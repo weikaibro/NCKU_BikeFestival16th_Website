@@ -14,14 +14,6 @@
       <img src="../assets/official_slider_1.png" alt="成大單車節">
     </div>
   </div>
-
-  
-
-  <div>
-    <div class="">
-
-    </div>
-  </div>
 </template>
 
 <style scoped>
