@@ -105,7 +105,7 @@ setInterval(() => {
     >
       <video
         id="myVideo"
-        class="rounded-3"
+        class="absolute rounded-3 text-white"
         height="501"
         data-setup='{ "autoplay":true, "controls": false }'
         @click="playOrPause"
@@ -124,16 +124,16 @@ setInterval(() => {
             {{ videoName }}
           </div>
         </div>
-        <button class="text-white w-16" @click="last">
+        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="last">
           <icon-ic-baseline-skip-previous class="w-full h-full" />
         </button>
-        <button class="text-white w-16" @click="play">
+        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="play">
           <icon-material-symbols-play-arrow class="w-full h-full" />
         </button>
-        <button class="text-white w-16" @click="pause">
+        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="pause">
           <icon-ic-baseline-pause class="w-full h-full" />
         </button>
-        <button class="text-white w-16" @click="next">
+        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="next">
           <icon-ic-sharp-skip-next class="w-full h-full" />
         </button>
         <div
