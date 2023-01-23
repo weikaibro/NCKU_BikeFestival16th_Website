@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomepageView from '../views/HomepageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'homepage',
+      component: HomepageView
     },
     {
       path: '/registration',
@@ -17,11 +17,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/RegistrationView.vue')
     },
-    {
-      path: '/introduction',
-      name: 'introduction',
-      component: () => import('../views/IntroductionView.vue')
-    }
+
   ]
 })
 
