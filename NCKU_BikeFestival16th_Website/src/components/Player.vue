@@ -105,7 +105,7 @@ setInterval(() => {
     >
       <video
         id="myVideo"
-        class="absolute rounded-3 text-white"
+        class="rounded-3"
         height="501"
         data-setup='{ "autoplay":true, "controls": false }'
         @click="playOrPause"
