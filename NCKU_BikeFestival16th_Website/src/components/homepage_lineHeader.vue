@@ -19,8 +19,12 @@
 
     <div class="basis-6/12 flex flex-row justify-evenly items-center w-screen">
       <div class="border-2 border-black w-1/5 h-full">
-        <img class="w-full p-4 hover:bg-gradient-to-t hover:from-black" src="https://picsum.photos/200" alt="">
-        <span class="pl-4 text-xl font-semibold">模擬面試</span>
+        <div class="m-4">
+          <div class="w-full hover:bg-gradient-to-t hover:from-gray-400">
+            <img src="https://picsum.photos/200" alt="">
+          </div>
+          <span class="text-xl font-semibold">模擬面試</span>
+        </div>
       </div>
       <div class="border-2 border-black w-1/5 h-full">
         <img class="w-full p-4" src="https://picsum.photos/200" alt="">
