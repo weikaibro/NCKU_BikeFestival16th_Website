@@ -99,14 +99,13 @@ setInterval(() => {
 
 <template>
   <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
-  <div class="bg-black w-full h-[665px] pt-8 flex flex-col gap-y-4">
+  <div class="bg-black w-full h-full pt-8 flex flex-col gap-y-4">
     <div
       class="bg-white h-[500px] rounded-[3rem] flex justify-center mx-16 flex-shrink-0"
     >
       <video
         id="myVideo"
-        class="rounded-3"
-        height="501"
+        class="rounded-3 h-[499px]"
         data-setup='{ "autoplay":true, "controls": false }'
         @click="playOrPause"
         @timeupdate="progressControl"
@@ -124,6 +123,7 @@ setInterval(() => {
             {{ videoName }}
           </div>
         </div>
+
         <button class="text-white w-16" @click="last">
           <icon-ic-baseline-skip-previous class="w-full h-full" />
         </button>
@@ -136,6 +136,7 @@ setInterval(() => {
         <button class="text-white w-16" @click="next">
           <icon-ic-sharp-skip-next class="w-full h-full" />
         </button>
+
         <div
           class="w-[900px] bg-transparent h-5 mt-[24px] mb-7 flex flex-shrink-0 flex-nowrap"
           @click="progressClick"
@@ -149,12 +150,13 @@ setInterval(() => {
         </div>
       </div>
       <button
-        class="w-52 h-[84px] border border-white text-white text-center text-3xl mt-2 flex-shrink-0"
+        class="w-52 h-[84px] border border-white text-white text-center text-3xl mt-2 shrink-0"
       >
         即刻報名
       </button>
     </div>
   </div>
 </template>
+
 
 <style scoped></style>

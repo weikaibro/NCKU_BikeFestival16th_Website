@@ -8,7 +8,7 @@
 
         </div>
         <div class="flex flex-row-reverse mt-2 mx-12">
-            <button class="w-52 h-[84px] border border-white text-white text-center text-3xl ">即刻報名</button>
+            <button class="w-52 h-[84px] border border-white text-white text-center text-3xl">即刻報名</button>
         </div>
     </div>
 </template>

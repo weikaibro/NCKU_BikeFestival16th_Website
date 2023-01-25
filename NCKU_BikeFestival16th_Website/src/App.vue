@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header>
-    <nav class="flex underline underline-offset-8">
+    <nav class="flex underline underline-offset-8 overflow-hidden">
       <RouterLink to="/" class="p-3">Homepage</RouterLink>
       <RouterLink to="/registration" class="p-3">Registration</RouterLink>
       <RouterLink to="/Information" class="p-3">Information</RouterLink>
@@ -17,3 +17,10 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterView />
   </main>
 </template>
+
+<style>
+* {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+</style>

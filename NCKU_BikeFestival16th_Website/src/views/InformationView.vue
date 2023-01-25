@@ -15,7 +15,7 @@ const selected = (event) => {
       target.value = i;
       t.push('selected');
     }
-    else  t.push('notselected');
+    else t.push('notselected');
     parent[i].className = t.join(' ');
   }
 }

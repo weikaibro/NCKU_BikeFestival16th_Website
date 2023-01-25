@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="sliderContainer m-0 p-0 relative w-screen h-screen">
+  <div class="sliderContainer m-0 p-0 relative">
     <div>
       <img src="../assets/official_slider_1.png" alt="成大單車節">
     </div>
@@ -21,8 +21,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  left: 100%;
-  width: 100%;
+  left: 0%;
+  max-width: 100%;
   opacity: 0;
   z-index: -1;
   animation: sliderTrans 15s linear infinite;
@@ -76,7 +76,7 @@
   46.69% {
     opacity: 0;
     filter: alpha(opacity=0);
-    left: 100%;
+    left: 0%;
     /* 6.5-7秒回到起始位置*/
   }
 }
