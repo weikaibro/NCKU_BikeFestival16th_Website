@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <div
-    class="bg-black w-full h-[665px] px-20 py-24 grid gap-x-28 gap-y-20 grid-cols-3"
+    class="bg-black w-full h-full px-20 py-24 grid gap-x-28 gap-y-20 grid-cols-3"
   >
     <RouterLink to="/Introduction/InterviewView" class="option">模擬面試</RouterLink>
     <RouterLink to="/Introduction/DeepExperienceView" class="option">沉浸式體驗</RouterLink>
