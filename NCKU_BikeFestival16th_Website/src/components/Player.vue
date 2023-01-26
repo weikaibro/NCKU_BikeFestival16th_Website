@@ -133,7 +133,7 @@ setInterval(() => {
           <icon-ic-baseline-pause class="w-full h-full" />
         </button>
         <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="next">
-          <icon-ic-sharp-skip-next class="w-full h-full" />
+            <icon-ic-sharp-skip-next class="w-full h-full" />
         </button>
 
         <div

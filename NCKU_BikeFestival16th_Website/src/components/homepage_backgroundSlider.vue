@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="sliderContainer m-0 p-0 relative">
+  <div class="sliderEff relative">
     <div>
       <img src="../assets/official_slider_1.png" alt="成大單車節">
     </div>
@@ -17,33 +17,34 @@
 </template>
 
 <style scoped>
-.sliderContainer div {
+.sliderEff div {
   position: absolute;
+  margin: auto;
   left: 0;
+  right: 0;
   top: 0;
   left: 0%;
   max-width: 100%;
   opacity: 0;
-  z-index: -1;
   animation: sliderTrans 15s linear infinite;
   -webkit-animation: sliderTrans 15s linear infinite;
 }
 
-.sliderContainer div img {
+.sliderEff div img {
   width: 100%;
 }
 
-.sliderContainer div:nth-child(3) {
+.sliderEff div:nth-child(3) {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
 }
 
-.sliderContainer div:nth-child(2) {
+.sliderEff div:nth-child(2) {
   animation-delay: 5s;
   -webkit-animation-delay: 5s;
 }
 
-.sliderContainer div:nth-child(1) {
+.sliderEff div:nth-child(1) {
   animation-delay: 10s;
   -webkit-animation-delay: 10s;
 }
