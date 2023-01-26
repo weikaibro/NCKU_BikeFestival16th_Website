@@ -1,0 +1,76 @@
+<script setup>
+import { ref, computed } from 'vue'
+import Map from '../components/Information/map.vue'
+import Traffic from '../components/Information/traffic.vue'
+import TimeTable from '../components/Information/TimeTable.vue'
+
+let target = ref(0);
+
+const selected = (event) => {
+  let parent = event.currentTarget.parentElement.children;
+  for (let i = 0; i < parent.length; i++) {
+    let t = parent[i].className.split(' ');
+    t.pop();
+    if (parent[i] === event.currentTarget){
+      target.value = i;
+      t.push('selected');
+    }
+    else t.push('notselected');
+    parent[i].className = t.join(' ');
+  }
+}
+
+const Show = computed(() => {
+  switch(target.value){
+    case 0:{
+      return Map
+    }
+    case 1:{
+      return Traffic
+    }
+    case 2:{
+      return TimeTable
+    }
+    default:
+      break;
+  }
+})
+</script>
+
+<template>
+  <div class="relative m-20">
+    <div class="text-3xl pl-5 font-extrabold">
+      活動資訊
+    </div>
+    <div>
+      <ul class="flex justify-end">
+        <li class="border-l border-r selected" @click="selected">
+          <a class="text-1xl px-6 py-1 font-extrabold" href="#">展場地圖</a>
+        </li>
+        <li class="notselected" @click="selected">
+          <a class="text-1xl px-6 py-1 font-extrabold" href="#">交通資訊</a>
+        </li>
+        <li class="border-l border-r notselected" @click="selected">
+          <a class="text-1xl px-6 py-1 font-extrabold" href="#">時間表</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <component :is="Show" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .selected {
+    @apply border-t border-black flex justify-evenly items-center bg-black text-white;
+  }
+  .notselected {
+    @apply border-t border-black flex justify-evenly items-center bg-white text-black;
+  }
+}
+</style>
