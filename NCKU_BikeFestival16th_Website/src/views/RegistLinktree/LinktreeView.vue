@@ -4,7 +4,7 @@ import irregularButton from '../../components/irregularButton.vue'
 </script>
 
 <template>
-  <div class="h-screen w-screen flex flex-row bg-black">
+  <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden">
 
     <div class="basis-1/3 flex flex-col justify-evenly items-center">
       <RouterLink to="/Registration/Linktree/MockInterview">
@@ -15,7 +15,7 @@ import irregularButton from '../../components/irregularButton.vue'
     </div>
 
     <div class="basis-1/3 flex justify-center items-center">
-      <img class="w-full" src="../../assets/logo.svg" alt="">
+      <img class="w-full" src="../../assets/bikeFestivalLogo.png" alt="">
     </div>
 
     <div class="basis-1/3 flex flex-col justify-evenly items-center">
@@ -25,3 +25,10 @@ import irregularButton from '../../components/irregularButton.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+.bgImg {
+  background-image: url("../../assets/backgrond.png");
+  background-size: 100% 100%;
+}
+</style>

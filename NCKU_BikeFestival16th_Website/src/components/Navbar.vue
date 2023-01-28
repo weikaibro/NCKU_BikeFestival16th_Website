@@ -6,7 +6,7 @@ const headers = ref([
   { title: "活動資訊", link: "/Information"},
   { title: "活動介紹", link: "/Introduction"},
   { title: "主題專欄", link: ""},
-  { title: "科系博覽", link: ""},
+  { title: "科系手冊", link: ""},
   { title: "合作夥伴", link: ""},
   { title: "紀念品預購", link: ""} 
 ]);

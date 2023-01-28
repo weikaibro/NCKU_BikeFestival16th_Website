@@ -32,7 +32,8 @@ const router = createRouter({
             },
             {
               path: 'MockInterview',
-              component: () => import('../views/RegistLinktree/RegistPage/MockInterview.vue')
+              name: 'MockInterview',
+              component: () => import('../views/RegistLinktree/RegistPage/MockInterview.vue')  
             }
           ]
           
@@ -90,7 +91,12 @@ const router = createRouter({
           component: () => import('../views/Introduction/EnergyBonusView.vue'),
         }
       ]
-    }
+    },
+    {
+      path: '/:domain(.*)*',
+      name: 'NotFound',
+      component: import('../views/404.vue')
+    },
   ]
 })
 

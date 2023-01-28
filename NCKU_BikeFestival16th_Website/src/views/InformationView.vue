@@ -1,47 +1,51 @@
 <script setup>
-import { ref, computed } from 'vue'
-import Map from '../components/Information/map.vue'
-import Traffic from '../components/Information/traffic.vue'
-import TimeTable from '../components/Information/TimeTable.vue'
+import { ref, computed } from "vue";
+import Map from "../components/Information/map.vue";
+import Traffic from "../components/Information/Traffic.vue";
+import TimeTable from "../components/Information/TimeTable.vue";
+import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
 
 let target = ref(0);
 
 const selected = (event) => {
   let parent = event.currentTarget.parentElement.children;
   for (let i = 0; i < parent.length; i++) {
-    let t = parent[i].className.split(' ');
+    let t = parent[i].className.split(" ");
     t.pop();
-    if (parent[i] === event.currentTarget){
+    if (parent[i] === event.currentTarget) {
       target.value = i;
-      t.push('selected');
-    }
-    else t.push('notselected');
-    parent[i].className = t.join(' ');
+      t.push("selected");
+    } else t.push("notselected");
+    parent[i].className = t.join(" ");
   }
-}
+  // console.log(target.value);
+};
 
 const Show = computed(() => {
-  switch(target.value){
-    case 0:{
-      return Map
+  switch (target.value) {
+    case 0: {
+      return Map;
     }
-    case 1:{
-      return Traffic
+    case 1: {
+      return Traffic;
     }
-    case 2:{
-      return TimeTable
+    case 2: {
+      return TimeTable;
     }
     default:
       break;
   }
-})
+});
 </script>
 
 <template>
-  <div class="relative m-20">
-    <div class="text-3xl pl-5 font-extrabold">
-      活動資訊
-    </div>
+  <Navbar />
+
+  <div class="m-20">
+
+    <div class="text-3xl pl-5 font-extrabold">活動資訊</div>
+
     <div>
       <ul class="flex justify-end">
         <li class="border-l border-r selected" @click="selected">
@@ -55,10 +59,15 @@ const Show = computed(() => {
         </li>
       </ul>
     </div>
+
     <div>
       <component :is="Show" />
     </div>
+
   </div>
+
+  <Footer />
+
 </template>
 
 <style scoped>

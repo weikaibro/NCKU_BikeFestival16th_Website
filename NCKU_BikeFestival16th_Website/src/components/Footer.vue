@@ -12,6 +12,7 @@ const list = ref([
 
 <template>
   <div class="bg-black text-white z-0 inset-x-0 relative bottom-0 py-4 flex">
+    
     <div class="mx-6 items-center">
       <span class="font-semibold mb-4">國立成功大學第16屆單車節</span>
       <ul>

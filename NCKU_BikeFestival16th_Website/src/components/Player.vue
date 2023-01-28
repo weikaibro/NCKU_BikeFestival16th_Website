@@ -1,5 +1,6 @@
 <script setup>
 import videojs from "video.js";
+import irregularButton from "./irregularButton.vue";
 import IconIcBaselinePause from "~icons/ic/baseline-pause";
 import IconIcSharpSkipNext from "~icons/ic/sharp-skip-next";
 import IconIcBaselineSkipPrevious from "~icons/ic/baseline-skip-previous";
@@ -99,22 +100,60 @@ setInterval(() => {
 
 <template>
   <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
-  <div class="bg-black w-full h-full pt-8 flex flex-col gap-y-4">
+  <!-- top + bottom -->
+  <div class="bg-black w-full h-full flex flex-col gap-y-4">
+    <!-- frame -->
     <div
-      class="bg-white h-[500px] rounded-[3rem] flex justify-center mx-16 flex-shrink-0"
+      class="bg-white h-[600px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
     >
       <video
         id="myVideo"
-        class="rounded-3 h-[499px]"
+        class="rounded-3 h-[499px] hidden"
         data-setup='{ "autoplay":true, "controls": false }'
         @click="playOrPause"
         @timeupdate="progressControl"
       ></video>
+      <div class="text-3xl font-bold">大學充值站</div>
+      <br />
+      大學充值站，為你召集一群熱心且經驗滿滿的學長姐，淬鍊自身經驗，第一手分享給來參加的你。從課業、生活、人際關係、多元經驗和其他特殊主題出發，為你拼湊出大學生活的全貌。除了精彩的實體演講與展覽外，在各平台上也有收錄 Podcast 特輯。讓每個對大學生活充滿好奇的你，不受時間、距離限制，只要有網路收聽的地方，就是你探索大學生活的大平台！
+      <br /><br />
+      1. 動態校園講者：
+      <br />
+      在單車節活動兩日，舉辦共計八場的精彩演講，主題從多元經驗、課業經驗、生活經驗、人際關係到其他特殊主題分享應有盡有，讓充滿好奇與疑惑的你，面對面聆聽學長姐的經驗談，以最直接的方式一探大學生活究竟。在演講結束後，也設有問答時間，讓學長姐們直接答覆你的疑問！
+      <br /><br />
+      2. 靜態個人展：
+      <br />
+      蒐集並彙整講者們經驗，以靜態展覽的形式，在唯農大樓走廊呈現。聽過演講的你，能夠再重新回味方才的精華；等待演講中的你，可先概覽講者小檔案；還在猶豫參加哪場演講的你，可以透過個人展鎖定適合自己的場次喔！
+      <br /><br />
+      3. 線上 Podcast：
+      <br />
+      總共 7 集的單集，以訪談的形式，邀請校園講者線上免費串流。內容涵蓋但不限於學業、大學迷思、校內外活動的經驗分享。學長姐們將最真實的生活經驗，毫無保留地以聲音的形式傳承給你，陪伴你在活動現場以外，盡情探索成大的校園生活。
+
+      <br /><br />
+      <div class="text-3xl font-bold">活動資訊</div>
+      <br />
+      地點：校園講者與個人展將在光復校區唯農大樓舉行 <br />
+      ＊校園講者為限額講座，每場上限 30 人，有興趣參與演講記得到報名專區報名喔！
+      <br />
+      ＊如對以上內容有任何疑惑，歡迎斯訊成大單車節臉書粉專或 IG 官方帳號 <br />
+      <br />
+      <div class="text-3xl font-bold">籌備團隊</div>
+      <br />
+      部長 外文114 劉世瑜
+      <br />
+      部員 不分115 張百鴻 <br />
+      部員 會計114 李采諭 <br />
+      部員 工資管114 魯倫愷 <br />
+      部員 電機115 魏子翔 <br />
+      部員 機械114 鄭皓澤
     </div>
+    <!-- under -->
     <div class="bg-black h-auto flex justify-between mx-12 flex-shrink-0">
+      <!-- progress frame -->
       <div
         class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap"
       >
+        <!-- Marquee -->
         <div class="w-[1200px] overflow-hidden flex flex-nowrap">
           <div ref="marquee1" class="w-[600px] bg-transparent text-white h-6">
             {{ videoName }}
@@ -123,19 +162,32 @@ setInterval(() => {
             {{ videoName }}
           </div>
         </div>
-        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="last">
+        <!-- button * 4 -->
+        <button
+          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          @click="last"
+        >
           <icon-ic-baseline-skip-previous class="w-full h-full" />
         </button>
-        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="play">
+        <button
+          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          @click="play"
+        >
           <icon-material-symbols-play-arrow class="w-full h-full" />
         </button>
-        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="pause">
+        <button
+          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          @click="pause"
+        >
           <icon-ic-baseline-pause class="w-full h-full" />
         </button>
-        <button class="text-white w-16 active:animate-ping hover:animate-bounce" @click="next">
-            <icon-ic-sharp-skip-next class="w-full h-full" />
+        <button
+          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          @click="next"
+        >
+          <icon-ic-sharp-skip-next class="w-full h-full" />
         </button>
-
+        <!-- progress bar -->
         <div
           class="w-[900px] bg-transparent h-5 mt-[24px] mb-7 flex flex-shrink-0 flex-nowrap"
           @click="progressClick"
@@ -148,14 +200,36 @@ setInterval(() => {
           <div class="bg-white w-5 h-5 mb-7 flex-shrink-0 rounded-full"></div>
         </div>
       </div>
-      <button
-        class="w-52 h-[84px] border border-white text-white text-center text-3xl mt-2 shrink-0"
-      >
-        即刻報名
-      </button>
+
+      <div class="float-right mt-6 mr-16">
+        <irregularButton btnTitle="即刻報名" />
+      </div>
     </div>
   </div>
 </template>
 
+<style scoped>
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-<style scoped></style>
+/* Track */
+::-webkit-scrollbar-track-piece {
+  box-shadow: inset 0 0 5px transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 60, 210);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(6, 60, 169);
+}
+
+.fontEff {
+  color: rgb(6, 60, 169);
+  font-weight: bolder;
+}
+</style>

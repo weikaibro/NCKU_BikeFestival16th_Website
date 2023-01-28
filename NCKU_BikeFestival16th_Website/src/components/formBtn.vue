@@ -8,6 +8,7 @@ const Switch = (index) => {
 </script>
 
 <template>
+  <!-- RWD -->
   <div class="sm:hidden flex flex-col">
     <button
       v-for="(value, index) in buttonName"
@@ -20,13 +21,13 @@ const Switch = (index) => {
     </button>
   </div>
 
-  <!-- RWD -->
   <div class="hidden sm:flex">
     <button
       v-for="(value, index) in buttonName"
       :key="index"
       @click="Switch(index)"
-      class="mr-6 font-semibold bg-transparent text-white border-2 border-white px-5 py-1 rounded-full hover:scale-105 active:scale-95"
+      class="transition furatioduration-100 w-[250px] h-[60px] font-semibold bg-transparent text-white text-lg border-2 border-white mx-8 px-5 py-1 rounded-full 
+        hover:scale-105 active:scale-95"
       :class="{ change: index === num }"
     >
       {{ value }}
