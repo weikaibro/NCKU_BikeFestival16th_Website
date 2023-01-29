@@ -122,6 +122,67 @@ const router = createRouter({
       component: () => import('../views/ThemeColumnView.vue'),
     },
     {
+      path: '/DeptManual',
+      children: [
+        {
+          path: '',
+          name: 'DeptManual',
+          component: () => import('../views/DeptManualView.vue'),
+        },
+        {
+          path: 'BioscienceAndBiotechnology',
+          name: 'BioscienceAndBiotechnology',
+          component: () => import('../views/DeptManual/BioscienceAndBiotechnology.vue'),
+        },
+        {
+          path: 'ElectricalEngineeringAndComputerScience',
+          name: 'ElectricalEngineeringAndComputerScience',
+          component: () => import('../views/DeptManual/ElectricalEngineeringAndComputerScience.vue'),
+        },
+        {
+          path: 'Engineering',
+          name: 'Engineering',
+          component: () => import('../views/DeptManual/Engineering.vue'),
+        },
+        {
+          path: 'LiberalArts',
+          name: 'LiberalArts',
+          component: () => import('../views/DeptManual/LiberalArts.vue'),
+        },
+        {
+          path: 'Management',
+          name: 'Management',
+          component: () => import('../views/DeptManual/Management.vue'),
+        },
+        {
+          path: 'Medicine',
+          name: 'Medicine',
+          component: () => import('../views/DeptManual/Medicine.vue'),
+        },
+        {
+          path: 'PlanningAndDesign',
+          name: 'PlanningAndDesign',
+          component: () => import('../views/DeptManual/PlanningAndDesign.vue'),
+        },
+        {
+          path: 'Science',
+          name: 'Science',
+          component: () => import('../views/DeptManual/Science.vue'),
+        },
+        {
+          path: 'SocialScience',
+          name: 'SocialScience',
+          component: () => import('../views/DeptManual/SocialScience.vue'),
+        },
+        {
+          path: 'Undeclared',
+          name: 'Undeclared',
+          component: () => import('../views/DeptManual/Undeclared.vue'),
+        },
+      ]
+
+    },
+    {
       path: '/:domain(.*)*',
       name: 'NotFound',
       component: import('../views/404.vue')

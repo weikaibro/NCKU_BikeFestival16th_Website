@@ -6,7 +6,7 @@ const headers = ref([
   { title: "活動資訊", link: "/Information" },
   { title: "活動介紹", link: "/Introduction" },
   { title: "主題專欄", link: "/ThemeColumn" },
-  { title: "科系手冊", link: ""},
+  { title: "科系手冊", link: "/DeptManual"},
   { title: "合作夥伴", link: ""},
   { title: "紀念品預購", link: ""} 
 ]);
@@ -44,7 +44,7 @@ const show = () => {
         <li>
           <RouterLink 
             v-for="header in headers" 
-            :key="index"
+            :key="headers.indexOf(header)"
             :to="header.link" 
             class="h-10 rounded-lg px-4 py-5 transition-all text-xl hover:bg-myblue"
           >

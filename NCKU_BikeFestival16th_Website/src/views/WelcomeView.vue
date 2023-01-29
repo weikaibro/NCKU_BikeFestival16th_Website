@@ -5,7 +5,7 @@ import irregularButton from "../components/irregularButton.vue";
 
 <template>
   <div class="relative overflow-hidden flex flex-col h-screen w-screen">
-    <video autoplay muted loop class="w-screen object-contain">
+    <video autoplay muted loop class="absolute w-full">
       <source src="../assets/bg1.mp4" type="video/mp4" />
     </video>
 
@@ -26,4 +26,6 @@ import irregularButton from "../components/irregularButton.vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

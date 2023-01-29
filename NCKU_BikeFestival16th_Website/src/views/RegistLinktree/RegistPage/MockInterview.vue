@@ -61,9 +61,6 @@ const Show = computed(() => {
       <div>
         <component :is="Show" />
       </div>
-
-      <!-- <entryFormIntro /> -->
-      <!-- <entryForm /> -->
     </div>
 
     <Footer />

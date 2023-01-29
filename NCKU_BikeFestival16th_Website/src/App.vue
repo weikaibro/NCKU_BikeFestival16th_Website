@@ -24,18 +24,9 @@ import formBtn from './components/formBtn.vue'
   <RoundButton text="Back" onclick="location.href='https://hackmd.io/WpjPOBDTR0eQuBCdSPk3ag?view'"/>
   <RoundButton text="More" onclick="location.href='https://www.w3schools.com/default.asp'"/> -->
 
-  <header>
-    <!-- <Navbar/> -->
-  </header>
-
   <main>
-    <!-- RouterView 會直接讀取 router 資料夾內的 router js 內容 -->
     <RouterView />
   </main>
-
-  <footer>
-    <!-- <Footer/> -->
-  </footer>
 
 </template>
 

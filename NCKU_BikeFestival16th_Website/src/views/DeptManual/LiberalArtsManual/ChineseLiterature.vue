@@ -1,16 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import { RouterLink, RouterView } from "vue-router";
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
-import roundedBtn from '../components/RoundButton.vue'
-import irregularButton from '../components/irregularButton.vue'
-import homepage_dialogBox from '../components/homepage_dialogBox.vue'
-import homepage_lineHeader from '../components/homepage_lineHeader.vue'
-import homepage_themeActivity from '../components/homepage_themeActivity.vue'
-import homepage_backgroundSlider from '../components/homepage_backgroundSlider.vue'
-import homepage_totalMemberSlider from '../components/homepage_totalMemberSlider.vue'
-const selectedMember = [
+import { useMemberStore } from '../../../stores/memberInfo.js'
+const store = useMemberStore();  // pinia: all members
+const members = ref([
   { memberPic: "https://picsum.photos/200", memberName: "姜昕", memberTitle: "總籌", 
       memberGrade: "療癒系 112 級", memberSaid: "牙空灰機牙空灰機牙空灰機牙空灰機牙空灰機" },
   { memberPic: "https://picsum.photos/200", memberName: "劉子綾", memberTitle: "總籌", 
@@ -33,57 +25,49 @@ const selectedMember = [
       memberGrade: "療癒系 112 級", memberSaid: "牙空灰機牙空灰機牙空灰機牙空灰機牙空灰機" },
   { memberPic: "https://picsum.photos/200", memberName: "黃鈺婷", memberTitle: "設計部", 
       memberGrade: "療癒系 112 級", memberSaid: "牙空灰機牙空灰機牙空灰機牙空灰機牙空灰機" }
-]
+])
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <Navbar/>
+  <div>
+    <div 
+    class="absolute z-10 left-8 top-32 w-[250px] transition duration-200 
+      hover:-translate-x-3 active:opacity-50 active:scale-75 max-sm:hidden"
+    @click="store.scrollLeft"
+  >
+    <img src="../../../assets/arrow_left.svg" alt="leftArrow">   
+  </div>
+  <div class="absolute z-0 inset-x-0 mx-auto bg-neutral-100
+    w-[80%] h-[580px] max-sm:w-screen max-sm:h-[500px]">
+    <div 
+      id="scrollTo"
+      class="snap-x snap-mandatory overflow-hidden 
+        flex flex-row gap-8 mx-12 items-center h-full
+        max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
+    >
 
-    <div class="flex flex-col w-screen aspect-video bg-black">
-      <div class="basis-[80%]">
-        <homepage_backgroundSlider />
+      <div
+        v-for="member in members" 
+        :key="members.indexOf(member)"
+        class="memberInfo"
+      >
+        <img class="imgInfo" :src="member.memberPic" alt="">
+        <span class="mt-4 text-2xl font-bold">{{ member.memberName }}</span>
+        <span class="text-lg mt-2 text-center">
+          {{ member.memberTitle }}
+          <br>{{ member.memberGrade }}
+          <br>{{ member.memberSaid }}
+        </span>
       </div>
-      <div class="basis-[20%] self-center">
-        <RouterLink to="/Registration/Linktree">
-          <irregularButton btnTitle="即刻報名" />
-        </RouterLink>
-      </div>
+
     </div>
-
-
-    <div class="flex flex-row justify-center items-center w-screen h-[1100px] overflow-hidden">
-      <homepage_dialogBox dialogTitle="單車節緣起" />
-    </div>
-
-
-    <div class="flex flex-col justify-center items-center m-0 p-0 w-screen h-[800px]">
-      <div class="h-[130px]">
-        <homepage_lineHeader headerTitle="四大主題活動" />
-      </div>
-      <div class="flex flex-col justify-evenly items-center w-screen sm:flex-row">
-        <homepage_themeActivity />
-      </div>
-      <div class="h-[150px] pt-12">
-        <roundedBtn text="More" />
-      </div>
-    </div>
-
-    <div class="flex flex-row justify-center items-center m-0 p-0 w-screen h-[1100px] overflow-hidden">
-      <homepage_dialogBox dialogTitle="紀念品">
-        <img src="../assets/logo.svg" alt="">
-      </homepage_dialogBox>
-    </div>
-
-    <div class="m-0 p-0 w-screen h-[1000px]">
-      <div class="h-[25%] flex justify-center items-end pb-16">
-        <homepage_lineHeader headerTitle="籌備團隊" />
-      </div>
-      <div class="h-[75%] relative">
-        <homepage_totalMemberSlider :members="selectedMember"/>
-      </div>
-    </div>
-
-    <Footer />
+  </div>
+  <div 
+    class="absolute z-10 right-8 top-32 w-[250px] transition duration-200 
+      hover:translate-x-3 3 active:opacity-50 active:scale-75 max-sm:hidden"
+    @click="store.scrollRight"
+  >
+    <img src="../../../assets/arrow_right.svg" alt="rightArrow">
+  </div>
   </div>
 </template>

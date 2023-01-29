@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 const buttonName = ref(["各系模擬面試", "教授面試技巧演講", "學習歷程加油站"]);
-const num = ref(4);
+const num = ref(0);
 const Switch = (index) => {
   num.value = index;
 };
