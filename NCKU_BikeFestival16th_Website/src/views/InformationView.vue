@@ -44,18 +44,18 @@ const Show = computed(() => {
 
   <div class="m-20">
 
-    <div class="text-3xl pl-5 font-extrabold">活動資訊</div>
+    <div class="text-4xl pl-5 font-extrabold">活動資訊</div>
 
     <div>
       <ul class="flex justify-end">
         <li class="border-l border-r selected" @click="selected">
-          <a class="text-1xl px-6 py-1 font-extrabold" href="#">展場地圖</a>
+          <a class="text-2xl px-10 py-2 font-extrabold" href="#">展場地圖</a>
         </li>
         <li class="notselected" @click="selected">
-          <a class="text-1xl px-6 py-1 font-extrabold" href="#">交通資訊</a>
+          <a class="text-2xl px-10 py-2 font-extrabold" href="#">交通資訊</a>
         </li>
         <li class="border-l border-r notselected" @click="selected">
-          <a class="text-1xl px-6 py-1 font-extrabold" href="#">時間表</a>
+          <a class="text-2xl px-10 py-2 font-extrabold" href="#">時間表</a>
         </li>
       </ul>
     </div>

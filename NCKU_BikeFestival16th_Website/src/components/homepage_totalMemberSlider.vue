@@ -6,7 +6,6 @@ const scrollLeft = () => {
     behavior: 'smooth'
   });
 }
-
 const scrollRight = () => {
   var scrollTo = document.getElementById('scrollTo');
   scrollTo.scrollBy({

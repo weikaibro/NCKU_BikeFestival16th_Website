@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <div class="scaleEff relative transition duration-150 ease-in-out
-    w-[320px] max-sm:w-[120px]"
+    w-[300px] max-sm:w-[120px]"
   >
     <img src="../assets/irregularBtn_transparent.svg" alt="">
     <span class="absolute top-6 left-11 text-3xl text-white 

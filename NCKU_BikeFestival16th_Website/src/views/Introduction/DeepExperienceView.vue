@@ -44,7 +44,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 劉尚恩
     </div>
     <div class="float-right mt-6 mr-16">
-      <IrregularButton btnTitle="即刻報名" />
+      <RouterLink to="/Registration/Linktree/DeepExperience">
+        <IrregularButton btnTitle="即刻報名" />
+      </RouterLink>
     </div>
   </div>
 </template>

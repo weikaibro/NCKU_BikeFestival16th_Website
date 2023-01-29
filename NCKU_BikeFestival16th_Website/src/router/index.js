@@ -33,10 +33,34 @@ const router = createRouter({
             {
               path: 'MockInterview',
               name: 'MockInterview',
-              component: () => import('../views/RegistLinktree/RegistPage/MockInterview.vue')  
+              component: () => import('../views/RegistLinktree/RegistPage/MockInterview.vue')
+            },
+            {
+              path: 'ExploreLearning',
+              name: 'ExploreLearning',
+              component: () => import('../views/RegistLinktree/RegistPage/ExploreLearning.vue')
+            },
+            {
+              path: 'CollegeCharge',
+              name: 'CollegeCharge',
+              component: () => import('../views/RegistLinktree/RegistPage/CollegeCharge.vue')
+            },
+            {
+              path: 'DepartmentTour',
+              name: 'DepartmentTour',
+              component: () => import('../views/RegistLinktree/RegistPage/DepartmentTour.vue')
+            },
+            {
+              path: 'BikeExperience',
+              name: 'BikeExperience',
+              component: () => import('../views/RegistLinktree/RegistPage/BikeExperience.vue')
+            },
+            {
+              path: 'DeepExperience',
+              name: 'DeepExperience',
+              component: () => import('../views/RegistLinktree/RegistPage/DeepExperience.vue')
             }
           ]
-          
         },
       ]
 
@@ -55,42 +79,47 @@ const router = createRouter({
           component: () => import('../views/IntroductionView.vue'),
         },
         {
-          path: 'InterviewView',
+          path: 'Interview',
           component: () => import('../views/Introduction/InterviewView.vue'),
         },
         {
-          path: 'DeepExperienceView',
+          path: 'DeepExperience',
           component: () => import('../views/Introduction/DeepExperienceView.vue'),
         },
         {
-          path: 'StageView',
+          path: 'Stage',
           component: () => import('../views/Introduction/StageView.vue'),
         },
         {
-          path: 'ExpositionView',
+          path: 'Exposition',
           component: () => import('../views/Introduction/ExpositionView.vue'),
         },
         {
-          path: 'BikeExperienceView',
+          path: 'BikeExperience',
           component: () => import('../views/Introduction/BikeExperienceView.vue'),
         },
         {
-          path: 'MindShopView',
+          path: 'MindShop',
           component: () => import('../views/Introduction/MindShopView.vue'),
         },
         {
-          path: 'CollegeChargeView',
+          path: 'CollegeCharge',
           component: () => import('../views/Introduction/CollegeChargeView.vue'),
         },
         {
-          path: 'SearchLearning',
-          component: () => import('../views/Introduction/SearchLearning.vue'),
+          path: 'ExploreLearning',
+          component: () => import('../views/Introduction/ExploreLearning.vue'),
         },
         {
-          path: 'EnergyBonusView',
+          path: 'EnergyBonus',
           component: () => import('../views/Introduction/EnergyBonusView.vue'),
         }
       ]
+    },
+    {
+      path: '/ThemeColumn',
+      name: 'ThemeColumn',
+      component: () => import('../views/ThemeColumnView.vue'),
     },
     {
       path: '/:domain(.*)*',

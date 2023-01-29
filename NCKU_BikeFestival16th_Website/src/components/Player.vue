@@ -1,11 +1,13 @@
 <script setup>
+import { ref, reactive, onMounted } from "vue";
+import { RouterLink } from "vue-router";
 import videojs from "video.js";
 import irregularButton from "./irregularButton.vue";
 import IconIcBaselinePause from "~icons/ic/baseline-pause";
 import IconIcSharpSkipNext from "~icons/ic/sharp-skip-next";
 import IconIcBaselineSkipPrevious from "~icons/ic/baseline-skip-previous";
 import IconMaterialSymbolsPlayArrow from "~icons/material-symbols/play-arrow";
-import { ref, reactive, onMounted } from "vue";
+
 let videoPlayer = {};
 let progressBar = ref(null);
 let marquee1 = ref(null);
@@ -109,7 +111,7 @@ setInterval(() => {
       <video
         id="myVideo"
         class="rounded-3 h-[499px] hidden"
-        data-setup='{ "autoplay":true, "controls": false }'
+        data-setup='{ "autoplay":false, "controls": false }'
         @click="playOrPause"
         @timeupdate="progressControl"
       ></video>
@@ -202,7 +204,9 @@ setInterval(() => {
       </div>
 
       <div class="float-right mt-6 mr-16">
-        <irregularButton btnTitle="即刻報名" />
+        <RouterLink to="/Registration/Linktree/CollegeCharge">
+          <irregularButton btnTitle="即刻報名" />
+        </RouterLink>
       </div>
     </div>
   </div>

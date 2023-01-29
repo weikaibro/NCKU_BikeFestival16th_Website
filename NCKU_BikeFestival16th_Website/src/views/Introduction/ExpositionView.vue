@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from "vue-router";
 import Navbar from "../../components/Navbar.vue";
 import IrregularButton from "../../components/irregularButton.vue";
 </script>
@@ -60,7 +61,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 牙醫117 林柏毅
     </div>
     <div class="float-right mt-6 mr-16">
-      <IrregularButton btnTitle="即刻報名" />
+      <RouterLink to="/Registration/Linktree/DepartmentTour">
+        <IrregularButton btnTitle="即刻報名" />
+      </RouterLink>
     </div>
   </div>
 </template>

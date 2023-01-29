@@ -8,7 +8,7 @@ import irregularButton from "../components/irregularButton.vue";
     class="bgImg relative grid grid-cols-3 place-items-center 
     bg-black w-screen h-screen px-20 py-24 overflow-hidden"
   >
-    <!-- background -->
+    <!-- corner * 4 -->
     <div class="imgEff absolute left-0 top-0 hover:-translate-x-2 hover:-translate-y-2">
       <img class="w-[300px]" src="../assets/bg_LeftTop.png" alt="">
     </div>
@@ -21,34 +21,33 @@ import irregularButton from "../components/irregularButton.vue";
     <div class="imgEff absolute right-0 bottom-0 hover:translate-x-2 hover:translate-y-2">
       <img class="w-[300px]" src="../assets/bg_RightBottom.png" alt="">
     </div>
-    
 
     <!-- router -->
-    <RouterLink to="/Introduction/InterviewView">
+    <RouterLink to="/Introduction/Interview">
       <irregularButton btnTitle="模擬面試" />
     </RouterLink>
-    <RouterLink to="/Introduction/DeepExperienceView">
+    <RouterLink to="/Introduction/DeepExperience">
       <irregularButton btnTitle="沉浸式體驗" />
     </RouterLink>
-    <RouterLink to="/Introduction/StageView">
+    <RouterLink to="/Introduction/Stage">
       <irregularButton btnTitle="舞台活動" />
     </RouterLink>
-    <RouterLink to="/Introduction/ExpositionView">
+    <RouterLink to="/Introduction/Exposition">
       <irregularButton btnTitle="科系博覽" />
     </RouterLink>
-    <RouterLink to="/Introduction/BikeExperienceView">
+    <RouterLink to="/Introduction/BikeExperience">
       <irregularButton btnTitle="單車體驗" />
     </RouterLink>
-    <RouterLink to="/Introduction/MindShopView">
+    <RouterLink to="/Introduction/MindShop">
       <irregularButton btnTitle="心靈柑仔店" />
     </RouterLink>
-    <RouterLink to="/Introduction/CollegeChargeView">
+    <RouterLink to="/Introduction/CollegeCharge">
       <irregularButton btnTitle="大學充值" />
     </RouterLink>
-    <RouterLink to="/Introduction/SearchLearning">
+    <RouterLink to="/Introduction/ExploreLearning">
       <irregularButton btnTitle="探索學習" />
     </RouterLink>
-    <RouterLink to="/Introduction/EnergyBonusView">
+    <RouterLink to="/Introduction/EnergyBonus">
       <irregularButton btnTitle="能量加值" />
     </RouterLink>
   </div>
@@ -65,7 +64,7 @@ import irregularButton from "../components/irregularButton.vue";
   }
 }
 .bgImg {
-  background-image: url(../assets/backgrond.png);
+  background-image: url(../assets/background.png);
   background-size: 100% 100%;
 }
 </style>
