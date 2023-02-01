@@ -43,6 +43,7 @@ const list = ref([
             alt="facebook"
             class="w-10 mr-6 mb-6"
           />
+          
         </picture>
       </a>
       <a href="https://www.instagram.com/nckubike_official/?fbclid=IwAR0t4smhGxWpPVr6ql3my23jcX2KKkEXFuVnT6oPiFF6BgYGRtOTmt4m0Cw" target="_blank" rel="noreferrer noopenner">

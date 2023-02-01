@@ -30,7 +30,7 @@ const btn = ref([
       </RouterLink>
 
       <div></div>
-      
+
       <RouterLink to="/DeptManual/Undeclared">
         <irregularButton class="col-span-3" btnTitle="不分學院" />
       </RouterLink>
@@ -39,7 +39,12 @@ const btn = ref([
 </template>
 
 <style scoped>
-.bgImg {
+
+.webp .bgImg {
+  background-image: url("../assets/background.webp");
+  background-size: 100% 100%;
+}
+.np-webp .bgImg {
   background-image: url("../assets/background.png");
   background-size: 100% 100%;
 }

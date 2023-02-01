@@ -5,13 +5,22 @@
 <template>
   <div class="sliderEff relative">
     <div>
-      <img src="../assets/official_slider_1.png" alt="成大單車節">
+      <picture>
+        <source srcset="../assets/official_slider_1.webp" type="image/webp">
+        <img src="../assets/official_slider_1.png" alt="NCKUbike">
+      </picture>
     </div>
     <div>
-      <img src="../assets/official_slider_1.png" alt="成大單車節">
+      <picture>
+        <source srcset="../assets/official_slider_1.webp" type="image/webp">
+        <img src="../assets/official_slider_1.png" alt="NCKUbike">
+      </picture>
     </div>
     <div>
-      <img src="../assets/official_slider_1.png" alt="成大單車節">
+      <picture>
+        <source srcset="../assets/official_slider_1.webp" type="image/webp">
+        <img src="../assets/official_slider_1.png" alt="NCKUbike">
+      </picture>
     </div>
   </div>
 </template>

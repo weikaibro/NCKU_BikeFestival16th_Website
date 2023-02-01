@@ -2,9 +2,10 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 const contents = ref([
-  { to:"/ThemeColumn/TimeManagement" , imgSrc: "src/assets/themeCol_TimeManagement/timeManagement (1).png", text1: "時間管理祕笈" },
-  { to:"/ThemeColumn/AfterClassInfo" , imgSrc: "src/assets/themeCol_AfterClassInfo/afterClassInfo (1).png", text1: "為生活添加調味：", text2: "課餘活動資訊分享" },
-  { to:"/ThemeColumn/unknown" , imgSrc: "src/assets/themeCol_TimeManagement", text1: "標題" },
+  { to:"/ThemeColumn/TimeManagement" , imgSrc: "src/assets/themeCol_TimeManagement/timeManagement1.png", text1: "時間管理祕笈" },
+  { to:"/ThemeColumn/AfterClassInfo" , imgSrc: "src/assets/themeCol_AfterClassInfo/afterClassInfo1.png", text1: "為生活添加調味：", text2: "課餘活動資訊分享" },
+  { to:"/ThemeColumn/Slashie" , imgSrc: "src/assets/Slashie.png", text1: "分身不乏術——斜槓是在斜什麼" },
+  { to:"/ThemeColumn/PartTimeJob" , imgSrc: "src/assets/PartTimeJob.png", text1: "踏入社會的第一步：打工大小事" },
 ])
 </script>
 

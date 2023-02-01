@@ -25,11 +25,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16">1.眼部放鬆</div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_healthEye.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/healthEye.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/healthEye.png" alt="healthEye">
+        </picture>
         <div class="text-xl leading-9">
           眼睛操
           <br />
@@ -47,7 +46,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16 mb-6">2.健身－徒手健身</div>
-        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_handWorkout.png" alt="" />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_handWorkout.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_handWorkout.png" alt="handWorkout">
+        </picture>
         <div class="text-xl leading-9">
           身為考生的你是否還在苦惱每天的時間都被讀書占了大部分，沒有時間能好好運動放鬆呢？
           <br />
@@ -62,7 +64,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16 mb-6">3.肩頸放鬆－肩頸操</div>
-        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_shoulderWorkout.png" alt="" />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_shoulderWorkout.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_shoulderWorkout.png" alt="shoulderWorkout">
+        </picture>
         <div class="text-xl leading-9">
           在家讀書時經常姿勢不正確經常感到肩頸痠痛？
           <br />
@@ -72,7 +77,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16 mb-6">4.拉筋伸展</div>
-        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_shoulderStretch.png" alt="" />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_shoulderStretch.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_shoulderStretch.png" alt="shoulderStretch">
+        </picture>
         <div class="text-xl leading-9">
           久坐在書桌前容易腳麻、屁股痠痛？
           <br />

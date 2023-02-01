@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div 
     class="absolute z-10 left-8 top-32 w-[250px] transition duration-200 
-      hover:-translate-x-3 active:opacity-50 active:scale-75 max-sm:hidden"
+      hover:-translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
     @click="store.scrollLeft"
   >
     <img src="../assets/arrow_left.svg" alt="leftArrow">   
@@ -31,11 +31,16 @@ defineProps({
         :key="members.indexOf(member)" 
         class="memberInfo"
       >
-        <img class="rounded-full w-[70%]" :src="member.memberPic" alt="">
+        <picture>
+          <source class="rounded-full w-[70%] mx-auto mt-5" :srcset="member.memberPicWebp" type="image/webp">
+          <img class="rounded-full w-[70%] mx-auto mt-5" :src="member.memberPic" alt="member">
+        </picture>
         <span class="mt-4 text-2xl font-bold">{{ member.memberName }}</span>
         <span class="fontSize mt-2 text-center">
           {{ member.memberTitle }}
-          <br>{{ member.memberGrade }}
+        </span>
+        <span class="fontSize">
+          {{ member.memberGrade }}
         </span>
         <span class="fontSize mt-1 text-center">
           {{ member.memberSaid }}
@@ -47,7 +52,7 @@ defineProps({
 
   <div 
     class="absolute z-10 right-8 top-32 w-[250px] transition duration-200 
-      hover:translate-x-3 3 active:opacity-50 active:scale-75 max-sm:hidden"
+      hover:translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
     @click="store.scrollRight"
   >
     <img src="../assets/arrow_right.svg" alt="rightArrow">

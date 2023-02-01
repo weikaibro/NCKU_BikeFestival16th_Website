@@ -13,6 +13,7 @@ import homepage_totalMemberSlider from "../components/homepage_totalMemberSlider
 const selectedMember = [
   {
     memberPic: "src/assets/teamMember/姜昕.png",
+    memberPicWebp: "src/assets/teamMember/姜昕.webp",
     memberName: "姜昕",
     memberTitle: "總籌",
     memberGrade: "療癒系 112 級",
@@ -21,6 +22,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/劉子綾.png",
+    memberPicWebp: "src/assets/teamMember/劉子綾.webp",
     memberName: "劉子綾",
     memberTitle: "總籌",
     memberGrade: "外文114",
@@ -28,6 +30,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/許哲斐.png",
+    memberPicWebp: "src/assets/teamMember/許哲斐.webp",
     memberName: "許哲斐",
     memberTitle: "秘書部",
     memberGrade: "航太113",
@@ -35,6 +38,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/張鈺昕.png",
+    memberPicWebp: "src/assets/teamMember/張鈺昕.webp",
     memberName: "張鈺昕",
     memberTitle: "秘書部",
     memberGrade: "政治114",
@@ -42,6 +46,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/陳加羲.png",
+    memberPicWebp: "src/assets/teamMember/陳加羲.webp",
     memberName: "陳加羲",
     memberTitle: "行銷部",
     memberGrade: "材料114",
@@ -49,6 +54,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/廖珺安.png",
+    memberPicWebp: "src/assets/teamMember/廖珺安.webp",
     memberName: "廖珺安",
     memberTitle: "行銷部",
     memberGrade: "台文114",
@@ -56,6 +62,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/陳冠儒.png",
+    memberPicWebp: "src/assets/teamMember/陳冠儒.webp",
     memberName: "陳冠儒",
     memberTitle: "公關部",
     memberGrade: "機械114",
@@ -63,6 +70,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/蔡依璇.png",
+    memberPicWebp: "src/assets/teamMember/蔡依璇.webp",
     memberName: "蔡依璇",
     memberTitle: "公關部",
     memberGrade: "護理114",
@@ -70,6 +78,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/許芷綾.png",
+    memberPicWebp: "src/assets/teamMember/許芷綾.webp",
     memberName: "許芷綾",
     memberTitle: "學術部",
     memberGrade: "外文114",
@@ -77,6 +86,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/劉世瑜.png",
+    memberPicWebp: "src/assets/teamMember/劉世瑜.webp",
     memberName: "劉世瑜",
     memberTitle: "學術部",
     memberGrade: "外文114",
@@ -84,6 +94,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/謝昀璋.png",
+    memberPicWebp: "src/assets/teamMember/謝昀璋.webp",
     memberName: "謝昀璋",
     memberTitle: "學術部",
     memberGrade: "醫學116",
@@ -91,6 +102,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/佘紀伸.png",
+    memberPicWebp: "src/assets/teamMember/佘紀伸.webp",
     memberName: "佘紀伸",
     memberTitle: "設計部",
     memberGrade: "土木113",
@@ -98,6 +110,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/邱于芸.png",
+    memberPicWebp: "src/assets/teamMember/邱于芸.webp",
     memberName: "邱于芸",
     memberTitle: "設計部",
     memberGrade: "建築114",
@@ -106,6 +119,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/黃鈺婷.png",
+    memberPicWebp: "src/assets/teamMember/黃鈺婷.webp",
     memberName: "黃鈺婷",
     memberTitle: "設計部",
     memberGrade: "交管113",
@@ -113,6 +127,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/呂秉宸.png",
+    memberPicWebp: "src/assets/teamMember/呂秉宸.webp",
     memberName: "呂秉宸",
     memberTitle: "影紀部",
     memberGrade: "水利114",
@@ -120,6 +135,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/徐子菱.png",
+    memberPicWebp: "src/assets/teamMember/徐子菱.webp",
     memberName: "徐子菱",
     memberTitle: "影紀部",
     memberGrade: "不分114",
@@ -127,6 +143,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/林子瑜.png",
+    memberPicWebp: "src/assets/teamMember/林子瑜.webp",
     memberName: "林子瑜",
     memberTitle: "策展部",
     memberGrade: "交管113",
@@ -134,6 +151,7 @@ const selectedMember = [
   },
   {
     memberPic: "src/assets/teamMember/簡以恆.png",
+    memberPicWebp: "src/assets/teamMember/簡以恆.webp",
     memberName: "簡以恆",
     memberTitle: "策展部",
     memberGrade: "經濟113",
@@ -141,6 +159,8 @@ const selectedMember = [
       "策展，Curate，即篩選並照顧藝術品或展品，以構成收藏或展覽。整個成大展場對我來說就是細心呵護藝術品以呈現給大家。",
   },
 ];
+const dialogBoxContent = "猶記得高三那年，一出學測考場，人生頓失方向。該讀哪間學校、報什麼學系？此起彼落的疑問，成了每個考生心中的困擾，也迴盪在每次與父母、導師的談話間。不管閱覽了多少網路資料，你仍然躊躇不前，甚至更加心焦。<br><strong>—— 這樣的選擇是對的嗎？去了那裡會不會後悔？</strong><br><br>已然進入所屬科系的我們，知道這樣的輪迴仍然不斷上演。所以我們自問，該如何消弭高中生們內心的不安。<span class='text-myblue'><strong>曾經籠罩我們的迷惘，就由我們來驅散。這份理念，就是單車節的初心。</strong></span>"
+const SouvenirContent = ""
 </script>
 
 <template>
@@ -160,7 +180,7 @@ const selectedMember = [
     <div
       class="flex flex-row justify-center items-center w-screen h-[1100px] overflow-hidden"
     >
-      <homepage_dialogBox dialogTitle="單車節緣起" />
+      <homepage_dialogBox dialogTitle="單車節緣起" styleAdd="mx-12" :article="dialogBoxContent" />
     </div>
 
     <div
@@ -175,16 +195,18 @@ const selectedMember = [
         <homepage_themeActivity />
       </div>
       <div class="h-[150px] pt-12">
-        <roundedBtn BtnTitle="More" />
+        <RouterLink to="/Introduction">
+          <roundedBtn BtnTitle="More" />
+        </RouterLink>
       </div>
     </div>
 
     <div
       class="flex flex-col justify-center items-center m-0 p-0 w-screen h-[1100px] overflow-hidden"
     >
-      <div class="flex justify-center items-center">
-        <homepage_dialogBox dialogTitle="紀念品">
-          <img src="../assets/logo.svg" alt="" />
+      <div class="flex justify-center items-center w-full">
+        <homepage_dialogBox dialogTitle="紀念品" :article="SouvenirContent" >
+          <img src="../assets/comingSoonWithBg.png" alt="" />
         </homepage_dialogBox>
       </div>
       <div class="h-[150px] pt-12">

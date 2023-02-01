@@ -65,7 +65,9 @@ function checkSelected() {
   }
   if (checkedOne[0] && checkedOne[1] && checkedOne[2] && checkedOne[3]) {
     console.log('Welcome!')
-    document.querySelector('form').submit();
+    var form = document.querySelector('form');
+    form.submit();
+    form.reset();
     alert('報名成功！')
   }
 }

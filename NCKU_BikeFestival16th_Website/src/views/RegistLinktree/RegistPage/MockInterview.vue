@@ -53,8 +53,10 @@ const Show = computed(() => {
           {{ value }}
         </button>
       </div>
-
-      <img class="w-[55%]" src="../../../assets/bikeFestivalLogo2.png" alt="">
+      <picture>
+        <source class="w-[55%] mx-auto" srcset="../../../assets/bikeFestivalLogo2.webp" type="image/webp">
+        <img class="w-[55%] mx-auto" src="../../../assets/bikeFestivalLogo2.png" alt="NCKUlogo">
+      </picture>
     </div>
 
     <div class="px-36 pt-20">

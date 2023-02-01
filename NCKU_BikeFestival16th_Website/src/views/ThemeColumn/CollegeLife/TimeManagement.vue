@@ -13,12 +13,19 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="時間" theme="時間管理祕笈" />
 
     <div class="mx-60 my-20">
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement (1).png" alt="">
+      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="">
+      <picture>
+        <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement1.webp" type="image/webp">
+        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="timeManagement">
+      </picture>
       <div class="text-xl leading-9">
         時間管理一直以來都是生活中非常重要的一項能力，不論實在學中還是備考中，若能掌握時間管理的技巧，絕對能有更佳的效率！小編我想經由這篇文分享一些時間觀禮相關的資訊，廢話不多說直接進入正題～
         <br><br><span class="font-bold text-2xl">時間管理的技巧</span>
       </div>
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement (2).png" alt="">
+      <picture>
+        <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement2.webp" type="image/webp">
+        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement2.png" alt="timeManagement">
+      </picture>
       <div class="text-xl leading-9">
         首先是時間管理的技巧，我們將其分成四個點：
         <br><br> 第一是辨認高價值的任務，面對接踵而來的大小事，列出所有代辦事項，分辨輕重緩急，先擬好大概的處理順序，既不會漏掉任何事，在分配上也能更加從容。
@@ -27,14 +34,20 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br><br> 最後一點是建立任務管理系統，可以選擇一本手帳或行事曆或是應用程式，依自身使用習慣決定，這些工具的輔助能更有效管理生活瑣事，別忘了持之以恆！長久下來會發現自己能過得既充實又從容～
         <br><br><span class="font-bold text-2xl">科學佐證的自律法</span> 
       </div>
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement (3).png" alt="">
+      <picture>
+        <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement3.webp" type="image/webp">
+        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement3.png" alt="timeManagement">
+      </picture>
       <div class="text-xl leading-9">
         什麼！自律也能牽扯科學！沒錯，自律的循環就是一種，就像是能達成自律的基礎原理，在這樣的原則下套用在各種情況都很適合，不妨可以試看看！
         <br> 目標設立→自我規劃、策略→自我監控與調節→自我反思）
         <br><br><span class="font-bold text-2xl">app推薦</span> 
         <br> 說到時間管理，想必也要一些輔助的工具，一直以來小編及朋友們都有在多方嘗試一些應用程式，不管是面對大考還是日常生活都能帶給我們一些幫助，以下是小編從以前試過的的app，在這邊推薦給大家！
       </div>
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement (4).png" alt="">
+      <picture>
+        <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement4.webp" type="image/webp">
+        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement4.png" alt="timeManagement">
+      </picture>
       <div class="text-xl leading-9">
         YPT
         <br> 創建學習群與朋友一起相互督促、努力，切記要適度比較，重點不在讀書時間的長短，而是自己讀進去了多少，如果開始在意計時的數字與排名，反而是偏離了讀書的重點，還是要注意自己的心態後再使用，我建議的方式就是跟幾個好友創一個讀書室一起努力就好，這個app是幫助我能跟精確分配讀書和休息，知道自己休息了多久，再回到位置上繼續專注就好。
@@ -49,7 +62,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br><br><span class="font-bold text-2xl">自主學習的心態調整</span> 
         <br> 如同前述自律的循環，擁有目標是自律的根本，而自律也是構築目標的一環，心態對自身的影響不容小覷，所以呢，小編還是要推薦幾種心態和方向：
       </div>
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement (5).png" alt="">
+      <picture>
+        <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement5.webp" type="image/webp">
+        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement5.png" alt="timeManagement">
+      </picture>
       <div class="text-xl leading-9">
         <ul class="list-decimal list-inside">
           <li>自主學習建立在一種自我實現的生活態度，我們是為自己而活，需要一點一點的向目標邁進。</li>

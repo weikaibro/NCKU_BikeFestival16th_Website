@@ -15,6 +15,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <div class="mx-60 my-20">
       <div>
         <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_starPlan.png" alt="" />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_starPlan.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_starPlan.png" alt="starPlan">
+        </picture>
         <div class="text-xl leading-9">
           這篇要介紹的是「繁星推薦」！在上一篇升學專欄中有稍微簡介繁星，但因為繁星的規則其實頗為複雜，所以決定再寫一篇專欄詳細為大家整理繁星的規則～
           <br> 首先先來簡單介紹一下繁星推薦是什麼！這是一個由大學甄選入學委員會主辦的升學管道，約佔升學管道中的15%，算是第三大宗的升學方式。

@@ -26,7 +26,9 @@ function checkSelected() {
   }
   if (checkedOne) {
     console.log('Welcome!')
-    document.querySelector('form').submit();
+    var form = document.querySelector('form');
+    form.submit();
+    form.reset();
     alert('報名成功！')
   }
 }
@@ -39,7 +41,10 @@ function checkSelected() {
     <!-- header -->
     <div class="flex flex-col justify-center items-center gap-16 mt-10">
       <span class="text-5xl font-bold tracking-wider">團體報名</span>
-      <img class="w-[55%]" src="../assets/bikeFestivalLogo2.png" alt="">
+      <picture>
+        <source class="w-[55%]" srcset="../assets/bikeFestivalLogo2.webp" type="image/webp">
+        <img class="w-[55%]" src="../assets/bikeFestivalLogo2.png" alt="NCKU">
+      </picture>
     </div>
 
     <div class="px-36 pt-20">
@@ -60,7 +65,7 @@ function checkSelected() {
           <br><br> ｜聯絡人 姜昕｜
           <a
             class="linkEff"
-            href="https://www.facebook.com/profile.php?id=100002291378285"
+            href="https://www.facebook.com/jessie01081910/"
             target="_blank"
             rel="noreferrer noopenner"
           >
@@ -69,7 +74,7 @@ function checkSelected() {
           <br> ｜聯絡人 劉子綾｜
           <a
             class="linkEff"
-            href="https://www.facebook.com/jessie01081910/"
+            href="https://www.facebook.com/profile.php?id=100002291378285"
             target="_blank"
             rel="noreferrer noopenner"
           >

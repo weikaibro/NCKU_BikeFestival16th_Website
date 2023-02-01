@@ -17,11 +17,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20">
       <div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.png"
-          alt=""
-        />
+
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.png" alt="FinancialManagement">
+        </picture>
         <div class="text-xl leading-9">
           在這個不斷通膨的時代，如何不被通膨追上成為每個人必學的課題，在成年開戶前，先養成良好儲蓄習慣，並培養對總體經濟的敏感度，讓自己提前準備好，以面對各式各樣的危機與轉機（機會是留給準備好的人！！
           <br /><br />
@@ -37,11 +37,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         </div>
       </div>
       <div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement2.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement2.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement2.png" alt="FinancialManagement">
+        </picture>
         <div class="text-xl leading-9">
           1. Fortune City 記帳城市
           <br />
@@ -109,11 +108,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br><br>
 
           <span class="mt-4 text-blue-600 font-bold">二、股票</span>
-          <img
-            class="shadow-lg mx-auto my-10 w-[800px]"
-            src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement3.png"
-            alt=""
-          />
+          <picture>
+            <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement3.webp" type="image/webp">
+            <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement3.png" alt="FinancialManagement">
+          </picture>
           <div class="text-xl leading-9">
             <span class="font-bold">基本面</span> 
             <br> 基本面就是影響公司財務與獲利之所有因素。
@@ -170,11 +168,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
             </ul>
           </div>
           <br><span class="mt-4 text-blue-600 font-bold">三、基金</span>
-          <img
-            class="shadow-lg mx-auto my-10 w-[800px]"
-            src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement4.png"
-            alt=""
-          />
+          <picture>
+            <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement4.webp" type="image/webp">
+            <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement4.png" alt="FinancialManagement">
+          </picture>
           <div class="text-xl leading-9">
             <span class="font-bold">基金類型</span> 
             <ul class="list-disc list-inside">
@@ -222,11 +219,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
             <br>小編說說話：基金是多支股票、債券等標的物的綜合體，而每一檔股票、債券都有其四大面向需要考慮，藉由基金經理人減少投資者的學習門檻，但因為包含的標的物多，學習天花板的難度也相對更高！
           </div>
           <br><span class="mt-4 text-blue-600 font-bold">四、外匯</span>
-          <img
-            class="shadow-lg mx-auto my-10 w-[800px]"
-            src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement5.png"
-            alt=""
-          />
+          <picture>
+            <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement5.webp" type="image/webp">
+            <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement5.png" alt="FinancialManagement">
+          </picture>
           <div class="text-xl leading-9">
             <span class="font-bold">美元指數</span>
             <br> 由六個主要國際貨幣（歐元、日元、英鎊、加拿大元、瑞典克朗和瑞士法郎）權重衡量美元在國際外匯市場匯率變化的一項綜合指標，另外還有貿易加權美元指數。

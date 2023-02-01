@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 const contents = ref([
-  { to:"/ThemeColumn/NotePro" , imgSrc: "src/assets/", text: "筆記 Pro" },
-  { to:"/ThemeColumn/PlatformForDummies" , imgSrc: "src/assets/", text: "平台資源懶人包" },
+  { to:"/ThemeColumn/NotePro" , imgSrc: "src/assets/comingSoonWithBg.png", text: "筆記 Pro" },
+  { to:"/ThemeColumn/PlatformForDummies" , imgSrc: "src/assets/comingSoonWithBg.png", text: "平台資源懶人包" },
   { to:"/ThemeColumn/FinancialManagement" , imgSrc: "src/assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.png", text: "比運彩更好賺－投資理財" },
 ])
 </script>

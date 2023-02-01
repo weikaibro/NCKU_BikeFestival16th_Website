@@ -1,13 +1,15 @@
 <script setup>
 defineProps({
-  dialogTitle: String
+  dialogTitle: String,
+  article: String,
+  styleAdd: String
 })
 </script>
 
 <template>
   <div 
     class="basis-1/6 transition duration-200
-      hover:-translate-x-3 active:opacity-50 active:scale-75 max-sm:hidden"
+      hover:-translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
     @click="scrollLeft"
   >
     <img class="w-full" src="../assets/arrow_left.svg" alt="leftArrow">   
@@ -31,20 +33,12 @@ defineProps({
       </div>
     </div>
 
-    <div class="flex flex-row justify-center items-center p-6
+    <div class="flex flex-row justify-center items-center
       border-x-4 border-b-4 border-black h-[600px] overflow-hidden">
       <!-- image slot -->
       <slot></slot>
-      <div class="text-center p-6 text-2xl leading-relaxed
-        max-sm:text-xs max-sm:leading-5 max-sm:p-4">
-        高三那年，一出學測考場，人生頓失方向。
-        <br> 這樣的輪迴不斷上演。我們希望消弭高中生們內心的不安和迷惘。
-
-        <br><br><strong>消弭不安，驅散迷惘</strong>。這份理念，就是單車節的初心。
-        <br> 牽起你與科系的對話，讓第一線的學長姊為你揭開科系的真實面貌。
-        
-        <br><br> 希望與會的你知曉，在跌宕的路上，你並不孤獨。
-        <br> 前方有我們為你指路。這趟旅程，將為你鎖定屬於你發揚光大的舞台。
+      <div class="text-2xl leading-relaxed 
+        max-sm:text-xs max-sm:leading-5 max-sm:p-4" :class="styleAdd" v-html="article">
       </div>
     </div>
 
@@ -52,7 +46,7 @@ defineProps({
 
   <div 
     class="basis-1/6 w-[250px] transition duration-200 
-      hover:translate-x-3 active:opacity-50 active:scale-75 max-sm:hidden"
+      hover:translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
     @click="scrollRight"
   >
     <img class="w-full" src="../assets/arrow_right.svg" alt="rightArrow">

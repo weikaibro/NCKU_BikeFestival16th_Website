@@ -10,16 +10,28 @@ import irregularButton from "../components/irregularButton.vue";
   >
     <!-- corner * 4 -->
     <div class="imgEff absolute left-0 top-0 hover:-translate-x-2 hover:-translate-y-2">
-      <img class="w-[300px]" src="../assets/bg_LeftTop.png" alt="">
+      <picture>
+        <source class="w-[300px]" srcset="../assets/bg_LeftTop.webp" type="image/webp">
+        <img class="w-[300px]" src="../assets/bg_LeftTop.png" alt="background">
+      </picture>
     </div>
     <div class="imgEff absolute left-0 bottom-0 hover:-translate-x-2 hover:translate-y-2">
-      <img class="w-[300px]" src="../assets/bg_LeftBottom.png" alt="">
+      <picture>
+        <source class="w-[300px]" srcset="../assets/bg_LeftBottom.webp" type="image/webp">
+        <img class="w-[300px]" src="../assets/bg_LeftBottom.png" alt="background">
+      </picture>
     </div>
     <div class="imgEff absolute right-0 top-0 hover:translate-x-2 hover:-translate-y-2">
-      <img class="w-[300px]" src="../assets/bg_RightTop.png" alt="">
+      <picture>
+        <source class="w-[300px]" srcset="../assets/bg_RightTop.webp" type="image/webp">
+        <img class="w-[300px]" src="../assets/bg_RightTop.png" alt="background">
+      </picture>
     </div>
     <div class="imgEff absolute right-0 bottom-0 hover:translate-x-2 hover:translate-y-2">
-      <img class="w-[300px]" src="../assets/bg_RightBottom.png" alt="">
+      <picture>
+        <source class="w-[300px]" srcset="../assets/bg_RightBottom.webp" type="image/webp">
+        <img class="w-[300px]" src="../assets/bg_RightBottom.png" alt="background">
+      </picture>
     </div>
 
     <!-- router -->

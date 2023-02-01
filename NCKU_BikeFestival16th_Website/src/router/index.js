@@ -190,10 +190,15 @@ const router = createRouter({
           component: () => import('../views/ThemeColumn/CollegeLife/AfterClassInfo.vue'),
         },
         {
-          path: 'Unknown',
-          name: 'Unknown',
-          component: () => import('../views/ThemeColumn/CollegeLife/Unknown.vue'),
+          path: 'Slashie',
+          name: 'Slashie',
+          component: () => import('../views/ThemeColumn/CollegeLife/Slashie.vue'),
         },
+        {
+          path: 'PartTimeJob',
+          name: 'PartTimeJob',
+          component: () => import('../views/ThemeColumn/CollegeLife/PartTimeJob.vue'),
+        }
       ]
     },
     {
@@ -277,7 +282,16 @@ const router = createRouter({
       name: 'NotFound',
       component: () => import('../views/404.vue')
     },
-  ]
+  ],
+  // solve: scrollY not be changed when route change
+  // ref: https://router.vuejs.org/guide/advanced/scroll-behavior.html#delaying-the-scroll
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router

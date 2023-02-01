@@ -73,7 +73,10 @@ const showContent = computed(() => {
       <div class="flex justify-center items-center text-black text-3xl mb-16">學長姐經驗分享</div>
       <div class="relative">
         <homepage_totalMemberSlider/>
-        <img class="absolute top-10" src="../../assets/comingSoon.png" alt="">
+        <picture>
+          <source class="absolute top-10" srcset="../../assets/comingSoon.webp" type="image/webp">
+          <img class="absolute top-10" src="../../assets/comingSoon.png" alt="">
+        </picture>
       </div>
       
       <!-- <img src="../../assets/comingSoonWithBg.png" alt=""> -->

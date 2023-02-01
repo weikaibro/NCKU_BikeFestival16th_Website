@@ -2,9 +2,9 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 const contents = ref([
-  { to:"/ThemeColumn/LearningProcessStrategy" , imgSrc: "src/assets/themeCol_enrollmentForDummies/", text: "學習歷程全攻略" },
-  { to:"/ThemeColumn/EnrollmentForDummies" , imgSrc: "src/assets/themeCol_enrollmentForDummies/enrollmentForDummies (1).png", text: "生涯探索 / 升學網站懶人包" },
-  { to:"/ThemeColumn/AllRoadsLeadToRome" , imgSrc: "src/assets/themeCol_enrollmentForDummies/", text: "升學管道總整理：條條大路通羅馬" },
+  { to:"/ThemeColumn/LearningProcessStrategy" , imgSrc: "src/assets/comingSoonWithBg.png", text: "學習歷程全攻略" },
+  { to:"/ThemeColumn/EnrollmentForDummies" , imgSrc: "src/assets/themeCol_enrollmentForDummies/enrollmentForDummies1.png", text: "生涯探索 / 升學網站懶人包" },
+  { to:"/ThemeColumn/AllRoadsLeadToRome" , imgSrc: "src/assets/comingSoonWithBg.png", text: "升學管道總整理：條條大路通羅馬" },
   { to:"/ThemeColumn/StarPlan" , imgSrc: "src/assets/themeCol_starPlan.png", text: "繁星到底怎麼繁？" }
 ])
 </script>

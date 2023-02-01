@@ -14,7 +14,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20">
       <div>
-        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup1.png" alt="" />
+        <picture>
+          <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup1.webp" type="image/webp">
+          <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup1.png" alt="stayUp">
+        </picture>
         <div class="text-xl leading-9">
           112 學測將進入最後衝刺階段，身為考生的你是否覺得自己準備還不夠充足，想要犧牲睡眠時間來多看點書呢？
           <br> 身處在期末地獄中的你，是否因為讀書計畫趕不上變化而在段考前拼命熬夜呢？
@@ -26,7 +29,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16 mb-6">1.熬夜 bad bad</div>
-        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup2.png" alt="" />
+        <picture>
+          <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup2.webp" type="image/webp">
+          <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup2.png" alt="stayUp">
+        </picture>
         <div class="text-xl leading-9">
           長時間作息不正常容易導致：注意力不集中、肥胖、免疫力下…等，少熬夜對身體才是好的幫助喔！
         </div>
@@ -35,7 +41,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
       <div>
         <div class="text-3xl mt-16 mb-6">2.睡眠週期</div>
         <div class="text-xl leading-9">分為四階段的睡眠週期，讓你快速瞭解睡眠中會經歷的過程，讓大腦得到適度的休息！</div>
-        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup3.png" alt="" />
+        <picture>
+          <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup3.webp" type="image/webp">
+          <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup3.png" alt="stayUp">
+        </picture>
         <div class="text-xl leading-9">
           <br> 1）快速動眼期
           <br> 此階段為眼球快速移動期，也是大腦的活躍時段～容易作夢是正常的現象喔！
@@ -54,7 +63,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           簡易快速睡眠法報你知！
           <br> 睡前吸吐氣，結合冥想的呼吸放鬆，讓你能夠及早入睡，不再為失眠而苦惱！
         </div>
-        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup4.png" alt="" />
+        <picture>
+          <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup4.webp" type="image/webp">
+          <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup4.png" alt="stayUp">
+        </picture>
       </div>
 
 
@@ -64,7 +76,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           透過臉部及頸部肌肉的伸展，
           <br> 讓全身心得到放鬆，睡眠品質up up🔝
         </div>
-        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup5.png" alt="" />
+        <picture>
+          <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup5.webp" type="image/webp">
+          <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup5.png" alt="stayUp">
+        </picture>
       </div>
 
       <div class="text-xl leading-9 mt-10 mb-6">

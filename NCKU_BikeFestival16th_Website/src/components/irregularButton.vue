@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   btnTitle: String,
-  disable: Boolean
+  disable: String
 })
 </script>
 

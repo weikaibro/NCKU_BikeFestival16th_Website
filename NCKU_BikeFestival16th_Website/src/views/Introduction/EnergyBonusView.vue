@@ -10,12 +10,23 @@ import IrregularButton from "../../components/irregularButton.vue";
     <div
       class="bg-white h-[650px] rounded-[3rem] mt-6 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
     >
-      <div class="text-3xl font-bold">能量加值</div>
+      <span class="text-3xl font-bold">能量加值</span>
+      <br /><br />
+      在各個專案中穿梭，尋覓自己的升學方向和自我探索之餘，總有疲累的時候。
       <br />
-      <div class="bg-stone-200">
-        <img src="../../assets/comingSoon.png" alt="">
-      </div>
-      
+      這時，最適合來一個吃吃喝喝的休息時間！有傳統小吃、小點心、清涼飲品、精緻手作品、手作烘培、炸物，等你來覓食，讓你在充飽電之後繼續前進下一個展區！
+      <br /><br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe
+        class="my-12"
+        src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F"
+        width="1080"
+        height="480"
+      ></iframe>
+      <span class="text-3xl font-bold">籌備團隊</span><br />
+      <br />
+      陳冠儒 機械114 <br />
+      蔡依璇 護理114 <br /><br />
     </div>
   </div>
 </template>

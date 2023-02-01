@@ -13,8 +13,14 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="活動" theme="為生活添加調味：課餘活動資訊分享" />
 
     <div class="mx-60 my-20">
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (1).png" alt="">
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (2).png" alt="">
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo1.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo1.png" alt="afterClass">
+      </picture>
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo2.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo2.png" alt="afterClass">
+      </picture>
       <div class="text-xl leading-9">
         上大學後除了課業，也想體驗好多活動怎麼辦？這時候課餘時間該如何充實自己呢？
         <br> 像小編我就是很喜歡在空閒時往外走的人，非常喜歡把生活過的充實而伴隨的滿足感。
@@ -25,7 +31,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br> 小編這邊推文推薦三個彙整平台，希望大家對課餘時間的規劃更有方向～
         <br><br> 第一個要先介紹的是 <strong>「打工換宿」</strong>!
       </div>
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (3).png" alt="">
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo3.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo3.png" alt="afterClass">
+      </picture>
       <div class="text-xl leading-9">
         Ｑ：什麼是打工換宿？
         <br> Ａ：以打工換取工作期間住宿的旅遊模式，基本上不會有額外薪水，大學生能利用暑假的時間實踐。
@@ -64,7 +73,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         打工換宿不需要結伴而行，一個人到一個陌生環境、睡在不熟悉的床、做著不一定是平常會做的工作，可以說是跨出舒適圈的一大步。因此也有很多高中剛畢業的學生，或大學生，喜歡趁寒暑假嘗試打工換宿。
         <br><br> 接下來要介紹的是「壯遊計畫」
       </div>
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (4).png" alt="">
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo4.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo4.png" alt="afterClass">
+      </picture>
       <div class="text-xl leading-9">
         Ｑ：什麼是壯遊計畫？
         <br> Ａ：教育部青年發展署的補助計畫，鼓勵青年以壯遊體驗多元方式，與臺灣各地人文社會深入互動交流，認識瞭解臺灣不同面向。
@@ -77,7 +89,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br><br> Ｑ：還有什麼適合我參加呢？
         <br> Ａ：課餘時間大家還可以參加展覽、工作坊、論壇、講座、體驗活動等等。
       </div>
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (5).png" alt="">
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo5.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo5.png" alt="afterClass">
+      </picture>
       <div class="text-xl leading-9">
         Ｑ：我要從哪裡知道有哪些活動可以參加呢？
         <br> Ａ：
@@ -87,7 +102,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <li> ACCUPASS 活動通：以學術活動為主的資訊統整平台，不論是工作坊、論壇、線上課程、讀書會或者是講座，都能直接在網站中報名參加，培養軟實力</li>
         </ul>
       </div>
-      <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo (6).png" alt="">
+      <picture>
+        <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo6.png" type="image/webp">
+        <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo6.png" alt="afterClass">
+      </picture>
     </div>
     
     <div>

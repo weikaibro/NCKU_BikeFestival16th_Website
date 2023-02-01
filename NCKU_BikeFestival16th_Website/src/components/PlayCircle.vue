@@ -14,8 +14,8 @@ defineProps({
   >
     <a v-bind:href="link">
       <picture>
-        <source srcset="../assets/icon _play circle_.webp" type="image/webp" />
-        <img src="../assets/icon _play circle_.svg" alt="播放鍵" />
+        <source srcset="../assets/playerCircle.webp" type="image/webp" />
+        <img src="../assets/playerCircle.svg" alt="播放鍵" />
       </picture>
     </a>
   </div>

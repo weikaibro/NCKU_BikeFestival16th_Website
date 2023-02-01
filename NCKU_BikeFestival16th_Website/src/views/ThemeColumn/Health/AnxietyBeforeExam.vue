@@ -15,7 +15,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <div class="mx-60 my-20">
 
       <div>
-        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion1.png" alt="" />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion1.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion1.png" alt="emotion">
+        </picture>
         <div class="text-xl leading-9">
           在準備考試時，你是否經常懷疑自我，覺得自己還沒準備充足？
           <br> 是否害怕自己的努力無法與最終的考試結果有相應的回報？
@@ -27,11 +30,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16">1.相信自我</div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_Emotion/themeCol_emotion2.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion2.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion2.png" alt="emotion">
+        </picture>
         <div class="text-xl leading-9">
           缺乏自信心越容易因為過度緊張，而亂了自己讀書的步調和考試心態。
           <br> 小編以往在考前一天或考試的當下，都會在心裡告訴自己：
@@ -42,11 +44,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16">2.調整心態</div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_Emotion/themeCol_emotion3.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion3.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion3.png" alt="emotion">
+        </picture>
         <div class="text-xl leading-9">
           「學測只有一次，要是考差了怎麼辦？」
          <br>相信這是許多高中生及應屆考生的心魔。
@@ -58,11 +59,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16">3.改變目標</div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_Emotion/themeCol_emotion4.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion4.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion4.png" alt="emotion">
+        </picture>
         <div class="text-xl leading-9">
           夢想中的校系與現實中的落差，該繼續追求目標還是趁早改變呢？
           <br> 小編作為108課綱第一屆的學生，當初在高三模擬考期間也曾因為一次次的考試成績未達到自己夢想校系的門檻，而感到沮喪且不知所措…後來小編嘗試著將自己的目標轉變為以「現在的成績可以選擇的校系」為出發點，達到了就算沒有如願進自己夢想中的校系，現在可以選擇的校系也要是我喜歡且願意努力的！
@@ -72,11 +72,10 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
       <div>
         <div class="text-3xl mt-16">4.心情抒發</div>
-        <img
-          class="shadow-lg mx-auto my-10 w-[800px]"
-          src="../../../assets/themeCol_Emotion/themeCol_emotion5.png"
-          alt=""
-        />
+        <picture>
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion5.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Emotion/themeCol_emotion5.png" alt="emotion">
+        </picture>
         <div class="text-xl leading-9">
           在備考期間除了調整自己的讀書方式外，抒發自己的心情也是很重要的一環！
            <br> 切勿讓不好的情緒藏在心底，多與家人、師長、朋友談心，
