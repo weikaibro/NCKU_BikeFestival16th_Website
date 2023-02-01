@@ -118,8 +118,83 @@ const router = createRouter({
     },
     {
       path: '/ThemeColumn',
-      name: 'ThemeColumn',
-      component: () => import('../views/ThemeColumnView.vue'),
+      children: [
+        {
+          path: '',
+          name: 'ThemeColumn',
+          component: () => import('../views/ThemeColumnView.vue'),
+        },
+        {
+          path: 'HealthRoom',
+          name: 'HealthRoom',
+          component: () => import('../views/ThemeColumn/Health/HealthRoom.vue'),
+        },
+        {
+          path: 'StayUpStudy',
+          name: 'StayUpStudy',
+          component: () => import('../views/ThemeColumn/Health/StayUpStudy.vue'),
+        },
+        {
+          path: 'AnxietyBeforeExam',
+          name: 'AnxietyBeforeExam',
+          component: () => import('../views/ThemeColumn/Health/AnxietyBeforeExam.vue'),
+        },
+        {
+          path: 'DietGuide',
+          name: 'DietGuide',
+          component: () => import('../views/ThemeColumn/Health/DietGuide.vue'),
+        },
+        {
+          path: 'LearningProcessStrategy',
+          name: 'LearningProcessStrategy',
+          component: () => import('../views/ThemeColumn/Enrollment/LearningProcessStrategy.vue'),
+        },
+        {
+          path: 'EnrollmentForDummies',
+          name: 'EnrollmentForDummies',
+          component: () => import('../views/ThemeColumn/Enrollment/EnrollmentForDummies.vue'),
+        },
+        {
+          path: 'AllRoadsLeadToRome',
+          name: 'AllRoadsLeadToRome',
+          component: () => import('../views/ThemeColumn/Enrollment/AllRoadsLeadToRome.vue'),
+        },
+        {
+          path: 'StarPlan',
+          name: 'StarPlan',
+          component: () => import('../views/ThemeColumn/Enrollment/StarPlan.vue'),
+        },
+        {
+          path: 'NotePro',
+          name: 'NotePro',
+          component: () => import('../views/ThemeColumn/SelfLearn/NotePro.vue'),
+        },
+        {
+          path: 'PlatformForDummies',
+          name: 'PlatformForDummies',
+          component: () => import('../views/ThemeColumn/SelfLearn/PlatformForDummies.vue'),
+        },
+        {
+          path: 'FinancialManagement',
+          name: 'FinancialManagement',
+          component: () => import('../views/ThemeColumn/SelfLearn/FinancialManagement.vue'),
+        },
+        {
+          path: 'TimeManagement',
+          name: 'TimeManagement',
+          component: () => import('../views/ThemeColumn/CollegeLife/TimeManagement.vue'),
+        },
+        {
+          path: 'AfterClassInfo',
+          name: 'AfterClassInfo',
+          component: () => import('../views/ThemeColumn/CollegeLife/AfterClassInfo.vue'),
+        },
+        {
+          path: 'Unknown',
+          name: 'Unknown',
+          component: () => import('../views/ThemeColumn/CollegeLife/Unknown.vue'),
+        },
+      ]
     },
     {
       path: '/DeptManual',
@@ -183,9 +258,24 @@ const router = createRouter({
 
     },
     {
+      path: '/Partner',
+      name: 'Partner',
+      component: () => import('../views/PartnerView.vue'),
+    },
+    {
+      path: '/SouvenirPreorder',
+      name: 'SouvenirPreorder',
+      component: () => import('../views/SouvenirPreorderView.vue'),
+    },
+    {
+      path: '/GroupRegistration',
+      name: 'GroupRegistration',
+      component: () => import('../views/GroupRegistrationView.vue'),
+    },
+    {
       path: '/:domain(.*)*',
       name: 'NotFound',
-      component: import('../views/404.vue')
+      component: () => import('../views/404.vue')
     },
   ]
 })

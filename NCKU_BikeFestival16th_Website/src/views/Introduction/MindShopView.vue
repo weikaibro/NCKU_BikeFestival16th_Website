@@ -8,7 +8,7 @@ import IrregularButton from "../../components/irregularButton.vue";
     <Navbar />
 
     <div
-      class="bg-white h-[650px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
+      class="bg-white h-[650px] rounded-[3rem] mt-6 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
     >
       <div class="text-3xl font-bold">心靈柑仔店</div>
       <br />
@@ -33,15 +33,10 @@ import IrregularButton from "../../components/irregularButton.vue";
       <div class="text-3xl font-bold">活動資訊</div>
       <br />
       歷史文物館、成功湖前的空地
-      <br />
-
-      <br />
-      ＊如對以上內容有任何疑惑，歡迎私訊成大單車節臉書粉專或 IG 官方帳號
       <br /><br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
-    </div>
-    <div class="float-right mt-6 mr-16">
-      <IrregularButton btnTitle="即刻報名" />
     </div>
   </div>
 </template>

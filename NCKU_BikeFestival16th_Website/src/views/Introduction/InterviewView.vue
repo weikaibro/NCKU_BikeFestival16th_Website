@@ -51,6 +51,8 @@ import IrregularButton from "../../components/irregularButton.vue";
       <br />
       ＊如對以上內容有任何疑惑，歡迎私訊成大單車節臉書粉專或 IG 官方帳號
       <br /><br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <span class="text-3xl font-bold"> 籌備團隊 </span> <br /><br />
       部長 醫學116 謝昀暲 <br />
       部員 會計115 趙蓁妤 <br />
@@ -92,7 +94,7 @@ import IrregularButton from "../../components/irregularButton.vue";
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 5px;
   text-decoration-color: #0ea5e9;
 }
 

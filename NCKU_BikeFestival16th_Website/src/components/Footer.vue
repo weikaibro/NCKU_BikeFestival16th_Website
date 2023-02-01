@@ -1,35 +1,41 @@
 <script setup>
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 const list = ref([
-  "活動資訊",
-  "活動介紹",
-  "主題專欄",
-  "科系手冊",
-  "合作夥伴",
-  "紀念品預購",
+  { title: "活動資訊", to: "/Information" },
+  { title: "活動介紹", to: "/Introduction" },
+  { title: "主題專欄", to: "/ThemeColumn" },
+  { title: "科系手冊", to: "/DeptManual" },
+  { title: "合作夥伴", to: "/Partner" },
+  { title: "紀念品預購", to: "/SouvenirPreorder" },
+  { title: "團體報名", to: "/GroupRegistration" },
 ]);
 </script>
 
 <template>
-  <div class="bg-black text-white z-0 inset-x-0 relative bottom-0 py-4 flex">
+  <div class="bg-black text-white inset-x-0 relative py-4 flex">
     
     <div class="mx-6 items-center">
-      <span class="font-semibold mb-4">國立成功大學第16屆單車節</span>
+      <div class="font-semibold mb-2">國立成功大學第16屆單車節</div>
       <ul>
         <li>
-          <a
-            href="#"
-            v-for="(value, index) in list"
-            :key="index"
-            class="text-sm"
-            >{{ value }}<br
-          /></a>
+          <RouterLink 
+            v-for="value in list"
+            :key="list.indexOf(value)"
+            :to="value.to"
+          >
+            <a
+              href="#"
+              class="text-sm"
+            >{{ value.title}}<br/>
+            </a>
+          </RouterLink>
         </li>
       </ul>
     </div>
 
     <div class="absolute bottom-0 right-0 flex items-center">
-      <a href="#">
+      <a href="https://www.facebook.com/NCKUbikefestival" target="_blank" rel="noreferrer noopenner">
         <picture>
           <source srcset="../assets/facebook.webp" type="image/webp" />
           <img
@@ -39,7 +45,7 @@ const list = ref([
           />
         </picture>
       </a>
-      <a href="#">
+      <a href="https://www.instagram.com/nckubike_official/?fbclid=IwAR0t4smhGxWpPVr6ql3my23jcX2KKkEXFuVnT6oPiFF6BgYGRtOTmt4m0Cw" target="_blank" rel="noreferrer noopenner">
         <picture>
           <source srcset="../assets/instagram.webp" type="image/webp" />
           <img
@@ -49,7 +55,7 @@ const list = ref([
           />
         </picture>
       </a>
-      <a href="#">
+      <a href="#" target="_blank" rel="noreferrer noopenner">
         <picture>
           <source srcset="../assets/youtube.webp" type="image/webp" />
           <img

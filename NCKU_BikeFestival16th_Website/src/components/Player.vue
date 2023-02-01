@@ -134,11 +134,13 @@ setInterval(() => {
       <br /><br />
       <div class="text-3xl font-bold">活動資訊</div>
       <br />
-      地點：校園講者與個人展將在光復校區唯農大樓舉行 <br />
+      地點：校園講者與個人展將在光復校區唯農大樓舉行 <br /><br>
       ＊校園講者為限額講座，每場上限 30 人，有興趣參與演講記得到報名專區報名喔！
       <br />
       ＊如對以上內容有任何疑惑，歡迎斯訊成大單車節臉書粉專或 IG 官方帳號 <br />
       <br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
       <br />
       部長 外文114 劉世瑜
@@ -149,8 +151,8 @@ setInterval(() => {
       部員 電機115 魏子翔 <br />
       部員 機械114 鄭皓澤
     </div>
-    <!-- under -->
-    <div class="bg-black h-auto flex justify-between mx-12 flex-shrink-0">
+    <!-- bottom -->
+    <div class="bg-black flex justify-between ml-12 flex-shrink-0">
       <!-- progress frame -->
       <div
         class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap"
@@ -203,10 +205,10 @@ setInterval(() => {
         </div>
       </div>
 
-      <div class="float-right mt-6 mr-16">
-        <RouterLink to="/Registration/Linktree/CollegeCharge">
-          <irregularButton btnTitle="即刻報名" />
-        </RouterLink>
+      <div class="float-right mt-8 mr-16">
+        <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
+          <irregularButton btnTitle="即將開放" disable="true" />
+        <!-- </RouterLink> -->
       </div>
     </div>
   </div>

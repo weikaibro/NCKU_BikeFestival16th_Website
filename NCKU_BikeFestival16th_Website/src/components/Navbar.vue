@@ -7,8 +7,9 @@ const headers = ref([
   { title: "活動介紹", link: "/Introduction" },
   { title: "主題專欄", link: "/ThemeColumn" },
   { title: "科系手冊", link: "/DeptManual"},
-  { title: "合作夥伴", link: ""},
-  { title: "紀念品預購", link: ""} 
+  { title: "合作夥伴", link: "/Partner" },
+  { title: "紀念品預購", link: "/SouvenirPreorder" },
+  { title: "團體報名", link: "/GroupRegistration"}
 ]);
 
 const showMenu = ref(false);

@@ -25,8 +25,10 @@ import IrregularButton from "../../components/irregularButton.vue";
       <br />
       地點：國際會議廳一、二、三、四會、陽台 ( 3、4F ) <br />
       場次：一場 40 分 <br />
-      名額有限，每場 10－12 人想參加者請提早報名喔！（當天亦會開放現場） <br />
+      名額有限，每場 10－12 人想參加者請提早報名喔！（當天亦會開放現場）
       <br /><br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
       <br />
       部長 林子瑜 <br />
@@ -39,9 +41,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 劉尚恩
     </div>
     <div class="float-right mt-6 mr-16">
-      <RouterLink to="/Registration/Linktree/DeepExperience">
-        <IrregularButton btnTitle="即刻報名" />
-      </RouterLink>
+      <!-- <RouterLink to="/Registration/Linktree/DeepExperience"> -->
+        <IrregularButton btnTitle="即將開放" disable="true" />
+      <!-- </RouterLink> -->
     </div>
   </div>
 </template>

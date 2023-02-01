@@ -12,7 +12,7 @@ const Switch = (index) => {
     v-for="(value, index) in buttonName"
     :key="index"
     @click="Switch(index)"
-    class="mr-3 font-semibold bg-mygray px-4 py-2 rounded-full
+    class="transition duration-100 mr-3 font-semibold bg-mygray px-4 py-2 rounded-full
       lg:mr-6 lg:px-5 lg:py-2 hover:scale-105 active:scale-95"
     :class="{ change: index === num }"
   >

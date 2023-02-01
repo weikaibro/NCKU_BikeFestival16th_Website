@@ -25,7 +25,6 @@ defineProps ({
   background-color: black;
   margin-right: 24px;
   margin-bottom: 20.8px;
-
 }
 
 @media not all and (min-width: 640px) {

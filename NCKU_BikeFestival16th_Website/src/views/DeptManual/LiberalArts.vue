@@ -2,6 +2,8 @@
 import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import Navbar from '../../components/Navbar.vue';
+import Footer from '../../components/Footer.vue';
+import homepage_totalMemberSlider from '../../components/homepage_totalMemberSlider.vue';
 import ChineseLiterature from '../DeptManual/LiberalArtsManual/ChineseLiterature.vue'
 import ForeignLanguages from '../DeptManual/LiberalArtsManual/ForeignLanguages.vue'
 import History from '../DeptManual/LiberalArtsManual/History.vue'
@@ -40,10 +42,9 @@ const showContent = computed(() => {
 <template>
   <div>
     <Navbar />
-    <div class="flex mt-20 ml-12">
-
+    <div class="flex mt-20 mx-12">
+      <!-- selected dept -->
       <div class="flex flex-col mr-12 w-[300px] h-[550px] bg-black text-white text-center">
-
         <div class="text-3xl mt-10 mb-6 font-bold">文學院</div>
         <ul>
           <li 
@@ -62,15 +63,23 @@ const showContent = computed(() => {
           </div>
         </RouterLink>
       </div>
-
-      <div class="columnLine w-[1200px] h-[700px] text-white">
+      <!-- reader -->
+      <div class="relative w-[1000px] h-[950px] text-white pl-12 border-l-2 border-black">
         <component :is="showContent" />
       </div>
-
     </div>
 
-    <div>tset</div>
+    <div class="mt-16 p-0 w-screen h-[800px]">
+      <div class="flex justify-center items-center text-black text-3xl mb-16">學長姐經驗分享</div>
+      <div class="relative">
+        <homepage_totalMemberSlider/>
+        <img class="absolute top-10" src="../../assets/comingSoon.png" alt="">
+      </div>
+      
+      <!-- <img src="../../assets/comingSoonWithBg.png" alt=""> -->
+    </div>
 
+    <Footer />
   </div>
 </template>
 
@@ -79,7 +88,4 @@ const showContent = computed(() => {
   background-color: #003cd1;
 }
 
-.columnLine {
-  column-rule: solid 6px;
-}
 </style>

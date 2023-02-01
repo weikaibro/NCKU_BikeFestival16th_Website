@@ -2,11 +2,51 @@
 import { ref } from "vue";
 import entryForm_personalInfo from "../../../../components/entryForm_personalInfo.vue";
 const checkBoxInfo1 = ref([
-  { speech: "3/4（六）09:20-10:30 電機系 - 賴癸江教授", api: "entry.316989471" },
-  { speech: "3/4（六）13:50-15:00 牙醫系 - 陳畊仲教授", api: "entry.316989471" },
-  { speech: "3/5（日）09:20-10:30 會計系 - 劉梧柏教授", api: "entry.316989471" },
-  { speech: "3/5（日）13:50-15:00 學習歷程特邀講座 - Yory 優歷", api: "entry.316989471" },
+  {
+    speech: "3/4（六）09:20-10:30 電機系 - 賴癸江教授",
+    api: "entry.316989471",
+  },
+  {
+    speech: "3/4（六）13:50-15:00 牙醫系 - 陳畊仲教授",
+    api: "entry.316989471",
+  },
+  {
+    speech: "3/5（日）09:20-10:30 會計系 - 劉梧柏教授",
+    api: "entry.316989471",
+  },
+  {
+    speech: "3/5（日）13:50-15:00 學習歷程特邀講座 - Yory 優歷",
+    api: "entry.316989471",
+  },
 ]);
+// at least one "checkbox" to be selected
+function checkSelected() {
+  var sets = [
+    {
+      checkboxes: document.querySelectorAll('[name="entry.316989471"]'),
+      errorMessage: "請在【想參加的場次】中至少選擇一項"
+    },
+  ];
+  var checkedOne = [false, false, false, false];
+  for (var i = 0; i < sets.length; i++) {
+    var checkboxes = sets[i].checkboxes;
+    var errorMessage = sets[i].errorMessage;
+    for (var j = 0; j < checkboxes.length; j++) {
+      if (checkboxes[j].checked) {
+        checkedOne[i] = true;
+        break;
+      }
+    }
+    if (!checkedOne[i]) {
+      alert(errorMessage);
+    }
+  }
+  if (checkedOne[0]) {
+    console.log('Welcome!')
+    document.querySelector('form').submit();
+    alert('報名成功！')
+  }
+}
 </script>
 
 <template>
@@ -14,7 +54,7 @@ const checkBoxInfo1 = ref([
     <div class="text-4xl font-bold mb-10">
       單車十六｜教授面試技巧演講/學習歷程特邀講座
     </div>
-    <div class="text-lg leading-9">
+    <div class="text-xl leading-8">
       各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
       <br />我們將於 3/4(六)~3/5(日) 早上09:20-10:30 及 下午 01:50-03:00
       舉辦教授面試技巧演講及學習歷程特邀講座
@@ -49,6 +89,7 @@ const checkBoxInfo1 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100012231169610"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -58,6 +99,7 @@ const checkBoxInfo1 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100003523717876"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -67,6 +109,7 @@ const checkBoxInfo1 = ref([
         class="linkEff"
         href="https://www.facebook.com/Shang.Hong.Chang"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -76,6 +119,7 @@ const checkBoxInfo1 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100006236919642"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -84,20 +128,22 @@ const checkBoxInfo1 = ref([
     <form
       action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfNMX05RwfODBSQPSoJDmTFCA09Ig2SzfqW9CKqrPZjrNxM9w/formResponse"
       method="POST"
-      onsubmit="submitted=true"
+      @submit.prevent="checkSelected"
+      target="_blank"
+      rel="noreferrer noopenner"
     >
       <div class="mt-12">
-        <p class="text-lg my-6">電子信箱</p>
+        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱</p>
         <input
           name="emailAddress"
           class="inputEff"
-          type="text"
+          type="email"
           autocomplete="off"
           required
         />
       </div>
       <div class="mt-12">
-        <p class="text-lg my-6">你的名字</p>
+        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字</p>
         <input
           name="entry.1466084252"
           class="inputEff"
@@ -107,9 +153,11 @@ const checkBoxInfo1 = ref([
         />
       </div>
       <div class="mt-12">
-        <p class="text-lg my-6">
+        <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
           就讀學校及年級
-          <br />例：高雄中學高三
+        </p>
+        <p class="mb-6">
+          例：高雄中學高三
         </p>
         <input
           name="entry.1323875869"
@@ -120,54 +168,58 @@ const checkBoxInfo1 = ref([
         />
       </div>
       <div class="mt-12">
-        <p class="text-lg my-6">聯絡電話</p>
+        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話（格式: 0912-345678）</p>
         <input
           name="entry.158182772"
           class="inputEff"
-          type="text"
+          type="tel"
+          pattern="[0-9]{4}-[0-9]{6}"
           autocomplete="off"
           required
         />
       </div>
       <div class="mt-12">
-        <p class="text-lg my-6">
+        <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
           常用的聯絡信箱
-          <br />
+        </p>
+        <p class="mb-6">
           報名後要記得確認信箱喔～
         </p>
         <input
           name="entry.1642078386"
           class="inputEff"
-          type="text"
+          type="email"
           autocomplete="off"
           required
         />
       </div>
       <div class="mt-12">
-        <p class="text-lg my-6">你的臉書連結</p>
+        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
         <input
           name="entry.1830004147"
           class="inputEff"
-          type="text"
+          type="url"
           autocomplete="off"
           required
         />
       </div>
       <div class="mt-12 mb-4">
-          <p class="text-lg">
-            想參加的場次
-            <br> 一個場次為 70 分鐘
-          </p>
-          <label
-            class="checkBoxEff"
-            v-for="info in checkBoxInfo1"
-            :key="checkBoxInfo1.indexOf(info)"
-          >
-            <input :name="info.api" type="checkbox" :value="info.speech" />{{
-              info.speech
-            }}
-          </label>
-        </div>
+        <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+          想參加的場次
+        </p>
+        <p class="mb-6">
+          一個場次為 70 分鐘
+        </p>
+        <label
+          class="checkBoxEff"
+          v-for="info in checkBoxInfo1"
+          :key="checkBoxInfo1.indexOf(info)"
+        >
+          <input :name="info.api" type="checkbox" :value="info.speech" />{{
+            info.speech
+          }}
+        </label>
+      </div>
       <div class="mt-12">
         <p class="text-lg my-6">
           有沒有想事先詢問教授的問題？（會以匿名的形式將問題給教授，並在最後的QA時間回答，歡迎大家踴躍提問！）
@@ -177,7 +229,6 @@ const checkBoxInfo1 = ref([
           class="inputEff"
           type="text"
           autocomplete="off"
-          required
         />
       </div>
       <div class="mt-12">
@@ -187,7 +238,6 @@ const checkBoxInfo1 = ref([
           class="inputEff"
           type="text"
           autocomplete="off"
-          required
         />
       </div>
       <div class="py-20 w-[300px]">
@@ -208,7 +258,7 @@ const checkBoxInfo1 = ref([
 @layer components {
   .inputEff {
     @apply transition duration-200 border-b bg-transparent w-[1000px]
-        hover:border-pink-600 focus:border-pink-600 focus:outline-none focus:border-b-2;
+        hover:border-myblue focus:border-myblue focus:outline-none focus:border-b-2;
   }
 }
 
@@ -218,13 +268,13 @@ const checkBoxInfo1 = ref([
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 5px;
   text-decoration-color: #0ea5e9;
 }
 
 .linkEff:hover {
   color: #fff;
-  box-shadow: inset 0 -50px 0 0 #0ea5e9;
+  box-shadow: inset 0 -30px 0 0 #0ea5e9;
 }
 
 /* ref: https://moderncss.dev/pure-css-custom-checkbox-style/ */
@@ -262,7 +312,25 @@ input[type="checkbox"]::before {
   content: "";
   width: 0.85em;
   height: 0.85em;
-  clip-path: polygon( 19% 0%, 32% 0, 8% 34%, 66% 0, 95% 0, 10% 74%, 100% 23%, 100% 41%, 40% 88%, 100% 80%, 100% 90%, 14% 100%, 88% 40%, 0 88%, 0 69%, 76% 6%, 0 49%, 0 31%
+  clip-path: polygon(
+    19% 0%,
+    32% 0,
+    8% 34%,
+    66% 0,
+    95% 0,
+    10% 74%,
+    100% 23%,
+    100% 41%,
+    40% 88%,
+    100% 80%,
+    100% 90%,
+    14% 100%,
+    88% 40%,
+    0 88%,
+    0 69%,
+    76% 6%,
+    0 49%,
+    0 31%
   );
   transform: scale(0);
   /* transform-origin: bottom left; */

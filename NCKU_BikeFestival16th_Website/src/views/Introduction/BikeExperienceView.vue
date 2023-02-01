@@ -34,8 +34,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       ＊單車體驗<span class="fontEff">限額 7 人</span> ，有興趣參與者記得到報名專區報名喔！
       <br />
       ＊如對以上內容有任何疑惑，歡迎斯訊成大單車節臉書粉專或 IG 官方帳號
-
-      <br /><br />
+      <br><br>
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
       <br />
       部員 航太113 黃翊軒
@@ -46,9 +47,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 生技115 陳雨婕
     </div>
     <div class="float-right mt-6 mr-16">
-      <RouterLink to="/Registration/Linktree/BikeExperience">
-        <IrregularButton btnTitle="即刻報名" />
-      </RouterLink>
+      <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
+        <IrregularButton btnTitle="即將開放" disable="true" />
+      <!-- </RouterLink> -->
     </div>
   </div>
 </template>

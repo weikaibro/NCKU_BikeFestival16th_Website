@@ -37,5 +37,16 @@ import formBtn from './components/formBtn.vue'
   /* background-color: white; */
   /* overflow-x: hidden; */
 }
+.v-enter-active, .v-leave-active {
+  transition: opacity 0.75s;
+}
+
+.v-enter-from, .v-leave-to {
+  opacity: 0;
+}
+
+.v-enter-to, .v-leave-from {
+  opacity: 1;
+}
 </style>
 

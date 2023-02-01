@@ -25,22 +25,26 @@ defineProps({
         flex flex-row gap-8 mx-12 items-center h-full
         max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
     >
+
       <div
         v-for="member in members" 
         :key="members.indexOf(member)" 
         class="memberInfo"
       >
-        <img class="imgInfo" :src="member.memberPic" alt="">
+        <img class="rounded-full w-[70%]" :src="member.memberPic" alt="">
         <span class="mt-4 text-2xl font-bold">{{ member.memberName }}</span>
-        <span class="text-lg mt-2 text-center">
+        <span class="fontSize mt-2 text-center">
           {{ member.memberTitle }}
           <br>{{ member.memberGrade }}
-          <br>{{ member.memberSaid }}
+        </span>
+        <span class="fontSize mt-1 text-center">
+          {{ member.memberSaid }}
         </span>
       </div>
+
     </div>
   </div>
-  
+
   <div 
     class="absolute z-10 right-8 top-32 w-[250px] transition duration-200 
       hover:translate-x-3 3 active:opacity-50 active:scale-75 max-sm:hidden"
@@ -58,11 +62,11 @@ defineProps({
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      justify-center items-center bg-white shadow-lg w-[300px] h-[87.5%] p-3
+      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
       max-sm:w-[250px];
   }
-  .imgInfo {
-    @apply rounded-full w-44 max-sm:w-36
-  }
+}
+.fontSize {
+  font-size: 21px;
 }
 </style>

@@ -43,8 +43,8 @@
 
 @layer components {
   .divGrid {
-    @apply flex-none relative p-4 m-4 border-2 border-black shadow-lg h-[425px] w-[370px] 
-      transition duration-200 hover:-translate-y-3;
+    @apply relative p-4 m-4 border-2 border-black shadow-lg h-[425px] w-[370px] 
+      transition duration-200 hover:-translate-y-5;
   }
 }
 
@@ -59,7 +59,7 @@
   opacity: 0;
   visibility: hidden;
   background: rgba(0, 0, 0, 0.65);
-  transition: visibility 0s, opacity 0.5s linear;
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.3s linear;
+  -webkit-transition: visibility 0s, opacity 0.3s linear;
 }
 </style>

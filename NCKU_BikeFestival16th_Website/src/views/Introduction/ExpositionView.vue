@@ -47,8 +47,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       （報名後將於活動前 3 天寄 e-mail 通知錄取以及集合地點。若採當天實體報名，則直接於科系帳篷向該科系登記即可。注意！！上午場無實體報名喔）
       <br /><br />
       ＊如對以上內容有任何疑惑，歡迎私訊成大單車節臉書粉專或 IG 官方帳號
-      <br />
       <br /><br />
+      <span class="text-3xl font-bold"> 專案地圖 </span>
+      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
       <br />
       部長 外文114 許芷綾
@@ -61,9 +62,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 牙醫117 林柏毅
     </div>
     <div class="float-right mt-6 mr-16">
-      <RouterLink to="/Registration/Linktree/DepartmentTour">
-        <IrregularButton btnTitle="即刻報名" />
-      </RouterLink>
+      <!-- <RouterLink to="/Registration/Linktree/DepartmentTour"> -->
+        <IrregularButton btnTitle="即將開放" disable="true" />
+      <!-- </RouterLink> -->
     </div>
   </div>
 </template>

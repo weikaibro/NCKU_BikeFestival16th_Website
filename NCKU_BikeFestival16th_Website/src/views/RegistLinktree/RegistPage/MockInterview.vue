@@ -34,14 +34,14 @@ const Show = computed(() => {
 </script>
 
 <template>
-  <div class="bg-slate-700 text-white">
+  <div class="bg-black text-white">
     <Navbar />
 
-    <div class="flex flex-col justify-center items-center gap-16 mt-20">
+    <div class="flex flex-col justify-center items-center gap-16 mt-10">
       <span class="text-5xl font-bold tracking-wider">模擬面試</span>
 
       <!-- registration form * 3 -->
-      <div class="hidden sm:flex">
+      <div class="flex">
         <button
           v-for="(value, index) in buttonName"
           :key="index"
@@ -54,13 +54,13 @@ const Show = computed(() => {
         </button>
       </div>
 
-      <img src="../../../assets/bikeFestivalLogo2.png" alt="">
+      <img class="w-[55%]" src="../../../assets/bikeFestivalLogo2.png" alt="">
     </div>
 
-    <div class="px-36 pt-52">
-      <div>
+    <div class="px-36 pt-20">
+      <Transition mode="out-in">
         <component :is="Show" />
-      </div>
+      </Transition>
     </div>
 
     <Footer />

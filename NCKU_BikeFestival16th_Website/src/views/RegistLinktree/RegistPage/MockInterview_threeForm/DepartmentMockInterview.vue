@@ -74,6 +74,51 @@ const checkBoxInfo5 = ref([
   },
   { speech: "不參加", api: "entry.1780036049" },
 ]);
+// at least one "checkbox" to be selected
+function checkSelected() {
+  var sets = [
+    {
+      checkboxes: document.querySelectorAll('[name="entry.837131498"]'),
+      errorMessage: "請在【3/4（六）上午 9:00 - 12:00】中至少選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1152759436"]'),
+      errorMessage: "請在【3/4（六）下午 13:30 - 16:30】中至少選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.807095932"]'),
+      errorMessage: "請在【3/5（日）上午 9:00 - 12:00】中至少選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.244463617"]'),
+      errorMessage: "請在【3/5（日）下午 13:30 - 16:00】中至少選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1780036049"]'),
+      errorMessage: "請在【學長姐經驗分享報名】中至少選擇一項"
+    }
+  ];
+  var checkedOne = [false, false, false, false];
+  for (var i = 0; i < sets.length; i++) {
+    var checkboxes = sets[i].checkboxes;
+    var errorMessage = sets[i].errorMessage;
+    
+    for (var j = 0; j < checkboxes.length; j++) {
+      if (checkboxes[j].checked) {
+        checkedOne[i] = true;
+        break;
+      }
+    }
+    if (!checkedOne[i]) {
+      alert(errorMessage);
+    }
+  }
+  if (checkedOne[0] && checkedOne[1] && checkedOne[2] && checkedOne[3] && checkedOne[4]) {
+    console.log('Welcome!')
+    document.querySelector('form').submit();
+    alert('報名成功！')
+  }
+}
 </script>
 
 <template>
@@ -104,6 +149,7 @@ const checkBoxInfo5 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100012231169610"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -113,6 +159,7 @@ const checkBoxInfo5 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100003523717876"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -122,6 +169,7 @@ const checkBoxInfo5 = ref([
         class="linkEff"
         href="https://www.facebook.com/Shang.Hong.Chang"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -131,6 +179,7 @@ const checkBoxInfo5 = ref([
         class="linkEff"
         href="https://www.facebook.com/profile.php?id=100006236919642"
         target="_blank"
+        rel="noreferrer noopenner"
       >
         Facebook
       </a>
@@ -141,21 +190,22 @@ const checkBoxInfo5 = ref([
       <form
         action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScDvhJuAJisZGoLG29si_UMhGmxcNYNqlGjLYmLVjJNUlXoiQ/formResponse"
         method="POST"
-        onsubmit="submitted=true"
-        target="hidden_iframe"
+        @submit.prevent="checkSelected"
+        target="_blank"
+        rel="noreferrer noopenner"
       >
         <div class="mt-12">
-          <p class="text-lg my-6">電子信箱</p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱 </p>
           <input
             name="entry.1542886366"
             class="inputEff"
-            type="text"
+            type="email"
             autocomplete="off"
             required
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">你的名字</p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字 </p>
           <input
             name="entry.345686533"
             class="inputEff"
@@ -165,9 +215,11 @@ const checkBoxInfo5 = ref([
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
             就讀學校及年級
-            <br />例：高雄中學高三
+          </p>
+          <p class="mb-6">
+            例：高雄中學高三
           </p>
           <input
             name="entry.1279699445"
@@ -178,35 +230,37 @@ const checkBoxInfo5 = ref([
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">聯絡電話</p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話（格式: 0912-345678）</p>
           <input
             name="entry.826079181"
             class="inputEff"
-            type="text"
+            type="tel"
+            pattern="[0-9]{4}-[0-9]{6}"
             autocomplete="off"
             required
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
             常用的聯絡信箱
-            <br />
+          </p>
+          <p class="mb-6">
             報名後要記得確認信箱喔～
           </p>
           <input
             name="entry.1951500596"
             class="inputEff"
-            type="text"
+            type="email"
             autocomplete="off"
             required
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">你的臉書連結</p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
           <input
             name="entry.1433765434"
             class="inputEff"
-            type="text"
+            type="url"
             autocomplete="off"
             required
           />
@@ -234,7 +288,7 @@ const checkBoxInfo5 = ref([
           </p>
         </div>
 
-        <p class="mt-10 mb-4 text-2xl">3/4（六）上午 9:00 - 12:00</p>
+        <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">3/4（六）上午 9:00 - 12:00 </p>
         <label
           class="checkBoxEff"
           v-for="info in checkBoxInfo1"
@@ -249,7 +303,7 @@ const checkBoxInfo5 = ref([
           {{ info.dept }}
         </label>
 
-        <p class="mt-10 mb-4 text-2xl">3/4（六）下午 13:30 - 16:30</p>
+        <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">3/4（六）下午 13:30 - 16:30 </p>
         <label
           class="checkBoxEff"
           v-for="info in checkBoxInfo2"
@@ -264,7 +318,7 @@ const checkBoxInfo5 = ref([
           {{ info.dept }}
         </label>
 
-        <p class="mt-10 mb-4 text-2xl">3/5（日）上午 9:00 - 12:00</p>
+        <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">3/5（日）上午 9:00 - 12:00 </p>
         <label
           class="checkBoxEff"
           v-for="info in checkBoxInfo3"
@@ -278,7 +332,7 @@ const checkBoxInfo5 = ref([
           />{{ info.dept }}
         </label>
 
-        <p class="mt-10 mb-4 text-2xl">3/5（日）下午 13:30 - 16:00</p>
+        <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">3/5（日）下午 13:30 - 16:00 </p>
         <label
           class="checkBoxEff"
           v-for="info in checkBoxInfo4"
@@ -293,8 +347,10 @@ const checkBoxInfo5 = ref([
         </label>
 
         <div class="mt-12">
-          <p class="text-lg my-6">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
             上述勾選的科系及時段的志願序？（會以此作為優先排序的依據）
+          </p>
+          <p class="mb-6">
             例：3/4上午 心理系、3/4下午 心理系
           </p>
           <input
@@ -312,7 +368,6 @@ const checkBoxInfo5 = ref([
             class="inputEff"
             type="text"
             autocomplete="off"
-            required
           />
         </div>
 
@@ -325,14 +380,14 @@ const checkBoxInfo5 = ref([
           </div>
         </div>
 
-        <div class="mt-6 mb-4">
-          <p class="text-lg">想參加的經驗分享場次</p>
+        <div class="mb-4">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">想參加的經驗分享場次 </p>
           <label
             class="checkBoxEff"
             v-for="info in checkBoxInfo5"
             :key="checkBoxInfo5.indexOf(info)"
           >
-            <input :name="info.api" type="checkbox" :value="info.speech" />{{
+            <input :name="info.api" type="checkbox" :value="info.speech" class="cursor-pointer" />{{
               info.speech
             }}
           </label>
@@ -345,10 +400,8 @@ const checkBoxInfo5 = ref([
             class="inputEff"
             type="text"
             autocomplete="off"
-            required
           />
         </div>
-
         <div class="py-20 w-[300px]">
           <input id="customBtn" type="submit" hidden />
           <label for="customBtn">
@@ -368,7 +421,7 @@ const checkBoxInfo5 = ref([
 @layer components {
   .inputEff {
     @apply transition duration-200 border-b bg-transparent w-[1000px]
-        hover:border-pink-600 focus:border-pink-600 focus:outline-none focus:border-b-2;
+        hover:border-myblue focus:border-myblue focus:outline-none focus:border-b-2;
   }
 }
 
@@ -378,13 +431,13 @@ const checkBoxInfo5 = ref([
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 5px;
   text-decoration-color: #0ea5e9;
 }
 
 .linkEff:hover {
   color: #fff;
-  box-shadow: inset 0 -50px 0 0 #0ea5e9;
+  box-shadow: inset 0 -30px 0 0 #0ea5e9;
 }
 
 /* ref: https://moderncss.dev/pure-css-custom-checkbox-style/ */

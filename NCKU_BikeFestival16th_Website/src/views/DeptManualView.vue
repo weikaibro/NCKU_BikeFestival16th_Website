@@ -12,8 +12,7 @@ const btn = ref([
   { title: "電資學院", link: "/DeptManual/ElectricalEngineeringAndComputerScience" },
   { title: "理學院", link: "/DeptManual/Science" }, 
   { title: "生科院", link: "/DeptManual/BioscienceAndBiotechnology" }, 
-  { title: "管理學院", link: "/DeptManual/Management" }, 
-  { title: "不分學院", link: "/DeptManual/Undeclared" }, 
+  { title: "管理學院", link: "/DeptManual/Management" },
 ]);
 
 </script>
@@ -24,13 +23,17 @@ const btn = ref([
     <div class="h-[90%] grid grid-cols-3 place-items-center">
       <RouterLink 
         v-for="header in btn" 
-        :key="index"
+        :key="btn.indexOf(header)"
         :to="header.link"
       >
         <irregularButton :btnTitle="header.title" />
       </RouterLink>
+
+      <div></div>
       
-      <irregularButton class="col-span-3" btnTitle="不分學院" />
+      <RouterLink to="/DeptManual/Undeclared">
+        <irregularButton class="col-span-3" btnTitle="不分學院" />
+      </RouterLink>
     </div>
   </div>
 </template>
