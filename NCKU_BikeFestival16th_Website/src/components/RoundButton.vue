@@ -5,13 +5,13 @@ defineProps({
 </script>
 <template>
   <div
-    class="transition-all = text-xl font-medium
-    w-24 h-10 px-6 pt-1.5 rounded-full bg-black
-    lg:w-40 lg:h-16 lg:pl-11 lg:pt-3.5 lg:text-3xl
+    class="transition duration-150 text-xl
+    w-24 h-10 rounded-full bg-black cursor-pointer
+    lg:w-40 lg:h-14 lg:text-2xl
     hover:bg-myblue hover:scale-105 active:bg-myblue active:scale-95 "
   >
-    <button class="text-white">
+    <div class="text-white h-full flex justify-center items-center">
       {{ BtnTitle }}
-    </button>
+    </div>
   </div>
 </template>

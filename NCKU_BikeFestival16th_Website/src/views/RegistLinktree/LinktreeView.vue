@@ -4,9 +4,9 @@ import irregularButton from '../../components/irregularButton.vue'
 </script>
 
 <template>
-  <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden">
+  <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden max-sm:flex-col">
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-end pr-12">
+    <div class="basis-1/3 flex flex-col justify-evenly items-end max-sm:basis-1/2 max-sm:items-center max-sm:justify-around ">
       <RouterLink to="/Registration/Linktree/MockInterview">
         <irregularButton btnTitle="模擬面試" />
       </RouterLink>
@@ -18,16 +18,19 @@ import irregularButton from '../../components/irregularButton.vue'
       <!-- </RouterLink> -->
     </div>
 
-    <div class="basis-1/3 flex justify-center items-center ml-6">
+
+    <div class="basis-1/3 flex justify-center items-center ml-6 max-sm:hidden">
       <picture>
         <source class="w-full" srcset="../../assets/bikeFestivalLogo.webp" type="image/webp">
         <img class="w-full" src="../../assets/bikeFestivalLogo.png" alt="NCKUlogo">
       </picture>
     </div>
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-start pl-12">
+
+
+    <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center">
       <!-- <RouterLink to="/Registration/Linktree/DepartmentTour"> -->
-        <irregularButton btnTitle="系館導覽" disable="true" />
+        <irregularButton btnTitle="科系博覽" disable="true" />
       <!-- </RouterLink> -->
       <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
         <irregularButton btnTitle="單車體驗" disable="true" />

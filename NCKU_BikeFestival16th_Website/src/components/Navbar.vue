@@ -36,9 +36,9 @@ const show = () => {
       </RouterLink>
     </div>
 
-    <div class="gcse-searchbox w-[300px]">
+    <!-- <div class="gcse-searchbox w-[300px]">
       
-    </div>
+    </div> -->
 
     <div class="hidden space-x-8 lg:flex">
       <ul class="float-right w-auto mx-6 text-white">
@@ -72,20 +72,22 @@ const show = () => {
         />
       </svg>
     </button>
-    <!-- RWD -->
-    <ul class="lg:hidden h-10 text-white text-center mt-20 m-3" v-if="showMenu">
-      <li>
+  </div>
 
-        <RouterLink 
-          v-for="header in headers" 
-          :key="index"
-          :to="header.link" 
-          class="h-10 rounded-lg px-4 py-5 transition-all text-xl hover:bg-myblue"
-        >
+  <!-- RWD -->
+  <div>
+    <div class="flex flex-col h-[315px] w-screen text-white text-center lg:hidden" v-if="showMenu">
+      <div
+        v-for="header in headers" 
+        :key="headers.indexOf(header)"
+        class="flex justify-center py-1 items-center text-lg text-white active:bg-myblue bg-black"
+      >
+        <RouterLink :to="header.link">
           {{ header.title }}
         </RouterLink>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
-  
+
+
 </template>

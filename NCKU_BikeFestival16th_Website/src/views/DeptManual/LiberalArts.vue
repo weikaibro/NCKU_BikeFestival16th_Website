@@ -37,16 +37,24 @@ const showContent = computed(() => {
       break;
   }
 });
+const showDept = ref(false)
+const show = () => {
+  showDept.value = !showDept.value;
+};
 </script>
 
 <template>
   <div>
     <Navbar />
-    <div class="flex mt-20 mx-12">
+    <div class="flex mx-12 max-sm:mx-0 max-sm:flex-col">
       <!-- selected dept -->
-      <div class="flex flex-col mr-12 w-[300px] h-[550px] bg-black text-white text-center">
-        <div class="text-3xl mt-10 mb-6 font-bold">文學院</div>
-        <ul>
+      <div class="flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-sm:mt-0 max-sm:w-screen">
+        <!-- RWD -->
+        <div @click="show" class="text-3xl mt-10 mb-6 font-bold sm:hidden">文學院</div>
+        <!-- Laptop -->
+        <div class="text-3xl mt-10 mb-6 font-bold max-sm:hidden">文學院</div>
+        <!-- RWD -->
+        <ul v-if="showDept" class="sm:hidden">
           <li 
             v-for="(chosen, index) in chosenDept"
             :key="index"
@@ -58,19 +66,37 @@ const showContent = computed(() => {
           </li>
         </ul>
         <RouterLink to="/DeptManual">
-          <div class="text-3xl mt-6 mb-10 font-bold">
+          <div class="text-3xl mt-6 mb-10 font-bold sm:hidden" v-if="showDept">
+            回前頁
+          </div>
+        </RouterLink>
+        <!-- Laptop -->
+        <ul class="max-sm:hidden">
+          <li 
+            v-for="(chosen, index) in chosenDept"
+            :key="index"
+            class="transition duration-100 ease-linear py-4 text-lg bg-black hover:cursor-pointer hover:scale-110"
+            :class="{ changeBg: index === userChosenNum }"
+            @click="userChosen(index)"
+          >
+          {{ chosen }}
+          </li>
+        </ul>
+        <RouterLink to="/DeptManual">
+          <div class="text-3xl mt-6 mb-10 font-bold max-sm:hidden">
             回前頁
           </div>
         </RouterLink>
       </div>
-      <!-- reader -->
-      <div class="relative w-[1000px] h-[950px] text-white pl-12 border-l-2 border-black">
+
+      <!-- pdf -->
+      <Transition mode="out-in" class="relative w-full h-[950px] pl-20 mt-20 border-l-2 border-black max-sm:border-l-0 max-sm:pl-0 max-sm:mt-6">
         <component :is="showContent" />
-      </div>
+      </Transition>
     </div>
 
     <div class="mt-16 p-0 w-screen h-[800px]">
-      <div class="flex justify-center items-center text-black text-3xl mb-16">學長姐經驗分享</div>
+      <div class="flex justify-center items-center text-black text-3xl mb-16 font-bold">學長姐經驗分享</div>
       <div class="relative">
         <homepage_totalMemberSlider/>
         <picture>

@@ -34,6 +34,7 @@ import formBtn from './components/formBtn.vue'
 <style>
 * {
   max-width: 100%;
+  /* font-family: "Noto Sans Traditional Chinese"; */
   /* background-color: white; */
   /* overflow-x: hidden; */
 }

@@ -42,8 +42,8 @@ function checkSelected() {
     <div class="flex flex-col justify-center items-center gap-16 mt-10">
       <span class="text-5xl font-bold tracking-wider">團體報名</span>
       <picture>
-        <source class="w-[55%]" srcset="../assets/bikeFestivalLogo2.webp" type="image/webp">
-        <img class="w-[55%]" src="../assets/bikeFestivalLogo2.png" alt="NCKU">
+        <source class="w-[55%] mx-auto" srcset="../assets/bikeFestivalLogo2.webp" type="image/webp">
+        <img class="w-[55%] mx-auto" src="../assets/bikeFestivalLogo2.png" alt="NCKU">
       </picture>
     </div>
 

@@ -26,8 +26,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
       <div>
         <div class="text-3xl mt-16">1.眼部放鬆</div>
         <picture>
-          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/healthEye.webp" type="image/webp">
-          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/healthEye.png" alt="healthEye">
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_healthEye.webp" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_healthEye.png" alt="healthEye">
         </picture>
         <div class="text-xl leading-9">
           眼睛操
