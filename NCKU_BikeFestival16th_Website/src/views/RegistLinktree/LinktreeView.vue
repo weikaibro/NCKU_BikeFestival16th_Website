@@ -43,7 +43,7 @@ import irregularButton from '../../components/irregularButton.vue'
 </template>
 
 <style scoped>
-.webp .bgImg {
+/* .webp .bgImg {
   background-image: url("../../assets/background.webp");
   background-size: 100% 100%;
   -webkit-filter: brightness(120%);
@@ -54,5 +54,18 @@ import irregularButton from '../../components/irregularButton.vue'
   background-size: 100% 100%;
   -webkit-filter: brightness(120%);
   filter: brightness(120%);
+} */
+.bgImg {
+  background-image: url("../../assets/background.png");
+  background-size: 100% 100%;
+}
+.bgImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 </style>

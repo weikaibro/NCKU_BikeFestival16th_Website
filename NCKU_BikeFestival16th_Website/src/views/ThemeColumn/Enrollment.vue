@@ -1,12 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
-const contents = ref([
-  { to:"/ThemeColumn/LearningProcessStrategy" , imgSrc: "src/assets/comingSoonWithBg.png", text: "學習歷程全攻略" },
-  { to:"/ThemeColumn/EnrollmentForDummies" , imgSrc: "src/assets/themeCol_enrollmentForDummies/enrollmentForDummies1.png", text: "生涯探索 / 升學網站懶人包" },
-  { to:"/ThemeColumn/AllRoadsLeadToRome" , imgSrc: "src/assets/comingSoonWithBg.png", text: "升學管道總整理：條條大路通羅馬" },
-  { to:"/ThemeColumn/StarPlan" , imgSrc: "src/assets/themeCol_starPlan.png", text: "繁星到底怎麼繁？" }
-])
 </script>
 
 <template>
@@ -14,17 +8,48 @@ const contents = ref([
     <div class="text-center text-2xl">#學習歷程 #面試攻略 #生涯探索 #入學管道</div>
     <hr>
     <div class="flex flex-wrap justify-between items-center my-16 mx-20">
-      <RouterLink 
-        v-for="content in contents"
-        :key="contents.indexOf(content)"
-        :to="content.to"
-      >
+      <RouterLink to="/ThemeColumn/LearningProcessStrategy">
         <div
           class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
             tansition duration-150 hover:-translate-y-5"
         >
-          <img :src="content.imgSrc" alt="">
-          <div class="text-xl font-bold">{{ content.text }}</div>
+          <img src="../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy1.png" alt="LearningProcessStrategy">
+          <div class="text-xl font-bold">
+            學習歷程全攻略
+          </div>
+        </div>
+      </RouterLink>
+      <RouterLink to="/ThemeColumn/EnrollmentForDummies">
+        <div
+          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+            tansition duration-150 hover:-translate-y-5"
+        >
+          <img src="../../assets/themeCol_enrollmentForDummies/enrollmentForDummies1.png" alt="EnrollmentForDummies">
+          <div class="text-xl font-bold">
+            生涯探索 / 升學網站懶人包
+          </div>
+        </div>
+      </RouterLink>
+      <RouterLink to="/ThemeColumn/AllRoadsLeadToRome">
+        <div
+          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+            tansition duration-150 hover:-translate-y-5"
+        >
+          <img src="../../assets/themeCol_AllRoadsLeadToRome/AllRoadsLeadToRome1.png" alt="AllRoadsLeadToRome">
+          <div class="text-xl font-bold">
+            升學管道總整理：條條大路通羅馬
+          </div>
+        </div>
+      </RouterLink>
+      <RouterLink to="/ThemeColumn/StarPlan">
+        <div
+          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+            tansition duration-150 hover:-translate-y-5"
+        >
+          <img src="../../assets/themeCol_starPlan.png" alt="StarPlan">
+          <div class="text-xl font-bold">
+            繁星到底怎麼繁？
+          </div>
         </div>
       </RouterLink>
     </div>

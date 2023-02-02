@@ -79,4 +79,13 @@ import irregularButton from "../components/irregularButton.vue";
   background-image: url(../assets/background.png);
   background-size: 100% 100%;
 }
+.bgImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
 </style>

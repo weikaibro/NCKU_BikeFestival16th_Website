@@ -28,7 +28,6 @@ const btn = ref([
       >
         <irregularButton :btnTitle="header.title" />
       </RouterLink>
-
       <div></div>
 
       <RouterLink to="/DeptManual/Undeclared">
@@ -39,7 +38,7 @@ const btn = ref([
 </template>
 
 <style scoped>
-
+/* 
 .webp .bgImg {
   background-image: url("../assets/background.webp");
   background-size: 100% 100%;
@@ -47,5 +46,18 @@ const btn = ref([
 .np-webp .bgImg {
   background-image: url("../assets/background.png");
   background-size: 100% 100%;
+} */
+.bgImg {
+  background-image: url("../assets/background.png");
+  background-size: 100% 100%;
+}
+.bgImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 </style>

@@ -14,8 +14,8 @@ let marquee1 = ref(null);
 let marquee2 = ref(null);
 let videoName = ref("");
 let srcName = reactive([
-  "/src/assets/Welcome to Animation.mp4",
-  "/src/assets/Senator Armstrong running at you then punching you Bluescreen.mp4",
+  "/src/assets/WelcometoAnimation.mp4",
+  "/src/assets/SenatorArmstrong.mp4",
 ]);
 let current = ref(0);
 let timer = 0;
@@ -71,7 +71,7 @@ const progressControl = (event) => {
   }
 };
 const progressClick = (event) => {
-  let width = event.pageX - 320;
+  let width = event.pageX - 370;
   progressBar.value.style.cssText = `width: ${width}px;`;
   videoPlayer.currentTime(videoPlayer.duration() * (width / 920));
   if (videoPlayer.currentTime() >= videoPlayer.duration()) {
@@ -103,7 +103,7 @@ setInterval(() => {
 <template>
   <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
   <!-- top + bottom -->
-  <div class="bg-black w-full h-full flex flex-col gap-y-4">
+  <div class="bg-black h-screen overflow-hidden">
     <!-- frame -->
     <div
       class="bg-white h-[600px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
@@ -151,6 +151,11 @@ setInterval(() => {
       部員 電機115 魏子翔 <br />
       部員 機械114 鄭皓澤
     </div>
+    <div class="float-right mt-8 mr-16">
+      <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
+        <irregularButton btnTitle="即將開放" disable="true" />
+      <!-- </RouterLink> -->
+    </div>
     <!-- bottom -->
     <div class="bg-black flex justify-between ml-12 flex-shrink-0">
       <!-- progress frame -->
@@ -158,7 +163,7 @@ setInterval(() => {
         class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap"
       >
         <!-- Marquee -->
-        <div class="w-[1200px] overflow-hidden flex flex-nowrap">
+        <div class="w-[1200px] overflow-hidden flex flex-nowrap mt-5">
           <div ref="marquee1" class="w-[600px] bg-transparent text-white h-6">
             {{ videoName }}
           </div>
@@ -168,25 +173,25 @@ setInterval(() => {
         </div>
         <!-- button * 4 -->
         <button
-          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce"
           @click="last"
         >
           <icon-ic-baseline-skip-previous class="w-full h-full" />
         </button>
         <button
-          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce"
           @click="play"
         >
           <icon-material-symbols-play-arrow class="w-full h-full" />
         </button>
         <button
-          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce"
           @click="pause"
         >
           <icon-ic-baseline-pause class="w-full h-full" />
         </button>
         <button
-          class="text-white w-16 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce"
           @click="next"
         >
           <icon-ic-sharp-skip-next class="w-full h-full" />
@@ -203,12 +208,6 @@ setInterval(() => {
           ></div>
           <div class="bg-white w-5 h-5 mb-7 flex-shrink-0 rounded-full"></div>
         </div>
-      </div>
-
-      <div class="float-right mt-8 mr-16">
-        <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
-          <irregularButton btnTitle="即將開放" disable="true" />
-        <!-- </RouterLink> -->
       </div>
     </div>
   </div>
