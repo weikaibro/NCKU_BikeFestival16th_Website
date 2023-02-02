@@ -39,12 +39,12 @@ const showContent = computed(() => {
     <Navbar />
     <div class="flex flex-col justify-center items-center mt-20 mb-8">
       <homepage_lineHeader headerTitle="主題專欄" />
-      <div class="flex my-10"> 
+      <div class="grid grid-cols-4 my-10 gap-3 max-sm:grid-cols-2"> 
         <button
           v-for="(value, index) in buttonName"
           :key="index"
           @click="Switch(index)"
-          class="transition duration-100 mr-3 font-semibold bg-mygray px-4 py-2 rounded-full
+          class="w-[150px] transition duration-100 mr-3 font-semibold bg-mygray px-4 py-2 rounded-full
             lg:mr-6 lg:px-5 lg:py-2 hover:scale-105 active:scale-95"
           :class="{ change: index === num }"
         >

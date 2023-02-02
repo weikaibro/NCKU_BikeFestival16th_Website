@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 升學" keyWord="升學管道" theme="升學管道總整理：條條大路通羅馬" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <img src="../../../assets/themeCol_AllRoadsLeadToRome/AllRoadsLeadToRome1.png" alt="AllRoadsLeadToRome">
       <div class="text-xl leading-9">
         <br> 升學管道有非常多種，不只有大家常聽到的個申和分科，甚至不用考學測也有機會上大學！有些學生可能有特別厲害的專長，但比較偏科的話，就可以參加特殊選才。或是每一科在校成績都維持的很好，那繁星推薦就非常適合你。普通科學生想要念科大也有管道能申請哦～

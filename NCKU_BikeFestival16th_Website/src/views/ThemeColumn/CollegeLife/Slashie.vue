@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="斜槓" theme="分身不乏術——斜槓是在斜什麼" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/Slashie.png" alt="">
       <div class="text-xl leading-9">
         小編在上大學後對生活的多樣性有更深認知，時常想著如何豐富自己的大學生活，了解到了生活不單單只有課業，還有餘能裕發展自己的興趣，甚至將其作為一項工作，藉由這篇文章想與大家分享大學生的斜槓，在學生與其他身份來去自如。

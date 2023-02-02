@@ -11,9 +11,9 @@ const contents = ref([
 
 <template>
   <div>
-    <div class="text-center text-2xl">#打工 #課餘活動 #時間管理</div>
+    <div class="text-center text-2xl max-sm:text-base">#打工 #課餘活動 #時間管理</div>
     <hr>
-    <div class="flex flex-wrap justify-evenly items-center my-16 mx-20">
+    <div class="flex flex-wrap justify-between items-center my-16 mx-20 max-sm:mx-4 max-sm:gap-6">
 
       <RouterLink to="/ThemeColumn/TimeManagement">
         <div

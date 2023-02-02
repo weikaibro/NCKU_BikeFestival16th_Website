@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="活動" theme="為生活添加調味：課餘活動資訊分享" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <picture>
         <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_AfterClassInfo/afterClassInfo1.png" type="image/webp">
         <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_AfterClassInfo/afterClassInfo1.png" alt="afterClass">

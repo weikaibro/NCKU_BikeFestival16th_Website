@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 健康" keyWord="飲食" theme="考生飲食攻略" />
 
-    <div class="mx-56 my-20">
+    <div class="mx-56 my-20 max-sm:mx-4">
 
       <div>
         <picture>

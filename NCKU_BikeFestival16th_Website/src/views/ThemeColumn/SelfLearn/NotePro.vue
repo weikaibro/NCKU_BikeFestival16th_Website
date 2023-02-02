@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 自學" keyWord="筆記" theme="筆記 Pro" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <!-- Coming Soon -->
       <img src="../../../assets/comingSoonWithBg.png" alt="">
     </div>

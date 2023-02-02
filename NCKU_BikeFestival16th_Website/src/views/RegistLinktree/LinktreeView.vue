@@ -6,7 +6,7 @@ import irregularButton from '../../components/irregularButton.vue'
 <template>
   <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden max-sm:flex-col">
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-end max-sm:basis-1/2 max-sm:items-center max-sm:justify-around ">
+    <div class="basis-1/3 flex flex-col justify-evenly items-end max-sm:basis-1/2 max-sm:items-center max-sm:justify-end max-sm:gap-8 max-sm:mb-4">
       <RouterLink to="/Registration/Linktree/MockInterview">
         <irregularButton btnTitle="模擬面試" />
       </RouterLink>
@@ -28,7 +28,7 @@ import irregularButton from '../../components/irregularButton.vue'
 
 
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center">
+    <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center max-sm:justify-start max-sm:gap-8 max-sm:mt-4">
       <!-- <RouterLink to="/Registration/Linktree/DepartmentTour"> -->
         <irregularButton btnTitle="科系博覽" disable="true" />
       <!-- </RouterLink> -->

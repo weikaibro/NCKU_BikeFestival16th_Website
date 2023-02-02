@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="時間" theme="時間管理祕笈" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="">
       <picture>
         <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement1.webp" type="image/webp">

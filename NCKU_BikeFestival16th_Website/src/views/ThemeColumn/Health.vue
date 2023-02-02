@@ -6,9 +6,9 @@ import { RouterLink } from 'vue-router';
 <template>
   
   <div>
-    <div class="text-center text-2xl">#健身 #心情調適 #睡眠 #飲食</div>
+    <div class="text-center text-2xl max-sm:text-base">#健身 #心情調適 #睡眠 #飲食</div>
     <hr>
-    <div class="flex flex-wrap justify-between items-center my-16 mx-20">
+    <div class="flex flex-wrap justify-between items-center my-16 mx-20 max-sm:mx-4 max-sm:gap-6">
       <RouterLink to="/ThemeColumn/HealthRoom">
         <div
           class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 

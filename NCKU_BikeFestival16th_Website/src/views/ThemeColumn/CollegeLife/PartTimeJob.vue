@@ -8,11 +8,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="打工" theme="踏入社會的第一步：打工大小事" />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/PartTimeJob.png" alt="PartTimeJob">
       <div class="text-xl leading-9">
         <br> 上大學後在外住宿多了許多生活開銷，除了理財節流之外，許多人也希望透過開源來減少父母的金錢負擔，甚至是能夠提早經濟獨立，於是打工就成為大學生活多出的一個選項。

@@ -12,8 +12,8 @@ defineProps({
       w-[300px] max-sm:w-[150px]"
     >
       <img src="../assets/irregularBtn_transparent.svg" alt="">
-      <span class="absolute top-6 left-11 text-3xl text-white font-medium
-        max-sm:text-xs max-sm:top-2 max-sm:left-2"
+      <span class="absolute top-6 left-11 text-3xl text-white font-bold
+        max-sm:text-xs max-sm:top-3 max-sm:left-5"
       >
         {{ btnTitle }}
       </span>

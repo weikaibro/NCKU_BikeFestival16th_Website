@@ -125,10 +125,10 @@ function checkSelected() {
 
 <template>
   <div>
-    <div class="text-4xl font-bold mb-10">
+    <div class="text-4xl font-bold mb-10 max-sm:text-2xl">
       單車十六｜模擬面試/學長姐經驗分享報名表
     </div>
-    <div class="text-lg leading-9">
+    <div class="text-lg leading-9 max-sm:text-sm">
       各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
       <br /><br />
       我們將於 <br />

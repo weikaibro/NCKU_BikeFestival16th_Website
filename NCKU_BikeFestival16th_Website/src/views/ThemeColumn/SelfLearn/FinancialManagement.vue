@@ -8,14 +8,14 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
   <Navbar />
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 max-sm:mx-4">
     <ThemeColumnHeader
       header="主題專欄 / 自學"
       keyWord="投資"
       theme="比運彩更好賺 — 投資理財"
     />
 
-    <div class="mx-60 my-20">
+    <div class="mx-60 my-20 max-sm:mx-4">
       <div>
 
         <picture>
