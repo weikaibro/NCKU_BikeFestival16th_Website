@@ -75,8 +75,8 @@ const show = () => {
   </div>
 
   <!-- RWD -->
-  <div>
-    <div class="flex flex-col h-[315px] w-screen text-white text-center lg:hidden" v-if="showMenu">
+  <div class="relative">
+    <div class="absolute z-50 flex flex-col w-screen text-white text-center lg:hidden" v-if="showMenu">
       <div
         v-for="header in headers" 
         :key="headers.indexOf(header)"

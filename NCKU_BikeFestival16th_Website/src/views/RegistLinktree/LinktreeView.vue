@@ -19,7 +19,7 @@ import irregularButton from '../../components/irregularButton.vue'
     </div>
 
 
-    <div class="basis-1/3 flex justify-center items-center ml-6 max-sm:hidden">
+    <div class="basis-1/3 flex justify-center items-center ml-6 max-md:hidden">
       <picture>
         <source class="w-full" srcset="../../assets/bikeFestivalLogo.webp" type="image/webp">
         <img class="w-full" src="../../assets/bikeFestivalLogo.png" alt="NCKUlogo">

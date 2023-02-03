@@ -6,14 +6,14 @@ export const useMemberStore = defineStore('memberInfo', () => {
   const scrollLeft = () => {
     var scrollTo = document.getElementById('scrollTo');
     scrollTo.scrollBy({
-      left: -300,
+      left: -250,
       behavior: 'smooth'
     });
   }
   const scrollRight = () => {
     var scrollTo = document.getElementById('scrollTo');
     scrollTo.scrollBy({
-      left: 300,
+      left: 250,
       behavior: 'smooth'
     });
   }

@@ -106,7 +106,8 @@ setInterval(() => {
   <div class="bg-black h-screen overflow-hidden">
     <!-- frame -->
     <div
-      class="bg-white h-[600px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
+      class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
+        max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
       <video
         id="myVideo"
@@ -151,19 +152,19 @@ setInterval(() => {
       部員 電機115 魏子翔 <br />
       部員 機械114 鄭皓澤
     </div>
-    <div class="float-right mt-8 mr-16">
+    <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
       <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
         <irregularButton btnTitle="即將開放" disable="true" />
       <!-- </RouterLink> -->
     </div>
     <!-- bottom -->
-    <div class="bg-black flex justify-between ml-12 flex-shrink-0">
+    <div class="bg-black flex justify-between ml-12 flex-shrink-0 max-sm:ml-0 hidden">
       <!-- progress frame -->
       <div
-        class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap"
+        class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap max-sm:mt-0"
       >
         <!-- Marquee -->
-        <div class="w-[1200px] overflow-hidden flex flex-nowrap mt-5">
+        <div class="w-[1200px] overflow-hidden flex flex-nowrap mt-5 max-sm:mt-1">
           <div ref="marquee1" class="w-[600px] bg-transparent text-white h-6">
             {{ videoName }}
           </div>
@@ -173,32 +174,32 @@ setInterval(() => {
         </div>
         <!-- button * 4 -->
         <button
-          class="text-white w-14 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce max-sm:w-8"
           @click="last"
         >
           <icon-ic-baseline-skip-previous class="w-full h-full" />
         </button>
         <button
-          class="text-white w-14 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce max-sm:w-8"
           @click="play"
         >
           <icon-material-symbols-play-arrow class="w-full h-full" />
         </button>
         <button
-          class="text-white w-14 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce max-sm:w-8"
           @click="pause"
         >
           <icon-ic-baseline-pause class="w-full h-full" />
         </button>
         <button
-          class="text-white w-14 active:animate-ping hover:animate-bounce"
+          class="text-white w-14 active:animate-ping hover:animate-bounce max-sm:w-8"
           @click="next"
         >
           <icon-ic-sharp-skip-next class="w-full h-full" />
         </button>
         <!-- progress bar -->
         <div
-          class="w-[900px] bg-transparent h-5 mt-[24px] mb-7 flex flex-shrink-0 flex-nowrap"
+          class="w-[900px] bg-transparent h-5 mt-[24px] mb-7 flex flex-shrink-0 flex-nowrap max-sm:mt-[10px]"
           @click="progressClick"
         >
           <div

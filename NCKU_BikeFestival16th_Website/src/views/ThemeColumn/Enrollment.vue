@@ -7,10 +7,10 @@ import { RouterLink } from 'vue-router';
   <div>
     <div class="text-center text-2xl max-sm:text-base">#學習歷程 #面試攻略 #生涯探索 #入學管道</div>
     <hr>
-    <div class="flex flex-wrap justify-between items-center my-16 mx-20 max-sm:mx-4 max-sm:gap-6">
+    <div class="flex flex-wrap justify-center items-center gap-8 my-16 max-sm:mx-4">
       <RouterLink to="/ThemeColumn/LearningProcessStrategy">
         <div
-          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5"
         >
           <img src="../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy1.png" alt="LearningProcessStrategy">
@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/EnrollmentForDummies">
         <div
-          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5"
         >
           <img src="../../assets/themeCol_enrollmentForDummies/enrollmentForDummies1.png" alt="EnrollmentForDummies">
@@ -32,7 +32,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/AllRoadsLeadToRome">
         <div
-          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5"
         >
           <img src="../../assets/themeCol_AllRoadsLeadToRome/AllRoadsLeadToRome1.png" alt="AllRoadsLeadToRome">
@@ -43,7 +43,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/StarPlan">
         <div
-          class="flex flex-col justify-evenly items-center w-[400px] h-[500px] border-2 
+          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5"
         >
           <img src="../../assets/themeCol_starPlan.png" alt="StarPlan">

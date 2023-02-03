@@ -7,7 +7,7 @@ defineProps ({
 <template>
   <div class>
     <div class="lineHeader relative flex justify-center items-end 
-      text-4xl font-bold tracking-wider">
+      text-4xl font-bold tracking-wider max-md:text-3xl">
       <div class="leftDotPos absolute bg-black rounded-full h-2 w-2 max-sm:hidden"></div>
       {{ headerTitle }}
       <div class="rightDotPos absolute bg-black rounded-full h-2 w-2 mb-3.5 right-32 max-sm:hidden"></div>

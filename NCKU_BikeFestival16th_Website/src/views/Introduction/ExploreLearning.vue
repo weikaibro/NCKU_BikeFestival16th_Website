@@ -8,7 +8,8 @@ import IrregularButton from "../../components/irregularButton.vue";
     <Navbar />
 
     <div
-      class="bg-white h-[650px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
+      class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
+        max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
       <div class="text-3xl font-bold">探索學習</div>
       <br />
@@ -51,7 +52,7 @@ import IrregularButton from "../../components/irregularButton.vue";
       部長 資訊114 梁祐晨 <br />
       部長 材料114 蕭翔駿
     </div>
-    <div class="float-right mt-6 mr-16">
+    <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
     <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
       <IrregularButton btnTitle="即將開放" disable="true" />
       <!-- </RouterLink> -->

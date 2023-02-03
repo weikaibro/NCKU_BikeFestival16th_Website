@@ -8,7 +8,7 @@ import Footer from '../components/Footer.vue';
   <div>
     <Navbar/>
     <div class="bg-black">
-      <img class="mx-auto h-[700px]" src="../assets/comingSoonWithBg.png" alt="">
+      <img class="mx-auto h-[700px] max-md:h-[580px]" src="../assets/comingSoonWithBg.png" alt="">
     </div>
     <Footer/>
   </div>

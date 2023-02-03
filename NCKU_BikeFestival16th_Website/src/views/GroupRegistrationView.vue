@@ -42,14 +42,14 @@ function checkSelected() {
     <div class="flex flex-col justify-center items-center gap-16 mt-10">
       <span class="text-5xl font-bold tracking-wider">團體報名</span>
       <picture>
-        <source class="w-[55%] mx-auto" srcset="../assets/bikeFestivalLogo2.webp" type="image/webp">
-        <img class="w-[55%] mx-auto" src="../assets/bikeFestivalLogo2.png" alt="NCKU">
+        <source class="w-[55%] mx-auto max-md:w-[90%]" srcset="../assets/bikeFestivalLogo2.webp" type="image/webp">
+        <img class="w-[55%] mx-auto max-md:w-[90%]" src="../assets/bikeFestivalLogo2.png" alt="NCKU">
       </picture>
     </div>
 
-    <div class="px-36 pt-20">
+    <div class="px-36 pt-20 max-md:px-4">
       <!-- intro -->
-      <div class="text-xl leading-8">
+      <div class="text-xl leading-8 max-sm:text-sm">
         <div>2023 成大單車節｜遊覽車團體登記表單</div>
         <div>
           ｜第十六屆成大單車節活動時間：2023/3/4-2023/3/5 09:00 - 16:00

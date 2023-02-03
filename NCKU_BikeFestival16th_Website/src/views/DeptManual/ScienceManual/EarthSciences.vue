@@ -62,7 +62,7 @@ onMounted(() => {
   }
   document.getElementById('next').addEventListener('click', onNextPage);
 
-  pdfjsLib.getDocument('/History.pdf').promise.then((doc) => {
+  pdfjsLib.getDocument('/EarthSciences.pdf').promise.then((doc) => {
     pdfDoc = doc;
     document.getElementById('page_total').textContent = doc.numPages;
     renderPage(pageNum);

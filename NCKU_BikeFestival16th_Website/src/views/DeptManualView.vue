@@ -20,7 +20,7 @@ const btn = ref([
 <template>
   <div class="bgImg overflow-hidden h-screen">
     <Navbar />
-    <div class="h-[90%] grid grid-cols-3 place-items-center">
+    <div class="h-[90%] grid grid-cols-3 place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1">
       <RouterLink 
         v-for="header in btn" 
         :key="btn.indexOf(header)"
@@ -28,7 +28,7 @@ const btn = ref([
       >
         <irregularButton :btnTitle="header.title" />
       </RouterLink>
-      <div></div>
+      <div class="max-lg:hidden"></div>
 
       <RouterLink to="/DeptManual/Undeclared">
         <irregularButton class="col-span-3" btnTitle="不分學院" />
@@ -59,5 +59,11 @@ const btn = ref([
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 640px) {
+  .bgImg {
+    background-image: none;
+    background-color: black;
+  }
 }
 </style>

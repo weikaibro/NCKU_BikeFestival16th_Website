@@ -9,7 +9,8 @@ import IrregularButton from "../../components/irregularButton.vue";
     <Navbar />
 
     <div
-      class="bg-white h-[650px] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
+      class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
+        max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
       <div class="text-3xl font-bold">模擬面試</div>
       <br />
@@ -59,7 +60,7 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 會計115 張嘉純 <br />
       部員 交管115 張尚弘
     </div>
-    <div class="float-right mt-6 mr-16">
+    <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
       <RouterLink to="/Registration/Linktree/MockInterview">
         <IrregularButton btnTitle="即刻報名" />
       </RouterLink>

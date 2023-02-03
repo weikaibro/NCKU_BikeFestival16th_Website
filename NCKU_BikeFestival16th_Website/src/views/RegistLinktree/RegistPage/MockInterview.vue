@@ -34,12 +34,12 @@ const Show = computed(() => {
   <div class="bg-black text-white">
     <Navbar />
 
-    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-sm:gap-1">
+    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-1">
       <span class="text-5xl font-bold tracking-wider">模擬面試</span>
 
       <!-- registration form * 3 -->
       <!-- @click="Switch(index)" -->
-      <div class="flex max-sm:flex-col">
+      <div class="flex max-md:flex-col">
         <button
           v-for="(value, index) in buttonName"
           :key="index"
@@ -47,19 +47,19 @@ const Show = computed(() => {
           class="transition furatioduration-100 font-semibold bg-transparent text-white text-lg border-2 border-white 
             w-[250px] h-[100px] mx-8 px-5 py-1 rounded-full 
             hover:scale-105 active:scale-95
-            max-sm:text-base max-sm:h-[70px] max-sm:my-4"
+            max-md:text-base max-md:h-[70px] max-md:my-4"
           :class="{ change: index === num }"
         >
           {{ value }}
         </button>
       </div>
       <picture>
-        <source class="w-[55%] mx-auto max-sm:w-[90%]" srcset="../../../assets/bikeFestivalLogo2.webp" type="image/webp">
-        <img class="w-[55%] mx-auto max-sm:w-[90%]" src="../../../assets/bikeFestivalLogo2.png" alt="NCKUlogo">
+        <source class="w-[55%] mx-auto max-md:w-[90%]" srcset="../../../assets/bikeFestivalLogo2.webp" type="image/webp">
+        <img class="w-[55%] mx-auto max-md:w-[90%]" src="../../../assets/bikeFestivalLogo2.png" alt="NCKUlogo">
       </picture>
     </div>
 
-    <div class="px-36 pt-20 max-sm:px-4">
+    <div class="px-36 pt-20 max-md:px-4">
       <Transition mode="out-in">
         <component :is="Show" />
       </Transition>

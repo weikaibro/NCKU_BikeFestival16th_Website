@@ -2,11 +2,10 @@
 </script>
 
 <template>
-    <div class="flex justify-center items-center h-[1000px] bg-black text-white p-4">
-        <img src="" alt="">
+    <div class="flex justify-center items-center bg-black text-white p-4">
         <picture>
-            <source class="w-full" srcset="../../assets/map.webp" type="image/webp">
-            <img class="w-full" src="../../assets/map.png" alt="map">
+            <source  srcset="../../assets/map.webp" type="image/webp">
+            <img  src="../../assets/map.png" alt="map">
         </picture>
     </div>
 </template>

@@ -42,20 +42,20 @@ const Show = computed(() => {
 <template>
   <Navbar />
 
-  <div class="m-20">
+  <div class="mx-20 my-20 max-sm:mx-4">
 
-    <div class="text-4xl pl-5 font-extrabold">活動資訊</div>
+    <div class="text-4xl pb-10 font-extrabold max-sm:text-center">活動資訊</div>
 
     <div>
       <ul class="flex justify-end">
         <li class="border-l border-r selected" @click="selected">
-          <a class="text-2xl px-10 py-2 font-extrabold" href="#">展場地圖</a>
+          <a class="text-2xl px-10 py-2 font-extrabold max-sm:text-base max-lg:px-4" href="#">展場地圖</a>
         </li>
         <li class="notselected" @click="selected">
-          <a class="text-2xl px-10 py-2 font-extrabold" href="#">交通資訊</a>
+          <a class="text-2xl px-10 py-2 font-extrabold max-sm:text-base max-lg:px-4" href="#">交通資訊</a>
         </li>
         <li class="border-l border-r notselected" @click="selected">
-          <a class="text-2xl px-10 py-2 font-extrabold" href="#">時間表</a>
+          <a class="text-2xl px-10 py-2 font-extrabold max-sm:text-base max-lg:px-4" href="#">時間表</a>
         </li>
       </ul>
     </div>

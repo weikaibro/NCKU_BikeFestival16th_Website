@@ -9,7 +9,8 @@ import IrregularButton from "../../components/irregularButton.vue";
     <Navbar />
 
     <div
-      class="bg-white rounded-[3rem] h-[650px] mt-6 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto"
+      class="bg-white rounded-[3rem] h-[75%] mt-6 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
+        max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
       <div class="text-3xl font-bold">舞台活動</div>
       <br />
