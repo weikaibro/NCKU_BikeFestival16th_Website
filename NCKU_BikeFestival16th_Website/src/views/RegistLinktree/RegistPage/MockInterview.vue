@@ -45,9 +45,9 @@ const Show = computed(() => {
           :key="index"
           
           class="transition furatioduration-100 font-semibold bg-transparent text-white text-lg border-2 border-white 
-            w-[250px] h-[100px] mx-8 px-5 py-1 rounded-full 
+            w-[280px] h-[50px] mx-8 px-5 py-1 rounded-full 
             hover:scale-105 active:scale-95
-            max-md:text-base max-md:h-[70px] max-md:my-4"
+            max-md:text-base max-md:my-4"
           :class="{ change: index === num }"
         >
           {{ value }}

@@ -280,10 +280,10 @@ function checkSelected() {
   }
 }
 .linkEff {
-  transition: color 0.5s ease, box-shadow 0.5s ease;
-  -o-transition: color 0.5s ease, box-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
+  -o-transition: color 0.5s ease, box-shadow 0.5s ease;
+  transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-color: #0ea5e9;

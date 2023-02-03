@@ -7,7 +7,7 @@ import Footer from '../components/Footer.vue';
 <template>
   <div>
     <Navbar/>
-    <div class="bg-black">
+    <div class="bg-black h-full w-screen">
       <img class="mx-auto h-[700px] max-md:h-[580px]" src="../assets/comingSoonWithBg.png" alt="">
     </div>
     <Footer />

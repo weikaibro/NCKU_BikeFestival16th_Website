@@ -56,7 +56,7 @@ const list = ref([
           />
         </picture>
       </a>
-      <a href="#" target="_blank" rel="noreferrer noopenner">
+      <a href="https://www.youtube.com/@user-ss2sl8nu8l/videos" target="_blank" rel="noreferrer noopenner">
         <picture>
           <source srcset="../assets/youtube.webp" type="image/webp" />
           <img

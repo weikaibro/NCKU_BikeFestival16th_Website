@@ -70,7 +70,7 @@ const SouvenirContent = "Coming Soon!"
       </div>
     </div>
 
-    <div class="mt-36 p-0 w-screen h-[800px] max-md:mt-16">
+    <div class="mt-36 p-0 w-screen h-[800px] max-md:mt-16 ">
       <div class="flex justify-center items-end mb-16 max-md:mb-6">
         <homepage_lineHeader headerTitle="籌備團隊" />
       </div>

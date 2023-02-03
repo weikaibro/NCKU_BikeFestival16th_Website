@@ -36,7 +36,7 @@ import irregularButton from "../components/irregularButton.vue";
     <!-- router -->
     <div class="grid grid-cols-3 place-items-center 
       w-screen h-screen px-20 py-24 overflow-hidden
-      max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:py-10 "
+      max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:py-10"
     >
       <RouterLink to="/Introduction/Interview">
         <irregularButton btnTitle="模擬面試" />

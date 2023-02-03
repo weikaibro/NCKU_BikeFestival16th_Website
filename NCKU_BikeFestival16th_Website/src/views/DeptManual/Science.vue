@@ -18,7 +18,8 @@ const chosenDept = ref([
 const userChosenNum = ref(0)
 const userChosen = (index) => {
   userChosenNum.value = index;
-  console.log(index)
+  showDept.value = !showDept.value;
+  // console.log(index)
 }
 const showContent = computed(() => {
   switch (userChosenNum.value) {
@@ -52,10 +53,10 @@ const show = () => {
     <Navbar />
     <div class="flex mx-12 h-[1300px] max-xl:mx-0 max-xl:flex-col max-xl:h-[1500px] max-sm:h-[1200px]">
       <!-- selected dept -->
-      <div class="flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[550px]">
+      <div class="relative flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[550px]">
         <!-- RWD -->
-        <div @click="show" class="text-3xl mt-10 mb-6 font-bold xl:hidden">理學院</div>
-        <ul v-if="showDept" class="xl:hidden">
+        <div @click="show" class="absolute bg-black w-screen h-[40px] text-3xl font-bold xl:hidden">理學院</div>
+        <ul v-if="showDept" class="absolute bg-black w-screen top-10 xl:hidden">
           <li 
             v-for="(chosen, index) in chosenDept"
             :key="index"
@@ -66,11 +67,11 @@ const show = () => {
           {{ chosen }}
           </li>
         </ul>
-        <RouterLink to="/DeptManual">
+        <!-- <RouterLink to="/DeptManual">
           <div class="text-3xl mt-6 mb-10 font-bold xl:hidden" v-if="showDept">
             回前頁
           </div>
-        </RouterLink>
+        </RouterLink> -->
         <!-- Laptop -->
         <div class="text-3xl mt-10 mb-6 font-bold max-xl:hidden">理學院</div>
         <ul class="max-xl:hidden">
@@ -92,7 +93,7 @@ const show = () => {
       </div>
 
       <!-- pdf -->
-      <Transition mode="out-in" class="w-full h-[950px] pl-20 mt-20 border-l-2 border-black max-2xl:pl-0 max-xl:border-l-0 max-sm:mt-6">
+      <Transition mode="out-in" class="w-full h-[950px] pl-20 mt-20 border-l-2 border-black max-2xl:pl-0 max-xl:border-l-0 max-sm:mt-10">
         <component :is="showContent" />
       </Transition>
     </div>

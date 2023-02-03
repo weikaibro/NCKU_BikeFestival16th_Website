@@ -9,7 +9,7 @@ defineProps({
   <!-- true -->
   <div v-if="disable">
     <div class="relative opacity-50
-      w-[300px] max-sm:w-[150px]"
+      w-[300px] max-sm:w-[120px]"
     >
       <img src="../assets/irregularBtn_transparent.svg" alt="">
       <span class="absolute top-6 left-11 text-3xl text-white font-bold
@@ -22,7 +22,7 @@ defineProps({
   <!-- default: false -->
   <div v-else>
     <div class="scaleEff relative transition duration-150 ease-in-out
-      w-[300px] max-sm:w-[180px]"
+      w-[300px] max-sm:w-[120px]"
     >
       <img src="../assets/irregularBtn_transparent.svg" alt="">
       <span class="absolute top-6 left-11 text-3xl text-white font-bold

@@ -3,16 +3,14 @@ import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import Navbar from '../../components/Navbar.vue';
 import Footer from '../../components/Footer.vue';
-import homepage_totalMemberSlider from '../../components/homepage_totalMemberSlider.vue';
-import ChineseLiterature from '../DeptManual/LiberalArtsManual/ChineseLiterature.vue'
-import ForeignLanguages from '../DeptManual/LiberalArtsManual/ForeignLanguages.vue'
-import History from '../DeptManual/LiberalArtsManual/History.vue'
-import TaiwaneseLiterature from '../DeptManual/LiberalArtsManual/TaiwaneseLiterature.vue'
+// import 
+
 const chosenDept = ref([
-  "中國文學系",
-  "台灣文學系",
-  "歷史學系",
-  "外國語文學系",
+  "會計系",
+  "企管系",
+  "工資管系",
+  "統計系",
+  "交管系"
 ])
 const userChosenNum = ref(0)
 const userChosen = (index) => {
@@ -22,16 +20,19 @@ const userChosen = (index) => {
 const showContent = computed(() => {
   switch (userChosenNum.value) {
     case 0: {
-      return ChineseLiterature;
+      return Accountancy;
     }
     case 1: {
-      return TaiwaneseLiterature;
+      return BusinessAdministration;
     }
     case 2: {
-      return History;
+      return IndustrialandInformationManagement;
     }
     case 3: {
-      return ForeignLanguages;
+      return Statistics;
+    }
+    case 4: {
+      return TransportationandCommunication;
     }
     default:
       break;

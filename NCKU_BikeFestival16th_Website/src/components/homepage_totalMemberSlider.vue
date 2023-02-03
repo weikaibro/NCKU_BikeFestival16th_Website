@@ -14,7 +14,7 @@ const store = useMemberStore();
   </div>
 
   <div class="absolute z-0 inset-x-0 mx-auto bg-neutral-100
-    w-[80%] h-[580px] max-sm:w-screen max-sm:h-[500px]"
+    w-[80%] h-[580px] max-sm:w-screen max-sm:h-[460px]"
   >
     <div 
       id="scrollTo"

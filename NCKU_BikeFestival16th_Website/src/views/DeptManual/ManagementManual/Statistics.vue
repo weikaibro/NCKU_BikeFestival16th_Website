@@ -62,7 +62,7 @@ onMounted(() => {
   }
   document.getElementById('next').addEventListener('click', onNextPage);
 
-  pdfjsLib.getDocument('/ChineseLiterature.pdf').promise.then((doc) => {
+  pdfjsLib.getDocument('/Statistics.pdf').promise.then((doc) => {
     pdfDoc = doc;
     document.getElementById('page_total').textContent = doc.numPages;
     renderPage(pageNum);

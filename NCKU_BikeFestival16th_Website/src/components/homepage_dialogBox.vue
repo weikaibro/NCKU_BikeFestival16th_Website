@@ -36,11 +36,11 @@ defineProps({
     </div>
 
     <div class="flex flex-row justify-center items-center
-      border-x-4 border-b-4 border-black h-[600px] overflow-hidden max-md:h-[550px]">
+      border-x-4 border-b-4 border-black h-[600px] overflow-hidden max-md:h-[400px]">
       <!-- image slot -->
       <slot></slot>
       <div class="text-2xl leading-relaxed m-12 
-        max-xl:text-lg max-lg:text-sm max-md:leading-5 max-md:m-1.5" :class="styleAdd" v-html="article">
+        max-xl:text-lg max-lg:text-sm max-md:leading-5 max-md:m-4" :class="styleAdd" v-html="article">
       </div>
     </div>
 
