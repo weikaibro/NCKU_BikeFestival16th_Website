@@ -46,11 +46,11 @@ import IrregularButton from "../../components/irregularButton.vue";
       部長 外文114 劉世瑜
       <br />
       部長 政治115 姚瀚晴 <br />
-      部長 交管115 黃奎臻 <br />
-      部長 資訊115 陳俊安 <br />
-      部長 材料115 陳采欣 <br />
-      部長 資訊114 梁祐晨 <br />
-      部長 材料114 蕭翔駿
+      部員 交管115 黃奎臻 <br />
+      部員 資訊115 陳俊安 <br />
+      部員 材料115 陳采欣 <br />
+      部員 資訊114 梁祐晨 <br />
+      部員 材料114 蕭翔駿
     </div>
     <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
     <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->

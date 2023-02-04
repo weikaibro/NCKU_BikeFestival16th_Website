@@ -27,10 +27,10 @@ defineProps({
         {{ dialogTitle }}
       </p>
       <!-- dialog cross/underline -->
-      <div class="absolute right-0 mr-32 mt-[20px] max-md:hidden">
+      <div class="absolute right-0 mr-[140px] mt-[20px] max-md:hidden">
         <img class="w-[60px] h-[60px]" src="../assets/cross.svg" alt="cross">
       </div>
-      <div class="absolute right-0 mr-14 mt-[20px] max-md:hidden">
+      <div class="absolute right-0 mr-[56px] mt-[20px] max-md:hidden">
         <img class="w-[60px] h-[60px]" src="../assets/underline.svg" alt="underline">
       </div>
     </div>

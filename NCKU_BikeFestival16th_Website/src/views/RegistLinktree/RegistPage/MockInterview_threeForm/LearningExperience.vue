@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import entryForm_personalInfo from "../../../../components/entryForm_personalInfo.vue";
+import irregularButton from "../../../../components/irregularButton.vue";
 const checkBoxInfo1 = ref([
   {
     speech: "3/4（六）09:20-10:30 電機系 - 賴癸江教授",
@@ -270,7 +270,7 @@ function checkSelected() {
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
   text-decoration-color: #0ea5e9;
 }
 

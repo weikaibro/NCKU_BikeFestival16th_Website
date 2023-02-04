@@ -125,10 +125,10 @@ function checkSelected() {
 
 <template>
   <div>
-    <div class="text-4xl font-bold mb-10 max-sm:text-2xl">
+    <div class="text-4xl font-bold mb-10">
       單車十六｜模擬面試/學長姐經驗分享報名表
     </div>
-    <div class="text-lg leading-9 max-sm:text-sm">
+    <div class="text-lg leading-9">
       各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
       <br /><br />
       我們將於 <br />
@@ -433,7 +433,7 @@ function checkSelected() {
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
   text-decoration-color: #0ea5e9;
 }
 

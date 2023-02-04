@@ -1,7 +1,6 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import irregularButton from "../../../../components/irregularButton.vue";
-
 const checkBoxInfo1 = ref([
   { time:'3/4（六）上午 9:00 - 10:30', dept:'職治系', api:'entry.665165868', style: "after:content-['*'] after:ml-2 after:text-red-500" },
   { time:'', dept:'化工系', api:'entry.665165868' },
@@ -316,7 +315,7 @@ function checkSelected() {
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
   text-decoration-color: #0ea5e9;
 }
 

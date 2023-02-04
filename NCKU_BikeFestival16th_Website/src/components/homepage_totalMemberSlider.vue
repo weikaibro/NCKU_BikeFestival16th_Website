@@ -111,7 +111,7 @@ const store = useMemberStore();
         <span class="mt-4 text-2xl font-bold max-md:mt-2">許芷綾</span>
         <span class="fontSize mt-2 text-center">學術部</span>
         <span class="fontSize">外文114</span>
-        <span class="smallFontSize mt-1 text-center">在選擇科系的道路上，不免遇到許多迷惘徬徨的時刻，希望成大單車節能指引你，讓你也成為閃亮的一顆星星✨</span>
+        <span class="fontSize mt-1 text-center">在選擇科系的道路上，不免遇到許多迷惘徬徨的時刻，希望成大單車節能指引你，讓你也成為閃亮的一顆星星✨</span>
       </div>
       <div class="memberInfo">
         <picture>
@@ -201,7 +201,7 @@ const store = useMemberStore();
         <span class="mt-4 text-2xl font-bold max-md:mt-2">簡以恆</span>
         <span class="fontSize mt-2 text-center">策展部</span>
         <span class="fontSize">經濟113</span>
-        <span class="smallFontSize mt-1 text-center">策展，Curate，即篩選並照顧藝術品或展品，以構成收藏或展覽。整個成大展場對我來說就是細心呵護藝術品以呈現給大家。</span>
+        <span class="fontSize mt-1 text-center">策展，Curate，即篩選並照顧藝術品或展品，以構成收藏或展覽。整個成大展場對我來說就是細心呵護藝術品以呈現給大家。</span>
       </div>
 
 
@@ -237,10 +237,10 @@ const store = useMemberStore();
 }
 @media (max-width: 768px) {
   .fontSize {
-    font-size: 12px;
+    font-size: 16px;
   }
-  .smallFontSize {
+  /* .fontSize {
     font-size: 12px;
-  }
+  } */
 }
 </style>

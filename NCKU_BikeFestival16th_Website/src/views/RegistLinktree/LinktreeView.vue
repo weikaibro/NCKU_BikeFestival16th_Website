@@ -30,7 +30,7 @@ import irregularButton from '../../components/irregularButton.vue'
 
     <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center max-sm:justify-start max-sm:gap-8 max-sm:mt-4">
       <!-- <RouterLink to="/Registration/Linktree/DepartmentTour"> -->
-        <irregularButton btnTitle="科系博覽" disable="true" />
+        <irregularButton btnTitle="系館導覽" disable="true" />
       <!-- </RouterLink> -->
       <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
         <irregularButton btnTitle="單車體驗" disable="true" />

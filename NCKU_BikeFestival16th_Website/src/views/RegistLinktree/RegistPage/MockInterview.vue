@@ -7,7 +7,7 @@ import LearningExperience from '../RegistPage/MockInterview_threeForm/LearningEx
 import ProfessorInterview from '../RegistPage/MockInterview_threeForm/ProfessorInterview.vue'
 
 import { ref, computed } from "vue";
-const buttonName = ref(["各系模擬面試", "教授面試技巧演講 - 2/4 開放", "學習歷程加油站 - 2/4 開放"]);
+const buttonName = ref(["各系模擬面試", "教授面試技巧演講", "學習歷程加油站"]);
 const num = ref(0);
 const Switch = (index) => {
   num.value = index;
@@ -19,10 +19,10 @@ const Show = computed(() => {
       return DepartmentMockInterview;
     }
     case 1: {
-      // return LearningExperience;
+      return LearningExperience;
     }
     case 2: {
-      // return ProfessorInterview;
+      return ProfessorInterview;
     }
     default:
       break;
@@ -35,17 +35,16 @@ const Show = computed(() => {
     <Navbar />
 
     <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-1">
-      <span class="text-5xl font-bold tracking-wider">模擬面試</span>
+      <span class="text-5xl font-bold tracking-wider max-md:text-4xl">模擬面試</span>
 
       <!-- registration form * 3 -->
-      <!-- @click="Switch(index)" -->
-      <div class="flex max-md:flex-col">
+      <div class="flex max-md:flex-col max-md:my-6">
         <button
           v-for="(value, index) in buttonName"
           :key="index"
-          
+          @click="Switch(index)"
           class="transition furatioduration-100 font-semibold bg-transparent text-white text-lg border-2 border-white 
-            w-[280px] h-[50px] mx-8 px-5 py-1 rounded-full 
+            w-[250px] h-[45px] mx-8 px-5 py-1 rounded-full 
             hover:scale-105 active:scale-95
             max-md:text-base max-md:my-4"
           :class="{ change: index === num }"
