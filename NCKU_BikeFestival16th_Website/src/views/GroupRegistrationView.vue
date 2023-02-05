@@ -255,7 +255,7 @@ function checkSelected() {
           <!-- submit -->
           <div class="py-20 w-[300px]">
             <input id="customBtn" type="submit" hidden />
-            <label for="customBtn">
+            <label for="customBtn" class="cursor-pointer">
               <irregularButton btnTitle="送出" />
             </label>
           </div>

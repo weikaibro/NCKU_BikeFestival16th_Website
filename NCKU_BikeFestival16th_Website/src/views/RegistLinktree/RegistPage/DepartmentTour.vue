@@ -2,27 +2,48 @@
 import Navbar from '../../../components/Navbar.vue';
 import Footer from '../../../components/Footer.vue';
 import irregularButton from '../../../components/irregularButton.vue';
-const grades = ([
-  "高一", "高二", "高三", "其他"
-])
+// const grades = ([
+//   "高一", "高二", "高三", "其他"
+// ])
 // at least one "checkbox" to be selected
 function checkSelected() {
   var sets = [
-    {
-      checkboxes: document.querySelectorAll('[name="entry.1613919912"]'),
-      errorMessage: "請在【年級】中選擇一項"
-    },
     // {
-
-    // }
+    //   checkboxes: document.querySelectorAll('[name="entry.1613919912"]'),
+    //   errorMessage: "請在【年級】中選擇一項"
+    // },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1214836427"]'),
+      errorMessage: "請在【A梯次 - 3/4（六）上午08：10～10：00】中選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1992365722"]'),
+      errorMessage: "請在【A梯次 - 3/4（六）下午13：10～15：00】中選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1186940117"]'),
+      errorMessage: "請在【A梯次 - 3/5（日）上午08：10～10：00】中選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.369597169"]'),
+      errorMessage: "請在【B梯次 - 3/4（六）上午10：10～12：00】中選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.1653302306"]'),
+      errorMessage: "請在【B梯次 - 3/4（六）下午15：10～17：00】中選擇一項"
+    },
+    {
+      checkboxes: document.querySelectorAll('[name="entry.338725664"]'),
+      errorMessage: "請在【B梯次 - 3/5（日）上午10：10～12：00】中選擇一項"
+    },
   ];
-  var checkedOne = [false, false, false, false, false, false, false];
+  var checkedOne = [false, false, false, false, false, false];
   for (var i = 0; i < sets.length; i++) {
     var checkboxes = sets[i].checkboxes;
     var errorMessage = sets[i].errorMessage;
     for (var j = 0; j < checkboxes.length; j++) {
       if (checkboxes[j].checked) {
-        checkedOne = true;
+        checkedOne[i] = true;
         break;
       }
     }
@@ -30,7 +51,7 @@ function checkSelected() {
       alert(errorMessage);
     }
   }
-  if (checkedOne[0] && checkedOne[1] && checkedOne[2] && checkedOne[3] && checkedOne[4] && checkedOne[5] && checkedOne[6]) {
+  if (checkedOne[0] && checkedOne[1] && checkedOne[2] && checkedOne[3] && checkedOne[4] && checkedOne[5]) {
     console.log('Welcome!')
     var form = document.querySelector('form');
     form.submit();
@@ -44,7 +65,7 @@ function checkSelected() {
   <div class="bg-black text-white">
     <Navbar />
 
-    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-1">
+    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10">
       <span class="text-5xl font-bold tracking-wider max-md:text-4xl">系館導覽</span>
 
       <picture>
@@ -53,7 +74,7 @@ function checkSelected() {
       </picture>
     </div>
 
-    <div class="px-36 pt-20 max-md:px-4">
+    <div class="px-36 pt-16 max-md:px-4">
       
       <div>
         <div class="text-4xl font-bold mb-10 max-sm:text-2xl">
@@ -171,7 +192,10 @@ function checkSelected() {
             </div>
             <div class="mt-12">
               <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-                目前就讀學校
+                目前就讀學校與年級
+                <p class="mb-6">
+                  例：高雄中學高三
+                </p>
               </p>
               <input
                 name="entry.1613016253"
@@ -181,7 +205,8 @@ function checkSelected() {
                 required
               />
             </div>
-            <div class="customRadio mt-12">
+
+            <!-- <div class="customRadio mt-12">
               <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
                 年級
               </p>
@@ -198,7 +223,7 @@ function checkSelected() {
                 />
                 <label :for="value">{{ value }}</label>
               </div>
-            </div>
+            </div> -->
 
             <div class="mt-28">
               <div class="text-3xl mb-10">⚠️｜注意事項</div>
@@ -210,7 +235,7 @@ function checkSelected() {
               </p>
             </div>
 
-            <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">第一場次 </p>
+            <p class="mt-16 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">A梯次 </p>
             <div class="grid grid-cols-11 w-[880px] gap-y-6">
               <!-- <div class="flex"> -->
                 <div class="col-span-2"></div>
@@ -226,43 +251,43 @@ function checkSelected() {
               <!-- </div>
               <div class="flex"> -->
                 <div class="col-span-2">3/4（六）上午08：10～10：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="工設系" value="工設系"><label for="工設系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="法律系" value="法律系"><label for="法律系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="生科系" value="生科系"><label for="生科系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="職治系" value="職治系"><label for="職治系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="工設系" value="工業設計學系"><label for="工設系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="法律系" value="法律學系"><label for="法律系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="生科系" value="生物科技與產業科學系"><label for="生科系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="職治系" value="職能治療學系"><label for="職治系"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="化學系" value="化學系"><label for="化學系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="機械系" value="機械系"><label for="機械系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="系統系" value="系統系"><label for="系統系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="機械系" value="機械工程學系"><label for="機械系"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="系統系" value="系統暨船舶機電工程學"><label for="系統系"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="物理系" value="物理系"><label for="物理系"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1214836427" id="不參加" value="不參加"><label for="不參加"></label></div>
               <!-- </div>
               <div class="flex"> -->
                 <div class="col-span-2">3/4（六）下午13：10～15：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="工設系2" value="工設系"><label for="工設系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="法律系2" value="法律系"><label for="法律系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="生科系2" value="生科系"><label for="生科系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="職治系2" value="職治系"><label for="職治系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="工設系2" value="工業設計學系"><label for="工設系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="法律系2" value="法律學系"><label for="法律系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="生科系2" value="生物科技與產業科學系"><label for="生科系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="職治系2" value="職能治療學系"><label for="職治系2"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="化學系2" value="化學系"><label for="化學系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="機械系2" value="機械系"><label for="機械系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="系統系2" value="系統系"><label for="系統系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="機械系2" value="機械工程學系"><label for="機械系2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="系統系2" value="系統暨船舶機電工程學"><label for="系統系2"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="物理系2" value="物理系"><label for="物理系2"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1992365722" id="不參加2" value="不參加"><label for="不參加2"></label></div>
               <!-- </div> -->
               <!-- <div class="flex"> -->
                 <div class="col-span-2">3/5（日）上午08：10～10：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="工設系3" value="工設系"><label for="工設系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="法律系3" value="法律系"><label for="法律系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="生科系3" value="生科系"><label for="生科系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="職治系3" value="職治系"><label for="職治系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="工設系3" value="工業設計學系"><label for="工設系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="法律系3" value="法律學系"><label for="法律系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="生科系3" value="生物科技與產業科學系"><label for="生科系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="職治系3" value="職能治療學系"><label for="職治系3"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="化學系3" value="化學系"><label for="化學系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="機械系3" value="機械系"><label for="機械系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="系統系3" value="系統系"><label for="系統系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="機械系3" value="機械工程學系"><label for="機械系3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="系統系3" value="系統暨船舶機電工程學"><label for="系統系3"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="物理系3" value="物理系"><label for="物理系3"></label></div>
                 <div class="customRadio twoDimension"><input type="radio" name="entry.1186940117" id="不參加3" value="不參加"><label for="不參加3"></label></div>
               <!-- </div> -->
             </div>
 
-            <p class="mt-10 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">B梯次 </p>
+            <p class="mt-16 mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500">B梯次 </p>
             <div class="grid grid-cols-11 w-[880px] gap-y-6">
               <!-- <div class="flex"> -->
                 <div class="col-span-2"></div>
@@ -278,39 +303,39 @@ function checkSelected() {
               <!-- </div>
               <div class="flex"> -->
                 <div class="col-span-2">3/4（六）上午10：10～12：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="都計Ｘ建築系" value="都計Ｘ建築系"><label for="都計Ｘ建築系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="心理系" value="心理系"><label for="心理系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="生科系" value="生科系"><label for="生科系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="歷史系" value="歷史系"><label for="歷史系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="環工系" value="環工系"><label for="環工系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="化工系" value="化工系"><label for="化工系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="工科系" value="資工系"><label for="工科系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="資工系" value="工科系"><label for="資工系"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="不參加" value="不參加"><label for="不參加"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="都計Ｘ建築系4" value="都市計劃學系Ｘ建築學系"><label for="都計Ｘ建築系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="心理系4" value="心理學系"><label for="心理系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="生科系4" value="生命科學系"><label for="生科系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="歷史系4" value="歷史學系"><label for="歷史系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="環工系4" value="環境工程學系"><label for="環工系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="化工系4" value="化學工程學系"><label for="化工系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="工科系4" value="工程科學系"><label for="工科系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="資工系4" value="資訊工程學系"><label for="資工系4"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.369597169" id="不參加4" value="不參加"><label for="不參加4"></label></div>
               <!-- </div>
               <div class="flex"> -->
                 <div class="col-span-2">3/4（六）下午15：10～17：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="都計Ｘ建築系2" value="都計Ｘ建築系"><label for="都計Ｘ建築系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="心理系2" value="心理系"><label for="心理系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="生科系2" value="生科系"><label for="生科系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="歷史系2" value="歷史系"><label for="歷史系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="環工系2" value="環工系"><label for="環工系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="化工系2" value="化工系"><label for="化工系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="工科系2" value="工科系"><label for="工科系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="資工系2" value="資工系"><label for="資工系2"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="不參加2" value="不參加"><label for="不參加2"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="都計Ｘ建築系5" value="都市計劃學系Ｘ建築學系"><label for="都計Ｘ建築系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="心理系5" value="心理學系"><label for="心理系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="生科系5" value="生命科學系"><label for="生科系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="歷史系5" value="歷史學系"><label for="歷史系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="環工系5" value="環境工程學系"><label for="環工系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="化工系5" value="化學工程學系"><label for="化工系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="工科系5" value="工程科學系"><label for="工科系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="資工系5" value="資訊工程學系"><label for="資工系5"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.1653302306" id="不參加5" value="不參加"><label for="不參加5"></label></div>
               <!-- </div>
               <div class="flex"> -->
                 <div class="col-span-2">3/5（日）上午10：10～12：00</div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="都計Ｘ建築系3" value="都計Ｘ建築系"><label for="都計Ｘ建築系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="心理系3" value="心理系"><label for="心理系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="生科系3" value="生科系"><label for="生科系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="歷史系3" value="歷史系"><label for="歷史系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="環工系3" value="環工系"><label for="環工系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="化工系3" value="化工系"><label for="化工系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="工科系3" value="資工系"><label for="工科系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="資工系3" value="工科系"><label for="資工系3"></label></div>
-                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="不參加3" value="不參加"><label for="不參加3"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="都計Ｘ建築系6" value="都市計劃學系Ｘ建築學系"><label for="都計Ｘ建築系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="心理系6" value="心理學系"><label for="心理系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="生科系6" value="生命科學系"><label for="生科系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="歷史系6" value="歷史學系"><label for="歷史系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="環工系6" value="環境工程學系"><label for="環工系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="化工系6" value="化學工程學系"><label for="化工系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="工科系6" value="工程科學系"><label for="工科系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="資工系6" value="資訊工程學系"><label for="資工系6"></label></div>
+                <div class="customRadio twoDimension"><input type="radio" name="entry.338725664" id="不參加6" value="不參加"><label for="不參加6"></label></div>
               <!-- </div> -->
             </div>
 
@@ -336,7 +361,7 @@ function checkSelected() {
 
             <div class="py-20 w-[300px]">
               <input id="customBtn" type="submit" hidden />
-              <label for="customBtn">
+              <label for="customBtn" class="cursor-pointer">
                 <irregularButton btnTitle="送出" />
               </label>
             </div>

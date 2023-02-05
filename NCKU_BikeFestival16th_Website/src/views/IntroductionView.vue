@@ -5,7 +5,7 @@ import irregularButton from "../components/irregularButton.vue";
 
 <template>
   <div
-    class="bgImg relative"
+    class="bgImg relative overflow-hidden"
   >
     <!-- corner * 4 -->
     <div class="imgEff absolute left-0 top-0 hover:-translate-x-2 hover:-translate-y-2">
@@ -48,7 +48,7 @@ import irregularButton from "../components/irregularButton.vue";
         <irregularButton btnTitle="舞台活動" />
       </RouterLink>
       <RouterLink to="/Introduction/Exposition">
-        <irregularButton btnTitle="科系博覽" />
+        <irregularButton btnTitle="系館導覽" />
       </RouterLink>
       <RouterLink to="/Introduction/BikeExperience">
         <irregularButton btnTitle="單車體驗" />

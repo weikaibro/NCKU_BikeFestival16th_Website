@@ -10,11 +10,11 @@ import irregularButton from '../../components/irregularButton.vue'
       <RouterLink to="/Registration/Linktree/MockInterview">
         <irregularButton btnTitle="模擬面試" />
       </RouterLink>
-      <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
-        <irregularButton btnTitle="探索學習" disable="true" />
-      <!-- </RouterLink> -->
-      <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
-        <irregularButton btnTitle="大學充值" disable="true"/>
+      <RouterLink to="/Registration/Linktree/DepartmentTour">
+        <irregularButton btnTitle="系館導覽" />
+      </RouterLink>
+      <!-- <RouterLink to="/Registration/Linktree/DeepExperience"> -->
+        <irregularButton btnTitle="沉浸式體驗" disable="true" />
       <!-- </RouterLink> -->
     </div>
 
@@ -22,21 +22,21 @@ import irregularButton from '../../components/irregularButton.vue'
     <div class="basis-1/3 flex justify-center items-center ml-6 max-md:hidden">
       <picture>
         <source class="w-full" srcset="../../assets/bikeFestivalLogo.webp" type="image/webp">
-        <img class="w-full" src="../../assets/bikeFestivalLogo.png" alt="NCKUlogo">
+        <img class="w-full brightness-125" src="../../assets/bikeFestivalLogo.png" alt="NCKUlogo">
       </picture>
     </div>
 
 
 
     <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center max-sm:justify-start max-sm:gap-8 max-sm:mt-4">
-      <!-- <RouterLink to="/Registration/Linktree/DepartmentTour"> -->
-        <irregularButton btnTitle="系館導覽" disable="true" />
+      <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
+        <irregularButton btnTitle="探索學習" disable="true" />
       <!-- </RouterLink> -->
       <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
         <irregularButton btnTitle="單車體驗" disable="true" />
       <!-- </RouterLink> -->
-      <!-- <RouterLink to="/Registration/Linktree/DeepExperience"> -->
-        <irregularButton btnTitle="沉浸式體驗" disable="true" />
+      <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
+        <irregularButton btnTitle="大學充值" disable="true"/>
       <!-- </RouterLink> -->
     </div>
   </div>
