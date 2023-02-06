@@ -62,7 +62,7 @@ onMounted(() => {
   }
   document.getElementById('next').addEventListener('click', onNextPage);
 
-  pdfjsLib.getDocument('/ComputerScienceandInformationEngineering.pdf').promise.then((doc) => {
+  pdfjsLib.getDocument('/Psychology.pdf').promise.then((doc) => {
     pdfDoc = doc;
     document.getElementById('page_total').textContent = doc.numPages;
     renderPage(pageNum);

@@ -180,6 +180,11 @@ const router = createRouter({
           component: () => import('../views/ThemeColumn/SelfLearn/FinancialManagement.vue'),
         },
         {
+          path: 'BookRecommend',
+          name: 'BookRecommend',
+          component: () => import('../views/ThemeColumn/SelfLearn/BookRecommend.vue'),
+        },
+        {
           path: 'TimeManagement',
           name: 'TimeManagement',
           component: () => import('../views/ThemeColumn/CollegeLife/TimeManagement.vue'),

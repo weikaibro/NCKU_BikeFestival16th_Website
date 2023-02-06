@@ -1,6 +1,14 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 const dialogTitle = ref("單車節緣起")
+onMounted(() => {
+  var content = document.getElementById("content")
+  var memberImg1 = document.getElementById("memberImg1")
+  var memberImg2 = document.getElementById("memberImg2")
+  content.innerHTML = "猶記得高三那年，一出學測考場，人生頓失方向。該讀哪間學校、報什麼學系？此起彼落的疑問，成了每個考生心中的困擾，也迴盪在每次與父母、導師的談話間。不管閱覽了多少網路資料，你仍然躊躇不前，甚至更加心焦。<br><strong>—— 這樣的選擇是對的嗎？去了那裡會不會後悔？</strong><br><br>已然進入所屬科系的我們，知道這樣的輪迴仍然不斷上演。所以我們自問，該如何消弭高中生們內心的不安。<span class='text-myblue'><strong>曾經籠罩我們的迷惘，就由我們來驅散。這份理念，就是單車節的初心。</strong></span>"
+  memberImg1.className = "hidden max-md:w-[100px]"
+  memberImg2.className = "hidden max-md:w-[100px]"
+})
 const scrollRightChangeContent = () => {
   var content = document.getElementById("content")
   var memberImg1 = document.getElementById("memberImg1")
@@ -42,7 +50,7 @@ const scrollLeftChangeContent = () => {
     dialogTitle.value = "成為學子們的燈塔"
     memberImg1.className = "hidden max-md:w-[100px]"
   } else if (dialogTitle.value == "總籌的話 - 劉子綾") {
-    content.innerHTML = "我們都曾經站在升學道路的岔口上，在面對未知的結果當前我們是不安的，所以成大單車節希望能夠幫助全台灣高中生，進行升學選擇前都能夠有足夠充足的先備知識，無論是針對課業的準備、系所的認識，或是課外大學生活的日常、組織活動的參與等，弭平高中和大學端間的資訊落差，做高中生們的引路人。"
+    content.innerHTML = "我們都曾經站在升學道路的岔口上，在面對未知的結果當前我們是不安的，所以成大單車節希望能夠幫助全台灣高中生，進行升學選擇前都能夠有足夠充足的先備知識，無論是針對課業的準備、系所的認識，或是課外大學生活的日常、組織活動的參與等，<span class='text-myblue'><strong>弭平高中和大學端間的資訊落差，做高中生們的引路人。</strong></span>"
     dialogTitle.value = "總籌的話 - 姜昕"
     rightArrowImg.className = "w-full "
     memberImg1.className = "max-md:w-[100px]"

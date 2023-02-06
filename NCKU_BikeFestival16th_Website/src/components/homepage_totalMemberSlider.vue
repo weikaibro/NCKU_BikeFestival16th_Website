@@ -1,14 +1,30 @@
 <script setup>
 import { ref } from 'vue';
-import { useMemberStore } from '../stores/memberInfo.js'
-const store = useMemberStore();
+// import { useMemberStore } from '../stores/memberInfo.js'
+// const store = useMemberStore();
+const scrollLeft = () => {
+  var scrollTo = document.getElementById('scrollTo');
+  scrollTo.scrollBy({
+    left: -250,
+    behavior: 'smooth'
+  });
+}
+const scrollRight = () => {
+  var scrollTo = document.getElementById('scrollTo');
+  scrollTo.scrollBy({
+    left: 250,
+    behavior: 'smooth'
+  });
+  
+  if (scrollTo.left == 1000) console.log('Hi')
+}
 </script>
 
 <template>
   <div 
     class="absolute z-10 left-8 top-32 w-[250px] transition duration-200 
       hover:-translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
-    @click="store.scrollLeft"
+    @click="scrollLeft"
   >
     <img src="../assets/arrow_left.svg" alt="leftArrow">   
   </div>
@@ -211,7 +227,7 @@ const store = useMemberStore();
   <div 
     class="absolute z-10 right-8 top-32 w-[250px] transition duration-200 
       hover:translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
-    @click="store.scrollRight"
+    @click="scrollRight"
   >
     <img src="../assets/arrow_right.svg" alt="rightArrow">
   </div>

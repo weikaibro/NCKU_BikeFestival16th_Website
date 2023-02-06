@@ -13,9 +13,9 @@ import irregularButton from '../../components/irregularButton.vue'
       <RouterLink to="/Registration/Linktree/DepartmentTour">
         <irregularButton btnTitle="系館導覽" />
       </RouterLink>
-      <!-- <RouterLink to="/Registration/Linktree/DeepExperience"> -->
-        <irregularButton btnTitle="沉浸式體驗" disable="true" />
-      <!-- </RouterLink> -->
+      <RouterLink to="/Registration/Linktree/DeepExperience">
+        <irregularButton btnTitle="沉浸式體驗" />
+      </RouterLink>
     </div>
 
 

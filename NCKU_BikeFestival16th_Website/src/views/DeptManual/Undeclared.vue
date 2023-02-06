@@ -51,7 +51,7 @@ const show = () => {
           </div>
         </RouterLink> -->
         <!-- Laptop -->
-        <div class="text-3xl mt-10 mb-6 font-bold max-xl:hidden">不分系</div>
+        <div class="text-3xl mt-10 mb-6 font-bold max-xl:hidden">不分學院</div>
         <ul class="max-xl:hidden">
           <li 
             v-for="(chosen, index) in chosenDept"

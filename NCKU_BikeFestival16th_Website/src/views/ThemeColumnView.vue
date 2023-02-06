@@ -1,13 +1,12 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
-import SwitchButton from '../components/SwitchButton.vue';
 import homepage_lineHeader from '../components/homepage_lineHeader.vue';
 import Health from '../views/ThemeColumn/Health.vue'
 import Enrollment from '../views/ThemeColumn/Enrollment.vue'
 import SelfLearn from '../views/ThemeColumn/SelfLearn.vue'
 import CollegeLife from '../views/ThemeColumn/CollegeLife.vue'
-import { ref, computed } from "vue";
+import { ref, shallowRef, computed } from "vue";
 const buttonName = ref(["健康", "升學", "自學", "大學生活"]);
 const num = ref(0);
 const Switch = (index) => {
@@ -16,20 +15,11 @@ const Switch = (index) => {
 };
 const showContent = computed(() => {
   switch (num.value) {
-    case 0: {
-      return Health;
-    }
-    case 1: {
-      return Enrollment;
-    }
-    case 2: {
-      return SelfLearn;
-    }
-    case 3: {
-      return CollegeLife;
-    }
-    default:
-      break;
+    case 0: return Health;
+    case 1: return Enrollment;
+    case 2: return SelfLearn;
+    case 3: return CollegeLife;
+    default: return Health;
   }
 });
 </script>
@@ -54,8 +44,11 @@ const showContent = computed(() => {
     </div>
 
     <Transition mode="out-in">
-      <component :is="showContent" />
+      <!-- <KeepAlive include="num"> -->
+        <component :is="showContent" />
+      <!-- </KeepAlive> -->
     </Transition>
+
 
     <Footer />
   </div>

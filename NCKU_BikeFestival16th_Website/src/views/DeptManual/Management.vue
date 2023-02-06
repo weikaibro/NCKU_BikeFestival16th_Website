@@ -3,7 +3,11 @@ import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import Navbar from '../../components/Navbar.vue';
 import Footer from '../../components/Footer.vue';
-// import 
+import Accountancy from './ManagementManual/Accountancy.vue';
+import BusinessAdministration from './ManagementManual/BusinessAdministration.vue';
+import IndustrialandInformationManagement from './ManagementManual/IndustrialandInformationManagement.vue';
+import Statistics from './ManagementManual/Statistics.vue';
+import TransportationandCommunication from './ManagementManual/TransportationandCommunication.vue';
 
 const chosenDept = ref([
   "會計系",
@@ -15,7 +19,6 @@ const chosenDept = ref([
 const userChosenNum = ref(0)
 const userChosen = (index) => {
   userChosenNum.value = index;
-  console.log(index)
 }
 const showContent = computed(() => {
   switch (userChosenNum.value) {

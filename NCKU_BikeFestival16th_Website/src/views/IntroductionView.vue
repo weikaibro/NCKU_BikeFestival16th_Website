@@ -48,7 +48,7 @@ import irregularButton from "../components/irregularButton.vue";
         <irregularButton btnTitle="舞台活動" />
       </RouterLink>
       <RouterLink to="/Introduction/Exposition">
-        <irregularButton btnTitle="系館導覽" />
+        <irregularButton btnTitle="科系博覽" />
       </RouterLink>
       <RouterLink to="/Introduction/BikeExperience">
         <irregularButton btnTitle="單車體驗" />

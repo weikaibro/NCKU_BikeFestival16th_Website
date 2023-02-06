@@ -12,7 +12,6 @@ import homepage_themeActivity from "../components/homepage_themeActivity.vue";
 import homepage_backgroundSlider from "../components/homepage_backgroundSlider.vue";
 import homepage_totalMemberSlider from "../components/homepage_totalMemberSlider.vue";
 
-const SouvenirContent = "Coming Soon!"
 </script>
 
 <template>

@@ -14,7 +14,6 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20 max-sm:mx-4">
       <div>
-        <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_starPlan.png" alt="" />
         <picture>
           <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_starPlan.webp" type="image/webp">
           <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_starPlan.png" alt="starPlan">
