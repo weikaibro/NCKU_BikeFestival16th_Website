@@ -12,6 +12,8 @@ let videoPlayer = {};
 let progressBar = ref(null);
 let marquee1 = ref(null);
 let marquee2 = ref(null);
+let marqueeMom = ref(null);
+let progressBarMom = ref(null);
 let videoName = ref("");
 let srcName = reactive([
   "/src/assets/WelcometoAnimation.mp4",
@@ -64,16 +66,20 @@ const last = () => {
   timer = 0;
 };
 const progressControl = (event) => {
-  let width = 920 * (event.target.currentTime / event.target.duration);
+  let width =
+    progressBarMom.value.offsetWidth *
+    (event.target.currentTime / event.target.duration);
   progressBar.value.style.cssText = `width: ${width}px;`;
   if (event.target.currentTime >= event.target.duration) {
     next();
   }
 };
 const progressClick = (event) => {
-  let width = event.pageX - 370;
+  let width = event.pageX - progressBar.value.offsetLeft;
   progressBar.value.style.cssText = `width: ${width}px;`;
-  videoPlayer.currentTime(videoPlayer.duration() * (width / 920));
+  videoPlayer.currentTime(
+    videoPlayer.duration() * (width / progressBarMom.value.offsetWidth)
+  );
   if (videoPlayer.currentTime() >= videoPlayer.duration()) {
     next();
   }
@@ -82,12 +88,12 @@ const progressClick = (event) => {
 setInterval(() => {
   timer++;
   try {
-    if (timer !== 1200) {
+    if (timer !== marqueeMom.value.offsetWidth) {
       marquee1.value.style.cssText = `--tw-translate-x: ${
-        timer - 1200
+        timer - marqueeMom.value.offsetWidth
       }px; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));`;
       marquee2.value.style.cssText = `--tw-translate-x: ${
-        timer - 600
+        timer - marquee1.value.offsetWidth
       }px; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));`;
     } else {
       marquee1.value.style.cssText = `--tw-translate-x: -1200px; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));`;
@@ -103,11 +109,10 @@ setInterval(() => {
 <template>
   <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
   <!-- top + bottom -->
-  <div class="bg-black h-screen overflow-hidden">
+  <div class="bg-black h-screen overflow-y-auto">
     <!-- frame -->
     <div
-      class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
-        max-sm:mx-4 max-sm:px-4 max-sm:text-base"
+      class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto max-sm:mx-4 max-sm:px-4 max-sm:text-base max-sm:h-[70%]"
     >
       <video
         id="myVideo"
@@ -118,7 +123,9 @@ setInterval(() => {
       ></video>
       <div class="text-3xl font-bold">大學充值站</div>
       <br />
-      大學充值站，為你召集一群熱心且經驗滿滿的學長姐，淬鍊自身經驗，第一手分享給來參加的你。從課業、生活、人際關係、多元經驗和其他特殊主題出發，為你拼湊出大學生活的全貌。除了精彩的實體演講與展覽外，在各平台上也有收錄 Podcast 特輯。讓每個對大學生活充滿好奇的你，不受時間、距離限制，只要有網路收聽的地方，就是你探索大學生活的大平台！
+      大學充值站，為你召集一群熱心且經驗滿滿的學長姐，淬鍊自身經驗，第一手分享給來參加的你。從課業、生活、人際關係、多元經驗和其他特殊主題出發，為你拼湊出大學生活的全貌。除了精彩的實體演講與展覽外，在各平台上也有收錄
+      Podcast
+      特輯。讓每個對大學生活充滿好奇的你，不受時間、距離限制，只要有網路收聽的地方，就是你探索大學生活的大平台！
       <br /><br />
       1. 動態校園講者：
       <br />
@@ -130,18 +137,24 @@ setInterval(() => {
       <br /><br />
       3. 線上 Podcast：
       <br />
-      總共 7 集的單集，以訪談的形式，邀請校園講者線上免費串流。內容涵蓋但不限於學業、大學迷思、校內外活動的經驗分享。學長姐們將最真實的生活經驗，毫無保留地以聲音的形式傳承給你，陪伴你在活動現場以外，盡情探索成大的校園生活。
+      總共 7
+      集的單集，以訪談的形式，邀請校園講者線上免費串流。內容涵蓋但不限於學業、大學迷思、校內外活動的經驗分享。學長姐們將最真實的生活經驗，毫無保留地以聲音的形式傳承給你，陪伴你在活動現場以外，盡情探索成大的校園生活。
 
       <br /><br />
       <div class="text-3xl font-bold">活動資訊</div>
       <br />
-      地點：校園講者與個人展將在光復校區唯農大樓舉行 <br /><br>
+      地點：校園講者與個人展將在光復校區唯農大樓舉行 <br /><br />
       ＊校園講者為限額講座，每場上限 30 人，有興趣參與演講記得到報名專區報名喔！
       <br />
       ＊如對以上內容有任何疑惑，歡迎斯訊成大單車節臉書粉專或 IG 官方帳號 <br />
       <br />
       <span class="text-3xl font-bold"> 專案地圖 </span>
-      <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
+      <iframe
+        class="my-12"
+        src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F"
+        width="1080"
+        height="480"
+      ></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
       <br />
       部長 外文114 劉世瑜
@@ -152,23 +165,30 @@ setInterval(() => {
       部員 電機115 魏子翔 <br />
       部員 機械114 鄭皓澤
     </div>
-    <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
+    <div
+      class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0 hidden"
+    >
       <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
-        <irregularButton btnTitle="即將開放" disable="true" />
+
       <!-- </RouterLink> -->
     </div>
     <!-- bottom -->
-    <div class="bg-black flex justify-between ml-12 flex-shrink-0 max-sm:ml-0 hidden">
+    <div
+      class="bg-black flex flex-shrink-0 max-sm:ml-0 justify-center max-sm:px-2 max-sm:flex-wrap"
+    >
       <!-- progress frame -->
       <div
-        class="w-[1200px] ml-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap max-sm:mt-0"
+        class="w-[72vw] h-min mr-4 mt-2 flex items-start gap-y-0 flex-shrink-0 flex-wrap max-sm:mr-0 max-sm:w-full"
       >
         <!-- Marquee -->
-        <div class="w-[1200px] overflow-hidden flex flex-nowrap mt-5 max-sm:mt-1">
-          <div ref="marquee1" class="w-[600px] bg-transparent text-white h-6">
+        <div
+          ref="marqueeMom"
+          class="w-full overflow-hidden flex flex-nowrap mt-5 max-sm:mt-0"
+        >
+          <div ref="marquee1" class="w-1/2 bg-transparent text-white h-6 max-sm:h-min max-sm:text-xs">
             {{ videoName }}
           </div>
-          <div ref="marquee2" class="w-[600px] bg-transparent text-white h-6">
+          <div ref="marquee2" class="w-1/2 bg-transparent text-white h-6 max-sm:h-min max-sm:text-xs">
             {{ videoName }}
           </div>
         </div>
@@ -199,16 +219,20 @@ setInterval(() => {
         </button>
         <!-- progress bar -->
         <div
-          class="w-[900px] bg-transparent h-5 mt-[24px] mb-7 flex flex-shrink-0 flex-nowrap max-sm:mt-[10px]"
+          ref="progressBarMom"
+          class="w-[calc(100%_-_240px)] bg-transparent h-5 mt-[18px] mr-3 flex flex-shrink-0 flex-nowrap max-sm:mt-[6px] max-sm:w-[calc(100%_-_150px)]"
           @click="progressClick"
         >
           <div
             ref="progressBar"
-            class="bg-white h-1 mt-2 mb-7 flex-shrink-0"
+            class="bg-white h-1 mt-2 mb-8 flex-shrink-0"
             style="width: 0px"
           ></div>
-          <div class="bg-white w-5 h-5 mb-7 flex-shrink-0 rounded-full"></div>
+          <div class="bg-white w-5 h-5 mb-8 flex-shrink-0 rounded-full"></div>
         </div>
+      </div>
+      <div class="mt-5 max-sm:mt-0">
+        <irregularButton btnTitle="即將開放" disable="true" />
       </div>
     </div>
   </div>
