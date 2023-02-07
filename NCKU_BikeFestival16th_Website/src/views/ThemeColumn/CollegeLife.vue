@@ -1,12 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
-const contents = ref([
-  { to:"" , imgSrc: "assets/themeCol_TimeManagement/timeManagement1.png", text1: "" },
-  { to:"" , imgSrc: "", text1: "", text2: "" },
-  { to:"/ThemeColumn/" , imgSrc: "", text1: "" },
-  { to:"/ThemeColumn/" , imgSrc: "", text1: "" },
-])
 </script>
 
 <template>
@@ -18,7 +12,7 @@ const contents = ref([
       <RouterLink to="/ThemeColumn/TimeManagement">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_TimeManagement/timeManagement1.png" alt="TimeManagement">
           <div class="text-xl font-bold">
@@ -30,7 +24,7 @@ const contents = ref([
       <RouterLink to="/ThemeColumn/AfterClassInfo">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_AfterClassInfo/afterClassInfo1.png" alt="AfterClassInfo">
           <div class="text-xl font-bold">
@@ -42,10 +36,10 @@ const contents = ref([
       <RouterLink to="/ThemeColumn/Slashie">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/Slashie.png" alt="Slashie">
-          <div class="text-xl font-bold">
+          <div class="text-xl font-bold mx-4">
             分身不乏術——斜槓是在斜什麼
           </div>
         </div>
@@ -53,10 +47,10 @@ const contents = ref([
       <RouterLink to="/ThemeColumn/PartTimeJob">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/PartTimeJob.png" alt="PartTimeJob">
-          <div class="text-xl font-bold">
+          <div class="text-xl font-bold mx-4">
             踏入社會的第一步：打工大小事
           </div>
         </div>

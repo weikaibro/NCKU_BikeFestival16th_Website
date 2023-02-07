@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/HealthRoom">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_healthEye.png" alt="HealthRoom">
           <div class="text-xl font-bold">
@@ -23,7 +23,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/StayUpStudy">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_Stayup/themeCol_stayup1.png" alt="StayUpStudy">
           <div class="text-xl font-bold">
@@ -34,7 +34,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/AnxietyBeforeExam">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_Emotion/themeCol_emotion1.png" alt="AnxietyBeforeExam">
           <div class="text-xl font-bold">
@@ -45,7 +45,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/DietGuide">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_DietGuide/themeCol_dietGuide1.png" alt="DietGuide">
           <div class="text-xl font-bold">

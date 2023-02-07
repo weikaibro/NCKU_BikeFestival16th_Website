@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/NotePro">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_NotePro/NotePro1.jpg" alt="NotePro">
           <div class="text-xl font-bold">
@@ -22,9 +22,9 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/PlatformForDummies">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
-          <img width="250" src="../../assets/themeCol_PlatformForDummies/PlatformForDummies1.png" alt="PlatformForDummies">
+          <img class="w-[250px] max-sm:w-[200px]" src="../../assets/themeCol_PlatformForDummies/PlatformForDummies1.png" alt="PlatformForDummies">
           <div class="text-xl font-bold">
             平台資源懶人包
           </div>
@@ -33,7 +33,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/FinancialManagement">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.png" alt="FinancialManagement">
           <div class="text-xl font-bold">
@@ -44,7 +44,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/BookRecommend">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_BookRecommend/BookRecommend1.jpg" alt="BookRecommend">
           <div class="text-xl font-bold">

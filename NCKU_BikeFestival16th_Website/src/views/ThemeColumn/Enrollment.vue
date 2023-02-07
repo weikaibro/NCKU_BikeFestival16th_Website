@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/LearningProcessStrategy">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy1.png" alt="LearningProcessStrategy">
           <div class="text-xl font-bold">
@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/EnrollmentForDummies">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_enrollmentForDummies/enrollmentForDummies1.png" alt="EnrollmentForDummies">
           <div class="text-xl font-bold">
@@ -33,10 +33,10 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/AllRoadsLeadToRome">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_AllRoadsLeadToRome/AllRoadsLeadToRome1.png" alt="AllRoadsLeadToRome">
-          <div class="text-xl font-bold">
+          <div class="text-xl font-bold mx-4">
             升學管道總整理：條條大路通羅馬
           </div>
         </div>
@@ -44,7 +44,7 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/ThemeColumn/StarPlan">
         <div
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5"
+            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_starPlan.png" alt="StarPlan">
           <div class="text-xl font-bold">
