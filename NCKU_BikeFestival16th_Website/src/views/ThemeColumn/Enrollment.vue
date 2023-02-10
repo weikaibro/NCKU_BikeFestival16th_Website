@@ -46,7 +46,7 @@ import { RouterLink } from 'vue-router';
           class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
-          <img src="../../assets/themeCol_starPlan.png" alt="StarPlan">
+          <img src="../../assets/themeCol_StarPlan/themeCol_starPlan1.png" alt="StarPlan">
           <div class="text-xl font-bold">
             繁星到底怎麼繁？
           </div>

@@ -13,6 +13,9 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 升學" keyWord="學習歷程" theme="學習歷程全攻略" />
 
     <div class="mx-60 my-20 max-sm:mx-4">
+      <div class="text-center text-xl leading-9 my-16">
+        筆者：邱暄澐 / 編修：廖珺安
+      </div>
       <picture>
         <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy1.png" type="image/webp">
         <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy1.png" alt="LearningProcessStrategy">
@@ -26,7 +29,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br><br> 但想必大家需要一點準備方向，所以我們整理出「5大項內容」來給大家參考，
         <br> 保證大家看完會收穫滿滿滿！
         <br><br> 首先第一個主題是我們的 <strong>「外語類檢定」</strong>，在這個全球化的世代帶下，如何與外界的溝通成為一個重要的課題，而需要用到最重要的工具就是外語啦～
-        <br> 跟著我們的腳步一起研究各種檢定，藉由通過這些檢定增強自己的能力之外，也對日後在申請不管是國內或是海外的大學，甚至是對未來的工作，都能擁有比別人更加亮眼履歷！
+        <br> 跟著我們的腳步一起研究各種檢定，藉由通過這些檢定增強自己的能力之外，也對日後在申請不管是國內或是海外的大學，甚至是對未來的工作，都能擁有比別人更加亮眼的履歷！
       </div>
       <picture>
         <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_LearningProcessStrategy/LearningProcessStrategy2.png" type="image/webp">
@@ -71,7 +74,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         </ul>
 
         <br><strong>全民英檢 GEPT</strong> 
-        <br> 簡介：由台灣教育部補助財團法人語言培訓中心（LTTC）研發的英語分級測驗，為國內升學最常參考的英文檢定之一。分級制度可供不同需求的人報考，個分級的通過標準不同，可洽詢其官網。
+        <br> 簡介：由台灣教育部補助財團法人語言培訓中心（LTTC）研發的英語分級測驗，為國內升學最常參考的英文檢定之一。分級制度可供不同需求的人報考，各分級的通過標準不同，可洽詢其官網。
         <br><br> 考試內容：聽／說／讀／寫
         <br> 分級：初／中／中高／高／優級
         <br><br> 場次

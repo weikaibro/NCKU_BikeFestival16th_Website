@@ -15,9 +15,7 @@ const scrollRight = () => {
     left: 250,
     behavior: 'smooth'
   });
-  
-  if (scrollTo.left == 1000) console.log('Hi')
-}
+} 
 </script>
 
 <template>
@@ -74,7 +72,7 @@ const scrollRight = () => {
           <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="../assets/teamMember/member4.webp" type="image/webp">
           <img class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" src="../assets/teamMember/member4.png" alt="member">
         </picture>
-        <span class="mt-4 text-2xl font-bold max-md:mt-2">張鈺昕</span>
+        <span class="mt-4 text-2xl font-bold max-md:mt-2">張鈺欣</span>
         <span class="fontSize mt-2 text-center">秘書部</span>
         <span class="fontSize">政治114</span>
         <span class="fontSize mt-1 text-center">永遠不要害怕失敗，「成功」的意義，由你來定義。</span>
@@ -248,15 +246,9 @@ const scrollRight = () => {
 .fontSize {
   font-size: 21px;
 }
-.smallFontSize {
-  font-size: 16px;
-}
 @media (max-width: 768px) {
   .fontSize {
     font-size: 16px;
   }
-  /* .fontSize {
-    font-size: 12px;
-  } */
 }
 </style>

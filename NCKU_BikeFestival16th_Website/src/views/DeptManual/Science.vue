@@ -46,12 +46,26 @@ const showDept = ref(false)
 const show = () => {
   showDept.value = !showDept.value;
 };
+const scrollLeft = () => {
+  var scrollTo = document.getElementById('scrollTo');
+  scrollTo.scrollBy({
+    left: -250,
+    behavior: 'smooth'
+  });
+}
+const scrollRight = () => {
+  var scrollTo = document.getElementById('scrollTo');
+  scrollTo.scrollBy({
+    left: 250,
+    behavior: 'smooth'
+  });
+} 
 </script>
 
 <template>
   <div>
     <Navbar />
-    <div class="flex mx-12 h-[1300px] max-xl:mx-0 max-xl:flex-col max-xl:h-[1500px] max-sm:h-[1200px]">
+    <div class="flex mx-12 h-[1300px] max-xl:mx-0 max-xl:flex-col max-xl:h-[1500px] max-sm:h-[1100px]">
       <!-- selected dept -->
       <div class="relative flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[550px]">
         <!-- RWD -->
@@ -99,17 +113,83 @@ const show = () => {
       </Transition>
     </div>
 
-    <div class="mt-16 p-0 w-screen h-[800px] hidden">
+    <div class="relative mt-16 p-0 w-screen h-[800px]">
       <div class="flex justify-center items-center text-black text-3xl mb-16 font-bold">學長姐經驗分享</div>
-      <div class="bg-slate-200">
-        <!-- <homepage_totalMemberSlider/> -->
-        <picture class>
-          <source srcset="../../assets/comingSoon.webp" type="image/webp">
-          <img src="../../assets/comingSoon.png" alt="">
-        </picture>
+
+      <div 
+        class="absolute z-10 left-8 top-60 w-[250px] transition duration-200 
+          hover:-translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
+        @click="scrollLeft"
+      >
+        <img src="../../assets/arrow_left.svg" alt="leftArrow">   
+      </div>
+
+      <div class="absolute z-0 inset-x-0 mx-auto bg-neutral-100
+        w-[75%] h-[580px] max-sm:w-screen max-sm:h-[460px]"
+      >
+        <div 
+          id="scrollTo"
+          class="snap-x snap-mandatory overflow-hidden 
+            flex flex-row gap-8 mx-12 items-center h-full
+            max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
+        >
+
+          <div class="memberInfo">
+            <!-- <picture> -->
+              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science1.jpg" alt="member">
+            <!-- </picture> -->
+            <span class="mt-10 text-3xl font-bold max-md:mt-6">葉紹宇</span>
+            <span class="fontSize mt-3 text-center">數學系 114</span>
+            <span class="fontSize mt-2 text-center">#數學系課那麼硬還能參加那麼多活動？？？</span>
+          </div>
+          <div class="memberInfo">
+            <!-- <picture> -->
+              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science2.JPG" alt="member">
+            <!-- </picture> -->
+            <span class="mt-10 text-3xl font-bold max-md:mt-6">林庭永</span>
+            <span class="fontSize mt-3 text-center">物理學系 112</span>
+            <span class="fontSize mt-2 text-center">#過勞爆吐送急診</span>
+          </div>
+          <div class="memberInfo">
+            <!-- <picture> -->
+              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+              <img class="rounded-full w-[80%] min-h-[244px] object-cover mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Science/Science3.jpg" alt="member">
+            <!-- </picture> -->
+            <span class="mt-10 text-3xl font-bold max-md:mt-6">廖珮芸</span>
+            <span class="fontSize mt-3 text-center">地球科學系 113</span>
+            <span class="fontSize mt-2 text-center">#從政治到地科</span>
+          </div>
+          <div class="memberInfo">
+            <!-- <picture> -->
+              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science4.JPG" alt="member">
+            <!-- </picture> -->
+            <span class="mt-10 text-3xl font-bold max-md:mt-6">林奕丞</span>
+            <span class="fontSize mt-3 text-center">光電科學與工程學系 114</span>
+            <span class="fontSize mt-2 text-center">#用最穩的路，爬最陡的山</span>
+          </div>
+          <div class="memberInfo">
+            <!-- <picture> -->
+              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+              <img class="rounded-full w-[80%] mx-auto mt-20 mb-10 max-sm:mb-4" src="../../assets/DeptManual/Science/Science5.JPG" alt="member">
+            <!-- </picture> -->
+            <span class="mt-10 text-3xl font-bold max-md:mt-6">毛胤禎</span>
+            <span class="fontSize mt-3 text-center">化學系 112</span>
+            <span class="fontSize mt-2 text-center">#大學是個尋找人生目標，並且學習如何接近目標的地方</span>
+          </div>
+        </div>
+      </div>
+
+      <div 
+        class="absolute z-10 right-8 top-60 w-[250px] transition duration-200 
+          hover:translate-x-3 hover:cursor-pointer active:opacity-50 active:scale-75 max-sm:hidden"
+        @click="scrollRight"
+      >
+        <img src="../../assets/arrow_right.svg" alt="rightArrow">
       </div>
       
-      <!-- <img src="../../assets/comingSoonWithBg.png" alt=""> -->
     </div>
 
     <Footer />
@@ -117,6 +197,25 @@ const show = () => {
 </template>
 
 <style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .memberInfo {
+    @apply snap-center flex flex-col flex-none 
+      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
+      max-sm:w-[250px];
+  }
+}
+.fontSize {
+  font-size: 21px;
+}
+@media (max-width: 768px) {
+  .fontSize {
+    font-size: 18px;
+  }
+}
 .changeBg {
   background-color: #003cd1;
 }
