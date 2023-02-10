@@ -30,7 +30,11 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
             <li>經驗分享：有各科系學長姐的經驗分享，也有教授或社會人士的經驗談</li>
             <li>畢業出路：透過資料庫統計出各科系畢業後的出路以及待遇等</li>
           </ul>
-          <br><br><a target="_blank" rel="noreferrer noopenner" href="https://collego.edu.tw/">ColleGO!</a> 
+          <br><br><a target="_blank" rel="noreferrer noopenner" href="https://collego.edu.tw/">
+            <span class="linkEff">
+              ColleGO!
+            </span> 
+          </a> 
           <br> 這個網站的內容整理的很詳細，網站版面好看也很直觀。這裡的資訊很多是以圖表方式呈現的，可以很清楚且快速的理解他們想呈現的內容！
         </div>
         <picture>
@@ -57,8 +61,13 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br> 1. 興趣類型介紹
           <br> 2. 加深加廣課程介紹
           <br> 3. 焦點話題：包含各種升學相關文章
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://ucan.moe.edu.tw/">UCAN大專院校就業職能平台</a> / 
-            <a target="_blank" rel="noreferrer noopenner" href="http://www.hollandexam.com/hollandQuiz.aspx">1111人力銀行Holland學職涯探索平臺</a> </span>
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://ucan.moe.edu.tw/">
+            <span class="linkEff">
+              UCAN大專院校就業職能平台
+            </span>
+          </a> / 
+            <a target="_blank" rel="noreferrer noopenner" href="http://www.hollandexam.com/hollandQuiz.aspx">
+              <span class="linkEff">1111人力銀行Holland學職涯探索平臺</span></a> </span>
           <br> 這兩個網站主要的功能是提供職涯興趣測驗，讓學生更了解自己未來可發展的方向！下面是興趣類型的分類，讓大家先對六種興趣類型有個基礎的概念～
         </div>
         <picture>
@@ -79,7 +88,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br> 偏好競爭的環境，喜歡說服、銷售與宣傳
           <br><br> 6. 事務型（Conventional） ＃組織 ＃系統 ＃精確
           <br> 處事精確、要求完美，講究細節、井然有序的狀態
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://ioh.tw/">IOH</a> </span> 
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://ioh.tw/"><span class="linkEff">IOH</span></a> </span> 
           <br> 這是一個開放個人經驗的分享平台，創辦初衷是希望讓在台灣沒有資源或人脈了解在求學與工作經驗的人，可以透過 IOH 去了解世界，讓他們敢於作夢，不被環境所受限。
         </div>
         <picture>
@@ -93,7 +102,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br>1. 學長姐分享：包含各科系學長姐的求學經驗、心路歷程、資源等，也包含留學海外的學長姐分享，可以解答一些申請留學或交換方面的疑惑。
           <br>2. 教授談科系：由教授親自告訴你該校系的特色以及資源，也會提供一些學習歷程及面試方面的資訊，讓學生知道教授真正想看到的特質為何。
           <br>3. 工作講座：分享在世界各地的工作內容、性質、工作方式、生活風格以及所需的專業技能以及學經歷
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.cheers.com.tw/career">生涯探索@cheers</a> </span> 
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.cheers.com.tw/career"><span class="linkEff">生涯探索@cheers</span></a> </span> 
           <br> Cheers是一個由天下雜誌出版的雜誌，其實他們主要在更新的是Cheers 快樂工作人這個網站，不過生涯探索@cheers的內容會和升學以及生涯探索較為相關，所以小編才選擇介紹這個網站！雖然比較少更新，但還是有很多實用的資訊，如果大家想要看最新資訊記得到快樂工作人的網站看哦～
         </div>
         <picture>
@@ -114,7 +123,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
             <li>大學搶先看：學院數、師生比、經費比、獨特優勢及口碑科系</li>
             <li>聽學長姐說：人文社科和理工資訊類學長姐的經驗分享</li>
           </ul>
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.104.com.tw/jb/career/department/navigation?browser=2&degree=2">104升學就業地圖</a></span> 
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.104.com.tw/jb/career/department/navigation?browser=2&degree=2"><span class="linkEff">104升學就業地圖</span></a></span> 
         </div>
         <picture>
           <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies6.png" type="image/webp">
@@ -131,7 +140,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           </ul>
           <br><br><span class="font-bold text-2xl">升學資訊網站</span> 
           <br> 接著要介紹的是升學資訊相關網站，這些網站會整理很多申請大學相關的內容，包含各種升學管道的介紹，還有一些考試、營隊、活動等等的資訊！
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://university-tw.ldkrsi.men/">University TW</a></span> 
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://university-tw.ldkrsi.men/"><span class="linkEff">University TW</span></a></span> 
         </div>
         <picture>
           <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies7.png" type="image/webp">
@@ -147,7 +156,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
             <li>升學內容：篩選標準、招生人數、採計科目等</li>
             <li>大學內容：大學男女比、新生註冊率</li>
           </ul>
-          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.unews.com.tw/">大學問</a></span> 
+          <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.unews.com.tw/"><span class="linkEff">大學問</span></a></span> 
         </div>
         <picture>
           <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies8.png" type="image/webp">
@@ -177,9 +186,9 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         </picture>
         <div class="text-xl leading-9">
           落點分析的網站包含
-          <a target="_blank" rel="noreferrer noopenner" href="https://hs.1111.com.tw/testAnalysisType.aspx?agent=of_email_analysis_highschool_03">1111</a> /
-          <a target="_blank" rel="noreferrer noopenner" href="https://student.104.com.tw/hs/">104</a>人力銀行、
-          <a target="_blank" rel="noreferrer noopenner" href="https://www.com.tw/p.html">儒林</a>等，這些網站會依據各升學管道的入學門檻，分析出你的最適落點。在臉書專欄中沒有把儒林貼出來，怕會有點像在打廣告，但這也是大家最常使用的落點分析網站之一哦！每個網站的落點分析結果都會不一樣，建議多參考不同的結果來排出最適合你的志願序。
+          <a target="_blank" rel="noreferrer noopenner" href="https://hs.1111.com.tw/testAnalysisType.aspx?agent=of_email_analysis_highschool_03"><span class="linkEff">1111</span></a> /
+          <a target="_blank" rel="noreferrer noopenner" href="https://student.104.com.tw/hs/"><span class="linkEff">104</span></a>人力銀行、
+          <a target="_blank" rel="noreferrer noopenner" href="https://www.com.tw/p.html"><span class="linkEff">儒林</span></a>等，這些網站會依據各升學管道的入學門檻，分析出你的最適落點。在臉書專欄中沒有把儒林貼出來，怕會有點像在打廣告，但這也是大家最常使用的落點分析網站之一哦！每個網站的落點分析結果都會不一樣，建議多參考不同的結果來排出最適合你的志願序。
           <br> ＃小提醒：這些網站有些功能要經過註冊才可以使用
           <br><br> 以下是每個網站包含的落點分析內容：
           <ul class="list-disc list-inside ml-6">
@@ -222,7 +231,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 </template>
 
 <style scoped>
-a {
+.linkEff {
   transition: color 0.5s ease, box-shadow 0.5s ease;
   -o-transition: color 0.5s ease, box-shadow 0.5s ease;
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
@@ -232,7 +241,7 @@ a {
   text-decoration-color: #0ea5e9;
 }
 
-a:hover {
+.linkEff:hover {
   color: #fff;
   box-shadow: inset 0 -50px 0 0 #0ea5e9;
 }

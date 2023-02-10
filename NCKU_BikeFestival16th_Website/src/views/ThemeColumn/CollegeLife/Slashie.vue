@@ -13,7 +13,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="斜槓" theme="分身不乏術——斜槓是在斜什麼" />
 
     <div class="mx-60 my-20 max-sm:mx-4">
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/Slashie.png" alt="">
+      <div class="text-center text-xl leading-9 my-16">筆者：謝雅婷 / 編修：廖珺安</div>
+      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/Slashie.png" alt="Slashie">
       <div class="text-xl leading-9">
         小編在上大學後對生活的多樣性有更深認知，時常想著如何豐富自己的大學生活，了解到了生活不單單只有課業，還有餘能裕發展自己的興趣，甚至將其作為一項工作，藉由這篇文章想與大家分享大學生的斜槓，在學生與其他身份來去自如。
         <br><br>以下我們將分為四個部分來做分享
@@ -49,7 +50,9 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br> 看了以上的種種經歷，事實上我之所以投入，其實原因就是因為自身的興趣，以及是自身喜愛的領域。對我而言，我總認為實際做、應用，遠比只理解理論還要來得重要，更重要的是我認為現今的社會是變化快速的，過往僅於固定領域深耕，或許能在部分領域上，得到極高的成就，但卻難逃社會結構的變遷。因此，我希望這些我所投入的事務，因為自身的興趣做為開端，也因後續的深究，讓自身多獲得一項能力。
         <br><br> 參考網站：
         <a target="_blank" rel="noreferrer noopenner" href="https://startingedu.com/slash/">
-          到底什麼是「斜槓」？在開始斜槓人生前，你應該具備這4項思維！
+          <span class="linkEff">
+            到底什麼是「斜槓」？在開始斜槓人生前，你應該具備這4項思維！
+          </span>
         </a> 
       </div>
     </div>
@@ -64,7 +67,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 </template>
 
 <style scoped>
-a {
+.linkEff {
   transition: color 0.5s ease, box-shadow 0.5s ease;
   -o-transition: color 0.5s ease, box-shadow 0.5s ease;
   -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
@@ -74,7 +77,7 @@ a {
   text-decoration-color: #0ea5e9;
 }
 
-a:hover {
+.linkEff:hover {
   color: #fff;
   box-shadow: inset 0 -50px 0 0 #0ea5e9;
 }

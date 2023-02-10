@@ -47,221 +47,235 @@ function checkSelected() {
       </picture>
     </div>
 
-    <div class="px-36 pt-20 max-md:px-4">
-      <!-- intro -->
-      <div class="text-xl leading-8 max-sm:text-sm">
-        <div>2023 成大單車節｜遊覽車團體登記表單</div>
-        <div>
-          ｜第十六屆成大單車節活動時間：2023/3/4-2023/3/5 09:00 - 16:00
-          <br> 活動地點：台南市東區 國立成功大學
-          <br><br> ｜說 明
-          <br> * 本表單僅供交通工具為遊覽車需求之學校、組織、班級之登記， 尤其若貴單位欲租遊覽車往返，請務必填寫，以利活動當日追蹤安排。 
-          <br> * 若為個人或朋友揪團共襄盛舉、想要得到單車節限量紀念品，再請持續鎖定官網，我們將推出預購。
-          <br> * 關於遊覽車入場停靠方式會在日後以電子郵件告知，請務必留意信箱！
-          <br><br> ｜備 註
-          <br> * 此團體登記完全免費。
-          <br> * 對於成大單車節有任何問題，皆可以私訊粉專或聯絡人，我們會盡快回答您的問題。
-          <br><br> ｜聯絡人 姜昕｜
-          <a
-            class="linkEff"
-            href="https://www.facebook.com/jessie01081910/"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Facebook
-          </a>
-          <br> ｜聯絡人 劉子綾｜
-          <a
-            class="linkEff"
-            href="https://www.facebook.com/profile.php?id=100002291378285"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Facebook
-          </a>
-          <br> ｜粉絲專頁 成大單車節｜ 
-          <a
-            class="linkEff"
-            href="https://www.facebook.com/NCKUbikefestival/"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >
-            Facebook
-          </a>
-        </div>
-      </div>
-      <!-- form -->
-      <div>
-        <form 
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfsThqpVnv30auskKR9KkzQjfBegp36giluyw0BaLIjTnR2A/formResponse"
-          method="POST"
-          @submit.prevent="checkSelected"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子郵件 </p>
-            <input
-              name="emailAddress"
-              class="inputEff"
-              type="email"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <div class="text-lg my-6">遊覽車路線說明（由自強校區之長榮路校門口進出）</div> 
-            <img src="../assets/map.png" alt="">
-            <div class="text-lg my-6">
-              遊覽車團體登記
-              <br> 適用於交通方式為遊覽車之學校、組織或班級
-            </div>
-          </div>
-          <div class="mt-12">
-            <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問您代表的團體是？
-            </p>
-            <p class="mb-6">例如：OO高中O班、OO高中輔導室、OO補習班</p> 
-            
-            <input
-              name="entry.445642084"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問您的名字？（全名）
-            </p>
-            <input
-              name="entry.1719992985"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問您的聯絡電話？（格式: 0912-345678）
-            </p>
-            <input
-              name="entry.1881290345"
-              class="inputEff"
-              type="tel"
-              pattern="[0-9]{4}-[0-9]{6}"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請附上您的臉書個人頁面「網址」
-            </p>  
-            <p class="mb-6">
-              進入個人頁面複製網址列的網址即可（如有需要我們會使用臉書與您聯絡）
-            </p>
-            <input
-              name="entry.1369900865"
-              class="inputEff"
-              type="url"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500　">
-              請問您團體的人數（包含您自己）
-            </p>
-            <input
-              name="entry.1053001367"
-              class="inputEff"
-              type="number"
-              autocomplete="off"
-              required
-            />
-          </div>
-
-          <div class="customRadio mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問您參加單車節的日期？
-            </p>
-            <div 
-              v-for="(date, index) in dates"
-              :key="index"
-              class="my-5"
-            >
-              <input
-                name="entry.1323600111"
-                :id="date"
-                type="radio"
-                :value="date"
-              />
-              <label :for="date">{{ date }}</label>
-            </div>
-          </div>
-
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              預計抵達時間？（請填寫 24 小時制，例如 9:01, 17:00）
-            </p>
-            <input
-              name="entry.785417167"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問遊覽車的車牌號碼為？
-            </p>
-            <input
-              name="entry.2025588403"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-              請問遊覽車司機姓名？
-            </p>
-            <input
-              name="entry.1859522470"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div class="mt-12">
-            <p class="text-lg my-6">
-              備註
-              <br> 任何關於單車節交通的疑問，我們會盡力在 Email 線上或單車節當日為您解答！
-            </p>
-            <input
-              name="entry.1000205050"
-              class="inputEff"
-              type="text"
-              autocomplete="off"
-            />
-          </div>
-          <!-- submit -->
-          <div class="py-20 w-[300px]">
-            <input id="customBtn" type="submit" hidden />
-            <label for="customBtn" class="cursor-pointer">
-              <irregularButton btnTitle="送出" />
-            </label>
-          </div>
-        </form>
-      </div>
-
+    
+    <div class="h-[280px] text-lg text-center my-20 lg:hidden">
+      電腦以外的裝置請點擊<a
+        class="linkEff"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScfsThqpVnv30auskKR9KkzQjfBegp36giluyw0BaLIjTnR2A/viewform"
+        target="_blank"
+        rel="noreferrer noopenner"
+      >此連結</a>報名
     </div>
+
+    <div class="max-lg:hidden">
+      <div class="px-36 pt-20 max-md:px-4">
+      <!-- intro -->
+        <div class="text-xl leading-8 max-sm:text-sm">
+          <div>2023 成大單車節｜遊覽車團體登記表單</div>
+          <div>
+            ｜第十六屆成大單車節活動時間：2023/3/4-2023/3/5 09:00 - 16:00
+            <br> 活動地點：台南市東區 國立成功大學
+            <br><br> ｜說 明
+            <br> * 本表單僅供交通工具為遊覽車需求之學校、組織、班級之登記， 尤其若貴單位欲租遊覽車往返，請務必填寫，以利活動當日追蹤安排。 
+            <br> * 若為個人或朋友揪團共襄盛舉、想要得到單車節限量紀念品，再請持續鎖定官網，我們將推出預購。
+            <br> * 關於遊覽車入場停靠方式會在日後以電子郵件告知，請務必留意信箱！
+            <br><br> ｜備 註
+            <br> * 此團體登記完全免費。
+            <br> * 對於成大單車節有任何問題，皆可以私訊粉專或聯絡人，我們會盡快回答您的問題。
+            <br><br> ｜聯絡人 姜昕｜
+            <a
+              class="linkEff"
+              href="https://www.facebook.com/jessie01081910/"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >
+              Facebook
+            </a>
+            <br> ｜聯絡人 劉子綾｜
+            <a
+              class="linkEff"
+              href="https://www.facebook.com/profile.php?id=100002291378285"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >
+              Facebook
+            </a>
+            <br> ｜粉絲專頁 成大單車節｜ 
+            <a
+              class="linkEff"
+              href="https://www.facebook.com/NCKUbikefestival/"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
+        <!-- form -->
+        <div>
+          <form 
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfsThqpVnv30auskKR9KkzQjfBegp36giluyw0BaLIjTnR2A/formResponse"
+            method="POST"
+            @submit.prevent="checkSelected"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子郵件 </p>
+              <input
+                name="emailAddress"
+                class="inputEff"
+                type="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <div class="text-lg my-6">遊覽車路線說明（由自強校區之長榮路校門口進出）</div> 
+              <img src="../assets/map.png" alt="">
+              <div class="text-lg my-6">
+                遊覽車團體登記
+                <br> 適用於交通方式為遊覽車之學校、組織或班級
+              </div>
+            </div>
+            <div class="mt-12">
+              <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問您代表的團體是？
+              </p>
+              <p class="mb-6">例如：OO高中O班、OO高中輔導室、OO補習班</p> 
+              
+              <input
+                name="entry.445642084"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問您的名字？（全名）
+              </p>
+              <input
+                name="entry.1719992985"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問您的聯絡電話？（格式: 0912-345678）
+              </p>
+              <input
+                name="entry.1881290345"
+                class="inputEff"
+                type="tel"
+                pattern="[0-9]{4}-[0-9]{6}"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請附上您的臉書個人頁面「網址」
+              </p>  
+              <p class="mb-6">
+                進入個人頁面複製網址列的網址即可（如有需要我們會使用臉書與您聯絡）
+              </p>
+              <input
+                name="entry.1369900865"
+                class="inputEff"
+                type="url"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500　">
+                請問您團體的人數（包含您自己）
+              </p>
+              <input
+                name="entry.1053001367"
+                class="inputEff"
+                type="number"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="customRadio mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問您參加單車節的日期？
+              </p>
+              <div 
+                v-for="(date, index) in dates"
+                :key="index"
+                class="my-5"
+              >
+                <input
+                  name="entry.1323600111"
+                  :id="date"
+                  type="radio"
+                  :value="date"
+                />
+                <label :for="date">{{ date }}</label>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                預計抵達時間？（請填寫 24 小時制，例如 9:01, 17:00）
+              </p>
+              <input
+                name="entry.785417167"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問遊覽車的車牌號碼為？
+              </p>
+              <input
+                name="entry.2025588403"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+                請問遊覽車司機姓名？
+              </p>
+              <input
+                name="entry.1859522470"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="mt-12">
+              <p class="text-lg my-6">
+                備註
+                <br> 任何關於單車節交通的疑問，我們會盡力在 Email 線上或單車節當日為您解答！
+              </p>
+              <input
+                name="entry.1000205050"
+                class="inputEff"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+            <!-- submit -->
+            <div class="py-20 w-[300px]">
+              <input id="customBtn" type="submit" hidden />
+              <label for="customBtn" class="cursor-pointer">
+                <irregularButton btnTitle="送出" />
+              </label>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    
 
     <Footer />
   </div>

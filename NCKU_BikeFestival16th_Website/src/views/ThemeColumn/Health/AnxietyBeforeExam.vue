@@ -13,7 +13,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 健康" keyWord="心情" theme="考前焦慮怎麼辦？" />
 
     <div class="mx-60 my-20 max-sm:mx-4">
-
+      <div class="text-center text-xl leading-9 my-16">筆者：許羽沛 / 編修：廖珺安</div>
       <div>
         <picture>
           <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Emotion/themeCol_emotion1.webp" type="image/webp">

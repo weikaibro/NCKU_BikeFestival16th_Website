@@ -39,8 +39,9 @@ const show = () => {
       <!-- selected dept -->
       <div class="relative flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[1000px]">
         <!-- RWD -->
-        <div @click="show" class="absolute bg-black w-screen h-[40px] text-3xl mb-6 font-bold xl:hidden">社會科學院</div>
-        <ul v-if="showDept" class="absolute bg-black w-screen top-10 xl:hidden">
+        <div @click="show" class="absolute bg-black w-screen h-[50px] text-2xl font-bold xl:hidden">社會科學院</div>
+        <img class="absolute top-8 inset-x-0 mx-auto w-[15px] xl:hidden" src="../../assets/downArrow.svg" alt="downArrow">
+        <ul v-if="showDept" class="absolute bg-black w-screen top-12 xl:hidden">
           <li 
             v-for="(chosen, index) in chosenDept"
             :key="index"
@@ -77,7 +78,7 @@ const show = () => {
       </div>
 
       <!-- pdf -->
-      <Transition mode="out-in" class="w-full h-[950px] pl-20 mt-20 border-l-2 border-black max-2xl:pl-0 max-xl:border-l-0 max-sm:mt-10">
+      <Transition mode="out-in" class="w-full h-[950px] pl-20 mt-20 border-l-2 border-black max-2xl:pl-0 max-xl:border-l-0 max-sm:mt-15">
         <component :is="showContent" />
       </Transition>
     </div>

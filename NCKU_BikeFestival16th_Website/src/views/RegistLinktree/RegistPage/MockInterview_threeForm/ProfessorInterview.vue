@@ -74,227 +74,241 @@ function checkSelected() {
 
 <template>
   <div>
-    <div class="text-4xl font-bold mb-10">單車十六｜學習歷程加油站報名表</div>
-    <div class="text-xl leading-8">
-      各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
-      <br />
-      我們將於 3/4(六)~3/5(日) 早上09:00-12:00 舉辦學習歷程加油站
 
-      <br /><br />
-      活動說明：請各位高中生事先上傳學習歷程檔案，會有成大的學長姐們幫忙檢閱並給予意見。檢閱內容為學習歷程自述（就讀動機、未來規劃、學習計畫），若內容沒有很完整也不用擔心，我們可以就現有的部分提供建議！
-
-      <br /><br />
-      活動地點：國立成功大學 唯農大樓（屆時會有角標指引）
-
-      <br /><br />
-      對應時段及科系： <br />
-      3/4（六）09:00 - 10:30：職治系、化工系、材料系、歷史系、護理系 <br />
-      3/4（六）10:30 - 12:00：經濟系、醫學系、不分系、中文系、環工系 <br />
-      3/5（日）09:00 - 10:30：職治系、化工系、材料系、資源系、電機系 <br />
-      3/5（日）10:30 - 12:00：經濟系、醫學系、不分系、會計系、護理系 <br />
-      *
-      一份歷程檔案檢閱及提供意見的時間約為10分鐘，詳細時間會在後續寄發之信件中通知
-
-      <br /><br />
-      📣貼心小提醒 <br />
-      若你已有報名模擬面試，或是單車節其他活動，要注意該活動時間是否與學習歷程加油站重疊喔！
-      <br />
-      ❗❗ 上傳學習歷程檔案時，若是以雲端分享，記得檢查共用權限是否開啟哦！
-
-      <br /><br />
-      🏴此表單將在 2/19(日)
-      23:59截止，後續錄取通知及相關資訊皆會經由電子郵件發送，因此麻煩各位一定要填「常用」信箱～
-
-      <br /><br />
-      有任何問題或是不明白的地方可以聯絡以下負責人：
-      <br />
-      會計115 趙蓁妤 0982826565 /
-      <a
+    <div class="lg:hidden text-lg text-center mb-16">
+      電腦以外的裝置請點擊<a
         class="linkEff"
-        href="https://www.facebook.com/profile.php?id=100012231169610"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdeTDSvDqKfNVG9tYo_fmpiRFLlXjS_BNjHS31T1eNjGLVZJw/viewform"
         target="_blank"
         rel="noreferrer noopenner"
-      >
-        Facebook
-      </a>
-      <br />
-      會計115 張嘉純 0908393528 /
-      <a
-        class="linkEff"
-        href="https://www.facebook.com/profile.php?id=100003523717876"
-        target="_blank"
-        rel="noreferrer noopenner"
-      >
-        Facebook
-      </a>
-      <br />
-      交管115 張尚弘 0906333909 /
-      <a
-        class="linkEff"
-        href="https://www.facebook.com/Shang.Hong.Chang"
-        target="_blank"
-        rel="noreferrer noopenner"
-      >
-        Facebook
-      </a>
-      <br />
-      外文114 柯雯瑄 0956205355 /
-      <a
-        class="linkEff"
-        href="https://www.facebook.com/profile.php?id=100006236919642"
-        target="_blank"
-        rel="noreferrer noopenner"
-      >
-        Facebook
-      </a>
+      >此連結</a>報名
     </div>
 
-    <form
-      action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdeTDSvDqKfNVG9tYo_fmpiRFLlXjS_BNjHS31T1eNjGLVZJw/formResponse"
-      method="POST"
-      @submit.prevent="checkSelected"
-      target="_blank"
-      rel="noreferrer noopenner"
-    >
-      <div class="mt-12">
-        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱 </p>
-        <input
-          name="emailAddress"
-          class="inputEff"
-          type="email"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div class="mt-12">
-        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字 </p>
-        <input
-          name="entry.901120360"
-          class="inputEff"
-          type="text"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div class="mt-12">
-        <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-          就讀學校及年級
-        </p>
-        <p class="mb-6">
-          例：高雄中學高三
-        </p>
-        <input
-          name="entry.1491874794"
-          class="inputEff"
-          type="text"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div class="mt-12">
-        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話（格式: 0912-345678）</p>
-        <input
-          name="entry.1268614972"
-          class="inputEff"
-          pattern="[0-9]{4}-[0-9]{6}"
-          type="tel"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div class="mt-12">
-        <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-          常用的聯絡信箱
-        </p>
-        <p class="mb-6">
-          報名後要記得確認信箱喔～
-        </p>
-        <input
-          name="entry.179244061"
-          class="inputEff"
-          type="email"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div class="mt-12">
-        <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
-        <input
-          name="entry.35071403"
-          class="inputEff"
-          type="url"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <!-- diff -->
-      <div class="mt-20 mb-4">
-        <p class="text-3xl"> 學習歷程加油站</p>
-        <p class="text-lg">
-         <br> 請依據報名對應的科系時間進行勾選並上傳學習歷程檔案
-         <br> 若不止有一個科系的檔案，請附上檔案連結～
-         <br> 記得將檔名更改成 姓名-科系 再上傳喔！
-        </p>
-        <div
-          v-for="info in checkBoxInfo1"
-          :key="checkBoxInfo1.indexOf(info)"
-        >
-          <p class="my-6 text-xl" :class="info.style">{{ info.time }}</p>
-          <label class="checkBoxEff">
-            <input :name="info.api" type="checkbox" :value="info.dept" class="cursor-pointer" />{{
-              info.dept
-            }}
-          </label>
-        </div>
+    <div class="max-lg:hidden">
+      <div class="text-4xl font-bold mb-10">單車十六｜學習歷程加油站報名表</div>
+      <div class="text-xl leading-8">
+        各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
+        <br />
+        我們將於 3/4(六)~3/5(日) 早上09:00-12:00 舉辦學習歷程加油站
 
-        <!-- text -->
+        <br /><br />
+        活動說明：請各位高中生事先上傳學習歷程檔案，會有成大的學長姐們幫忙檢閱並給予意見。檢閱內容為學習歷程自述（就讀動機、未來規劃、學習計畫），若內容沒有很完整也不用擔心，我們可以就現有的部分提供建議！
+
+        <br /><br />
+        活動地點：國立成功大學 唯農大樓（屆時會有角標指引）
+
+        <br /><br />
+        對應時段及科系： <br />
+        3/4（六）09:00 - 10:30：職治系、化工系、材料系、歷史系、護理系 <br />
+        3/4（六）10:30 - 12:00：經濟系、醫學系、不分系、中文系、環工系 <br />
+        3/5（日）09:00 - 10:30：職治系、化工系、材料系、資源系、電機系 <br />
+        3/5（日）10:30 - 12:00：經濟系、醫學系、不分系、會計系、護理系 <br />
+        *
+        一份歷程檔案檢閱及提供意見的時間約為10分鐘，詳細時間會在後續寄發之信件中通知
+
+        <br /><br />
+        📣貼心小提醒 <br />
+        若你已有報名模擬面試，或是單車節其他活動，要注意該活動時間是否與學習歷程加油站重疊喔！
+        <br />
+        ❗❗ 上傳學習歷程檔案時，若是以雲端分享，記得檢查共用權限是否開啟哦！
+
+        <br /><br />
+        🏴此表單將在 2/19(日)
+        23:59截止，後續錄取通知及相關資訊皆會經由電子郵件發送，因此麻煩各位一定要填「常用」信箱～
+
+        <br /><br />
+        有任何問題或是不明白的地方可以聯絡以下負責人：
+        <br />
+        會計115 趙蓁妤 0982826565 /
+        <a
+          class="linkEff"
+          href="https://www.facebook.com/profile.php?id=100012231169610"
+          target="_blank"
+          rel="noreferrer noopenner"
+        >
+          Facebook
+        </a>
+        <br />
+        會計115 張嘉純 0908393528 /
+        <a
+          class="linkEff"
+          href="https://www.facebook.com/profile.php?id=100003523717876"
+          target="_blank"
+          rel="noreferrer noopenner"
+        >
+          Facebook
+        </a>
+        <br />
+        交管115 張尚弘 0906333909 /
+        <a
+          class="linkEff"
+          href="https://www.facebook.com/Shang.Hong.Chang"
+          target="_blank"
+          rel="noreferrer noopenner"
+        >
+          Facebook
+        </a>
+        <br />
+        外文114 柯雯瑄 0956205355 /
+        <a
+          class="linkEff"
+          href="https://www.facebook.com/profile.php?id=100006236919642"
+          target="_blank"
+          rel="noreferrer noopenner"
+        >
+          Facebook
+        </a>
+      </div>
+
+      <form
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdeTDSvDqKfNVG9tYo_fmpiRFLlXjS_BNjHS31T1eNjGLVZJw/formResponse"
+        method="POST"
+        @submit.prevent="checkSelected"
+        target="_blank"
+        rel="noreferrer noopenner"
+      >
         <div class="mt-12">
-          <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
-            學習歷程上傳與檔案連結
-          </p>
-          <p class="mb-6">
-            請把檔名改成「姓名-科系」後上傳至您的 google 雲端硬碟，操作指南請參考<a
-              class="linkEff"
-              href="https://support.google.com/drive/answer/2494822?hl=zh-Hant&co=GENIE.Platform%3DDesktop#zippy=%2C%E8%88%87%E7%89%B9%E5%AE%9A%E4%BD%BF%E7%94%A8%E8%80%85%E5%85%B1%E7%94%A8%E6%AA%94%E6%A1%88"
-              target="_blank"
-              rel="noreferrer noopenner"
-            >這裡</a>，並將檔案的「共用連結」複製到下方欄位。
-            <br> 請同學注意，務必將檔案的權限更改為「與所有人共用」，以利後續作業。
-            <br> 若您報名多個科系，且有多個檔案，請參考<a
-              class="linkEff"
-              href="https://support.google.com/drive/answer/7166529"
-              target="_blank"
-              rel="noreferrer noopenner"
-            >這裡</a>，並複製整個資料夾的「共用連結」於下方欄位中。
-          </p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱 </p>
           <input
-            id="customUploadBtn"
-            name="entry.957710852"
+            name="emailAddress"
             class="inputEff"
-            type="url"
+            type="email"
+            autocomplete="off"
             required
           />
         </div>
         <div class="mt-12">
-          <p class="text-lg my-6">
-            有其他想問的嗎？
-          </p>
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字 </p>
           <input
-            name="entry.464609855"
+            name="entry.901120360"
             class="inputEff"
             type="text"
             autocomplete="off"
+            required
           />
         </div>
-      </div>
-      <div class="py-20 w-[300px]">
-        <input id="customBtn" type="submit" hidden />
-        <label for="customBtn" class="cursor-pointer">
-          <irregularButton btnTitle="送出" />
-        </label>
-      </div>
-    </form>
+        <div class="mt-12">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+            就讀學校及年級
+          </p>
+          <p class="mb-6">
+            例：高雄中學高三
+          </p>
+          <input
+            name="entry.1491874794"
+            class="inputEff"
+            type="text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mt-12">
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話 </p>
+          <input
+            name="entry.1268614972"
+            class="inputEff"
+            pattern="[0-9]{10}"
+            type="tel"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mt-12">
+          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+            常用的聯絡信箱
+          </p>
+          <p class="mb-6">
+            報名後要記得確認信箱喔～
+          </p>
+          <input
+            name="entry.179244061"
+            class="inputEff"
+            type="email"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="mt-12">
+          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
+          <input
+            name="entry.35071403"
+            class="inputEff"
+            type="url"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <!-- diff -->
+        <div class="mt-20 mb-4">
+          <p class="text-3xl"> 學習歷程加油站</p>
+          <p class="text-lg">
+          <br> 請依據報名對應的科系時間進行勾選並上傳學習歷程檔案
+          <br> 若不止有一個科系的檔案，請附上檔案連結～
+          <br> 記得將檔名更改成 姓名-科系 再上傳喔！
+          </p>
+          <div
+            v-for="info in checkBoxInfo1"
+            :key="checkBoxInfo1.indexOf(info)"
+          >
+            <p class="my-6 text-xl" :class="info.style">{{ info.time }}</p>
+            <label class="checkBoxEff">
+              <input :name="info.api" type="checkbox" :value="info.dept" class="cursor-pointer" />{{
+                info.dept
+              }}
+            </label>
+          </div>
+
+          <!-- text -->
+          <div class="mt-12">
+            <p class="text-lg mt-6 after:content-['*'] after:ml-0.5 after:text-red-500">
+              學習歷程上傳與檔案連結
+            </p>
+            <p class="mb-6">
+              請把檔名改成「姓名-科系」後上傳至您的 google 雲端硬碟，操作指南請參考<a
+                class="linkEff"
+                href="https://support.google.com/drive/answer/2494822?hl=zh-Hant&co=GENIE.Platform%3DDesktop#zippy=%2C%E8%88%87%E7%89%B9%E5%AE%9A%E4%BD%BF%E7%94%A8%E8%80%85%E5%85%B1%E7%94%A8%E6%AA%94%E6%A1%88"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >這裡</a>，並將檔案的「共用連結」複製到下方欄位。
+              <br> 請同學注意，務必將檔案的權限更改為「與所有人共用」，以利後續作業。
+              <br> 若您報名多個科系，且有多個檔案，請參考<a
+                class="linkEff"
+                href="https://support.google.com/drive/answer/7166529"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >這裡</a>，並複製整個資料夾的「共用連結」於下方欄位中。
+            </p>
+            <input
+              id="customUploadBtn"
+              name="entry.957710852"
+              class="inputEff"
+              type="url"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6">
+              有其他想問的嗎？
+            </p>
+            <input
+              name="entry.464609855"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="py-20 w-[300px]">
+          <input id="customBtn" type="submit" hidden />
+          <label for="customBtn" class="cursor-pointer">
+            <irregularButton btnTitle="送出" />
+          </label>
+        </div>
+      </form>
+    </div>
+
   </div>
+
 </template>
 
 <style scoped>

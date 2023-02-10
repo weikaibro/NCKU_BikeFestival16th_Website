@@ -14,6 +14,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20 max-sm:mx-4">
       <div>
+        <div class="text-center text-xl leading-9 my-16">筆者：許羽沛 / 編修：廖珺安</div>
         <picture>
           <source class="mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_Stayup/themeCol_stayup1.webp" type="image/webp">
           <img class="mx-auto my-10 w-[800px]" src="../../../assets/themeCol_Stayup/themeCol_stayup1.png" alt="stayUp">

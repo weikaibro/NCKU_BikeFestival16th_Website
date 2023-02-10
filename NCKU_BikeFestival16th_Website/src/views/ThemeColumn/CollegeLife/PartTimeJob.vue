@@ -13,11 +13,12 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="打工" theme="踏入社會的第一步：打工大小事" />
 
     <div class="mx-60 my-20 max-sm:mx-4">
+      <div class="text-center text-xl leading-9 my-16">筆者：謝雅婷 / 編修：廖珺安</div>
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/PartTimeJob.png" alt="PartTimeJob">
       <div class="text-xl leading-9">
         <br> 上大學後在外住宿多了許多生活開銷，除了理財節流之外，許多人也希望透過開源來減少父母的金錢負擔，甚至是能夠提早經濟獨立，於是打工就成為大學生活多出的一個選項。
         <br><br> 我們將分成四個部分來做分享
-        <ul class="list-disc list-inside">
+        <ul class="list-decimal list-inside">
           <li>資訊獲得管道</li>
           <li>打工的經驗分享</li>
           <li>打工種類與分析</li>
@@ -38,9 +39,9 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br> 缺：非專門徵成大生，好職缺競爭會更大
         <br><br><span class="font-bold text-2xl">打工的經驗分享</span> 
         <br><br> 小編向各方朋友收集了打工的經驗談，挑出了三位比較常見的打工職分享給各位，在找工作之前也可以將以下的內容做為參考喔！
-        <br> 校內打工
-        <br> 管理學院 女同學
-        <br> 一、工作職稱 ：成大總圖典藏組工讀生
+        <br><br> 校內打工
+        <div class="text-end text-xl leading-9">管理學院 女同學</div> 
+        一、工作職稱 ：成大總圖典藏組工讀生
         <br> 二、打工資訊獲得的途徑：系上學長分享，剛好看到臉書二手版徵人，所以直接去櫃檯詢問，行政阿姨約時間面試後提供基本的履歷大致上就好。
         <br> 三、詳細工作內容：推空推車收別人還的書、刷還登入系統、上架
         <br> 拿掃描機做館藏盤點、整架、老舊的書標更新。
@@ -51,8 +52,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br> 六、薪資狀況：基本工資168扣掉保險一個月差不多五千
         <br> 七、想備註的事項：若生活開銷較大，真的不太適合從事校內打工，只能算賺零用錢而已，另外也建議課比較少再來做、偏勞力、需要細心、不怕髒，效率也要高一點，因此要稍微記樓層藏書分類。
         <br><br> 校外打工
-        <br> 管理學院 男同學
-        <br> 一、工作職稱：補習班工讀生
+        <div class="text-end text-xl leading-9">管理學院 男同學</div>
+        一、工作職稱：補習班工讀生
         <br> 二、打工資訊獲得途徑：透過朋友介紹再去應徵
         <br> 三、工作詳細內容：大致上是打掃環境、訂便當、課前點名、倒垃圾等雜務。
         <br> 四、優缺點分析
@@ -62,8 +63,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         <br> 六、薪資狀況：200元/小時，但因為自己做這份工作只是想賺點零用錢，所以一週做五個小時。
         <br> 七、想要備註的事項：把工作做完之後可以做自己的事，所以我大部分時間都在寫微積分作業，老闆人真的超好。
         <br><br> 家教
-        <br> 工學院 男同學
-        <br> ㄧ、工作職稱：物理化學家教
+        <div class="text-end text-xl leading-9">工學院 男同學</div>
+        ㄧ、工作職稱：物理化學家教
         <br> 二、打工資訊獲得途徑：朋友介紹和以前的學生
         <br> 三、工作詳細內容：每週兩個小時（視情況增加），幫兩個高一高二的學生一對一教學，上課的部分高一的學生主要是教必修物理，高二的那位是教選修物理化學，但是有其他科的問題也會問我，課後會派作業給學生讓他們練習，有什麼問題也隨時可以傳訊息問我，除了課業上的幫助，有時候也會和他們聊聊未來的人生目標或是學習歷程之類的話題，抑或是分享我的經驗，幫助他們尋找未來的人生方向。
         <br> 四、優缺點分析

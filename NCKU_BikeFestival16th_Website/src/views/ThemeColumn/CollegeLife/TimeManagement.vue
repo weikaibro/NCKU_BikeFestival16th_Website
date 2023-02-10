@@ -13,6 +13,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="時間" theme="時間管理祕笈" />
 
     <div class="mx-60 my-20 max-sm:mx-4">
+      <div class="text-center text-xl leading-9 my-16">筆者：謝雅婷 / 編修：廖珺安</div>
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="">
       <picture>
         <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement1.webp" type="image/webp">

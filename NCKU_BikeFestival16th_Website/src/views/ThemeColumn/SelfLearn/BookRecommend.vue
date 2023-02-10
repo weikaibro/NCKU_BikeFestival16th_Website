@@ -14,13 +14,15 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20 max-sm:mx-4">
 
+      <div class="text-center text-xl leading-9 my-16">筆者：宋張齊 / 編修：廖珺安</div>
+
       <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_BookRecommend/BookRecommend1.jpg" alt="BookRecommend">
 
       <div class="text-xl leading-9 my-16">
         前面三篇文章所提到的項目與學習管道，都是小編在步入大學環境後，有所需求才真正認識補足的知識。但要如何更早發現自我在人生道路上的缺乏，就要靠大量閱讀養成的習慣來檢視了。在一方面補足自身缺點，另一方面放大眼界、與時俱進。小編列出了一些適合所有人的推薦書單，給鬧書荒的你！
         
         <br><br><span class="font-bold text-2xl">原子習慣</span> 
-        <br> 本書將習慣養成的步驟拆解成四大重點，讓好習慣更易養成，使壞習慣更易戒斷。「提示：讓提示顯而易見」、「<strong>渴望</strong>：讓習慣有吸引力」
+        <br>本書將習慣養成的步驟拆解成四大重點，讓好習慣更易養成，使壞習慣更易戒斷。「提示：讓提示顯而易見」、「<strong>渴望</strong>：讓習慣有吸引力」
         、「<strong>回應</strong>：讓行動輕而易舉」、「<strong>滿足</strong>：讓獎賞令人滿足」這個系統不斷往復循還，藉由<strong>複利效應</strong>放大成效，
         輔以心理學：<strong>改變身分認同</strong>、僅<strong>專注於系統</strong>，並搭配生動的範例，使讀者清晰理解並比對生活現況，能將想法馬上化為行動，
         <strong>愛上無聊</strong>（對重複的事物仍有興趣），習慣也如同愛因斯坦所說的：重複做同樣的事情但期待會出現不同的結果！

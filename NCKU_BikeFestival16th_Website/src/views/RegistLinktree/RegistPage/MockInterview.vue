@@ -1,12 +1,11 @@
 <script setup>
+import { ref, computed } from "vue";
 import Navbar from '../../../components/Navbar.vue';
 import Footer from '../../../components/Footer.vue';
-
 import DepartmentMockInterview from '../RegistPage/MockInterview_threeForm/DepartmentMockInterview.vue'
 import LearningExperience from '../RegistPage/MockInterview_threeForm/LearningExperience.vue'
 import ProfessorInterview from '../RegistPage/MockInterview_threeForm/ProfessorInterview.vue'
 
-import { ref, computed } from "vue";
 const buttonName = ref(["各系模擬面試", "教授面試技巧演講", "學習歷程加油站"]);
 const num = ref(0);
 const Switch = (index) => {
@@ -15,17 +14,10 @@ const Switch = (index) => {
 };
 const Show = computed(() => {
   switch (num.value) {
-    case 0: {
-      return DepartmentMockInterview;
-    }
-    case 1: {
-      return LearningExperience;
-    }
-    case 2: {
-      return ProfessorInterview;
-    }
-    default:
-      break;
+    case 0: return DepartmentMockInterview;
+    case 1: return LearningExperience;
+    case 2: return ProfessorInterview;
+    default: break;
   }
 });
 </script>
