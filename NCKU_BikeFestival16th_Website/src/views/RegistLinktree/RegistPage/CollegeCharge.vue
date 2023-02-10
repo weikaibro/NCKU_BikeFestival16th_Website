@@ -39,7 +39,7 @@ const session7 = [
 const session8 = [
   "3/5 (日) 14:35~16:00 黃昭禓｜放下你的手機，玩好人生這場大遊戲"
 ];
-function checkSelected() {
+function checkSelected(event) {
   var sets = [
     {
       checkboxes: document.querySelectorAll('[name="grade"]'),
@@ -66,7 +66,6 @@ function checkSelected() {
 }
 onMounted(() => {
   const radioInputs = document.querySelectorAll('input[type="radio"]');
-
   radioInputs.forEach(input => {
     input.addEventListener("click", function() {
       if (input.getAttribute("data-clicked")) {
@@ -115,7 +114,7 @@ onMounted(() => {
         <div class="text-lg leading-9 max-sm:text-sm">
           三月將至，南台炎熱的空氣中，多了一股青春血液的躁動。
           <br />
-          沒錯！一年一度的成大單車節將於3/4和3/5盛大舉行！
+          沒錯！一年一度的成大單車節將於 3/4 和 3/5 盛大舉行！
           <br />
           成大單車節致力於弭平高中生和大學之間的資訊不對稱，而我們單車16學術部，透過邀請成大校園中的各路大神進行經驗分享，讓各位與接觸到大學最真實的樣貌。
           <br /><br />
@@ -125,19 +124,41 @@ onMounted(() => {
           那就來報名成大單車節的校園講者吧！
           <br />
           這裡有各式各樣的主題與講者，等著你來尋寶。 <br />
-          廢話不多說，馬上點進成大單車節官網看看有哪些講者和主題吧！
+          廢話不多說，馬上點進<a 
+            href="https://nckubikefestival.ncku.edu.tw/" 
+            class="linkEff"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >成大單車節官網</a>看看有哪些講者和主題吧！
           <br /><br />
           如果當天無法參與，也可以透過我們的podcast，一起參與成大單車節唷！
           <br />
-          別單心，聽我說｜成大單車節Podcast <br /><br />
+          <a 
+            href="https://player.soundon.fm/p/bike16podcast?fbclid=IwAR2sPptx8eTxMgIYZuxZ1Jm-usnUXddECWI9uB7E5elmjKJWTGdxFJQ-XDk" 
+            class="linkEff"
+            target="_blank"
+            rel="noreferrer noopenner"
+          ><strong>別單心，聽我說｜成大單車節 Podcast</strong></a> <br /><br />
+          
         </div>
 
-        <div>
+        <div class="lg:hidden my-32 text-center text-2xl">
+          電腦以外的裝置請點擊<a
+            class="linkEff"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >此連結</a>報名
+        </div>
+
+        <iframe name="formIframe" class="hidden"></iframe>
+
+        <div class="max-lg:hidden">
           <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/formResponse"
+            action="https://nckubikefestival.ncku.edu.tw/api/register/speakers"
             method="POST"
             @submit.prevent="checkSelected"
-            target="_blank"
+            target="formIframe"
             rel="noreferrer noopenner"
           >
             <div class="mt-12">
@@ -154,6 +175,15 @@ onMounted(() => {
                 required
               />
             </div>
+
+            <div class="mt-12 text-xl leading-9 max-sm:text-sm">
+              <strong>時程通知 ⏰
+              <br> 報名日期：2/10（五）~ 2/18（六）
+              <br> 寄出錄取通知：2/20（一）(記得注意信箱喔!👍)
+              <br> 寄出備取通知：2/24（五）(記得注意信箱喔!👍)
+              <br> 演講日期：3/4（六）&  3/5（日）</strong>
+            </div>
+
             <div class="mt-12">
               <p
                 class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
@@ -172,13 +202,13 @@ onMounted(() => {
               <p
                 class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
               >
-                聯絡電話（格式: 0912-345678）
+                聯絡電話
               </p>
               <input
                 name="phone"
                 class="inputEff"
                 type="tel"
-                pattern="[0-9]{4}-[0-9]{6}"
+                pattern="[0-9]{10}"
                 autocomplete="off"
                 required
               />
@@ -226,11 +256,16 @@ onMounted(() => {
               />
             </div>
 
+            <div class="mt-24 text-xl leading-9">
+              📢報名場次
+              <br>🪶註：演講部分會優先錄取高中生
+            </div>
+
             <div class="customRadio mt-12">
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/4 上午場-1)
+                你報名的場次（3/4 上午場-1）
               </p>
               <div
                 v-for="(session, index) in session1"
@@ -251,7 +286,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/4 上午場-2)
+                你報名的場次（3/4 上午場-2）
               </p>
               <div
                 v-for="(session, index) in session2"
@@ -272,7 +307,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/4 下午場-1)
+                你報名的場次（3/4 下午場-1）
               </p>
               <div
                 v-for="(session, index) in session3"
@@ -293,7 +328,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/4 下午場-2)
+                你報名的場次（3/4 下午場-2）
               </p>
               <div
                 v-for="(session, index) in session4"
@@ -314,7 +349,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/5 上午場-1)
+                你報名的場次（3/5 上午場-1）
               </p>
               <div
                 v-for="(session, index) in session5"
@@ -335,7 +370,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/5 上午場-2)
+                你報名的場次（3/5 上午場-2）
               </p>
               <div
                 v-for="(session, index) in session6"
@@ -356,7 +391,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/5 下午場-1)
+                你報名的場次（3/5 下午場-1）
               </p>
               <div
                 v-for="(session, index) in session7"
@@ -377,7 +412,7 @@ onMounted(() => {
               <p
                 class="text-lg my-6"
               >
-                你報名的場次(3/5 下午場-2)
+                你報名的場次（3/5 下午場-2）
               </p>
               <div
                 v-for="(session, index) in session8"
@@ -395,7 +430,7 @@ onMounted(() => {
             </div>
 
             <div class="mt-12">
-              <p class="text-lg my-6">想說的話</p>
+              <p class="text-lg my-6">想對我們說的話！</p>
               <input
                 name="talk"
                 class="inputEff"
@@ -410,7 +445,9 @@ onMounted(() => {
                 <irregularButton btnTitle="送出" />
               </label>
             </div>
+
           </form>
+
         </div>
       </div>
     </div>
@@ -429,6 +466,21 @@ onMounted(() => {
     @apply transition duration-200 border-b bg-transparent w-[1000px]
         hover:border-myblue focus:border-myblue focus:outline-none focus:border-b-2;
   }
+}
+
+.linkEff {
+  transition: color 0.5s ease, box-shadow 0.5s ease;
+  -o-transition: color 0.5s ease, box-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease, box-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease, box-shadow 0.5s ease;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0ea5e9;
+}
+
+.linkEff:hover {
+  color: #fff;
+  box-shadow: inset 0 -30px 0 0 #0ea5e9;
 }
 
 /* ref: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */

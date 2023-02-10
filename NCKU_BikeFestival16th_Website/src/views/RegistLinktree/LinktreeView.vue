@@ -29,14 +29,14 @@ import irregularButton from '../../components/irregularButton.vue'
 
 
     <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center max-sm:justify-start max-sm:gap-8 max-sm:mt-4">
+      <RouterLink to="/Registration/Linktree/CollegeCharge">
+        <irregularButton btnTitle="大學充值" />
+      </RouterLink>
       <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
         <irregularButton btnTitle="探索學習" disable="true" />
       <!-- </RouterLink> -->
       <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
         <irregularButton btnTitle="單車體驗" disable="true" />
-      <!-- </RouterLink> -->
-      <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
-        <irregularButton btnTitle="大學充值" disable="true"/>
       <!-- </RouterLink> -->
     </div>
   </div>

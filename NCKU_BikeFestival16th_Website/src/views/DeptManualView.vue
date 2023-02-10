@@ -31,7 +31,7 @@ const btn = ref([
       <div class="max-lg:hidden"></div>
 
       <RouterLink to="/DeptManual/Undeclared">
-        <irregularButton class="col-span-3" btnTitle="不分學院" />
+        <irregularButton class="col-span-3" btnTitle="非屬學院" />
       </RouterLink>
     </div>
   </div>

@@ -33,7 +33,7 @@ const show = () => {
       <!-- selected dept -->
       <div class="relative flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[1000px]">
         <!-- RWD -->
-        <div @click="show" class="absolute bg-black w-screen h-[50px] text-2xl font-bold xl:hidden">不分學院</div>
+        <div @click="show" class="absolute bg-black w-screen h-[50px] text-2xl font-bold xl:hidden">非屬學院</div>
         <img class="absolute top-8 inset-x-0 mx-auto w-[15px] xl:hidden" src="../../assets/downArrow.svg" alt="downArrow">
         <ul v-if="showDept" class="absolute bg-black w-screen top-12 xl:hidden">
           <li 
@@ -52,7 +52,7 @@ const show = () => {
           </div>
         </RouterLink> -->
         <!-- Laptop -->
-        <div class="text-3xl mt-10 mb-6 font-bold max-xl:hidden">不分學院</div>
+        <div class="text-3xl mt-10 mb-6 font-bold max-xl:hidden">非屬學院</div>
         <ul class="max-xl:hidden">
           <li 
             v-for="(chosen, index) in chosenDept"

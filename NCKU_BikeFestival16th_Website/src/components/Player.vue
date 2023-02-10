@@ -153,9 +153,9 @@ setInterval(() => {
       部員 機械114 鄭皓澤
     </div>
     <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
-      <!-- <RouterLink to="/Registration/Linktree/CollegeCharge"> -->
-        <irregularButton btnTitle="即將開放" disable="true" />
-      <!-- </RouterLink> -->
+      <RouterLink to="/Registration/Linktree/CollegeCharge">
+        <irregularButton btnTitle="即刻報名" />
+      </RouterLink>
     </div>
     <!-- bottom -->
     <div class="bg-black flex justify-between ml-12 flex-shrink-0 max-sm:ml-0 hidden">
