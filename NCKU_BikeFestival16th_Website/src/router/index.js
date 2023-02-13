@@ -59,6 +59,12 @@ const router = createRouter({
               path: 'DeepExperience',
               name: 'DeepExperience',
               component: () => import('../views/RegistLinktree/RegistPage/DeepExperience.vue')
+            },
+            // for debugging
+            {
+              path: 'Debug',
+              name: 'Debug',
+              component: () => import('../views/RegistLinktree/RegistPage/Debug.vue')
             }
           ]
         },
@@ -216,53 +222,295 @@ const router = createRouter({
         },
         {
           path: 'BioscienceAndBiotechnology',
-          name: 'BioscienceAndBiotechnology',
-          component: () => import('../views/DeptManual/BioscienceAndBiotechnology.vue'),
+          children: [
+            {
+              path: '',
+              name: 'BioscienceAndBiotechnology',
+              component: () => import('../views/DeptManual/BioscienceAndBiotechnology.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/BioscienceAndBiotechnologyManual/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/BioscienceAndBiotechnologyManual/member2.vue'),
+            }
+          ],
         },
         {
           path: 'ElectricalEngineeringAndComputerScience',
-          name: 'ElectricalEngineeringAndComputerScience',
-          component: () => import('../views/DeptManual/ElectricalEngineeringAndComputerScience.vue'),
+          children: [
+            {
+              path: '',
+              name: 'ElectricalEngineeringAndComputerScience',
+              component: () => import('../views/DeptManual/ElectricalEngineeringAndComputerScience.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/ElectricalEngineeringAndComputerScienceManual/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/ElectricalEngineeringAndComputerScienceManual/member2.vue'),
+            }
+          ]
         },
         {
           path: 'Engineering',
-          name: 'Engineering',
-          component: () => import('../views/DeptManual/Engineering.vue'),
+          children: [
+            {
+              path: '',
+              name: 'Engineering',
+              component: () => import('../views/DeptManual/Engineering.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member4.vue'),
+            },
+            {
+              path: 'member5',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member5.vue'),
+            },
+            {
+              path: 'member6',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member6.vue'),
+            },
+            {
+              path: 'member7',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member7.vue'),
+            },
+            {
+              path: 'member8',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member8.vue'),
+            },
+            {
+              path: 'member9',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member9.vue'),
+            },
+            {
+              path: 'member10',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member10.vue'),
+            },
+            {
+              path: 'member11',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member11.vue'),
+            },
+            {
+              path: 'member12',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member12.vue'),
+            },
+            {
+              path: 'member13',
+              component: () => import('../views/DeptManual/EngineeringManual/member/member13.vue'),
+            }
+          ]
+
         },
         {
           path: 'LiberalArts',
-          name: 'LiberalArts',
-          component: () => import('../views/DeptManual/LiberalArts.vue'),
+          children: [
+            {
+              path: '',
+              name: 'LiberalArts',
+              component: () => import('../views/DeptManual/LiberalArts.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/LiberalArtsManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/LiberalArtsManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/LiberalArtsManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/LiberalArtsManual/member/member4.vue'),
+            }
+          ]
+          
         },
         {
           path: 'Management',
-          name: 'Management',
-          component: () => import('../views/DeptManual/Management.vue'),
+          children: [
+            {
+              path: '',
+              name: 'Management',
+              component: () => import('../views/DeptManual/Management.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/ManagementManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/ManagementManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/ManagementManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/ManagementManual/member/member4.vue'),
+            },
+            {
+              path: 'member5',
+              component: () => import('../views/DeptManual/ManagementManual/member/member5.vue'),
+            }
+          ]
+          
         },
         {
           path: 'Medicine',
-          name: 'Medicine',
-          component: () => import('../views/DeptManual/Medicine.vue'),
+          children: [
+            {
+              path: '',
+              name: 'Medicine',
+              component: () => import('../views/DeptManual/Medicine.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/MedicineManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/MedicineManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/MedicineManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/MedicineManual/member/member4.vue'),
+            },
+            {
+              path: 'member5',
+              component: () => import('../views/DeptManual/MedicineManual/member/member5.vue'),
+            },
+            {
+              path: 'member6',
+              component: () => import('../views/DeptManual/MedicineManual/member/member6.vue'),
+            },
+            {
+              path: 'member7',
+              component: () => import('../views/DeptManual/MedicineManual/member/member7.vue'),
+            }
+          ]
+          
         },
         {
           path: 'PlanningAndDesign',
-          name: 'PlanningAndDesign',
-          component: () => import('../views/DeptManual/PlanningAndDesign.vue'),
+          children: [
+            {
+              path: '',
+              name: 'PlanningAndDesign',
+              component: () => import('../views/DeptManual/PlanningAndDesign.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/PlanningAndDesignManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/PlanningAndDesignManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/PlanningAndDesignManual/member/member3.vue'),
+            }
+          ]
+          
         },
         {
           path: 'Science',
-          name: 'Science',
-          component: () => import('../views/DeptManual/Science.vue'),
+          children: [
+            {
+              path: '',
+              name: 'Science',
+              component: () => import('../views/DeptManual/Science.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/ScienceManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/ScienceManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/ScienceManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/ScienceManual/member/member4.vue'),
+            },
+            {
+              path: 'member5',
+              component: () => import('../views/DeptManual/ScienceManual/member/member5.vue'),
+            }
+          ]
+          
         },
         {
           path: 'SocialScience',
-          name: 'SocialScience',
-          component: () => import('../views/DeptManual/SocialScience.vue'),
+          children: [
+            {
+              path: '',
+              name: 'SocialScience',
+              component: () => import('../views/DeptManual/SocialScience.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/SocialScienceManual/member/member1.vue'),
+            },
+            {
+              path: 'member2',
+              component: () => import('../views/DeptManual/SocialScienceManual/member/member2.vue'),
+            },
+            {
+              path: 'member3',
+              component: () => import('../views/DeptManual/SocialScienceManual/member/member3.vue'),
+            },
+            {
+              path: 'member4',
+              component: () => import('../views/DeptManual/SocialScienceManual/member/member4.vue'),
+            }
+          ]
+          
         },
         {
           path: 'Undeclared',
-          name: 'Undeclared',
-          component: () => import('../views/DeptManual/Undeclared.vue'),
+          children: [
+            {
+              path: '',
+              name: 'Undeclared',
+              component: () => import('../views/DeptManual/Undeclared.vue'),
+            },
+            {
+              path: 'member1',
+              component: () => import('../views/DeptManual/UndeclaredManual/member1.vue'),
+            }
+          ]
+          
         },
       ]
 

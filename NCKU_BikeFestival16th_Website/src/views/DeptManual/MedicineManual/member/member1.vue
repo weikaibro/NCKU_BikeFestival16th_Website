@@ -1,0 +1,68 @@
+<script setup>
+import Navbar from '../../../../components/Navbar.vue';
+import Footer from '../../../../components/Footer.vue';
+</script>
+
+<template>
+  <Navbar />
+  <div class="my-16 mx-10">
+    <!-- header -->
+    <div class="text-end text-xl">科系手冊 / 醫學院 / 護理學系 / 顏楷容</div>
+    <hr />
+    <div class="relative flex flex-col justify-center items-center my-12 text-2xl">
+      <div class="absolute -bottom-12 left-0 right-1/2 translate-x-1/2 border-b-2 border-black max-lg:border-0"></div>
+      <img class="w-[500px]" src="../../../../assets/DeptManual/Medicine/Medicine1.png" alt="member">
+      <div class="my-4">護理學系114 顏楷容</div>
+      <div>#充滿理想的溫暖女孩</div>
+    </div>
+    <!-- content -->
+    <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-4">
+      <div class="absolute top-12 bottom-1/2 left-0 border-l-2 border-black max-lg:border-0"></div>
+      <div class="absolute -top-0.5 left-0 right-[75%] translate-x-[150%] border-b-2 border-white max-lg:border-0"></div>
+      <div class="text-lg">筆者：周沛儀 / 編修：陳加羲</div>
+      <br><br>
+      <div class="text-2xl font-bold mb-2.5">為什麼想就讀護理系？</div>
+      <div> 「比起賺很多錢，我希望我的工作是有意義感和使命感的，然後可以去接觸各式各樣的人，看到不一樣的生命歷程和故事。」高三時，顏楷容是以未來想從事什麼工作或想成為什麼樣的人為出發點去選擇科系，因而確定就讀醫療領域。且她本身對偏鄉醫療有興趣，同時覺得護理可以受用在很多地方，不只是在醫院裡面，也能影響身邊的人跟社會環境，因此選擇了護理系。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">個人申請入學的建議</div>
+      <div> 採用個人申請管道入學的顏楷容說，在準備個申的過程中，透過回顧成長歷程、學習經驗等，可以更加認識自己，同時幫助自己釐清是否真的對某個領域有興趣。她也建議，考完學測後就可開始準備備審資料，內容不需要誇大，只需了解自己的優勢和特質，並在備審和面試中展現。如果會擔心面試表現，可以多練習或是參加模擬面試，也可以蒐集歷屆的資料，還有一定要熟悉自己的備審內容。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">成大護理系的課程在上什麼？</div>
+      <div> 大一到大二上都是學理的內容，像是解剖、微生物及免疫學等。大二下的加冠典禮後會開始去成大醫院實習到大四，而實習會先從基礎護理學開始，再到產科、兒科、成人護理學，之後還有社區護理學、綜合臨床護理學等，非常多項目。最特別的是，成大護理注重實證護理和國際素養，系上有許多國際生，也有一門課叫「泛文化護理研討」，像今年暑假顏楷容就去澳洲，認識不同文化以及照護上的差異等。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">大學生活和想像的差異</div>
+      <div> 「高中時會聽到大家跟你說，大學就可以玩了，但上了大學才發現，作業考試還是很多，且因為內容更專業，所以難度也更高。」雖說如此，顏楷容還是很喜歡大學生活，即使會感到疲累，但大學有很多事情可以做，而她也樂在其中。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">關於時間分配</div>
+      <div> 顏楷容說，護理系在大三、大四時學業相較繁忙，不過在大一、大二時可以有多餘的時間做自己想做的事情、參加活動。目前大二的她將60%的時間分配在課業上，25%的時間是社團、系學會，剩下15%則是做自己喜歡的事情，例如參加有興趣的講座、活動等，幫助自己舒緩生活壓力。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">參加醫療服務社在做什麼？</div>
+      <div> 「服務是一件有人性、很溫暖的事情，對我而言，這是一個很有意義的地方」對於服務很有熱忱，覺得實際行動很重要的顏楷容，在大一時加入了醫療服務社。社團主要會去台南七股等偏遠地區拜訪獨居老人，陪他們聊天、傳遞衛教知識；也會去機構裡接觸身心障礙者，舉辦活動等等。她透過這個社團接觸到和自己不一樣族群的人，像身心障礙者、年長者，並在服務過程中找到了意義。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">參加社團、系學會的成長</div>
+      <div> 護理系上的活動跟其他系蠻相近的，比如湯火會、系野餐，有時也會邀請學長姊分享實習經驗，而擔任系學會副會長的顏楷容在這過程中學到如何和人溝通，不只是系學會成員，還有系辦、學長姊及不同單位。同時參加醫療服務社也讓她精進時間分配的能力，在要兼顧課業和活動的情況下，更加了解怎麼應用時間和調適心理狀態。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">護理系的出路有哪些？</div>
+      <div> 通常人們聽到護理系，第一個想到的會是在醫院裡當護理師，但顏楷容說，其實在學校、工廠等不同場所都需要護理師，也有人選擇繼續讀書，進護理所、老年所、公衛所做研究。另外，其他出路還有就讀學士後醫、自己開居家護理所、擔任衛福部行政人員、AI醫療業，甚至也有人跳脫護理系，轉行從事保險業、當空姐。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">個人職涯規劃</div>
+      <div> 顏楷容目前規劃自己在畢業後考完國考就進入臨床工作，累積臨床經驗，再就讀公衛研究所、接觸醫療體系。她認為護理和公衛這兩項專業是相輔相成，學習護理可以直接接觸人、了解醫療實際情況，而在這之後再去學習公衛相關知識，就可以從底層去接觸並發現問題，真正解決它。</div>
+      <br>
+      <div class="text-2xl font-bold mb-2.5">對想就讀護理系的高中生們說的話、建議</div>
+      <div> 「其實我覺得讀護理系需要蠻大的勇氣，之前在大一、大二時常聽到學長姐說實習壓力很大，再加上台灣的護理工作環境相較國外比較沒那麼好，甚至可能付出的辛勞和待遇是不成正比的。不過如果對護理有興趣的話，還是很鼓勵你可以抱持著這份熱忱，往護理領域發展；如果不確定也沒關係，因為大學有很多時間讓你找到不一樣的自己，重點是不要受限自己。」</div>
+      <br>
+
+    </div>
+
+  </div>
+  <Footer />
+</template>
+
+<style scoped>
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+</style>

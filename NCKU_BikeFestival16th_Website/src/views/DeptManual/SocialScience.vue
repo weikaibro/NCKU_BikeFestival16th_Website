@@ -139,7 +139,7 @@ const scrollRight = () => {
           <div class="memberInfo">
             <!-- <picture> -->
               <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience3.JPG" alt="member">
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience3.png" alt="member">
             <!-- </picture> -->
             <span class="mt-10 text-3xl font-bold max-md:mt-6">許齊芳</span>
             <span class="fontSize mt-3 text-center">法律學系 115</span>
@@ -148,7 +148,7 @@ const scrollRight = () => {
           <div class="memberInfo">
             <!-- <picture> -->
               <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience4.JPG" alt="member">
+              <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience4.png" alt="member">
             <!-- </picture> -->
             <span class="mt-10 text-3xl font-bold max-md:mt-6">高譽庭</span>
             <span class="fontSize mt-3 text-center">心理系 112</span>
@@ -179,8 +179,9 @@ const scrollRight = () => {
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
-      max-sm:w-[250px];
+      items-center bg-white shadow-lg w-[330px] h-[500px] p-3
+      cursor-pointer transition duration-200 hover:-translate-y-5 
+      max-sm:w-[250px] max-sm:h-[400px];
   }
 }
 .fontSize {

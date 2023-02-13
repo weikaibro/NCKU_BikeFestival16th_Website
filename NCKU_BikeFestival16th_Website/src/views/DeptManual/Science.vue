@@ -146,7 +146,7 @@ const scrollRight = () => {
           <div class="memberInfo">
             <!-- <picture> -->
               <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science2.JPG" alt="member">
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science2.png" alt="member">
             <!-- </picture> -->
             <span class="mt-10 text-3xl font-bold max-md:mt-6">林庭永</span>
             <span class="fontSize mt-3 text-center">物理學系 112</span>
@@ -164,7 +164,7 @@ const scrollRight = () => {
           <div class="memberInfo">
             <!-- <picture> -->
               <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science4.JPG" alt="member">
+              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science4.png" alt="member">
             <!-- </picture> -->
             <span class="mt-10 text-3xl font-bold max-md:mt-6">林奕丞</span>
             <span class="fontSize mt-3 text-center">光電科學與工程學系 114</span>
@@ -173,7 +173,7 @@ const scrollRight = () => {
           <div class="memberInfo">
             <!-- <picture> -->
               <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-20 mb-10 max-sm:mb-4" src="../../assets/DeptManual/Science/Science5.JPG" alt="member">
+              <img class="rounded-full w-[80%] mx-auto mt-20 mb-10 max-sm:mb-4" src="../../assets/DeptManual/Science/Science5.png" alt="member">
             <!-- </picture> -->
             <span class="mt-10 text-3xl font-bold max-md:mt-6">毛胤禎</span>
             <span class="fontSize mt-3 text-center">化學系 112</span>
@@ -204,8 +204,9 @@ const scrollRight = () => {
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
-      max-sm:w-[250px];
+      items-center bg-white shadow-lg w-[330px] h-[500px] p-3
+      cursor-pointer transition duration-200 hover:-translate-y-5 
+      max-sm:w-[250px] max-sm:h-[400px];
   }
 }
 .fontSize {

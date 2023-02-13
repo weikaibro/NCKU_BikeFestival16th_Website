@@ -137,123 +137,149 @@ const scrollRight = () => {
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
 
-        <div class="memberInfo">
-          <!-- <picture> -->
-            <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-            <img class="rounded-full w-[80%] max-h-[244px] object-contain mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering1.JPG" alt="member">
-          <!-- </picture> -->
-          <span class="mt-10 text-3xl font-bold max-md:mt-6">劉庭伊</span>
-          <span class="fontSize mt-3 text-center">生物醫學工程學系 114</span>
-          <span class="fontSize mt-2 text-center">#活潑愛笑的醫工女孩</span>
-        </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering2.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">蕭友哲</span>
-            <span class="fontSize mt-3 text-center">環境工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#大學成績不是重點，重點是要學會怎麼跟別人不一樣</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering3.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">張祐銘</span>
-            <span class="fontSize mt-3 text-center">機械工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#成功高中直生人</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] min-h-[244px] object-contain mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering4.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">吳李函</span>
-            <span class="fontSize mt-3 text-center">資源工程學系 113</span>
-            <span class="fontSize mt-2 text-center">#挖石油，發大財</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] max-h-[244px] object-contain mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering5.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">郭守珀</span>
-            <span class="fontSize mt-3 text-center">測量及空間資訊學系 113</span>
-            <span class="fontSize mt-2 text-center">#不務正業的大學生</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering6.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">陳俊安</span>
-            <span class="fontSize mt-3 text-center">航空太空工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#臺南在地排球少年</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering7.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">陳胤融</span>
-            <span class="fontSize mt-3 text-center">系統及船舶機電工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#向錢看齊，興趣不能當飯吃</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] min-h-[244px] object-contain mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering8.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">林鉅騰</span>
-            <span class="fontSize mt-3 text-center">材料科學與工程學系 113</span>
-            <span class="fontSize mt-2 text-center">#既然選擇了，那就盡力吧！</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering9.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">郭政儒</span>
-            <span class="fontSize mt-3 text-center">水利及海洋工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#水研營推推</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] max-h-[244px] object-contain mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering10.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">許舜傑</span>
-            <span class="fontSize mt-3 text-center">化學工程學系 113</span>
-            <span class="fontSize mt-2 text-center">#對科學保有了解的慾望</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering11.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">張博盛</span>
-            <span class="fontSize mt-3 text-center">工程科學系 114</span>
-            <span class="fontSize mt-2 text-center">#辣個活動家教轉系兼顧的男人</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering12.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">張喬霖</span>
-            <span class="fontSize mt-3 text-center">土木工程學系 113</span>
-            <span class="fontSize mt-2 text-center">#讀土木不用被關啦</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering13.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">殷子樵</span>
-            <span class="fontSize mt-3 text-center">能源工程國際學士學位學程 114</span>
-            <span class="fontSize mt-2 text-center">#能源只有一半台灣人</span>
-          </div>
+          <RouterLink to="/DeptManual/Engineering/member1">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering1.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">劉庭伊</span>
+              <span class="fontSize mt-3 text-center">生物醫學工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#活潑愛笑的醫工女孩</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member2">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering2.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">蕭友哲</span>
+              <span class="fontSize mt-3 text-center">環境工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#大學成績不是重點，重點是要學會怎麼跟別人不一樣</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member3">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering3.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">張祐銘</span>
+              <span class="fontSize mt-3 text-center">機械工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#成功高中直生人</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member4">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] min-h-[244px] object-cover mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering4.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">吳李函</span>
+              <span class="fontSize mt-3 text-center">資源工程學系 113</span>
+              <span class="fontSize mt-2 text-center">#挖石油，發大財</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member5">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering5.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">郭守珀</span>
+              <span class="fontSize mt-3 text-center">測量及空間資訊學系 113</span>
+              <span class="fontSize mt-2 text-center">#不務正業的大學生</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member6">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering6.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">陳俊安</span>
+              <span class="fontSize mt-3 text-center">航空太空工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#臺南在地排球少年</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member7">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering7.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">陳胤融</span>
+              <span class="fontSize mt-3 text-center">系統及船舶機電工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#向錢看齊，興趣不能當飯吃</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member8">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] min-h-[244px] object-cover mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering8.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">林鉅騰</span>
+              <span class="fontSize mt-3 text-center">材料科學與工程學系 113</span>
+              <span class="fontSize mt-2 text-center">#既然選擇了，那就盡力吧！</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member9">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering9.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">郭政儒</span>
+              <span class="fontSize mt-3 text-center">水利及海洋工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#水研營推推</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member10">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/Engineering/Engineering10.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">許舜傑</span>
+              <span class="fontSize mt-3 text-center">化學工程學系 113</span>
+              <span class="fontSize mt-2 text-center">#對科學保有了解的慾望</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member11">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering11.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">張博盛</span>
+              <span class="fontSize mt-3 text-center">工程科學系 114</span>
+              <span class="fontSize mt-2 text-center">#辣個活動家教轉系兼顧的男人</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member12">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering12.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">張喬霖</span>
+              <span class="fontSize mt-3 text-center">土木工程學系 113</span>
+              <span class="fontSize mt-2 text-center">#讀土木不用被關啦</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Engineering/member13">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Engineering/Engineering13.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">殷子樵</span>
+              <span class="fontSize mt-3 text-center">能源工程國際學士學位學程 114</span>
+              <span class="fontSize mt-2 text-center">#能源只有一半台灣人</span>
+            </div>
+          </RouterLink>
 
         </div>
       </div>
@@ -280,8 +306,9 @@ const scrollRight = () => {
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
-      max-sm:w-[250px];
+      items-center bg-white shadow-lg w-[330px] h-[500px] p-3
+      cursor-pointer transition duration-200 hover:-translate-y-5 
+      max-sm:w-[250px] max-sm:h-[400px];
   }
 }
 .fontSize {

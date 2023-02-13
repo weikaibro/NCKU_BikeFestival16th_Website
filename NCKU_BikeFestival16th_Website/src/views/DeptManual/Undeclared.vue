@@ -147,8 +147,9 @@ const scrollRight = () => {
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
-      max-sm:w-[250px];
+      items-center bg-white shadow-lg w-[330px] h-[500px] p-3
+      cursor-pointer transition duration-200 hover:-translate-y-5 
+      max-sm:w-[250px] max-sm:h-[400px];
   }
 }
 .fontSize {

@@ -107,31 +107,34 @@ const scrollRight = () => {
       <div class="absolute z-0 inset-x-0 mx-auto bg-neutral-100
         w-[75%] h-[580px] max-sm:w-screen max-sm:h-[460px]"
       >
-        <div 
+        <div
           id="scrollTo"
           class="snap-x snap-mandatory overflow-hidden 
             flex flex-row gap-8 mx-12 items-center h-full
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
-
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience1.GIF" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">姚磊漢</span>
-            <span class="fontSize mt-3 text-center">電機工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#樂觀社牛活動電神</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.JPG" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">劉仲昀</span>
-            <span class="fontSize mt-3 text-center">資訊工程學系 112</span>
-            <span class="fontSize mt-2 text-center">#用盡一切資源精進自己</span>
-          </div>
+          <RouterLink to="/DeptManual/ElectricalEngineeringAndComputerScience/member1">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience1.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">姚磊漢</span>
+              <span class="fontSize mt-3 text-center">電機工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#樂觀社牛活動電神</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/ElectricalEngineeringAndComputerScience/member2">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">劉仲昀</span>
+              <span class="fontSize mt-3 text-center">資訊工程學系 112</span>
+              <span class="fontSize mt-2 text-center">#用盡一切資源精進自己</span>
+            </div>
+          </RouterLink>
 
         </div>
       </div>
@@ -158,8 +161,9 @@ const scrollRight = () => {
 @layer components {
   .memberInfo {
     @apply snap-center flex flex-col flex-none 
-      items-center bg-white shadow-lg w-[330px] h-[87.5%] p-3
-      max-sm:w-[250px];
+      items-center bg-white shadow-lg w-[330px] h-[500px] p-3
+      cursor-pointer transition duration-200 hover:-translate-y-5 
+      max-sm:w-[250px] max-sm:h-[400px];
   }
 }
 .fontSize {
