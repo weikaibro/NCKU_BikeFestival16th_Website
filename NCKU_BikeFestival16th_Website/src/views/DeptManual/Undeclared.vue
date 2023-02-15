@@ -111,16 +111,18 @@ const scrollRight = () => {
             flex flex-row gap-8 mx-12 items-center h-full
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
-
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Undeclared/Undeclared1.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">黃椲庭</span>
-            <span class="fontSize mt-3 text-center">全校不分系學士學位學程 114</span>
-            <span class="fontSize mt-2 text-center">#活動超人</span>
-          </div>
+          <RouterLink to="/DeptManual/Undeclared/member1">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Undeclared/Undeclared1.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">黃椲庭</span>
+              <span class="fontSize mt-3 text-center">全校不分系學士學位學程 114</span>
+              <span class="fontSize mt-2 text-center">#活動超人</span>
+            </div>
+          </RouterLink>
+          
 
         </div>
       </div>

@@ -118,42 +118,50 @@ const scrollRight = () => {
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
 
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience1.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">林青澤</span>
-            <span class="fontSize mt-3 text-center">經濟學系 114</span>
-            <span class="fontSize mt-2 text-center">#多跑活動多交友</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience2.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">許景筑</span>
-            <span class="fontSize mt-3 text-center">政治學系 114</span>
-            <span class="fontSize mt-2 text-center">#成大的門面擔當</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience3.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">許齊芳</span>
-            <span class="fontSize mt-3 text-center">法律學系 115</span>
-            <span class="fontSize mt-2 text-center">#因為一次的糾紛，而選擇法律系</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience4.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">高譽庭</span>
-            <span class="fontSize mt-3 text-center">心理系 112</span>
-            <span class="fontSize mt-2 text-center">#心理系，讓我更了解自己，也更了解別人</span>
-          </div>
+          <RouterLink to="/DeptManual/SocialScience/member1">
+            <div class="memberInfo">
+                <!-- <picture> -->
+                  <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                  <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience1.png" alt="member">
+                <!-- </picture> -->
+                <span class="mt-10 text-3xl font-bold max-md:mt-6">高譽庭</span>
+                <span class="fontSize mt-3 text-center">心理系 112</span>
+                <span class="fontSize mt-2 text-center">#心理系，讓我更了解自己，也更了解別人</span>
+              </div>
+          </RouterLink>  
+          <RouterLink to="/DeptManual/SocialScience/member2">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience2.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">許齊芳</span>
+              <span class="fontSize mt-3 text-center">法律學系 115</span>
+              <span class="fontSize mt-2 text-center">#因為一次的糾紛，而選擇法律系</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/SocialScience/member3">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience3.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">許景筑</span>
+              <span class="fontSize mt-3 text-center">政治學系 114</span>
+              <span class="fontSize mt-2 text-center">#成大的門面擔當</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/SocialScience/member4">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/SocialScience/SocialScience4.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">林青澤</span>
+              <span class="fontSize mt-3 text-center">經濟學系 114</span>
+              <span class="fontSize mt-2 text-center">#多跑活動多交友</span>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
