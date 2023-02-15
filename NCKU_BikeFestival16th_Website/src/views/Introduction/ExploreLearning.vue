@@ -66,9 +66,9 @@ import IrregularButton from "../../components/irregularButton.vue";
     <div
       class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0"
     >
-      <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
-      <IrregularButton btnTitle="即將開放" disable="true" />
-      <!-- </RouterLink> -->
+      <RouterLink to="/Registration/Linktree/ExploreLearning">
+      <IrregularButton btnTitle="即將開放" />
+      </RouterLink>
     </div>
   </div>
 </template>

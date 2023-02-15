@@ -134,51 +134,61 @@ const scrollRight = () => {
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
 
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science1.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">葉紹宇</span>
-            <span class="fontSize mt-3 text-center">數學系 114</span>
-            <span class="fontSize mt-2 text-center">#數學系課那麼硬還能參加那麼多活動？？？</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science2.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">林庭永</span>
-            <span class="fontSize mt-3 text-center">物理學系 112</span>
-            <span class="fontSize mt-2 text-center">#過勞爆吐送急診</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] min-h-[244px] object-cover mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Science/Science3.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">廖珮芸</span>
-            <span class="fontSize mt-3 text-center">地球科學系 113</span>
-            <span class="fontSize mt-2 text-center">#從政治到地科</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science4.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">林奕丞</span>
-            <span class="fontSize mt-3 text-center">光電科學與工程學系 114</span>
-            <span class="fontSize mt-2 text-center">#用最穩的路，爬最陡的山</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-20 mb-10 max-sm:mb-4" src="../../assets/DeptManual/Science/Science5.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">毛胤禎</span>
-            <span class="fontSize mt-3 text-center">化學系 112</span>
-            <span class="fontSize mt-2 text-center">#大學是個尋找人生目標，並且學習如何接近目標的地方</span>
-          </div>
+          <RouterLink to="/DeptManual/Science/member1">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science1.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">葉紹宇</span>
+              <span class="fontSize mt-3 text-center">數學系 114</span>
+              <span class="fontSize mt-2 text-center">#數學系課那麼硬還能參加那麼多活動？？？</span>
+            </div>
+          </RouterLink>  
+          <RouterLink to="/DeptManual/Science/member2">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science2.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">林庭永</span>
+              <span class="fontSize mt-3 text-center">物理學系 112</span>
+              <span class="fontSize mt-2 text-center">#過勞爆吐送急診</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Science/member3">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] min-h-[244px] object-cover mx-auto mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/Science/Science3.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">廖珮芸</span>
+              <span class="fontSize mt-3 text-center">地球科學系 113</span>
+              <span class="fontSize mt-2 text-center">#從政治到地科</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Science/member4">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/Science/Science4.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">林奕丞</span>
+              <span class="fontSize mt-3 text-center">光電科學與工程學系 114</span>
+              <span class="fontSize mt-2 text-center">#用最穩的路，爬最陡的山</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/Science/member5">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-20 mb-10 max-sm:mb-4" src="../../assets/DeptManual/Science/Science5.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">毛胤禎</span>
+              <span class="fontSize mt-3 text-center">化學系 112</span>
+              <span class="fontSize mt-2 text-center">#大學是個尋找人生目標，並且學習如何接近目標的地方</span>
+            </div>
+          </RouterLink>
         </div>
       </div>
 

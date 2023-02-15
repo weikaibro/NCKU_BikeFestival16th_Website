@@ -17,11 +17,11 @@ import homepage_totalMemberSlider from "../components/homepage_totalMemberSlider
 <template>
   <div class="flex flex-col">
     <Navbar />
-    <div class="flex flex-col w-screen bg-black max-md:bg-white">
+    <div class="flex flex-col aspect-[2] w-screen bg-black max-md:bg-white">
       <div class="aspect-[2.5]">
-        <homepage_backgroundSlider />
+      <homepage_backgroundSlider />
       </div>
-      <div class="my-6 self-center max-md:hidden max-sm:basis-0">
+      <div class="self-center my-auto max-md:hidden">
         <RouterLink to="/Registration/Linktree">
           <irregularButton btnTitle="即刻報名" />
         </RouterLink>
@@ -54,23 +54,19 @@ import homepage_totalMemberSlider from "../components/homepage_totalMemberSlider
     </div>
 
     <div
-      class="flex flex-col justify-center items-center mt-24 p-0 w-screen overflow-hidden max-md:mt-12"
+      class="flex flex-col justify-center items-center mt-40 p-0 w-screen overflow-hidden max-md:mt-12"
     >
       <div class="flex justify-center items-center w-full">
         <homepage_SouvenirDialogBox />
-        <!-- <homepage_dialogBox dialogTitle="紀念品" :article="SouvenirContent" arrowHidden="opacity-20" >
-          <img src="../assets/comingSoonWithBg.png" alt="SouvenirPreorderView" />
-        </homepage_dialogBox> -->
       </div>
       <div class="h-[150px] pt-12">
         <RouterLink to="/SouvenirPreorder">
           <roundedBtn BtnTitle="More" />
         </RouterLink>
-
       </div>
     </div>
 
-    <div class="mt-36 p-0 w-screen h-[800px] max-md:mt-16 ">
+    <div class="mt-40 p-0 w-screen h-[800px] max-md:mt-16 ">
       <div class="flex justify-center items-end mb-16 max-md:mb-6">
         <homepage_lineHeader headerTitle="籌備團隊" />
       </div>

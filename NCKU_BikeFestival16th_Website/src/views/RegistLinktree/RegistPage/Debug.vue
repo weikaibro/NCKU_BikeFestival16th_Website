@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '../../../components/Navbar.vue';
 import Footer from '../../../components/Footer.vue';
+import irregularButton from '../../../components/irregularButton.vue';
 const checkBoxInfo1 = ([
   "第一場", "第二場", "第三場"
 ])
@@ -13,9 +14,9 @@ const dates = ([
   <div class="bg-black text-white">
     <Navbar />
 
-    <div class="px-36 pt-20 h-[800px]">
+    <div class="px-36 pt-20 h-[1500px]">
       This is a private page for debugging.
-      <form action="">
+      <form action="/api/debug/check" method="post">
 
         <div class="mt-12">
           <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
@@ -64,7 +65,12 @@ const dates = ([
           </div>
         </div>
 
-        <input type="submit">
+        <div class="py-20 w-[300px]">
+          <input id="customBtn" type="submit" hidden />
+          <label for="customBtn" class="cursor-pointer">
+            <irregularButton btnTitle="送出" />
+          </label>
+        </div>
         
       </form>
     </div>

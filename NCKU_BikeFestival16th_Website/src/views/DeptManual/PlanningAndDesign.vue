@@ -116,33 +116,39 @@ const scrollRight = () => {
             max-sm:touch-pan-x max-sm:overflow-auto max-sm:mx-4"
         >
 
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign1.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">黃俊祺</span>
-            <span class="fontSize mt-3 text-center">都市計劃學系 114</span>
-            <span class="fontSize mt-2 text-center">#撐過就是你的</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto object-cover min-h-[244px] mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign2.png" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">邱于芸</span>
-            <span class="fontSize mt-3 text-center">建築學系 114</span>
-            <span class="fontSize mt-2 text-center">#用睡眠來換取學分的建築人</span>
-          </div>
-          <div class="memberInfo">
-            <!-- <picture> -->
-              <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-              <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign3.jpg" alt="member">
-            <!-- </picture> -->
-            <span class="mt-10 text-3xl font-bold max-md:mt-6">林書緯</span>
-            <span class="fontSize mt-3 text-center">工業設計學系 114</span>
-            <span class="fontSize mt-2 text-center">#對自己的興趣保持熱忱</span>
-          </div>
+          <RouterLink to="/DeptManual/PlanningAndDesign/member1">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign1.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">黃俊祺</span>
+              <span class="fontSize mt-3 text-center">都市計劃學系 114</span>
+              <span class="fontSize mt-2 text-center">#撐過就是你的</span>
+            </div>
+          </RouterLink>  
+          <RouterLink to="/DeptManual/PlanningAndDesign/member2">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto object-cover min-h-[244px] mt-5 max-sm:min-h-[180px]" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign2.png" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">邱于芸</span>
+              <span class="fontSize mt-3 text-center">建築學系 114</span>
+              <span class="fontSize mt-2 text-center">#用睡眠來換取學分的建築人</span>
+            </div>
+          </RouterLink>
+          <RouterLink to="/DeptManual/PlanningAndDesign/member3">
+            <div class="memberInfo">
+              <!-- <picture> -->
+                <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/PlanningAndDesign/PlanningAndDesign3.jpg" alt="member">
+              <!-- </picture> -->
+              <span class="mt-10 text-3xl font-bold max-md:mt-6">林書緯</span>
+              <span class="fontSize mt-3 text-center">工業設計學系 114</span>
+              <span class="fontSize mt-2 text-center">#對自己的興趣保持熱忱</span>
+            </div>
+          </RouterLink>
         </div>
       </div>
 

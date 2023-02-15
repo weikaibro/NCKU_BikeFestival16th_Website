@@ -4,9 +4,9 @@ import irregularButton from '../../components/irregularButton.vue'
 </script>
 
 <template>
-  <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden max-sm:flex-col">
+  <div class="bgImg h-screen w-screen flex flex-row bg-black overflow-hidden max-md:flex-col">
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-end max-sm:basis-1/2 max-sm:items-center max-sm:justify-end max-sm:gap-8 max-sm:mb-4">
+    <div class="basis-1/3 flex flex-col justify-evenly items-end max-md:basis-1/2 max-md:items-center max-md:justify-end max-md:gap-8 max-md:mb-4">
       <RouterLink to="/Registration/Linktree/MockInterview">
         <irregularButton btnTitle="模擬面試" />
       </RouterLink>
@@ -28,16 +28,16 @@ import irregularButton from '../../components/irregularButton.vue'
 
 
 
-    <div class="basis-1/3 flex flex-col justify-evenly items-start max-sm:basis-1/2 max-sm:items-center max-sm:justify-start max-sm:gap-8 max-sm:mt-4">
+    <div class="basis-1/3 flex flex-col justify-evenly items-start max-md:basis-1/2 max-md:items-center max-md:justify-start max-md:gap-8 max-md:mt-4">
       <RouterLink to="/Registration/Linktree/CollegeCharge">
         <irregularButton btnTitle="大學充值" />
       </RouterLink>
-      <!-- <RouterLink to="/Registration/Linktree/ExploreLearning"> -->
-        <irregularButton btnTitle="探索學習" disable="true" />
-      <!-- </RouterLink> -->
-      <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
-        <irregularButton btnTitle="單車體驗" disable="true" />
-      <!-- </RouterLink> -->
+      <RouterLink to="/Registration/Linktree/BikeExperience">
+        <irregularButton btnTitle="單車體驗" />
+      </RouterLink>
+      <RouterLink to="/Registration/Linktree/ExploreLearning">
+        <irregularButton btnTitle="探索學習" />
+      </RouterLink>
     </div>
   </div>
 </template>

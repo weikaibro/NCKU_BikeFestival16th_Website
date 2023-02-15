@@ -48,9 +48,9 @@ import IrregularButton from "../../components/irregularButton.vue";
       部員 生技115 陳雨婕
     </div>
     <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
-      <!-- <RouterLink to="/Registration/Linktree/BikeExperience"> -->
-        <IrregularButton btnTitle="即將開放" disable="true" />
-      <!-- </RouterLink> -->
+      <RouterLink to="/Registration/Linktree/BikeExperience">
+        <IrregularButton btnTitle="即刻報名" />
+      </RouterLink>
     </div>
   </div>
 </template>

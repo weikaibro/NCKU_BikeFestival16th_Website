@@ -82,16 +82,12 @@ onMounted(() => {
 </script>
 
 <template>
+  <!-- 2/10 -->
   <div class="bg-black text-white">
     <Navbar />
 
-    <div
-      class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10"
-    >
-      <span class="text-5xl font-bold tracking-wider max-md:text-4xl"
-        >大學充值</span
-      >
-
+    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10">
+      <span class="text-5xl font-bold tracking-wider max-md:text-4xl">大學充值</span>
       <picture>
         <source
           class="w-[55%] mx-auto max-md:w-[90%]"
@@ -151,9 +147,18 @@ onMounted(() => {
           >此連結</a>報名
         </div>
 
+        <div class="h-[280px] text-lg text-center my-16 max-lg:hidden">
+          此頁面表單維修中，暫時先請前往<a
+            class="linkEff"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >此連結</a>報名
+        </div>
+
         <iframe name="formIframe" class="hidden"></iframe>
 
-        <div class="max-lg:hidden">
+        <div class="hidden">
           <form
             action="https://nckubikefestival.ncku.edu.tw/api/register/speakers"
             method="POST"

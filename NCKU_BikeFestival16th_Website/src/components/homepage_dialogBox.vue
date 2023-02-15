@@ -122,7 +122,7 @@ const scrollLeftChangeContent = () => {
 @layer components {
   .dialogBoxEff {
     @apply flex flex-row justify-center items-center p-12 overflow-hidden h-[600px]
-      max-md:h-[450px] max-md:p-4 max-md:flex-col;
+      max-lg:h-[450px] max-md:p-4 max-md:flex-col;
   }
 }
 </style>
