@@ -14,13 +14,12 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
     <div class="mx-60 my-20 max-sm:mx-4">
       <div class="text-center text-xl leading-9 my-16">筆者：謝雅婷 / 編修：廖珺安</div>
-      <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="">
       <picture>
         <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_TimeManagement/timeManagement1.webp" type="image/webp">
         <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_TimeManagement/timeManagement1.png" alt="timeManagement">
       </picture>
       <div class="text-xl leading-9">
-        時間管理一直以來都是生活中非常重要的一項能力，不論實在學中還是備考中，若能掌握時間管理的技巧，絕對能有更佳的效率！小編我想經由這篇文分享一些時間觀禮相關的資訊，廢話不多說直接進入正題～
+        時間管理一直以來都是生活中非常重要的一項能力，不論實在學中還是備考中，若能掌握時間管理的技巧，絕對能有更佳的效率！小編我想經由這篇文分享一些時間觀相關的資訊，廢話不多說直接進入正題～
         <br><br><span class="font-bold text-2xl">時間管理的技巧</span>
       </div>
       <picture>

@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import axios from "axios";
 import Navbar from "../../../components/Navbar.vue";
 import Footer from "../../../components/Footer.vue";
 import irregularButton from "../../../components/irregularButton.vue";
@@ -34,11 +35,12 @@ const session6 = [
 const session7 = [
   "3/5 (日) 13:00~14:25 邱耀陞｜迷茫的生涯規劃？從迷惘中探索新方向",
   "3/5 (日) 13:00~14:25 方文廷｜讓我們一起擁抱失敗",
-  "3/5 (日) 13:00~14:25 林世璿｜致高中生最重要的一課"
+  "3/5 (日) 13:00~14:25 林世璿｜致高中生最重要的一課",
 ];
 const session8 = [
-  "3/5 (日) 14:35~16:00 黃昭禓｜放下你的手機，玩好人生這場大遊戲"
+  "3/5 (日) 14:35~16:00 黃昭禓｜放下你的手機，玩好人生這場大遊戲",
 ];
+const isRegistSuccess = ref("")
 function checkSelected(event) {
   var sets = [
     {
@@ -57,17 +59,24 @@ function checkSelected(event) {
     alert(sets[0].errorMessage);
   }
   if (checkedOne) {
-    console.log("Welcome!");
-    var form = document.querySelector("form");
-    form.submit();
-    form.reset();
-    alert("報名成功！");
+    var formData = document.querySelector("form");
+    axios
+      .post(
+        "https://nckubikefestival.ncku.edu.tw/api/register/speakers",
+        formData
+      )
+      .then((res) => {
+        isRegistSuccess.value = "success";
+      })
+      .catch((err) => {
+        isRegistSuccess.value = "failure";
+      });
   }
 }
 onMounted(() => {
   const radioInputs = document.querySelectorAll('input[type="radio"]');
-  radioInputs.forEach(input => {
-    input.addEventListener("click", function() {
+  radioInputs.forEach((input) => {
+    input.addEventListener("click", function () {
       if (input.getAttribute("data-clicked")) {
         input.removeAttribute("data-clicked");
         input.checked = false;
@@ -77,8 +86,7 @@ onMounted(() => {
       }
     });
   });
-})
-
+});
 </script>
 
 <template>
@@ -86,8 +94,12 @@ onMounted(() => {
   <div class="bg-black text-white">
     <Navbar />
 
-    <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10">
-      <span class="text-5xl font-bold tracking-wider max-md:text-4xl">大學充值</span>
+    <div
+      class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10"
+    >
+      <span class="text-5xl font-bold tracking-wider max-md:text-4xl"
+        >大學充值</span
+      >
       <picture>
         <source
           class="w-[55%] mx-auto max-md:w-[90%]"
@@ -103,358 +115,360 @@ onMounted(() => {
     </div>
 
     <div class="px-36 pt-16 max-md:px-4">
-      <div>
-        <div class="text-4xl font-bold mb-10 max-sm:text-2xl">
-          單車十六｜校園講者 報名表單
+      <Transition mode="out-in">
+        <div class="border-2 border-white p-10 text-center mb-32" v-if="isRegistSuccess == 'success'">
+          <div class="text-4xl font-bold mb-10">報名成功</div>
+          <div class="text-3xl max-md:text-xl">
+            感謝你的填寫，期待在單車節與你相見
+          </div>
+          <br /><br /><br />
+          <div class="text-lg max-md:text-base">
+            （如有問題請聯繫<a
+              class="linkEff"
+              href="https://www.facebook.com/NCKUbikefestival"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >粉絲專頁</a
+            >，將有專人會在第一時間給予回覆！）
+          </div>
         </div>
-        <div class="text-lg leading-9 max-sm:text-sm">
-          三月將至，南台炎熱的空氣中，多了一股青春血液的躁動。
-          <br />
-          沒錯！一年一度的成大單車節將於 3/4 和 3/5 盛大舉行！
-          <br />
-          成大單車節致力於弭平高中生和大學之間的資訊不對稱，而我們單車16學術部，透過邀請成大校園中的各路大神進行經驗分享，讓各位與接觸到大學最真實的樣貌。
-          <br /><br />
-          📣 想知道一片迷惘時該怎麼辦嗎？ 📣 想知道如何過出畢生難忘的四年嗎？
-          <br />📣 想知道怎麼善用規則和資源嗎？ 📣 想知道怎麼跟教授相處嗎？
-          <br /><br />
-          那就來報名成大單車節的校園講者吧！
-          <br />
-          這裡有各式各樣的主題與講者，等著你來尋寶。 <br />
-          廢話不多說，馬上點進<a 
-            href="https://nckubikefestival.ncku.edu.tw/" 
-            class="linkEff"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >成大單車節官網</a>看看有哪些講者和主題吧！
-          <br /><br />
-          如果當天無法參與，也可以透過我們的podcast，一起參與成大單車節唷！
-          <br />
-          <a 
-            href="https://player.soundon.fm/p/bike16podcast?fbclid=IwAR2sPptx8eTxMgIYZuxZ1Jm-usnUXddECWI9uB7E5elmjKJWTGdxFJQ-XDk" 
-            class="linkEff"
-            target="_blank"
-            rel="noreferrer noopenner"
-          ><strong>別單心，聽我說｜成大單車節 Podcast</strong></a> <br /><br />
-          
+        <div
+          class="border-2 border-white p-10 text-2xl text-center my-16"
+          v-else-if="isRegistSuccess == 'failure'"
+        >
+          <div class="text-4xl font-bold mb-10">報名失敗！</div>
+          <div>
+            由於報名人數眾多導致後台不堪負荷，請前往<a
+              class="linkEff"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >此份表單</a
+            >報名
+          </div>
         </div>
+        <div v-else>
+          <div class="text-4xl font-bold mb-10 max-sm:text-2xl">
+            單車十六｜校園講者 報名表單
+          </div>
+          <div class="text-lg leading-9 max-sm:text-sm">
+            三月將至，南台炎熱的空氣中，多了一股青春血液的躁動。
+            <br />
+            沒錯！一年一度的成大單車節將於 3/4 和 3/5 盛大舉行！
+            <br />
+            成大單車節致力於弭平高中生和大學之間的資訊不對稱，而我們單車16學術部，透過邀請成大校園中的各路大神進行經驗分享，讓各位與接觸到大學最真實的樣貌。
+            <br /><br />
+            📣 想知道一片迷惘時該怎麼辦嗎？ 📣 想知道如何過出畢生難忘的四年嗎？
+            <br />📣 想知道怎麼善用規則和資源嗎？ 📣 想知道怎麼跟教授相處嗎？
+            <br /><br />
+            那就來報名成大單車節的校園講者吧！
+            <br />
+            這裡有各式各樣的主題與講者，等著你來尋寶。 <br />
+            廢話不多說，馬上點進<a
+              href="https://nckubikefestival.ncku.edu.tw/"
+              class="linkEff"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >成大單車節官網</a
+            >看看有哪些講者和主題吧！ <br /><br />
+            如果當天無法參與，也可以透過我們的podcast，一起參與成大單車節唷！
+            <br />
+            <a
+              href="https://player.soundon.fm/p/bike16podcast?fbclid=IwAR2sPptx8eTxMgIYZuxZ1Jm-usnUXddECWI9uB7E5elmjKJWTGdxFJQ-XDk"
+              class="linkEff"
+              target="_blank"
+              rel="noreferrer noopenner"
+              ><strong>別單心，聽我說｜成大單車節 Podcast</strong></a
+            >
+            <br /><br />
+          </div>
 
-        <div class="lg:hidden my-32 text-center text-2xl">
-          電腦以外的裝置請點擊<a
-            class="linkEff"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
-            target="_blank"
-            rel="noreferrer noopenner"
-          >此連結</a>報名
-        </div>
+          <!-- <div class="lg:hidden my-32 text-center text-2xl">
+            電腦以外的裝置請點擊<a
+              class="linkEff"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >此連結</a
+            >報名
+          </div> -->
 
-        <div class="h-[280px] text-lg text-center my-16 max-lg:hidden">
+          <!-- <div class="h-[280px] text-lg text-center my-16 max-lg:hidden">
           此頁面表單維修中，暫時先請前往<a
             class="linkEff"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
             target="_blank"
             rel="noreferrer noopenner"
           >此連結</a>報名
+        </div> -->
+
+          <!-- <iframe name="formIframe" class="hidden"></iframe> -->
+
+          <!-- target="formIframe" -->
+          <div class="">
+            <form
+              action="https://nckubikefestival.ncku.edu.tw/api/register/speakers"
+              method="POST"
+              @submit.prevent="checkSelected"
+            >
+              <div class="mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  電子信箱
+                </p>
+                <input
+                  name="email"
+                  class="inputEff"
+                  type="email"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="mt-12 text-xl leading-9 max-sm:text-sm">
+                <strong
+                  >時程通知 ⏰ <br />
+                  報名日期：2/10（五）~ 2/18（六） <br />
+                  寄出錄取通知：2/20（一）(記得注意信箱喔!👍) <br />
+                  寄出備取通知：2/24（五）(記得注意信箱喔!👍) <br />
+                  演講日期：3/4（六）& 3/5（日）</strong
+                >
+              </div>
+
+              <div class="mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  你的名字
+                </p>
+                <input
+                  name="name"
+                  class="inputEff"
+                  type="text"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  聯絡電話
+                </p>
+                <input
+                  name="phone"
+                  class="inputEff"
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="customRadio mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  你的身分
+                </p>
+                <div v-for="(grade, index) in grades" :key="index" class="my-5">
+                  <input name="grade" type="radio" :value="grade" :id="grade" />
+                  <label :for="grade">{{ grade }}</label>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  就讀學校（格式：縣市/學校名 ，如台北市/延平高中）
+                </p>
+                <input
+                  name="school"
+                  class="inputEff"
+                  type="text"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="mt-12">
+                <p
+                  class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                >
+                  常用的電子郵件（會發送活動相關訊息!）
+                </p>
+                <input
+                  name="freqEmail"
+                  class="inputEff"
+                  type="text"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div class="mt-24 text-xl leading-9">
+                📢報名場次
+                <br />🪶註：演講部分會優先錄取高中生
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/4 上午場-1）</p>
+                <div
+                  v-for="(session, index) in session1"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session1"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/4 上午場-2）</p>
+                <div
+                  v-for="(session, index) in session2"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session2"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/4 下午場-1）</p>
+                <div
+                  v-for="(session, index) in session3"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session3"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/4 下午場-2）</p>
+                <div
+                  v-for="(session, index) in session4"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session4"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/5 上午場-1）</p>
+                <div
+                  v-for="(session, index) in session5"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session5"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/5 上午場-2）</p>
+                <div
+                  v-for="(session, index) in session6"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session6"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/5 下午場-1）</p>
+                <div
+                  v-for="(session, index) in session7"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session7"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="customRadio mt-12">
+                <p class="text-lg my-6">你報名的場次（3/5 下午場-2）</p>
+                <div
+                  v-for="(session, index) in session8"
+                  :key="index"
+                  class="my-5"
+                >
+                  <input
+                    name="session8"
+                    type="radio"
+                    :value="session"
+                    :id="session"
+                  />
+                  <label :for="session">{{ session }}</label>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <p class="text-lg my-6">想對我們說的話！</p>
+                <input
+                  name="talk"
+                  class="inputEff"
+                  type="text"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="py-20 w-[300px]">
+                <input id="customBtn" type="submit" hidden />
+                <label for="customBtn" class="cursor-pointer">
+                  <irregularButton btnTitle="送出" />
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <iframe name="formIframe" class="hidden"></iframe>
-
-        <div class="hidden">
-          <form
-            action="https://nckubikefestival.ncku.edu.tw/api/register/speakers"
-            method="POST"
-            @submit.prevent="checkSelected"
-            target="formIframe"
-            rel="noreferrer noopenner"
-          >
-            <div class="mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                電子信箱
-              </p>
-              <input
-                name="email"
-                class="inputEff"
-                type="email"
-                autocomplete="off"
-                required
-              />
-            </div>
-
-            <div class="mt-12 text-xl leading-9 max-sm:text-sm">
-              <strong>時程通知 ⏰
-              <br> 報名日期：2/10（五）~ 2/18（六）
-              <br> 寄出錄取通知：2/20（一）(記得注意信箱喔!👍)
-              <br> 寄出備取通知：2/24（五）(記得注意信箱喔!👍)
-              <br> 演講日期：3/4（六）&  3/5（日）</strong>
-            </div>
-
-            <div class="mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                你的名字
-              </p>
-              <input
-                name="name"
-                class="inputEff"
-                type="text"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                聯絡電話
-              </p>
-              <input
-                name="phone"
-                class="inputEff"
-                type="tel"
-                pattern="[0-9]{10}"
-                autocomplete="off"
-                required
-              />
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                你的身分
-              </p>
-              <div v-for="(grade, index) in grades" :key="index" class="my-5">
-                <input name="grade" type="radio" :value="grade" :id="grade" />
-                <label :for="grade">{{ grade }}</label>
-              </div>
-            </div>
-
-            <div class="mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                就讀學校（格式：縣市/學校名 ，如台北市/延平高中）
-              </p>
-              <input
-                name="school"
-                class="inputEff"
-                type="text"
-                autocomplete="off"
-                required
-              />
-            </div>
-
-            <div class="mt-12">
-              <p
-                class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
-              >
-                常用的電子郵件（會發送活動相關訊息!）
-              </p>
-              <input
-                name="freqEmail"
-                class="inputEff"
-                type="text"
-                autocomplete="off"
-                required
-              />
-            </div>
-
-            <div class="mt-24 text-xl leading-9">
-              📢報名場次
-              <br>🪶註：演講部分會優先錄取高中生
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/4 上午場-1）
-              </p>
-              <div
-                v-for="(session, index) in session1"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session1"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/4 上午場-2）
-              </p>
-              <div
-                v-for="(session, index) in session2"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session2"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/4 下午場-1）
-              </p>
-              <div
-                v-for="(session, index) in session3"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session3"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/4 下午場-2）
-              </p>
-              <div
-                v-for="(session, index) in session4"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session4"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/5 上午場-1）
-              </p>
-              <div
-                v-for="(session, index) in session5"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session5"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/5 上午場-2）
-              </p>
-              <div
-                v-for="(session, index) in session6"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session6"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/5 下午場-1）
-              </p>
-              <div
-                v-for="(session, index) in session7"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session7"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="customRadio mt-12">
-              <p
-                class="text-lg my-6"
-              >
-                你報名的場次（3/5 下午場-2）
-              </p>
-              <div
-                v-for="(session, index) in session8"
-                :key="index"
-                class="my-5"
-              >
-                <input
-                  name="session8"
-                  type="radio"
-                  :value="session"
-                  :id="session"
-                />
-                <label :for="session">{{ session }}</label>
-              </div>
-            </div>
-
-            <div class="mt-12">
-              <p class="text-lg my-6">想對我們說的話！</p>
-              <input
-                name="talk"
-                class="inputEff"
-                type="text"
-                autocomplete="off"
-              />
-            </div>
-
-            <div class="py-20 w-[300px]">
-              <input id="customBtn" type="submit" hidden />
-              <label for="customBtn" class="cursor-pointer">
-                <irregularButton btnTitle="送出" />
-              </label>
-            </div>
-
-          </form>
-
-        </div>
-      </div>
+      </Transition>
     </div>
 
     <Footer />

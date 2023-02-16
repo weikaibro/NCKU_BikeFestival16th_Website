@@ -60,9 +60,12 @@ const Show = computed(() => {
       </ul>
     </div>
 
-    <div>
-      <component :is="Show" />
+    <div class="bg-black">
+      <Transition mode="out-in">
+        <component :is="Show" />
+      </Transition>
     </div>
+
 
   </div>
 

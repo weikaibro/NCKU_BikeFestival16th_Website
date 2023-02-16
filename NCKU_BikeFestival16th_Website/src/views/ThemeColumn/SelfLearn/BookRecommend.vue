@@ -44,7 +44,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
         的人生，分類成「<strong>自學、自律、選擇、熱忱</strong>」的四大特質，完全不雞湯的文字，推動著讀者們大力衝刺，成為夢想中的自己。
         
         <br><br><span class="font-bold text-2xl">小編的建議</span> 
-        <br> 前三本書的內容都以論述為主，後繼較難的讀者也可以考慮先看最後一本書後，對未來有著更具體的目標後，再來認識配套的技巧喔！
+        <br> 前三本書的內容都以論述為主，難以一次讀完的讀者也可以考慮先看最後一本書後，再來強化補足相應的能力喔！
+
       </div>
 
     </div>

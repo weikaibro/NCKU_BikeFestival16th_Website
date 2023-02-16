@@ -63,9 +63,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br> 3. 焦點話題：包含各種升學相關文章
           <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://ucan.moe.edu.tw/">
             <span class="linkEff">
-              UCAN大專院校就業職能平台
-            </span>
-          </a> / 
+              UCAN大專院校就業職能平台</span></a> / 
             <a target="_blank" rel="noreferrer noopenner" href="http://www.hollandexam.com/hollandQuiz.aspx">
               <span class="linkEff">1111人力銀行Holland學職涯探索平臺</span></a> </span>
           <br> 這兩個網站主要的功能是提供職涯興趣測驗，讓學生更了解自己未來可發展的方向！下面是興趣類型的分類，讓大家先對六種興趣類型有個基礎的概念～
@@ -159,8 +157,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br><br><span class="font-bold text-2xl"><a target="_blank" rel="noreferrer noopenner" href="https://www.unews.com.tw/"><span class="linkEff">大學問</span></a></span> 
         </div>
         <picture>
-          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies8.png" type="image/webp">
-          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies8.png" alt="enrollment">
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies9.png" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies9.png" alt="enrollment">
         </picture>
         <div class="text-xl leading-9">
           大學問是一個資訊非常豐富的網站，基本上就是什麼都有什麼都不奇怪。比起 University TW的申請資訊，大學問的資訊比較有經過整理和排版。而除了申請資訊外，大學問也有整理出各種升學管道的介紹和時程、寒暑假營隊的相關資訊，還有一些升學專欄內容等。大家平常也可以多上去看看大學情報，那邊時不時會發布一些新的文章。
@@ -181,8 +179,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
           <br><br><span class="font-bold text-2xl">落點分析</span> 
         </div>
         <picture>
-          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies9.png" type="image/webp">
-          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies9.png" alt="enrollment">
+          <source class="shadow-lg mx-auto my-10 w-[800px]" srcset="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies8.png" type="image/webp">
+          <img class="shadow-lg mx-auto my-10 w-[800px]" src="../../../assets/themeCol_enrollmentForDummies/enrollmentForDummies8.png" alt="enrollment">
         </picture>
         <div class="text-xl leading-9">
           落點分析的網站包含

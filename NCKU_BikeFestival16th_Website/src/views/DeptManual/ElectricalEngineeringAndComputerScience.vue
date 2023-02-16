@@ -128,7 +128,7 @@ const scrollRight = () => {
             <div class="memberInfo">
               <!-- <picture> -->
                 <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.jpg" alt="member">
+                <img class="rounded-full w-[80%] mx-auto mt-5" src="../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.png" alt="member">
               <!-- </picture> -->
               <span class="mt-10 text-3xl font-bold max-md:mt-6">劉仲昀</span>
               <span class="fontSize mt-3 text-center">資訊工程學系 112</span>

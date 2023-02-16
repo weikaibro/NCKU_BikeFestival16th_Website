@@ -51,10 +51,15 @@ const Show = computed(() => {
     <div class="">
       <div class="px-36 pt-16 max-md:px-4">
         
-        <Transition mode="out-in">
-          <div class="text-4xl font-bold mb-10 max-sm:text-2xl" v-if="num == 0">單車十六｜探索學習｜講座報名</div>
-          <div class="text-4xl font-bold mb-10 max-sm:text-2xl" v-else-if="num == 1">單車十六｜探索學習｜討論會報名</div>
-        </Transition>
+        
+          <div class="flex text-4xl font-bold mb-10 max-sm:text-2xl">
+            <div>單車十六｜探索學習</div>
+            <Transition mode="out-in">
+              <div v-if="num == 0">｜講座報名</div>
+              <div v-else-if="num == 1">｜討論會報名</div>
+            </Transition>
+          </div>
+          <!-- <div class="text-4xl font-bold mb-10 max-sm:text-2xl" v-else-if="num == 1">單車十六｜探索學習｜討論會報名</div> -->
         <div class="text-lg leading-9 max-sm:text-sm">
           負責人聯絡資訊：
           <br> 學術部｜部長｜劉世瑜｜

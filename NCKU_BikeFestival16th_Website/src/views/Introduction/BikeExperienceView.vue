@@ -28,7 +28,7 @@ import IrregularButton from "../../components/irregularButton.vue";
       <br />
       中正堂（整點） → 博物館 → 格致堂 → 總圖 → 榕園 → 小西門（歷史文物館） →
       火車頭 → 中正堂 <br /><br />
-      <span class="fontEff">香香之旅</span>
+      <span class="fontEff">理工之旅</span>
       <br />
       中正堂（整點） → 未來館 → 航太系直升機 → 化工系左轉 → 測量系（樹） →
       格致堂（湖） → 中正堂 <br /><br />

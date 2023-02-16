@@ -11,7 +11,7 @@ import Footer from '../../../components/Footer.vue';
     <hr />
     <div class="relative flex flex-col justify-center items-center my-12 text-2xl">
       <div class="absolute -bottom-12 left-0 right-1/2 translate-x-1/2 border-b-2 border-black max-lg:border-0"></div>
-      <img class="w-[500px]" src="../../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.jpg" alt="member">
+      <img class="w-[500px]" src="../../../assets/DeptManual/ElectricalEngineeringAndComputerScience/ElectricalEngineeringAndComputerScience2.png" alt="member">
       <div class="my-4">資訊工程學系112 劉仲昀</div>
       <div>#用盡一切資源精進自己</div>
     </div>
