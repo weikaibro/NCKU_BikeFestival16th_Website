@@ -65,7 +65,7 @@ const scrollRightChangeSouvenirContent = () => {
       <Transition mode="out-in">
         <div
           class="flex justify-center items-center p-24
-             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px]"
+             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px] max-md:p-3 max-md:p-3"
           v-if="souvenirIndex == 0"
         >
           <img class="w-[40%] max-sm:mb-8" src="../assets/Souvenir/Souvenir1.png" alt="Souvenir">
@@ -77,7 +77,7 @@ const scrollRightChangeSouvenirContent = () => {
         </div>
         <div
           class="flex justify-center items-center p-24
-             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px]"
+             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px] max-md:p-3"
           v-else-if="souvenirIndex == 1"
         >
           <img class="w-[40%] max-sm:mb-8" src="../assets/Souvenir/Souvenir2.png" alt="Souvenir">
@@ -89,7 +89,7 @@ const scrollRightChangeSouvenirContent = () => {
         </div>
         <div
           class="flex justify-center items-center p-24
-             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px]"
+             overflow-hidden h-[600px] max-sm:flex-col max-lg:p-10 max-md:h-[450px] max-md:p-3"
           v-else-if="souvenirIndex == 2"
         >
           <img class="w-[40%] max-sm:mb-8" src="../assets/Souvenir/Souvenir3.png" alt="Souvenir">

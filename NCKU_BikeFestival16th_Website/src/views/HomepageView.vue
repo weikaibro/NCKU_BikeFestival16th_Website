@@ -15,7 +15,7 @@ function fadeInEff() {
   let effElement = document.querySelectorAll(".scrollEff");
   for (var i = 0; i < effElement.length; i++) {
     var elem = effElement[i]
-    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 300;
+    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 100;
     if (distInView < 0) {
       elem.classList.add("fadeIn");
     }

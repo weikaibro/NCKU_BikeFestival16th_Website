@@ -16,7 +16,7 @@ import Footer from '../../../../components/Footer.vue';
       <div>#大學成績不是重點，重點是要學會怎麼跟別人不一樣</div>
     </div>
     <!-- content -->
-    <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-4">
+    <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-0 max-sm:text-base">
       <div class="absolute top-12 bottom-1/2 left-0 border-l-2 border-black max-lg:border-0"></div>
       <div class="absolute -top-0.5 left-0 right-[75%] translate-x-[150%] border-b-2 border-white max-lg:border-0"></div>
       <div class="text-lg">筆者：王妤文 / 編修：陳加羲</div>

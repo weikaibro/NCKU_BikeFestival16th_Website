@@ -76,7 +76,7 @@ onMounted(() => {
     <!-- pdf -->
     <canvas id="pdf_canvas" class=""></canvas>
     <!-- button -->
-    <div class="flex flex-col items-center ml-20 mt-6 max-2xl:ml-0 max-2xl:flex-row max-2xl:gap-x-4 max-sm:flex-col">
+    <div class="flex flex-col items-center ml-20 mt-6 max-2xl:ml-0 max-2xl:flex-row max-2xl:gap-x-4">
       <div class="text-2xl flex">
         Page：<div id="page_num"></div> / <div id="page_total"></div>
       </div>

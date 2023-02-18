@@ -5,15 +5,21 @@ function fadeInEff() {
   let effElement = document.querySelectorAll(".scrollEff");
   for (var i = 0; i < effElement.length; i++) {
     var elem = effElement[i]
-    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 300;
-    elem.classList.remove("fadeIn");
+    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 50;
     if (distInView < 0) {
       elem.classList.add("fadeIn");
     }
   }
 }
 onMounted(() => {
-  window.addEventListener('scroll', fadeInEff); 
+  let effElement = document.querySelectorAll(".scrollEff");
+  for (var i = 0; i < effElement.length; i++) {
+    var elem = effElement[i]
+    if (elem.classList.contains("fadeIn")) {
+      elem.classList.remove("fadeIn");
+    }
+  }
+  window.addEventListener('scroll', fadeInEff);
   fadeInEff()
 })
 onBeforeUnmount(() => {

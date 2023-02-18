@@ -42,7 +42,7 @@ onBeforeUnmount(() => {
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir1.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">金屬徽章</div>
           <div>＄90 /個</div>
           <div>以成大最具象徵性之一的榕園為主題，並選擇以像素遊戲的方式呈現，象徵在這次單車16裡，所有的參加者都在以榕園聞名的成大裡探索遊玩，尋找自己的遊戲結局。</div>
@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir2.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">學業御守</div>
           <div>＄150 /個</div>
           <div>延伸單車16主視覺所製作的學業御守，以成大校花鳳凰花紋樣點綴，是成大單車節送給每個前來追夢的學子的一份祝福。希望每個人都能夠懷揣著這份信念與盼望，向自己的目標大步邁進！</div>
@@ -64,7 +64,7 @@ onBeforeUnmount(() => {
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir3.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">帆布袋</div>
           <div>＄280 /個</div>
           <div>
@@ -78,7 +78,7 @@ onBeforeUnmount(() => {
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir4.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">飲料提袋</div>
           <div>＄60 /個</div>
           <div>
@@ -93,7 +93,7 @@ onBeforeUnmount(() => {
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir5.png" alt="Souvenir">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir6.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">資料夾</div>
           <div>＄35 /個 &nbsp;&nbsp; ＄55 /兩個</div>
           <div>以成大最具象徵性之一的榕園為主題，並選擇以像素遊戲的方式呈現，象徵在這次單車16裡，所有的參加者都在以榕園聞名的成大裡探索遊玩，尋找自己的遊戲結局。</div>
@@ -105,7 +105,7 @@ onBeforeUnmount(() => {
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir7.png" alt="Souvenir">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir8.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">衣服</div>
           <div>＄350 /件</div>
           <div> 
@@ -121,7 +121,7 @@ onBeforeUnmount(() => {
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%]">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir9.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">活頁紙</div>
           <div>＄90 /個</div>
           <div>以成大最具象徵性之一的榕園為主題，並選擇以像素遊戲的方式呈現，象徵在這次單車16裡，所有的參加者都在以榕園聞名的成大裡探索遊玩，尋找自己的遊戲結局。</div>
