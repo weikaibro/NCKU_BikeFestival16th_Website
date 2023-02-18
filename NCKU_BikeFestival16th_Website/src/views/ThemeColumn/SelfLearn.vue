@@ -1,6 +1,24 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { RouterLink } from 'vue-router';
+function fadeInEff() {
+  let effElement = document.querySelectorAll(".scrollEff");
+  for (var i = 0; i < effElement.length; i++) {
+    var elem = effElement[i]
+    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 300;
+    elem.classList.remove("fadeIn");
+    if (distInView < 0) {
+      elem.classList.add("fadeIn");
+    }
+  }
+}
+onMounted(() => {
+  window.addEventListener('scroll', fadeInEff); 
+  fadeInEff()
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', fadeInEff); 
+})
 </script>
 
 <template>
@@ -10,7 +28,7 @@ import { RouterLink } from 'vue-router';
     <div class="flex flex-wrap justify-center items-center gap-8 my-16 max-sm:mx-4">
       <RouterLink to="/ThemeColumn/NotePro">
         <div
-          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
+          class="scrollEff flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_NotePro/NotePro1.jpg" alt="NotePro">
@@ -21,7 +39,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/PlatformForDummies">
         <div
-          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
+          class="scrollEff flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img class="w-[250px] max-sm:w-[200px]" src="../../assets/themeCol_PlatformForDummies/PlatformForDummies1.png" alt="PlatformForDummies">
@@ -32,7 +50,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/FinancialManagement">
         <div
-          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
+          class="scrollEff flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_FinancialManagement/themeCol_FinancialManagement1.png" alt="FinancialManagement">
@@ -43,7 +61,7 @@ import { RouterLink } from 'vue-router';
       </RouterLink>
       <RouterLink to="/ThemeColumn/BookRecommend">
         <div
-          class="flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
+          class="scrollEff flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
             tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_BookRecommend/BookRecommend1.jpg" alt="BookRecommend">
@@ -63,5 +81,30 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
 
+@keyframes fade_in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fade_in ease 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.scrollEff {
+  opacity: 0;
+}
 </style>

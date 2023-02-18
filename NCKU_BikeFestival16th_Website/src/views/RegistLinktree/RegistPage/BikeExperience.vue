@@ -27,6 +27,7 @@ const Switch = (index) => {
   num.value = index;
 };
 const isRegistSuccess = ref("");
+const isBtnDisable = ref("")
 function checkSelected(event) {
   var sets = [
     {
@@ -53,6 +54,7 @@ function checkSelected(event) {
     }
   }
   if (checkedOne[0] && checkedOne[1]) {
+    isBtnDisable.value = "true"
     var formData = document.querySelector("form");
     axios
       .post(
@@ -365,7 +367,7 @@ function checkSelected(event) {
                 <div class="py-20 w-[300px]">
                   <input id="customBtn" type="submit" hidden />
                   <label for="customBtn" class="cursor-pointer">
-                    <irregularButton btnTitle="送出" />
+                    <irregularButton btnTitle="送出" :disable="isBtnDisable" />
                   </label>
                 </div>
               </form>

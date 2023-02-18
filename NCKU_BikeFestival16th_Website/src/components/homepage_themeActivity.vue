@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
         <source class="w-full" srcset="../assets/themeActivity/MockInterview.webp" type="image/webp">
         <img class="w-full" src="../assets/themeActivity/MockInterview.png" alt="Interview">
       </picture>
-      <span class="transitionEff absolute bottom-[100px] left-4 text-xl text-white max-md:text-base">
+      <span class="transitionEff absolute bottom-[120px] left-4 text-xl text-white max-md:text-base max-md:bottom-[100px]">
         備戰二階面試的最佳去處
       </span>
       <span class="absolute bottom-4 text-2xl font-semibold">模擬面試</span>
@@ -22,7 +22,7 @@ import { RouterLink } from 'vue-router';
         <source class="w-full" srcset="../assets/themeActivity/Exposition.png" type="image/webp">
         <img class="w-full" src="../assets/themeActivity/Exposition.png" alt="Exposition">
       </picture>
-      <span class="transitionEff absolute bottom-[100px] left-4 text-xl text-white max-md:text-base">
+      <span class="transitionEff absolute bottom-[120px] left-4 text-xl text-white max-md:text-base max-md:bottom-[100px]">
         一窺學術殿堂的堂奧
       </span>
       <span class="absolute bottom-4 text-2xl font-semibold">科系博覽</span>
@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
         <source class="w-full" srcset="../assets/themeActivity/CollegeCharge.webp" type="image/webp">
         <img class="w-full" src="../assets/themeActivity/CollegeCharge.png" alt="CollegeCharge">
       </picture>
-      <span class="transitionEff absolute bottom-[100px] left-4 text-xl text-white max-md:text-base">
+      <span class="transitionEff absolute bottom-[120px] left-4 text-xl text-white max-md:text-base max-md:bottom-[100px]">
         來自學長姐的第一手資訊
       </span>
       <span class="absolute bottom-4 text-2xl font-semibold">大學充值</span>
@@ -49,7 +49,7 @@ import { RouterLink } from 'vue-router';
         <source class="w-full" srcset="../assets/themeActivity/ExploreLearning.webp" type="image/webp">
         <img class="w-full" src="../assets/themeActivity/ExploreLearning.png" alt="ExploreLearning">
       </picture>
-      <span class="transitionEff absolute bottom-[100px] left-4 text-xl text-white max-md:text-base">
+      <span class="transitionEff absolute bottom-[120px] left-4 text-xl text-white max-md:text-base max-md:bottom-[100px]">
         自主學習起步走
       </span>
       <span class="absolute bottom-4 text-2xl font-semibold">探索學習</span>
@@ -70,6 +70,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .divGrid:hover .transitionEff {
+  /* text */
   padding: 20px 15px;
   visibility: visible;
   opacity: 1;

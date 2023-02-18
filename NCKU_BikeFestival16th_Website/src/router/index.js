@@ -41,6 +41,11 @@ const router = createRouter({
               component: () => import('../views/RegistLinktree/RegistPage/ExploreLearning.vue')
             },
             {
+              path: 'ExploreLearning2',
+              name: 'ExploreLearning2',
+              component: () => import('../views/RegistLinktree/RegistPage/ExploreLearning2.vue')
+            },
+            {
               path: 'CollegeCharge',
               name: 'CollegeCharge',
               component: () => import('../views/RegistLinktree/RegistPage/CollegeCharge.vue')

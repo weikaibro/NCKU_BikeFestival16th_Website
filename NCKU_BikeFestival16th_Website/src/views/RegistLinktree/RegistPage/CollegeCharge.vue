@@ -41,6 +41,7 @@ const session8 = [
   "3/5 (日) 14:35~16:00 黃昭禓｜放下你的手機，玩好人生這場大遊戲",
 ];
 const isRegistSuccess = ref("")
+const isBtnDisable = ref("")
 function checkSelected(event) {
   var sets = [
     {
@@ -59,6 +60,7 @@ function checkSelected(event) {
     alert(sets[0].errorMessage);
   }
   if (checkedOne) {
+    isBtnDisable.value = 'true'
     var formData = document.querySelector("form");
     axios
       .post(
@@ -462,7 +464,7 @@ onMounted(() => {
               <div class="py-20 w-[300px]">
                 <input id="customBtn" type="submit" hidden />
                 <label for="customBtn" class="cursor-pointer">
-                  <irregularButton btnTitle="送出" />
+                  <irregularButton btnTitle="送出" :disable="isBtnDisable" />
                 </label>
               </div>
             </form>

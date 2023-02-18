@@ -8,7 +8,7 @@ const headers = ref([
   { title: "主題專欄", link: "/ThemeColumn" },
   { title: "科系手冊", link: "/DeptManual"},
   { title: "合作夥伴", link: "/Partner" },
-  { title: "紀念品預購", link: "/SouvenirPreorder" },
+  { title: "紀念品介紹", link: "/SouvenirPreorder" },
   { title: "團體報名", link: "/GroupRegistration"}
 ]);
 

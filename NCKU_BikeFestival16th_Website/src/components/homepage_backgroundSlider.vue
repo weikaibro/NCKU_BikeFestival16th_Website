@@ -10,7 +10,7 @@
         <img src="../assets/official_slider_1.png" alt="NCKUbike">
       </picture>
     </div>
-    <div>
+    <!-- <div>
       <picture>
         <source srcset="../assets/official_slider_1.webp" type="image/webp">
         <img src="../assets/official_slider_1.png" alt="NCKUbike">
@@ -21,7 +21,7 @@
         <source srcset="../assets/official_slider_1.webp" type="image/webp">
         <img src="../assets/official_slider_1.png" alt="NCKUbike">
       </picture>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -43,7 +43,7 @@
   width: 100%;
 }
 
-.sliderEff div:nth-child(3) {
+/* .sliderEff div:nth-child(3) {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
 }
@@ -56,38 +56,48 @@
 .sliderEff div:nth-child(1) {
   animation-delay: 10s;
   -webkit-animation-delay: 10s;
+} */
+.sliderEff div {
+  animation: sliderTrans ease 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes sliderTrans {
-  6.67% {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+  /* 6.67% {
     opacity: 1;
     filter: alpha(opacity=100);
     left: 0;
-    /* 0 - 1秒 滑入*/
+    0 - 1秒 滑入
   }
   33.35% {
     opacity: 1;
     filter: alpha(opacity=100);
     left: 0;
-    /* 1- 5秒靜止*/
+    1- 5秒靜止
   }
   40.02% {
     opacity: 1;
     filter: alpha(opacity=100);
     left: -100%;
-    /* 5-6秒滑出*/
+    5-6秒滑出
   }
   43.35% {
     opacity: 0;
     filter: alpha(opacity=0);
     left: -100%;
-    /* 6-6.5秒變透明*/
+    6-6.5秒變透明
   }
   46.69% {
     opacity: 0;
     filter: alpha(opacity=0);
     left: 0%;
-    /* 6.5-7秒回到起始位置*/
-  }
+    6.5-7秒回到起始位置
+  } */
 }
 </style>

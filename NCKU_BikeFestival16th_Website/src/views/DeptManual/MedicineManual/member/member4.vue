@@ -7,7 +7,7 @@ import Footer from '../../../../components/Footer.vue';
   <Navbar />
   <div class="my-16 mx-10">
     <!-- header -->
-    <div class="text-end text-xl">科系手冊 / 醫學院 / 會計學系 / 張芸菁</div>
+    <div class="text-end text-xl">科系手冊 / 醫學院 / 醫學檢驗生物技術學系 / 方文廷</div>
     <hr />
     <div class="relative flex flex-col justify-center items-center my-12 text-2xl">
       <div class="absolute -bottom-12 left-0 right-1/2 translate-x-1/2 border-b-2 border-black max-lg:border-0"></div>
