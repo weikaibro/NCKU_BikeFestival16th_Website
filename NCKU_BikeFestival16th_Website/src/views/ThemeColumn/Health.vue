@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
       <RouterLink to="/ThemeColumn/HealthRoom">
         <div
           class="scrollEff flex flex-col justify-evenly items-center w-[360px] h-[450px] border-2 
-            tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
+          tansition duration-150 hover:-translate-y-5 max-sm:w-[280px] max-sm:h-[370px]"
         >
           <img src="../../assets/themeCol_healthEye.png" alt="HealthRoom">
           <div class="text-xl font-bold">
@@ -99,7 +99,14 @@ hr {
     transform: translateY(0);
   }
 }
-
+@keyframes y_translate {
+  from {
+    transform: translateY(0)
+  }
+  to {
+    transform: translateY(-40px)
+  }
+}
 .fadeIn {
   animation: fade_in ease 1s;
   animation-delay: 0.3s;

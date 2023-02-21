@@ -28,6 +28,7 @@ const Switch = (index) => {
 };
 const isRegistSuccess = ref("");
 const isBtnDisable = ref("")
+const submitText = ref("送出")
 function checkSelected(event) {
   var sets = [
     {
@@ -56,6 +57,9 @@ function checkSelected(event) {
   if (checkedOne[0] && checkedOne[1]) {
     isBtnDisable.value = "true"
     var formData = document.querySelector("form");
+    submitText.value = "處理中..."
+    // ref: https://andy-carter.com/blog/disable-multiple-form-submits-with-vanilla-javascript
+    document.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
     axios
       .post(
         "https://nckubikefestival.ncku.edu.tw/api/register/BikeExperience",
@@ -140,7 +144,7 @@ function checkSelected(event) {
           >
             <div class="text-4xl font-bold mb-10">報名失敗！</div>
             <div>
-              由於報名人數眾多導致後台不堪負荷，請前往<a
+              由於目前後台不穩，請前往<a
                 class="linkEff"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSddNzzDScYYomXWC38t8RqS51YH8I-ipxnH5Xzcl9IqN-a3kw/viewform"
                 target="_blank"
@@ -367,7 +371,7 @@ function checkSelected(event) {
                 <div class="py-20 w-[300px]">
                   <input id="customBtn" type="submit" hidden />
                   <label for="customBtn" class="cursor-pointer">
-                    <irregularButton btnTitle="送出" :disable="isBtnDisable" />
+                    <irregularButton :btnTitle="submitText" :disable="isBtnDisable" />
                   </label>
                 </div>
               </form>

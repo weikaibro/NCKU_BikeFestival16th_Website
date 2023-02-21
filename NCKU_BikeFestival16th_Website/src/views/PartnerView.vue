@@ -27,7 +27,11 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', fadeInEff); 
 })
-
+const partnerIndex = ref(100)
+const userChoose = (index) => {
+  partnerIndex.value = index
+  console.log(partnerIndex.value)
+}
 </script>
 
 <template>
@@ -40,7 +44,7 @@ onBeforeUnmount(() => {
 
       <div class="w-[70%] grid grid-cols-2 mx-auto gap-32 text-xl max-md:grid-cols-1 max-lg:w-[90%] max-lg:gap-20 max-sm:text-base">
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black pb-6 max-md:text-center">
-          <img class="w-[90%] mx-auto" src="../assets/Partner/partner1.png" alt="Partner">
+          <img @click="userChoose(0)" class="w-[90%] mx-auto cursor-pointer" src="../assets/Partner/partner1.png" alt="Partner">
           <div class="mt-20 mb-4 text-3xl font-bold max-sm:text-2xl">法律白話文運動</div>
           <div>由一群致力於散播法治種子的法律人成立的新媒體。</div>
         </div>
@@ -60,6 +64,12 @@ onBeforeUnmount(() => {
           <div>台南大飯店於西元1964年開幕營運，是南台灣第一家國際觀光飯店。</div>
         </div>
       </div>
+
+      <!-- <div>
+        <div class="fixed bg-white w-[1000px] h-[200px] overflow-y-scroll" v-if="partnerIndex == 0">
+          <img class="w-[800px]" src="../assets/Partner/partner1.png" alt="">
+        </div>
+      </div> -->
 
     </div>
     <Footer />

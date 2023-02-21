@@ -1,29 +1,31 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import axios from "axios";
 import irregularButton from "../../../../components/irregularButton.vue";
+import DepartmentTour from "../DepartmentTour.vue";
 const checkBoxInfo1 = ref([
   {
     speech: "3/4（六）09:20-10:30 電機系 - 賴癸江教授",
-    api: "entry.316989471",
+    api: "session",
   },
   {
     speech: "3/4（六）13:50-15:00 牙醫系 - 陳畊仲教授",
-    api: "entry.316989471",
+    api: "session",
   },
   {
     speech: "3/5（日）09:20-10:30 會計系 - 劉梧柏教授",
-    api: "entry.316989471",
+    api: "session",
   },
   {
     speech: "3/5（日）13:50-15:00 學習歷程特邀講座 - Yory 優歷",
-    api: "entry.316989471",
+    api: "session",
   },
 ]);
 // at least one "checkbox" to be selected
-function checkSelected() {
+const checkSelected = (e) => {
   var sets = [
     {
-      checkboxes: document.querySelectorAll('[name="entry.316989471"]'),
+      checkboxes: document.querySelectorAll('[name="session"]'),
       errorMessage: "請在【想參加的場次】中至少選擇一項"
     },
   ];
@@ -42,225 +44,272 @@ function checkSelected() {
     }
   }
   if (checkedOne[0]) {
-    console.log('Welcome!')
-    var form = document.querySelector('form');
-    form.submit();
-    form.reset();
-    alert('報名成功！')
+    isBtnDisable.value = "true";
+    submitText.value = "處理中..."
+    var formData = document.querySelector("form");
+    // ref: https://andy-carter.com/blog/disable-multiple-form-submits-with-vanilla-javascript
+    document.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
+    axios
+      .post(
+        "https://nckubikefestival.ncku.edu.tw/api/register/MockInterview",
+        formData
+      )
+      .then((res) => {
+        isRegistSuccess.value = "success";
+      })
+      .catch((err) => {
+        isRegistSuccess.value = "failure";
+      });
   }
 }
+const isRegistSuccess = ref("");
+const isBtnDisable = ref("")
+const submitText = ref("送出")
 </script>
 
 <template>
   <div>
 
-    <div class="lg:hidden text-lg text-center mb-16">
+    <!-- <div class="lg:hidden text-lg text-center mb-16">
       電腦以外的裝置請點擊<a
         class="linkEff"
         href="https://docs.google.com/forms/d/e/1FAIpQLSfNMX05RwfODBSQPSoJDmTFCA09Ig2SzfqW9CKqrPZjrNxM9w/viewform"
         target="_blank"
         rel="noreferrer noopenner"
       >此連結</a>報名
-    </div>
-
-    <div class="max-lg:hidden">
-      <div class="text-4xl font-bold mb-10">
-      單車十六｜教授面試技巧演講/學習歷程特邀講座
+    </div> -->
+    <Transition mode="out-in">
+      <div v-if="isRegistSuccess == 'success'">
+        <div class="border-2 border-white p-10 text-center mb-32">
+          <div class="text-4xl font-bold mb-10">報名成功</div>
+          <div class="text-3xl max-md:text-xl">
+            感謝你的填寫，期待在單車節與你相見
+          </div>
+          <br /><br /><br />
+          <div class="text-lg max-md:text-base">
+            （如有問題請聯繫<a
+              class="linkEff"
+              href="https://www.facebook.com/NCKUbikefestival"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >粉絲專頁</a
+            >，將有專人會在第一時間給予回覆！）
+          </div>
+        </div>
       </div>
-      <div class="text-xl leading-8">
-        各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
-        <br />我們將於 3/4(六)~3/5(日) 早上09:20-10:30 及 下午 01:50-03:00
-        舉辦教授面試技巧演講及學習歷程特邀講座
 
-        <br /><br />
-        演講時間及講者： <br />
-        3/4(六) 上午 09:20-10:30 電機系 - 賴癸江教授：大學甄選面試準備要領 <br />
-        3/4(六) 下午 01:50-03:00 牙醫系 - 陳畊仲教授：表達無障礙，面試有未來<br />
-        3/5(日) 上午 09:20-10:30 會計系 - 劉梧柏教授：不出意外的話，面試要出意外了 <br />
-        3/5(日) 下午 01:50-03:00 學習歷程特邀講座 - Yory 優歷：學習歷程做對了嗎？——製作關鍵大解密
-
-        <br /><br />
-        活動地點：國立成功大學 國際會議廳第三演講室（屆時會有角標指引） <br />
-        演講一場為 70 分鐘（包含 20 分鐘的 QA 時間）
-
-        <br /><br />
-        📣貼心小提醒 <br />
-        若你已有報名模擬面試，或是單車節其他活動，要<strong
-          >注意該活動時間是否與教授面試技巧演講重疊喔！</strong
-        >
-        <br />
-        表單送出後就無法更動報名的場次囉～
-
-        <br /><br />
-        🏴此表單將在 2/19(日) 23:59
-        截止，後續錄取通知及相關資訊皆會經由電子郵件發送，因此麻煩各位一定要填「常用」信箱～
-
-        <br /><br />
-        有任何問題或是不明白的地方可以聯絡以下負責人： <br />
-        會計115 趙蓁妤 0982826565 /
-        <a
-          class="linkEff"
-          href="https://www.facebook.com/profile.php?id=100012231169610"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          Facebook
-        </a>
-        <br />
-        會計115 張嘉純 0908393528 /
-        <a
-          class="linkEff"
-          href="https://www.facebook.com/profile.php?id=100003523717876"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          Facebook
-        </a>
-        <br />
-        交管115 張尚弘 0906333909 /
-        <a
-          class="linkEff"
-          href="https://www.facebook.com/Shang.Hong.Chang"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          Facebook
-        </a>
-        <br />
-        外文114 柯雯瑄 0956205355 /
-        <a
-          class="linkEff"
-          href="https://www.facebook.com/profile.php?id=100006236919642"
-          target="_blank"
-          rel="noreferrer noopenner"
-        >
-          Facebook
-        </a>
-        <br />
-      </div>
-      <form
-        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfNMX05RwfODBSQPSoJDmTFCA09Ig2SzfqW9CKqrPZjrNxM9w/formResponse"
-        method="POST"
-        @submit.prevent="checkSelected"
-        target="_blank"
-        rel="noreferrer noopenner"
+      <div
+        class="border-2 border-white p-10 text-2xl text-center my-16"
+        v-else-if="isRegistSuccess == 'failure'"
       >
-        <div class="mt-12">
-          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱</p>
-          <input
-            name="emailAddress"
-            class="inputEff"
-            type="email"
-            autocomplete="off"
-            required
-          />
+        <div class="text-4xl font-bold mb-10">報名失敗！</div>
+        <div>
+          由於目前後台不穩，請前往<a
+            class="linkEff"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfNMX05RwfODBSQPSoJDmTFCA09Ig2SzfqW9CKqrPZjrNxM9w/viewform"
+            target="_blank"
+            rel="noreferrer noopenner"
+            >此份表單</a
+          >報名
         </div>
-        <div class="mt-12">
-          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字</p>
-          <input
-            name="entry.1466084252"
-            class="inputEff"
-            type="text"
-            autocomplete="off"
-            required
-          />
+      </div>
+
+      <div class="" v-else>
+        <div class="text-4xl font-bold mb-10">
+        單車十六｜教授面試技巧演講/學習歷程特邀講座
         </div>
-        <div class="mt-12">
-          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-            就讀學校及年級
-          </p>
-          <p class="mb-6">
-            例：高雄中學高三
-          </p>
-          <input
-            name="entry.1323875869"
-            class="inputEff"
-            type="text"
-            autocomplete="off"
-            required
-          />
-        </div>
-        <div class="mt-12">
-          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話（格式: 0912-345678）</p>
-          <input
-            name="entry.158182772"
-            class="inputEff"
-            type="tel"
-            pattern="[0-9]{4}-[0-9]{6}"
-            autocomplete="off"
-            required
-          />
-        </div>
-        <div class="mt-12">
-          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-            常用的聯絡信箱
-          </p>
-          <p class="mb-6">
-            報名後要記得確認信箱喔～
-          </p>
-          <input
-            name="entry.1642078386"
-            class="inputEff"
-            type="email"
-            autocomplete="off"
-            required
-          />
-        </div>
-        <div class="mt-12">
-          <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
-          <input
-            name="entry.1830004147"
-            class="inputEff"
-            type="url"
-            autocomplete="off"
-            required
-          />
-        </div>
-        <div class="mt-12 mb-4">
-          <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
-            想參加的場次
-          </p>
-          <p class="mb-6">
-            一個場次為 70 分鐘
-          </p>
-          <label
-            class="checkBoxEff"
-            v-for="info in checkBoxInfo1"
-            :key="checkBoxInfo1.indexOf(info)"
+        <div class="text-xl leading-8 max-sm:text-base">
+          各位高中生好，我們是第十六屆成功大學單車節學術部模擬面試組
+          <br />我們將於 3/4(六)~3/5(日) 早上09:20-10:30 及 下午 01:50-03:00
+          舉辦教授面試技巧演講及學習歷程特邀講座
+
+          <br /><br />
+          演講時間及講者： <br />
+          3/4(六) 上午 09:20-10:30 電機系 - 賴癸江教授：大學甄選面試準備要領 <br />
+          3/4(六) 下午 01:50-03:00 牙醫系 - 陳畊仲教授：表達無障礙，面試有未來<br />
+          3/5(日) 上午 09:20-10:30 會計系 - 劉梧柏教授：不出意外的話，面試要出意外了 <br />
+          3/5(日) 下午 01:50-03:00 學習歷程特邀講座 - Yory 優歷：學習歷程做對了嗎？——製作關鍵大解密
+
+          <br /><br />
+          活動地點：國立成功大學 國際會議廳第三演講室（屆時會有角標指引） <br />
+          演講一場為 70 分鐘（包含 20 分鐘的 QA 時間）
+
+          <br /><br />
+          📣貼心小提醒 <br />
+          若你已有報名模擬面試，或是單車節其他活動，要<strong
+            >注意該活動時間是否與教授面試技巧演講重疊喔！</strong
           >
-            <input :name="info.api" type="checkbox" :value="info.speech" />{{
-              info.speech
-            }}
-          </label>
+          <br />
+          表單送出後就無法更動報名的場次囉～
+
+          <br /><br />
+          🏴此表單將在 2/19(日) 23:59
+          截止，後續錄取通知及相關資訊皆會經由電子郵件發送，因此麻煩各位一定要填「常用」信箱～
+
+          <br /><br />
+          有任何問題或是不明白的地方可以聯絡以下負責人： <br />
+          會計115 趙蓁妤 0982826565 /
+          <a
+            class="linkEff"
+            href="https://www.facebook.com/profile.php?id=100012231169610"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            Facebook
+          </a>
+          <br />
+          會計115 張嘉純 0908393528 /
+          <a
+            class="linkEff"
+            href="https://www.facebook.com/profile.php?id=100003523717876"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            Facebook
+          </a>
+          <br />
+          交管115 張尚弘 0906333909 /
+          <a
+            class="linkEff"
+            href="https://www.facebook.com/Shang.Hong.Chang"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            Facebook
+          </a>
+          <br />
+          外文114 柯雯瑄 0956205355 /
+          <a
+            class="linkEff"
+            href="https://www.facebook.com/profile.php?id=100006236919642"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            Facebook
+          </a>
+          <br />
         </div>
-        <div class="mt-12">
-          <p class="text-lg my-6">
-            有沒有想事先詢問教授的問題？（會以匿名的形式將問題給教授，並在最後的QA時間回答，歡迎大家踴躍提問！）
-          </p>
-          <input
-            name="entry.1073956836"
-            class="inputEff"
-            type="text"
-            autocomplete="off"
-          />
-        </div>
-        <div class="mt-12">
-          <p class="text-lg my-6">有其他想問的嗎？</p>
-          <input
-            name="entry.2131119717"
-            class="inputEff"
-            type="text"
-            autocomplete="off"
-          />
-        </div>
-        <div class="py-20 w-[300px]">
-          <input id="customBtn" type="submit" hidden />
-          <label for="customBtn" class="cursor-pointer">
-            <irregularButton btnTitle="送出" />
-          </label>
-        </div>
-      </form>
-    </div>
+        <form
+          @submit.prevent="checkSelected"
+        >
+          <input name="type" value="form2" hidden="true">
+          <div class="mt-12">
+            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">電子信箱</p>
+            <input
+              name="emailAddress"
+              class="inputEff"
+              type="email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的名字</p>
+            <input
+              name="name"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+              就讀學校及年級
+            </p>
+            <p class="mb-6">
+              例：高雄中學高三
+            </p>
+            <input
+              name="school"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">聯絡電話 </p>
+            <input
+              name="phone"
+              class="inputEff"
+              type="tel"
+              pattern="[0-9]{10}"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+              常用的聯絡信箱
+            </p>
+            <p class="mb-6">
+              報名後要記得確認信箱喔～
+            </p>
+            <input
+              name="freqMail"
+              class="inputEff"
+              type="email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6 after:content-['*'] after:ml-0.5 after:text-red-500">你的臉書連結 </p>
+            <input
+              name="facebook"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="mt-12 mb-4">
+            <p class="text-lg after:content-['*'] after:ml-0.5 after:text-red-500">
+              想參加的場次
+            </p>
+            <p class="mb-6">
+              一個場次為 70 分鐘
+            </p>
+            <label
+              class="checkBoxEff"
+              v-for="info in checkBoxInfo1"
+              :key="checkBoxInfo1.indexOf(info)"
+            >
+              <input :name="info.api" type="checkbox" :value="info.speech" />{{
+                info.speech
+              }}
+            </label>
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6">
+              有沒有想事先詢問教授的問題？（會以匿名的形式將問題給教授，並在最後的QA時間回答，歡迎大家踴躍提問！）
+            </p>
+            <input
+              name="question"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="mt-12">
+            <p class="text-lg my-6">有其他想問的嗎？</p>
+            <input
+              name="other"
+              class="inputEff"
+              type="text"
+              autocomplete="off"
+            />
+          </div>
+          <div class="py-20 w-[300px]">
+            <input id="customBtn" type="submit" hidden />
+            <label for="customBtn" class="submitBtn cursor-pointer">
+              <irregularButton :btnTitle="submitText" :disable="isBtnDisable" />
+            </label>
+          </div>
+        </form>
+      </div>
+    </Transition>
   </div>
     
 

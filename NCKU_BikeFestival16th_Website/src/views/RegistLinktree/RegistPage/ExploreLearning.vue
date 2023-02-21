@@ -36,6 +36,7 @@ const sessions = [
 ];
 const isRegistSuccess = ref("");
 const isBtnDisable = ref("")
+const submitText = ref("送出")
 // at least one "checkbox" to be selected
 function checkSelected() {
   var sets = [
@@ -70,6 +71,9 @@ function checkSelected() {
   if (checkedOne[0] && checkedOne[1] && checkedOne[2]) {
     isBtnDisable.value = "true";
     var formData = document.querySelector("form");
+    submitText.value = "處理中..."
+    // ref: https://andy-carter.com/blog/disable-multiple-form-submits-with-vanilla-javascript
+    document.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
     axios
       .post(
         "https://nckubikefestival.ncku.edu.tw/api/register/ExploreLearning",
@@ -227,7 +231,7 @@ function checkSelected() {
             >
               <div class="text-4xl font-bold mb-10">報名失敗！</div>
               <div>
-                由於報名人數眾多導致後台不堪負荷，請前往<a
+                由於目前後台不穩，請前往<a
                   class="linkEff"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc58FN6FgKwQV8wX6QDVOdiqYs6pthcSyszbxEkbDEuuY3f8g/viewform"
                   target="_blank"
@@ -255,7 +259,7 @@ function checkSelected() {
                   </div>
 
                   <div class="mt-12 text-lg leading-9 max-sm:text-sm">
-                    <div class="text-2xl mb-4">報名相關時程</div>
+                    <div class="text-2xl mb-4 max-sm:text-lg">報名相關時程</div>
                     <div>
                       報名時間：即日起～2/24（五）23:59
                       <br />
@@ -325,8 +329,8 @@ function checkSelected() {
                     <div class="text-3xl max-sm:text-2xl">
                       B. ✨講座參與意願✨
                     </div>
-                    <div class="text-lg">
-                      <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
+                    <div class="text-lg max-sm:text-base">
+                      <div class="text-2xl mt-12 mb-2 max-sm:text-lg">
                         場次一 03／04（六）10：00 ~11：30（9:30開放入場）
                       </div>
                       主題：擊敗拖延｜事半功倍的高效學習法
@@ -334,7 +338,7 @@ function checkSelected() {
                       講師：莊愛玲 <br />
                       組織：爆學力 <br />
                       地點：國際會議廳一
-                      <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
+                      <div class="text-2xl mt-12 mb-2 max-sm:text-lg">
                         場次二 03／04（六）13：30 ~15：00（13:00開放入場）
                       </div>
                       主題：讓服務學習時數用在真正需要的地方，志工活動也可以很有趣
@@ -342,7 +346,7 @@ function checkSelected() {
                       講師：黃妍庭 <br />
                       組織：善耕365公益媒合平台 <br />
                       地點：國際會議廳一
-                      <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
+                      <div class="text-2xl mt-12 mb-2 max-sm:text-lg">
                         場次三 03／04（六）16：00 ~17：30（15:30開放入場）
                       </div>
                       主題：船到橋頭自然直－成為法律人的心理準備
@@ -350,7 +354,7 @@ function checkSelected() {
                       講師：江鎬佑 <br />
                       組織：法律白話文運動 <br />
                       地點：國際會議廳一
-                      <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
+                      <div class="text-2xl mt-12 mb-2 max-sm:text-lg">
                         場次四 03／05（日）10：00 ~11：30（9:30開放入場）
                       </div>
                       主題：如何系統化探索大學科系，一起來「做中學」
@@ -358,7 +362,7 @@ function checkSelected() {
                       講師：許匡毅 <br />
                       組織：啟夢教育 <br />
                       地點：國際會議廳一
-                      <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
+                      <div class="text-2xl mt-12 mb-2 max-sm:text-lg">
                         場次五 03／05（日）13：30 ~15：00（13:00開放入場）
                       </div>
                       主題：先有人，才有教育
@@ -371,9 +375,7 @@ function checkSelected() {
                   </div>
 
                   <div class="mt-12">
-                    <p
-                      class="mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500"
-                    >
+                    <p class="mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500 max-sm:text-lg">
                       欲報名之場次（可複選喔）
                     </p>
                     <label
@@ -408,7 +410,7 @@ function checkSelected() {
                     </div>
                   </div>
 
-                  <div class="mt-12 text-lg">
+                  <div class="mt-12 text-lg max-sm:text-base">
                     <div class="text-3xl mb-4 max-sm:text-2xl">
                       C.✨報名動機與期待內容✨
                     </div>
@@ -531,7 +533,7 @@ function checkSelected() {
                   <div class="py-20 w-[300px]">
                     <input id="customBtn" type="submit" hidden />
                     <label for="customBtn" class="cursor-pointer">
-                      <irregularButton btnTitle="送出" :disable="isBtnDisable" />
+                      <irregularButton :btnTitle="submitText" :disable="isBtnDisable" />
                     </label>
                   </div>
                 </form>
@@ -593,7 +595,7 @@ function checkSelected() {
 
 /* ref: https://moderncss.dev/pure-css-custom-checkbox-style/ */
 .checkBoxEff {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.1;
 
   display: grid;

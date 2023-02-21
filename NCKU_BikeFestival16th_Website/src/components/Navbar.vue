@@ -20,7 +20,7 @@ const show = () => {
 
 <template>
   <div
-    class="sticky flex justify-between items-center mt-0 mx-0 bg-black h-16 lg:h-20"
+    class="sticky top-0 z-50 flex justify-between items-center bg-black h-16 lg:h-20"
   >
     <div>
       <RouterLink to="/">

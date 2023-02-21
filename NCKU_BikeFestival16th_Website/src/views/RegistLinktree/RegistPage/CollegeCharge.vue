@@ -42,6 +42,7 @@ const session8 = [
 ];
 const isRegistSuccess = ref("")
 const isBtnDisable = ref("")
+const submitText = ref("送出")
 function checkSelected(event) {
   var sets = [
     {
@@ -61,7 +62,10 @@ function checkSelected(event) {
   }
   if (checkedOne) {
     isBtnDisable.value = 'true'
+    submitText.value = "處理中..."
     var formData = document.querySelector("form");
+    // ref: https://andy-carter.com/blog/disable-multiple-form-submits-with-vanilla-javascript
+    document.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
     axios
       .post(
         "https://nckubikefestival.ncku.edu.tw/api/register/speakers",
@@ -140,7 +144,7 @@ onMounted(() => {
         >
           <div class="text-4xl font-bold mb-10">報名失敗！</div>
           <div>
-            由於報名人數眾多導致後台不堪負荷，請前往<a
+            由於目前後台不穩，請前往<a
               class="linkEff"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdKDzHdwI87IP6x2tsSCRorR5AvnaoA64Gn68vqJ8UIXqyfoQ/viewform"
               target="_blank"
@@ -231,11 +235,11 @@ onMounted(() => {
               <div class="mt-12 text-xl leading-9 max-sm:text-sm">
                 <strong
                   >時程通知 ⏰ <br />
-                  報名日期：2/10（五）~ 2/18（六） <br />
-                  寄出錄取通知：2/20（一）(記得注意信箱喔!👍) <br />
-                  寄出備取通知：2/24（五）(記得注意信箱喔!👍) <br />
-                  演講日期：3/4（六）& 3/5（日）</strong
-                >
+                  報名日期：2/10（五）~ 2/21（二）
+                  <br> 寄出錄取通知：2/24（五）(記得注意信箱喔!👍)
+                  <br> 寄出備取通知：2/26（日）(記得注意信箱喔!👍)
+                  <br> 演講日期：3/4（六）&  3/5（日）
+                </strong>
               </div>
 
               <div class="mt-12">
@@ -464,7 +468,7 @@ onMounted(() => {
               <div class="py-20 w-[300px]">
                 <input id="customBtn" type="submit" hidden />
                 <label for="customBtn" class="cursor-pointer">
-                  <irregularButton btnTitle="送出" :disable="isBtnDisable" />
+                  <irregularButton :btnTitle="submitText" :disable="isBtnDisable" />
                 </label>
               </div>
             </form>

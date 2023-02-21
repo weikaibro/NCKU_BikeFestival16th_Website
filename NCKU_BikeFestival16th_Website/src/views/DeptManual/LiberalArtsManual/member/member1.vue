@@ -13,7 +13,7 @@ import Footer from '../../../../components/Footer.vue';
       <div class="absolute -bottom-12 left-0 right-1/2 translate-x-1/2 border-b-2 border-black max-lg:border-0"></div>
       <img class="w-[500px]" src="../../../../assets/DeptManual/LiberalArts/LiberalArts1.jpg" alt="member">
       <div class="my-4">歷史學系115 柯睿信</div>
-      <div>#特殊選材的奇人</div>
+      <div>#特殊選才的奇人</div>
     </div>
     <!-- content -->
     <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-0 max-sm:text-base">
@@ -24,10 +24,10 @@ import Footer from '../../../../components/Footer.vue';
       <div class="text-2xl font-bold mb-2.5"> 為什麼要讀歷史系？</div>
       <div> 「為什麼想讀歷史系，這個東西就很好玩了。」柯睿信說道。他對歷史有相當濃厚的興趣，沒有想太多就做出了選擇。他在這裡建議各位，一定要選擇自己所熱愛的科系，雖然不確定未來如何，但總是可以試試看的。</div>
       <br>
-      <div class="text-2xl font-bold mb-2.5"> 當初特殊選材的過程？</div>
-      <div> 柯睿信在國二的時候聽說了這個入學管道，不過當時也不太確定這個管道如何運作，只知道需要累積一些特殊經歷。他認為以歷史系來說，最好的方法就是在網路上投稿文章，最好可以出書，因此加入了一個粉專，並且從國二經營到了現在。在經營的過程中也順利出版了一些歷史相關的書籍。柯睿信建議，如果很幸運的提早意識到自己有偏科的話，其實也可以往特殊選材的方向作嘗試。</div>
+      <div class="text-2xl font-bold mb-2.5"> 當初特殊選才的過程？</div>
+      <div> 柯睿信在國二的時候聽說了這個入學管道，不過當時也不太確定這個管道如何運作，只知道需要累積一些特殊經歷。他認為以歷史系來說，最好的方法就是在網路上投稿文章，最好可以出書，因此加入了一個粉專，並且從國二經營到了現在。在經營的過程中也順利出版了一些歷史相關的書籍。柯睿信建議，如果很幸運的提早意識到自己有偏科的話，其實也可以往特殊選才的方向作嘗試。</div>
       <br>
-      <div class="text-2xl font-bold mb-2.5"> 那特殊選材有什麼要特別注意的嗎？</div>
+      <div class="text-2xl font-bold mb-2.5"> 那特殊選才有什麼要特別注意的嗎？</div>
       <div> 特選分成兩個部分，書審和面試。書審的準備必須要提早開始準備，不能等到剩一學期幾個月這種短時間才開始準備，需要在資料中展現出自己的特殊性，像是他舉例說，他有一個朋友也是歷史系，而他寫了兩三萬字的家族史作為他的作品。而面試的感覺跟個人申請的大同小異，教授會平易近人的跟你聊天，不過還是需要額外準備關於書審上的資料，尤其教授會想多了解你的作品和特殊經歷。</div>
       <div> 那時候柯睿信寫信詢問外校的教授，請他幫忙做模擬面試，後來在單車節也有提供模擬面試的服務，他覺得受益良多，也在此推薦給各位高中的同學。</div>
       <br>

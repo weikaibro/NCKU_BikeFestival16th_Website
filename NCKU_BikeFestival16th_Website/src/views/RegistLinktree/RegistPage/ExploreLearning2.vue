@@ -20,6 +20,7 @@ const sessions = [
 ];
 const isRegistSuccess = ref("");
 const isBtnDisable = ref("")
+const submitText = ref("送出")
 function checkSelected() {
   var sets = [
     {
@@ -51,7 +52,10 @@ function checkSelected() {
   }
   if (checkedOne[0] && checkedOne[1] && checkedOne[2]) {
     isBtnDisable.value = "true"
+    submitText.value = "處理中..."
     var formData = document.querySelector("form");
+    // ref: https://andy-carter.com/blog/disable-multiple-form-submits-with-vanilla-javascript
+    document.querySelector('input[type="submit"]').setAttribute('disabled', 'disabled');
     axios
       .post("https://nckubikefestival.ncku.edu.tw/api/register/ExploreLearning2", formData)
       .then((res) => {
@@ -204,7 +208,7 @@ function checkSelected() {
             >
               <div class="text-4xl font-bold mb-10">報名失敗！</div>
               <div>
-                後台忙碌中，請前往<a
+                由於目前後台不穩，請前往<a
                   class="linkEff"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfHwXFwSNmVmXpWYmV1Mdf2Q4kFZs0vD87s4InzE7DmbsqFMQ/viewform"
                   target="_blank"
@@ -233,7 +237,7 @@ function checkSelected() {
                   </div>
 
                   <div class="mt-12 text-lg leading-9 max-sm:text-sm">
-                    <div class="text-2xl mb-4">
+                    <div class="text-2xl mb-4 max-sm:text-lg">
                       報名時間：即日起～2/24（五）23:59
                       <br />
                       錄取通知信將於 2/26（日）前寄送完畢
@@ -302,7 +306,7 @@ function checkSelected() {
                     <div class="text-3xl max-sm:text-2xl">
                       B. ✨講座參與意願✨
                     </div>
-                    <div class="text-lg">
+                    <div class="text-lg max-sm:text-base">
                       <div class="text-2xl mt-12 mb-2 max-sm:text-xl">
                         場次一 03／04（六）13：30 ~15：00（13：00開放入場）
                       </div>
@@ -329,7 +333,7 @@ function checkSelected() {
 
                   <div class="mt-20">
                     <p
-                      class="mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500"
+                      class="mb-4 text-2xl after:content-['*'] after:ml-0.5 after:text-red-500 max-sm:text-lg"
                     >
                       欲報名之場次（可複選喔）
                     </p>
@@ -350,7 +354,7 @@ function checkSelected() {
 
                   <div class="customRadio mt-12 mb-32">
                     <p
-                      class="text-2xl my-6 after:content-['*'] after:ml-0.5 after:text-red-500"
+                      class="text-2xl my-6 after:content-['*'] after:ml-0.5 after:text-red-500 max-sm:text-xl"
                     >
                       確定欲報名的場次與時間是可以參與，沒有與其他活動衝突
                     </p>
@@ -365,20 +369,20 @@ function checkSelected() {
                     </div>
                   </div>
 
-                  <div class="mt-12 text-lg">
+                  <div class="mt-12 text-lg max-sm:text-base">
                     <div class="text-3xl mb-4 max-sm:text-2xl">
                       B. 討論會形式說明與會前問題調查
                     </div>
                     <div class="mb-6">
-                      本次討論坊相較一般工作坊，時間較短
+                      本次討論坊相較一般工作坊，時間較短。
                       <br />
-                      因此我們希望每個報名的人，都可以是帶著疑問和好奇前來
+                      因此我們希望每個報名的人，都可以是帶著疑問和好奇前來。
                       <br />
-                      這樣相信你們在活動當下可以有更深刻的體會與收穫，同時我們活動流程也能較為順暢
+                      這樣相信你們在活動當下可以有更深刻的體會與收穫，同時我們活動流程也能較為順暢。
                       <br />
-                      因此下方希望你們可以針對你們報名的場次，能夠提出你們現有的想法、困惑
+                      因此下方希望你們可以針對你們報名的場次，能夠提出你們現有的想法、困惑。
                       <br />
-                      以利我們初步掌握學員的狀況，進一步設計更完善、更貼合每個學員的內容
+                      以利我們初步掌握學員的狀況，進一步設計更完善、更貼合每個學員的內容。
                       <br /><br />
                       註：只需填寫欲報名之場次即可 <br />
                       註：建議先將內容打在記事本上，不然跳掉需要全部重打，會瘋掉
@@ -440,7 +444,7 @@ function checkSelected() {
                   <div class="py-20 w-[300px]">
                     <input id="customBtn" type="submit" hidden />
                     <label for="customBtn" class="cursor-pointer">
-                      <irregularButton btnTitle="送出" :disable="isBtnDisable" />
+                      <irregularButton :btnTitle="submitText" :disable="isBtnDisable" />
                     </label>
                   </div>
                 </form>
@@ -502,7 +506,7 @@ function checkSelected() {
 
 /* ref: https://moderncss.dev/pure-css-custom-checkbox-style/ */
 .checkBoxEff {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.1;
 
   display: grid;
