@@ -159,7 +159,7 @@ function checkSelected(event) {
             </div>
             <div class="text-lg leading-9 max-sm:text-sm">
               單車體驗共分三條導覽路線
-              ——「文學院的一天」、「觀光客行程」、「香香之旅」。
+              ——「文學院的一天」、「觀光客行程」、「理工之旅」。
               <br /><br />
               <span class="text-2xl max-md:text-lg">文學院的一天 (約50分)</span>
               <br />
@@ -170,7 +170,7 @@ function checkSelected(event) {
               中正堂 → 博物館 → 格致堂 → 總圖 → 榕園 → 小西門/歷史文物館 →
               中正堂
               <br /><br />
-              <span class="text-2xl max-md:text-lg">香香之旅 (約50分)</span>
+              <span class="text-2xl max-md:text-lg">理工之旅 (約50分)</span>
               <br />
               中正堂 → 測量系 → 自強校區 → 航太系直升機 → 格致堂 → 未來館 →
               中正堂

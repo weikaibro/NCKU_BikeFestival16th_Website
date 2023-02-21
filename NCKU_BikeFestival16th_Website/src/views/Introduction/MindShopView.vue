@@ -38,6 +38,14 @@ import IrregularButton from "../../components/irregularButton.vue";
       <span class="text-3xl font-bold"> 專案地圖 </span>
       <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <div class="text-3xl font-bold">籌備團隊</div>
+      <div>
+        <br> 部員 航太114 陳昱豪
+        <br> 部員 能源115 張鈞傑
+        <br> 部員 材料115 陳宥蓁
+        <br> 部員 政治114 游棨巖
+        <br> 部員 政治114 王湘詞
+        <br> 部員 交管115 陳奕翰
+      </div>
     </div>
   </div>
 </template>

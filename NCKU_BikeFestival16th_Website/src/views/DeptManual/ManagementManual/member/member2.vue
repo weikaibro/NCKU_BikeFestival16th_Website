@@ -19,7 +19,7 @@ import Footer from '../../../../components/Footer.vue';
     <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-0 max-sm:text-base">
       <div class="absolute top-12 bottom-1/2 left-0 border-l-2 border-black max-lg:border-0"></div>
       <div class="absolute -top-0.5 left-0 right-[75%] translate-x-[150%] border-b-2 border-white max-lg:border-0"></div>
-      <div class="text-lg">筆者：施佳佑 / 編修：陳加羲</div>
+      <div class="text-lg">筆者：周沛儀 / 編修：陳加羲</div>
       <br><br>
       <div class="text-2xl font-bold mb-2.5">為什麼想就讀統計系？</div>
       <div> 陳芊妤說，因為現在是大數據時代，許多事情都需要以大數據為輔，她認為這是未來發展趨勢，因此選擇了統計系。</div>
@@ -34,7 +34,7 @@ import Footer from '../../../../components/Footer.vue';
       <div> 統計系有大大小小的活動，像是統計耶晚、煮火鍋、和外系合辦宿營等，也經常會請考取研究所的學長姐回來經驗分享，或是邀請教授發表關於統計、大數據的演講。</div>
       <br>
       <div class="text-2xl font-bold mb-2.5">和成大大學生活體驗營的緣分</div>
-      <div> 其實在高中時陳芊妤並非在台灣本地念書，對於台灣的大學不甚瞭解，直到某次暑假參加了成大的大學生活體驗營，過程中覺得蠻有趣的，因此決定考取成大。而上大學後，她也擔任大學生活體驗營的工作人員，現在則是擔任幹部，在過程中認識許多外系的朋友，一起構想活動內容，對於他來說是很美好的回憶。</div>
+      <div> 其實在高中時陳芊妤並非在台灣本地念書，對於台灣的大學不甚瞭解，直到某次暑假參加了成大的大學生活體驗營，過程中覺得蠻有趣的，因此決定考取成大。而上大學後，她也擔任大學生活體驗營的工作人員，現在則是擔任幹部，在過程中認識許多外系的朋友，一起構想活動內容，對於她來說是很美好的回憶。</div>
       <br>
       <div class="text-2xl font-bold mb-2.5">參加活動的成長</div>
       <div> 在參加過許多活動後，陳芊妤發現自己要負責的事情變得更多，不單單只是玩樂，尤其上了二年級，系上的課程難度也隨之提高，她意識到跑活動的同時也需要顧好學業，和大一的心態相較之下成熟許多。</div>

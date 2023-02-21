@@ -19,7 +19,7 @@ import Footer from '../../../../components/Footer.vue';
     <div class="relative px-32 mx-64 py-12 text-xl max-2xl:mx-20 max-2xl:px-32 max-lg:mx-36 max-lg:px-0 max-md:mx-0 max-sm:text-base">
       <div class="absolute top-12 bottom-1/2 left-0 border-l-2 border-black max-lg:border-0"></div>
       <div class="absolute -top-0.5 left-0 right-[75%] translate-x-[150%] border-b-2 border-white max-lg:border-0"></div>
-      <div class="text-lg">筆者：施佳佑 / 編修：陳加羲</div>
+      <div class="text-lg">筆者：周沛儀 / 編修：陳加羲</div>
       <br><br>
       <div class="text-2xl font-bold mb-2.5">為什麼想就讀企管系？</div>
       <div> 原本就讀台文系的劉彥妮受家庭影響，認為自己可以嘗試管理、金融相關領域，加上藉由擔任第十五屆單車節行銷部長，她接觸到行銷、領導職位，在過程中發現自己對此領域有興趣，因此決定轉到企管系。</div>

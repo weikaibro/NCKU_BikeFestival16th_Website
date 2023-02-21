@@ -75,8 +75,8 @@ const show = () => {
   </div>
 
   <!-- RWD -->
-  <div class="relative">
-    <div class="absolute z-50 flex flex-col w-screen text-white text-center lg:hidden" v-if="showMenu">
+  <!-- <div class="relative"> -->
+    <div class="fixed top-16 z-40 flex flex-col w-screen text-white text-center lg:hidden" v-if="showMenu">
       <div
         v-for="header in headers" 
         :key="headers.indexOf(header)"
@@ -87,7 +87,7 @@ const show = () => {
         </RouterLink>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
 
 </template>

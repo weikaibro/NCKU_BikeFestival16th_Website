@@ -54,14 +54,44 @@ const userChoose = (index) => {
           <div>1845年起只專注製造巧克力的品牌，是全世界第一個用可可濃度區分巧克力的品牌。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black pb-6 max-md:text-center">
-          <img class="mx-auto" src="../assets/Partner/partner3.png" alt="Partner">
-          <div class="my-4 text-3xl font-bold max-sm:text-2xl">hellolulu</div>
+          <img class="w-[50%] mx-auto" src="../assets/Partner/partner3.png" alt="Partner">
+          <div class="mt-12 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-6">hellolulu</div>
           <div>由兩位設計師好友John&Ronny於2005年創立的香港品牌。</div>
         </div>
-        <div class="scrollEff flex flex-col justify-end border-b-2 border-black pb-6 max-md:text-center">
-          <img src="../assets/Partner/partner4.png" alt="Partner">
-          <div class="mt-20 mb-4 text-3xl font-bold max-sm:text-2xl">台南大飯店</div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[80%] mx-auto" src="../assets/Partner/partner4.png" alt="Partner">
+          <div class="mt-28 mb-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">台南大飯店</div>
           <div>台南大飯店於西元1964年開幕營運，是南台灣第一家國際觀光飯店。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[40%] mx-auto" src="../assets/Partner/partner5.png" alt="Partner">
+          <div class="mt-24 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">台灣可果美</div>
+          <div>於1967年於台南成立，秉持「自然。健康」的經營理念。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[50%] mx-auto" src="../assets/Partner/partner6.png" alt="Partner">
+          <div class="mt-24 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">保力達</div>
+          <div>以絕佳的品質為國人的健康打底。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[50%] mx-auto" src="../assets/Partner/partner7.png" alt="Partner">
+          <div class="mt-28 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">ADHIL</div>
+          <div>專營手機配件、耳機、行動電源、充電器、生活用品等。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[55%] mx-auto" src="../assets/Partner/partner8.png" alt="Partner">
+          <div class="mt-32 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">KISSME 花漾美姬</div>
+          <div>致力於系列彩妝，讓每位女性自信展現各種樣貌。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
+          <img class="w-[75%] mx-auto" src="../assets/Partner/partner9.png" alt="Partner">
+          <div class="mt-32 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">Snapask 時課問</div>
+          <div>致力於幫助學生解決課業問題的全方位線上學習平台。</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img class="w-[80%] mx-auto" src="../assets/Partner/partner10.png" alt="Partner">
+          <div class="mt-16 my-4 text-3xl font-bold max-sm:text-2xl">JANDI 企業通訊軟體</div>
+          <div>全台各地的學生組織都在用！</div>
         </div>
       </div>
 

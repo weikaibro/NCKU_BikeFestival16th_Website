@@ -184,7 +184,7 @@ onMounted(() => {
               class="linkEff"
               target="_blank"
               rel="noreferrer noopenner"
-              ><strong>別單心，聽我說｜成大單車節 Podcast</strong></a
+              ><strong>成大單車節 Podcast｜大學萬靈單</strong></a
             >
             <br /><br />
           </div>
