@@ -11,7 +11,7 @@ import IrregularButton from "../../components/irregularButton.vue";
       class="bg-white h-[70%] rounded-[3rem] mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
         max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
-      <div class="text-3xl font-bold">沈浸式體驗 成・鏡</div>
+      <div class="text-3xl font-bold">沉浸式體驗：成・鏡</div>
       <br />
       遙想高中時期，總是對於大學生活充滿了嚮往與期待，但在實際經歷了大學生活後，卻發現與想像中的模樣有很大的出入。因此，我們將以最真實且多元化的劇本來還原大學日常，讓你走入互動式的劇場，沉浸於大學生活。
       <br /><br />

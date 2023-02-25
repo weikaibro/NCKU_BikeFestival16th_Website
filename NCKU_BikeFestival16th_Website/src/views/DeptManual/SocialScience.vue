@@ -122,7 +122,7 @@ const scrollRight = () => {
             <div class="memberInfo">
                 <!-- <picture> -->
                   <!-- <source class="rounded-full w-[80%] mx-auto mt-5 max-md:mt-1" srcset="" type="image/webp"> -->
-                  <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience1.png" alt="member">
+                  <img class="rounded-full w-[80%] max-h-[244px] object-cover mx-auto mt-5 max-sm:max-h-[180px]" src="../../assets/DeptManual/SocialScience/SocialScience1.jpg" alt="member">
                 <!-- </picture> -->
                 <span class="mt-10 text-3xl font-bold max-md:mt-6">高譽庭</span>
                 <span class="fontSize mt-3 text-center">心理系 112</span>

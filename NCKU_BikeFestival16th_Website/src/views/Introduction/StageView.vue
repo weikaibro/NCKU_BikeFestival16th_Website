@@ -29,9 +29,10 @@ import IrregularButton from "../../components/irregularButton.vue";
       <br /><br />
       活動資訊：
       <br />
-      舞台活動將於榕園草地舉行，將有不定時抽獎活動，可以來碰碰運氣抽大獎喔！
+      舞台活動將於榕園草園舉行，成功湖也有繪馬的祈求活動，歡迎在繪馬上寫下自己的心願呦！💖
       <br />
-      在路上也可能巧遇舞台吉祥物，歡迎與它們合影留念😍 <br /><br />
+      在路上如果巧遇舞台吉祥物，除了可以拿小糖果，也歡迎與他們合影留念哦！😍
+      <br /><br />
       <span class="text-3xl font-bold"> 專案地圖 </span>
       <iframe class="my-12" src="https://www.google.com/maps/d/embed?mid=1Vga0aGXdv9V-_rxXj1kB_nr8-IFem2I&ehbc=2E312F" width="1080" height="480"></iframe>
       <span class="text-3xl font-bold"> 籌備團隊 </span> <br /><br />

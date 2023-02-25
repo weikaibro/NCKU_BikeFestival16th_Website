@@ -45,7 +45,7 @@ const userChoice = (choice) => {
         <img class="w-[20px]" src="../../assets/downArrow.svg" alt="downArrow">
       </div>
       <Transition mode="out-in">
-        <div class="w-[700px] my-6" v-if="num == 2">
+        <div class="w-[1000px] my-6" v-if="num == 2">
           <img src="../../assets/timeTable/collegeCharge.png" alt="collegeCharge">
         </div> 
       </Transition>
@@ -70,7 +70,7 @@ const userChoice = (choice) => {
         <img class="w-[20px]" src="../../assets/downArrow.svg" alt="downArrow">
       </div>
       <Transition mode="out-in">
-        <div class="w-[1200px] my-6" v-if="num == 4">
+        <div class="w-[700px] my-6" v-if="num == 4">
           <img src="../../assets/timeTable/mockInterview.png" alt="mockInterview">
         </div> 
       </Transition>

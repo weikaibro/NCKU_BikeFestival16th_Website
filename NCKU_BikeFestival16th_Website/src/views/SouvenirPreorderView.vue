@@ -77,20 +77,6 @@ onBeforeUnmount(() => {
       <!-- <hr class="w-screen scrollEff"> -->
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
-        <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir4.png" alt="Souvenir">
-        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
-          <div class="text-3xl font-bold">飲料提袋</div>
-          <div>＄60 /個</div>
-          <div>
-            背景結合搜索雷達的概念，代表單車節幫助大家探索目標，找到前進方向；
-            <br> 單車急速向前的樣子就像我們用雙腳踩出夢想的速度。
-          </div>
-        </div>
-      </div>
-
-      <!-- <hr class="w-screen scrollEff"> -->
-
-      <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir5.png" alt="Souvenir">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir6.png" alt="Souvenir">
         <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">

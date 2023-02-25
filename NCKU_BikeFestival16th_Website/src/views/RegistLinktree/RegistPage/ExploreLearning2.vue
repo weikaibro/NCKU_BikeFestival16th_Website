@@ -238,9 +238,9 @@ function checkSelected() {
 
                   <div class="mt-12 text-lg leading-9 max-sm:text-sm">
                     <div class="text-2xl mb-4 max-sm:text-lg">
-                      報名時間：即日起～2/24（五）23:59
+                      報名時間：即日起～2/26（日）23:59
                       <br />
-                      錄取通知信將於 2/26（日）前寄送完畢
+                      錄取通知信將於 2/28（二）前寄送完畢
                     </div>
                     <div>＊屆時請記得檢查信箱＊</div>
                   </div>

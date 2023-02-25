@@ -1,21 +1,34 @@
 <script setup>
-import { ref } from "vue";
-import { RouterLink, RouterView } from 'vue-router';
+import { ref, onMounted } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 
 const headers = ref([
   { title: "活動資訊", link: "/Information" },
   { title: "活動介紹", link: "/Introduction" },
   { title: "主題專欄", link: "/ThemeColumn" },
-  { title: "科系手冊", link: "/DeptManual"},
+  { title: "科系手冊", link: "/DeptManual" },
   { title: "合作夥伴", link: "/Partner" },
   { title: "紀念品介紹", link: "/SouvenirPreorder" },
-  { title: "團體報名", link: "/GroupRegistration"}
+  { title: "團體報名", link: "/GroupRegistration" },
 ]);
 
 const showMenu = ref(false);
 const show = () => {
   showMenu.value = !showMenu.value;
 };
+
+onMounted(() => {
+  const currentUrl = window.location.href;
+  const navLists = document.querySelectorAll(".navLists");
+  navLists.forEach((navList) => {
+    // console.log(navList.href)
+    if (currentUrl.includes(navList)) {
+      navList.classList.add("bg-myblue");
+    } else {
+      navList.classList.remove("bg-myblue");
+    }
+  });
+});
 </script>
 
 <template>
@@ -36,18 +49,15 @@ const show = () => {
       </RouterLink>
     </div>
 
-    <!-- <div class="gcse-searchbox w-[300px]">
-      
-    </div> -->
-
+    <!-- computer list -->
     <div class="hidden space-x-8 lg:flex">
       <ul class="float-right w-auto mx-6 text-white">
         <li>
-          <RouterLink 
-            v-for="header in headers" 
+          <RouterLink
+            v-for="header in headers"
             :key="headers.indexOf(header)"
-            :to="header.link" 
-            class="h-10 rounded-lg px-4 py-5 transition-all text-xl hover:bg-myblue"
+            :to="header.link"
+            class="navLists h-10 rounded-lg px-4 py-5 transition-all mx-1 text-xl hover:bg-myblue"
           >
             {{ header.title }}
           </RouterLink>
@@ -55,7 +65,7 @@ const show = () => {
       </ul>
     </div>
 
-    <!-- RWD -->
+    <!-- mobile hamburger icon -->
     <button @click="show" class="lg:hidden absolute right-0 m-3 py-4">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -74,20 +84,20 @@ const show = () => {
     </button>
   </div>
 
-  <!-- RWD -->
-  <!-- <div class="relative"> -->
-    <div class="fixed top-16 z-40 flex flex-col w-screen text-white text-center lg:hidden" v-if="showMenu">
-      <div
-        v-for="header in headers" 
-        :key="headers.indexOf(header)"
-        class="flex justify-center py-1 items-center text-lg text-white active:bg-myblue bg-black"
-      >
-        <RouterLink :to="header.link">
-          {{ header.title }}
-        </RouterLink>
-      </div>
+  <!-- mobile list -->
+  <div
+    class="fixed top-14 z-40 flex flex-col w-screen text-white text-center bg-black lg:hidden"
+    v-if="showMenu"
+  >
+    <div
+      v-for="header in headers"
+      :key="headers.indexOf(header)"
+      class="flex justify-center py-2.5 items-center text-xl text-white active:bg-myblue"
+    >
+      <RouterLink :to="header.link">
+        {{ header.title }}
+      </RouterLink>
     </div>
-  <!-- </div> -->
-
-
+  </div>
 </template>
+

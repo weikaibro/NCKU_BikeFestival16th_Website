@@ -11,7 +11,7 @@ import Footer from '../../../../components/Footer.vue';
     <hr />
     <div class="relative flex flex-col justify-center items-center my-12 text-2xl">
       <div class="absolute -bottom-12 left-0 right-1/2 translate-x-1/2 border-b-2 border-black max-lg:border-0"></div>
-      <img class="w-[500px]" src="../../../../assets/DeptManual/SocialScience/SocialScience1.png" alt="member">
+      <img class="w-[500px]" src="../../../../assets/DeptManual/SocialScience/SocialScience1.jpg" alt="member">
       <div class="my-4">心理系112 高譽庭</div>
       <div>#心理系，讓我更了解自己，也更了解別人</div>
     </div>
