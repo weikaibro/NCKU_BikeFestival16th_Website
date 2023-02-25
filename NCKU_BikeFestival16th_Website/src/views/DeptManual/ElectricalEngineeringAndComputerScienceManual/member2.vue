@@ -5,7 +5,7 @@ import Footer from '../../../components/Footer.vue';
 
 <template>
   <Navbar />
-  <div class="my-16 mx-10">
+  <div class="my-36 mx-10">
     <!-- header -->
     <div class="text-end text-xl">科系手冊 / 電機資訊學院 / 資訊工程學系 / 劉仲昀</div>
     <hr />

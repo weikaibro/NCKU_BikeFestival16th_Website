@@ -5,7 +5,7 @@ import Footer from '../../../../components/Footer.vue';
 
 <template>
   <Navbar />
-  <div class="my-16 mx-10">
+  <div class="my-36 mx-10">
     <!-- header -->
     <div class="text-end text-xl">科系手冊 / 文學院 / 中國文學系 / 張雅筑</div>
     <hr />

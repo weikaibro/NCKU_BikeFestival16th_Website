@@ -82,7 +82,7 @@ const submitText = ref("送出")
     <Navbar />
 
     <div class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10">
-      <span class="text-5xl font-bold tracking-wider max-md:text-4xl">系館導覽</span>
+      <span class="mt-20 text-5xl font-bold tracking-wider max-md:text-4xl">系館導覽</span>
 
       <picture>
         <source class="w-[55%] mx-auto max-md:w-[90%]" srcset="../../../assets/bikeFestivalLogo2.webp" type="image/webp">

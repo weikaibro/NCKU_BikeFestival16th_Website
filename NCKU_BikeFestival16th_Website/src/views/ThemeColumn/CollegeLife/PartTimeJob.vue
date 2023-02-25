@@ -8,7 +8,7 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 
 <template>
 <Navbar />
-  <div class="mx-20 my-10 max-sm:mx-4">
+  <div class="mx-20 my-32 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="打工" theme="踏入社會的第一步：打工大小事" />
 

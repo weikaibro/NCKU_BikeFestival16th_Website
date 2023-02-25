@@ -27,7 +27,7 @@ const showContent = computed(() => {
 <template>
   <div>
     <Navbar />
-    <div class="flex flex-col justify-center items-center mt-20 mb-8">
+    <div class="flex flex-col justify-center items-center mt-40 mb-8">
       <homepage_lineHeader headerTitle="主題專欄" />
       <div class="grid grid-cols-4 my-10 gap-3 max-sm:grid-cols-2"> 
         <button

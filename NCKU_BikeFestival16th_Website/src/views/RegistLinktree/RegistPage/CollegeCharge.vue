@@ -103,7 +103,7 @@ onMounted(() => {
     <div
       class="flex flex-col justify-center items-center gap-16 mt-10 max-md:gap-10"
     >
-      <span class="text-5xl font-bold tracking-wider max-md:text-4xl"
+      <span class="mt-20 text-5xl font-bold tracking-wider max-md:text-4xl"
         >大學充值</span
       >
       <picture>

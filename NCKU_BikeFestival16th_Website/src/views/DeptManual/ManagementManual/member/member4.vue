@@ -5,7 +5,7 @@ import Footer from '../../../../components/Footer.vue';
 
 <template>
   <Navbar />
-  <div class="my-16 mx-10">
+  <div class="my-36 mx-10">
     <!-- header -->
     <div class="text-end text-xl">科系手冊 / 管理學院 / 交通管理科學系 / 蕭廷睿</div>
     <hr />

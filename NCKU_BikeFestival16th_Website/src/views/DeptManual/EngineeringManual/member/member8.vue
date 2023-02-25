@@ -4,7 +4,7 @@ import Footer from '../../../../components/Footer.vue';
 </script>
 <template>
   <Navbar />
-  <div class="my-16 mx-10">
+  <div class="my-36 mx-10">
     <!-- header -->
     <div class="text-end text-xl">科系手冊 / 工學院 / 材料科學與工程學系 / 林鉅騰</div>
     <hr />

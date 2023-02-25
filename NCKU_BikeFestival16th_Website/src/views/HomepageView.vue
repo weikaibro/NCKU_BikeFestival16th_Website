@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="flex flex-col">
     <Navbar />
-    <div class="flex flex-col aspect-[2] w-screen bg-black max-md:bg-white">
+    <div class="mt-20 flex flex-col aspect-[2] w-screen bg-black max-md:bg-white">
       <div class="aspect-[2.5]">
       <homepage_backgroundSlider />
       </div>

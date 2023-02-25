@@ -39,8 +39,8 @@ const isSuccess = ref("");
     <Navbar />
 
     <!-- header -->
-    <div class="flex flex-col justify-center items-center gap-16 mt-10">
-      <span class="text-5xl font-bold tracking-wider">團體報名</span>
+    <div class="flex flex-col justify-center items-center gap-16 mt-20">
+      <span class="mt-10 text-5xl font-bold tracking-wider">團體報名</span>
       <picture>
         <source
           class="w-[55%] mx-auto max-md:w-[90%]"

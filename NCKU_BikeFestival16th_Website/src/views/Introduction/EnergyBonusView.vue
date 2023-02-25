@@ -8,7 +8,7 @@ import IrregularButton from "../../components/irregularButton.vue";
     <Navbar />
 
     <div
-      class="bg-white h-[75%] rounded-[3rem] mt-6 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
+      class="bg-white h-[75%] rounded-[3rem] mt-28 mx-16 py-16 pl-20 pr-40 text-xl leading-9 overflow-y-auto
         max-sm:mx-4 max-sm:px-4 max-sm:text-base"
     >
       <span class="text-3xl font-bold">能量加值</span>

@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="sticky top-0 z-50 flex justify-between items-center bg-black h-16 lg:h-20"
+    class="fixed top-0 z-50 w-screen flex justify-between items-center bg-black h-20"
   >
     <div>
       <RouterLink to="/">
@@ -50,8 +50,8 @@ onMounted(() => {
     </div>
 
     <!-- computer list -->
-    <div class="hidden space-x-8 lg:flex">
-      <ul class="float-right w-auto mx-6 text-white">
+    <div class="max-lg:hidden space-x-8">
+      <ul class="text-white flex justify-end items-end mr-6">
         <li>
           <RouterLink
             v-for="header in headers"
@@ -86,13 +86,13 @@ onMounted(() => {
 
   <!-- mobile list -->
   <div
-    class="fixed top-14 z-40 flex flex-col w-screen text-white text-center bg-black lg:hidden"
+    class="fixed top-20 z-40 flex flex-col w-screen text-white text-center bg-black lg:hidden"
     v-if="showMenu"
   >
     <div
       v-for="header in headers"
       :key="headers.indexOf(header)"
-      class="flex justify-center py-2.5 items-center text-xl text-white active:bg-myblue"
+      class="flex justify-center py-1.5 items-center text-lg text-white active:bg-myblue"
     >
       <RouterLink :to="header.link">
         {{ header.title }}

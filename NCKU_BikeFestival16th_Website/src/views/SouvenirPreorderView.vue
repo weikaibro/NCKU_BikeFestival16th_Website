@@ -35,7 +35,7 @@ onBeforeUnmount(() => {
 <template>
   <div>
     <Navbar/>
-    <div class="flex flex-col justify-center items-center py-32">
+    <div class="flex flex-col justify-center items-center py-52">
       <div class="flex justify-center items-center mb-16 max-md:mb-6">
         <homepage_lineHeader headerTitle="紀念品介紹" />
       </div>

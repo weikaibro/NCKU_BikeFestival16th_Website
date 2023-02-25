@@ -43,7 +43,7 @@ const scrollRight = () => {
 <template>
   <div>
     <Navbar />
-    <div class="flex mx-12 h-[1300px] max-xl:mx-0 max-xl:flex-col max-xl:h-[1500px] max-sm:h-[1100px]">
+    <div class="flex mx-12 mt-20 h-[1300px] max-xl:mx-0 max-xl:flex-col max-xl:h-[1500px] max-sm:h-[1100px]">
       <!-- selected dept -->
       <div class="relative flex flex-col mr-20 mt-20 w-[500px] bg-black text-white text-center max-xl:mt-0 max-xl:w-screen xl:h-[1000px]">
         <!-- RWD -->

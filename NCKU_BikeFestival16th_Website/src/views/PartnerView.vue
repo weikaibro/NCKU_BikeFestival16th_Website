@@ -37,7 +37,7 @@ const userChoose = (index) => {
 <template>
   <div>
     <Navbar/>
-    <div class="py-32 max-lg:px-12">
+    <div class="py-52 max-lg:px-12">
       <div class="flex justify-center items-center mb-24">
         <homepage_lineHeader headerTitle="合作夥伴" />
       </div>

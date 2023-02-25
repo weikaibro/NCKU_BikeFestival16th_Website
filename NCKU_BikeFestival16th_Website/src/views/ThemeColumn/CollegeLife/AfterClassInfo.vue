@@ -7,8 +7,8 @@ import ThemeColumnHeader from "../../../components/ThemeColumnHeader.vue";
 </script>
 
 <template>
-<Navbar />
-  <div class="mx-20 my-10 max-sm:mx-4">
+  <Navbar />
+  <div class="mx-20 my-32 max-sm:mx-4">
 
     <ThemeColumnHeader header="主題專欄 / 大學生活" keyWord="活動" theme="為生活添加調味：課餘活動資訊分享" />
 

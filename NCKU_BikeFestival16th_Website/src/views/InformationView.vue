@@ -42,7 +42,7 @@ const Show = computed(() => {
 <template>
   <Navbar />
 
-  <div class="mx-20 my-20 max-sm:mx-4">
+  <div class="mx-20 my-40 max-sm:mx-4">
 
     <div class="text-4xl pb-10 font-extrabold max-sm:text-center">活動資訊</div>
 
