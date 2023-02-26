@@ -54,7 +54,7 @@ const userChoose = (index) => {
         v-if="partnerIndex == 0"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -73,7 +73,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 1"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -92,20 +92,30 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+          w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto 
+          max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 2"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
         </div>
         <img class="w-[40%] max-lg:w-[70%] mx-auto" src="../assets/Partner/partner3.png" alt="partner">
-        <div>
+        <div class>
           <div class="text-3xl font-bold mb-4 max-sm:text-lg">hellolulu</div>
           <div class="text-lg max-sm:text-base">
             由兩位設計師好友John&Ronny於2005年創立的香港品牌hellolulu，透過獨特的剪裁和細節上的講究，將設計及功能集於一身。hellolul簡約又亮眼的時尚休閒風格，讓世界各地追求耐用但不單調的消費者有更多不同的選擇。如今hellolulu已進駐歐洲、美國、日本、台灣，商品線也從休閒包袋擴展到孩童背包、相機包以及多款旅行收納袋。
+            <br><br>
+            <!-- <div class="flex"> -->
+            <img class="" src="../assets/Partner/partner3_1.png" alt="">
+            <!-- </div> -->
+            <div class="flex mt-5 justify-between">
+              <img class="w-[30%]" src="../assets/Partner/partner3_4.png" alt="">
+              <img class="w-[30%]" src="../assets/Partner/partner3_2.png" alt="">
+              <img class="w-[30%]" src="../assets/Partner/partner3_3.png" alt="">
+            </div>
             <br><br><a
               class="linkEff"
               href="https://www.instagram.com/hellolulu_taiwan/"
@@ -134,7 +144,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 3"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -146,6 +156,10 @@ const userChoose = (index) => {
             台南大飯店於西元1964年開幕營運，悠久的歷史是當時南台灣第一家國際觀光飯店，融合台南豐富的文化及人文素養，提供完美的住宿及用餐體驗。佇立於三級古蹟台南車站正前方，兼具歷史、人文、觀光、交通等元素，至今已深耕台南近一甲子。
             <br><br> 12種房型，152間溫馨簡約客房，因應旅客各種需求，悉心照料每位到訪的旅客。
             <br> 免開車旅行首選，台南火車站出站即達，官網訂房獨享加購高鐵票8折優惠！
+            <div class="mt-4 flex justify-between">
+              <img class="w-[48%]" src="../assets/Partner/partner4_1.jpg" alt="partner">
+              <img class="w-[48%]" src="../assets/Partner/partner4_2.jpg" alt="partner">
+            </div>
             <br><br> 來台南享受美食之旅就從這裡開始 👉<a
               class="linkEff"
               href="http://bit.ly/2PG3Y0q"
@@ -154,16 +168,34 @@ const userChoose = (index) => {
             >https://reurl.cc/LXvZe9</a>
             <br><br><span class="font-bold">歐式自助餐</span>
             <br><br> 多元異國美食，開放式廚房現場烹調頂級料理、澎湃海鮮及現切生魚片、飯店手做甜點、鮮打果汁飲料等，給你最豐盛的美食饗宴。
+            <div class="mt-4 flex justify-between">
+              <img class="w-[48%]" src="../assets/Partner/partner4_3.jpg" alt="">
+              <img class="w-[48%]" src="../assets/Partner/partner4_4.jpg" alt="">
+            </div>
             <br><br> 上百道豐富美饌任你吃 👉<a
               class="linkEff"
               href="http://bit.ly/2PG3Y0q"
               target="_blank"
               rel="noreferrer noopenner"
             >立即線上訂位</a>
-            <br><br> 產品選自飯店中受到饕客滿意度、回購率最高的商品，主廚手工製作，堅持天然不添加防腐劑，熱賣商品有港式臘味蘿蔔糕、蜂蜜岩燒乳酪蛋糕、30餘道鮮凍美食，讓你在家也能享用飯店主廚的美味佳餚。
-            <br><br> 港式臘味蘿蔔糕香傳半世紀，港飲名廚手工製作，口感層次豐富美味。
-            <br><br> 精選30餘道鮮凍美食，加熱即食的料理法寶，簡單為餐桌添加好料。
-            <br><br> 蜂蜜岩燒乳酪蛋糕，飯店人氣熱銷NO.1，微甜滋味大人小孩都愛！
+            <br><br>
+            <img src="../assets/Partner/partner4_5.png" alt="">
+            <br> 台南大飯店美食購的產品選自飯店中受到饕客滿意度、回購率最高的商品，主廚手工製作，堅持天然不添加防腐劑，熱賣商品有港式臘味蘿蔔糕、蜂蜜岩燒乳酪蛋糕、30餘道鮮凍美食，讓你在家也能享用飯店主廚的美味佳餚。
+            <div class="mt-8 flex gap-4 items-center">
+              <img class="w-[50%]" src="../assets/Partner/partner4_6.jpg" alt="">
+              港式臘味蘿蔔糕香傳半世紀，港飲名廚手工製作，口感層次豐富美味。
+            </div>
+            <br>
+            <div class="flex gap-4 items-center">
+              <img class="w-[50%]" src="../assets/Partner/partner4_7.jpg" alt="">
+              精選30餘道鮮凍美食，加熱即食的料理法寶，簡單為餐桌添加好料。
+            </div>
+            <br>
+            <div class="flex gap-4 items-center">
+              <img class="w-[50%]" src="../assets/Partner/partner4_8.jpg" alt="">
+              蜂蜜岩燒乳酪蛋糕，飯店人氣熱銷NO.1，微甜滋味大人小孩都愛！
+            </div>
+            <br>
             <br> 更多美食好料這裡找 👉<a
               class="linkEff"
               href="https://www.yummygo.com.tw/"
@@ -193,7 +225,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 4"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -233,7 +265,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 5"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -288,7 +320,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 6"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -300,7 +332,8 @@ const userChoose = (index) => {
             本公司創立於2017年,由始至終皆致力於給消費者CP值高的產品，此外，我們擁有完善的售後服務，強勢的商品介紹，使您買得安心，用的開心。
             <br><br> 本公司專營手機配件、耳機、行動電源、充電器、生活用品等，只有您想不到的產品，沒有我們找不到的商品。
             <br><br> 最近火熱的秒貼防塵網玻璃保護貼與真降噪無線藍芽耳機更是擁有著高CP 值，前者，除了有方便的貼膜神器外，其還有著高保護力與隱私性；後者，除了能提供使⽤者舒適的環境外，更重要的是超實惠的價格更替消費者省了不少荷包。
-            <br><br> 產品介紹
+            <br><br> 
+            產品介紹
             <br><a
               class="linkEff"
               href=" https://reurl.cc/eXxax7"
@@ -324,26 +357,32 @@ const userChoose = (index) => {
             <br> 8. 貼耳式設計，配戴超舒適
             <br> 9. 喚醒SIRI（IOS裝置自定義）
             <br> 10. 全功能：降噪模式（消除周圍環境音）、通透模式（增加周圍環境音）、遊戲模式（低音與聽音辨位加強）、音樂模式（人聲加強）
-            <br><br><a
-              class="linkEff"
-              href="https://www.adhilshop.com/h/Index?key=1dg19"
-              target="_blank"
-              rel="noreferrer noopenner"
-            >ADHIL官網</a>
-            <br>
-            <a
-              class="linkEff"
-              href="https://www.facebook.com/ADHILmobile"
-              target="_blank"
-              rel="noreferrer noopenner"
-            > ADHIL粉絲專頁 </a>
-            <br>
-            <a
-              class="linkEff"
-              href="https://shopee.tw/mandyhsu1"
-              target="_blank"
-              rel="noreferrer noopenner"
-            > 蝦皮旗艦店網址</a>
+            <br><br>
+            <div class="flex justify-between">
+              <div>
+                <a
+                  class="linkEff"
+                  href="https://www.adhilshop.com/h/Index?key=1dg19"
+                  target="_blank"
+                  rel="noreferrer noopenner"
+                >ADHIL官網</a>
+                <br>
+                <a
+                  class="linkEff"
+                  href="https://www.facebook.com/ADHILmobile"
+                  target="_blank"
+                  rel="noreferrer noopenner"
+                > ADHIL粉絲專頁 </a>
+                <br>
+                <a
+                  class="linkEff"
+                  href="https://shopee.tw/mandyhsu1"
+                  target="_blank"
+                  rel="noreferrer noopenner"
+                > 蝦皮旗艦店網址</a>
+              </div>
+              <img class="w-[50%]" src="../assets/Partner/partner7_1.png" alt="">
+            </div>
             <br>
           </div>
         </div>
@@ -354,7 +393,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 7"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -365,6 +404,8 @@ const userChoose = (index) => {
           <div class="text-lg max-sm:text-base">
             KISSME 奇士美化粧品旗下的彩妝品牌，來自日本的「全眼妝專家」，為了讓女孩實現對美麗的渴望，綻放如花朵般的光芒，為魅力眼神提供各種秘密武器，致力於發展 #眼線、#睫毛膏、#眉彩系列彩妝，讓每位女性都能自信展現各種樣貌、裝扮各式花漾。
             <br><br> 美姬公主自2021年，由甜美公主蛻變為時尚女王，象徵著她已從期盼美好愛情降臨的可愛女孩，成長為勇敢追尋心之所嚮、重視自我成長的自信女人。鼓勵女性不論妝容、生活，甚至是愛情，都該追求更精緻、獨立、堅強及自信的境地，使自己勇敢蛻變為迷人亮眼的女主角。秉持著「花若盛開，蝴蝶自來」的信念，完美詮釋追尋自我盛放的模樣，滋養為盛開的玫瑰，由內而外散發自信光芒，無論何時都保持完美無瑕，就讓花漾美姬成就妳的獨特魅力。
+            <br><br>
+            <img src="../assets/Partner/partner8_1.jpg" alt="">
             <br><br> KISSME 花漾美姬
             <br><a
               class="linkEff"
@@ -393,7 +434,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 8"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
@@ -420,7 +461,7 @@ const userChoose = (index) => {
         v-else-if="partnerIndex == 9"
       >
         <div 
-          class="absolute top-6 right-6 transition duration-150 hover:scale-90 hover:cursor-pointer hover:opacity-50"
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
           @click="userChoose(100)"
         >
           <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
