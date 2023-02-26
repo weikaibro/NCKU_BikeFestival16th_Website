@@ -50,7 +50,7 @@ const userChoose = (index) => {
     <Transition mode="out-in">
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50 
-        w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+        w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-if="partnerIndex == 0"
       >
         <div 
@@ -69,7 +69,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50 
-        w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+        w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 1"
       >
         <div 
@@ -92,7 +92,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 2"
       >
         <div 
@@ -130,7 +130,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 3"
       >
         <div 
@@ -189,7 +189,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 4"
       >
         <div 
@@ -229,7 +229,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 5"
       >
         <div 
@@ -254,8 +254,7 @@ const userChoose = (index) => {
             <br> 全力提升產品上市最佳效益，
             <br> 以及透過通路合作、異業結盟等方式，
             <br> 來持續擴大品牌經營價值及營運績效。
-            <br><br> 產品訴求多元化消費族群的品牌印象 ，如勞動階層、
-            <br> 青少年、女性消費者、銀髮族、兒童等消費族群。
+            <br><br> 產品訴求多元化消費族群的品牌印象，如勞動階層、青少年、女性消費者、銀髮族、兒童等消費族群。
             <br> 掌握健康活力、保健的消費趨勢，積極開拓行銷通路。
             <br> 完備生產線領域，滿足消費市場之需求，創造企
             <br> 業更高產出效率。
@@ -285,7 +284,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 6"
       >
         <div 
@@ -351,7 +350,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 7"
       >
         <div 
@@ -390,7 +389,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 8"
       >
         <div 
@@ -417,7 +416,7 @@ const userChoose = (index) => {
       </div>
       <div 
         class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
-         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%]" 
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
         v-else-if="partnerIndex == 9"
       >
         <div 

@@ -26,7 +26,7 @@ const num = ref(5);
 const Switch = (index) => {
   num.value = index;
 };
-const isRegistSuccess = ref("");
+const isRegistSuccess = ref("closed");
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 function checkSelected(event) {
@@ -121,9 +121,32 @@ function checkSelected(event) {
     <div class="">
       <div class="px-36 pt-16 max-md:px-4">
         <Transition mode="out-in">
+          <div 
+            class="mx-auto my-16 px-5 border-2 border-white flex flex-col justify-center items-center h-[400px] w-[1000px] text-center"
+            v-if="isRegistSuccess == 'closed'"
+          >
+            <div class="text-4xl font-bold mb-10 max-sm:text-2xl">單車體驗報名表</div>
+            <div class="text-3xl max-md:text-xl">目前已截止報名，感謝你的參與</div>
+            <br /><br><br>
+            <div class="text-lg max-md:text-base">
+              （立即查看<a
+                class="linkEff"
+                target="_blank"
+                rel="noreferrer noopenner"
+                href="https://docs.google.com/spreadsheets/d/1WgBUt7PCTmCHs9jGyzLIvihWsS7n8uFl12kfrMjx-cY/edit?fbclid=IwAR0XM6hsj6B9IzNggXhQuNOQ5KUKEDL6ak4BqNWWYFzn9BjyMMiwifSsQu8#gid=0"
+              >錄取名單</a>
+                ，有些路線還沒到人數上限仍可現場報名喔！如有問題請聯繫<a 
+                class="linkEff"
+                href="https://www.facebook.com/NCKUbikefestival"
+                target="_blank"
+                rel="noreferrer noopenner"
+                >粉絲專頁</a
+              >，將有專人會在第一時間給予回覆！）
+            </div>
+          </div>
           <div
             class="border-2 border-white p-10 text-center mb-32"
-            v-if="isRegistSuccess == 'success'"
+            v-else-if="isRegistSuccess == 'success'"
           >
             <div class="text-4xl font-bold mb-10">報名成功</div>
             <div class="text-3xl max-md:text-xl">感謝你的填寫，期待在單車節與你相見</div>

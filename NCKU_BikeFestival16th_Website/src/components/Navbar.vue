@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="fixed top-0 z-50 w-screen flex justify-between items-center bg-black h-20"
+    class="fixed top-0 z-40 w-screen flex justify-between items-center bg-black h-20"
   >
     <div>
       <RouterLink to="/">
@@ -86,7 +86,7 @@ onMounted(() => {
 
   <!-- mobile list -->
   <div
-    class="fixed top-20 z-40 flex flex-col w-screen text-white text-center bg-black lg:hidden"
+    class="fixed top-20 z-30 flex flex-col w-screen text-white text-center bg-black lg:hidden"
     v-if="showMenu"
   >
     <div

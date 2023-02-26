@@ -72,7 +72,7 @@ function checkSelected() {
       });
   }
 }
-const isRegistSuccess = ref("closed");
+const isRegistSuccess = ref("closed");     
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 </script>

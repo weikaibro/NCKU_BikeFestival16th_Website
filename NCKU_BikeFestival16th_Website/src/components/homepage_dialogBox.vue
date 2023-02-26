@@ -53,19 +53,19 @@ const scrollLeftChangeContent = () => {
   <div class="basis-4/6 shadow-xl">
 
     <!-- dialog -->
-    <div class="relative h-[100px] bg-black max-md:h-[70px]">
+    <div class="relative h-[100px] bg-black max-md:h-[55px]">
       <!-- dialog header -->
       <!-- dialog title -->
       <p class="absolute top-1/2 -translate-y-1/2 left-5
-        ml-3 text-4xl text-white font-semibold max-md:text-2xl">
+        ml-3 text-4xl text-white font-semibold max-md:text-2xl max-md:ml-0">
         {{ dialogTitle }}
       </p>
       <!-- dialog cross/underline -->
       <div class="absolute right-0 mr-[140px] mt-[20px] max-md:hidden">
-        <img class="w-[60px] h-[60px]" src="../assets/cross.svg" alt="cross">
+        <img class="w-[60px] h-[60px]" src="../assets/underline.svg" alt="cross">
       </div>
       <div class="absolute right-0 mr-[56px] mt-[20px] max-md:hidden">
-        <img class="w-[60px] h-[60px]" src="../assets/underline.svg" alt="underline">
+        <img class="w-[60px] h-[60px]" src="../assets/cross.svg" alt="underline">
       </div>
     </div>
 
@@ -122,7 +122,7 @@ const scrollLeftChangeContent = () => {
 @layer components {
   .dialogBoxEff {
     @apply flex flex-row justify-center items-center p-12 overflow-hidden h-[600px]
-      max-lg:h-[450px] max-md:p-4 max-md:flex-col;
+      max-lg:h-[400px] max-md:p-0 max-md:flex-col;
   }
 }
 </style>

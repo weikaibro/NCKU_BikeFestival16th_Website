@@ -34,7 +34,7 @@ const sessions = [
   "場次四 3/5（日）10：00 ~11：30（9:30開放入場）",
   "場次五 3/5（日）13：30 ~15：00（13:00開放入場）",
 ];
-const isRegistSuccess = ref("");
+const isRegistSuccess = ref("closed");
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 // at least one "checkbox" to be selected
@@ -206,9 +206,26 @@ function checkSelected() {
 
         <div class="mt-10">
           <Transition mode="out-in">
+            <div 
+              class="mx-auto my-16 border-2 border-white flex flex-col justify-center items-center h-[400px] w-[1000px] text-center"
+              v-if="isRegistSuccess == 'closed'"
+            >
+              <div class="text-4xl font-bold mb-10 max-sm:text-2xl">探索學習｜講座報名</div>
+              <div class="text-3xl max-md:text-xl">目前已截止報名，感謝你的參與</div>
+              <br /><br><br>
+              <div class="text-lg max-md:text-base">
+                （如有問題請聯繫<a 
+                  class="linkEff"
+                  href="https://www.facebook.com/NCKUbikefestival"
+                  target="_blank"
+                  rel="noreferrer noopenner"
+                  >粉絲專頁</a
+                >，將有專人會在第一時間給予回覆！）
+              </div>
+            </div>
             <div
               class="border-2 border-white p-10 text-center mb-32"
-              v-if="isRegistSuccess == 'success'"
+              v-else-if="isRegistSuccess == 'success'"
             >
               <div class="text-4xl font-bold mb-10">報名成功</div>
               <div class="text-3xl max-md:text-xl">

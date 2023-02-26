@@ -67,7 +67,7 @@ import IrregularButton from "../../components/irregularButton.vue";
       class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0"
     >
       <RouterLink to="/Registration/Linktree/ExploreLearning">
-      <IrregularButton btnTitle="即刻報名" />
+      <IrregularButton btnTitle="已截止報名" />
       </RouterLink>
     </div>
   </div>

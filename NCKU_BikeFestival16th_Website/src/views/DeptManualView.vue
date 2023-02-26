@@ -20,7 +20,7 @@ const btn = ref([
 <template>
   <div class="bgImg overflow-hidden h-screen">
     <Navbar />
-    <div class="h-[85%] mt-20 grid grid-cols-3 place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1">
+    <div class="h-[85%] mt-20 grid grid-cols-3 place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:w-[130px] mx-auto">
       <RouterLink 
         v-for="header in btn" 
         :key="btn.indexOf(header)"
