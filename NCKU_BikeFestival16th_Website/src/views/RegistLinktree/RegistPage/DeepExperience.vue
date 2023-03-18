@@ -52,7 +52,7 @@ function checkSelected() {
       });
   }
 }
-const isRegistSuccess = ref("");
+const isRegistSuccess = ref("closed");
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 </script>
@@ -80,7 +80,24 @@ const submitText = ref("送出")
       >此連結</a>報名
     </div> -->
     <Transition mode="out-in">
-      <div class="px-36 pt-16 max-md:px-4" v-if="isRegistSuccess == 'success'">
+      <div 
+        class="mx-auto my-16 border-2 border-white flex flex-col justify-center items-center h-[400px] w-[1000px] text-center"
+        v-if="isRegistSuccess == 'closed'"
+      >
+        <div class="text-4xl font-bold mb-10 max-sm:text-2xl">沉浸式體驗報名表</div>
+        <div class="text-3xl max-md:text-xl">目前已截止報名，感謝你的參與</div>
+        <br /><br><br>
+        <div class="text-lg max-md:text-base">
+          （如有問題請聯繫<a 
+            class="linkEff"
+            href="https://www.facebook.com/NCKUbikefestival"
+            target="_blank"
+            rel="noreferrer noopenner"
+            >粉絲專頁</a
+          >，將有專人會在第一時間給予回覆！）
+        </div>
+      </div>
+      <div class="px-36 pt-16 max-md:px-4" v-else-if="isRegistSuccess == 'success'">
         <div class="border-2 border-white p-10 text-center mb-32">
           <div class="text-4xl font-bold mb-10">報名成功</div>
           <div class="text-3xl max-md:text-xl">

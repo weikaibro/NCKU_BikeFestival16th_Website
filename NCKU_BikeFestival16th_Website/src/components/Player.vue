@@ -154,7 +154,7 @@ setInterval(() => {
     </div>
     <div class="flex justify-end mt-6 mr-16 max-sm:float-none max-sm:justify-center max-sm:mr-0">
       <RouterLink to="/Registration/Linktree/CollegeCharge">
-        <irregularButton btnTitle="即刻報名" btnTitleBreakLine="只開放至 2/28（二）" />
+        <irregularButton btnTitle="已截止報名" />
       </RouterLink>
     </div>
     <!-- bottom -->

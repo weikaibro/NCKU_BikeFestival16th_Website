@@ -53,10 +53,10 @@ const scrollRightChangeSouvenirContent = () => {
       </p>
       <!-- dialog cross/underline -->
       <div class="absolute right-0 mr-[140px] mt-[20px] max-md:hidden">
-        <img class="w-[60px] h-[60px]" src="../assets/cross.svg" alt="cross">
+        <img class="w-[60px] h-[60px]" src="../assets/underline.svg" alt="cross">
       </div>
       <div class="absolute right-0 mr-[56px] mt-[20px] max-md:hidden">
-        <img class="w-[60px] h-[60px]" src="../assets/underline.svg" alt="underline">
+        <img class="w-[60px] h-[60px]" src="../assets/cross.svg" alt="underline">
       </div>
     </div>
 

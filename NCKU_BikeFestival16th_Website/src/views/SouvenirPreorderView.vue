@@ -49,7 +49,6 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <!-- <hr class="w-screen scrollEff"> -->
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir2.png" alt="Souvenir">
@@ -60,7 +59,19 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <!-- <hr class="w-screen scrollEff"> -->
+
+      <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
+        <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir4.png" alt="Souvenir">
+        <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
+          <div class="text-3xl font-bold">飲料提袋</div>
+          <div>＄60 /個 </div>
+          <div>
+            背景結合搜索雷達的概念，代表單車節幫助大家探索目標，找到前進方向；
+            <br> 單車急速向前的樣子就像我們用雙腳踩出夢想的速度。
+          </div>
+        </div>
+      </div>
+
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir3.png" alt="Souvenir">
@@ -74,19 +85,16 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <!-- <hr class="w-screen scrollEff"> -->
-
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir5.png" alt="Souvenir">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir6.png" alt="Souvenir">
         <div class="flex flex-col justify-center gap-4 text-xl max-sm:text-base">
           <div class="text-3xl font-bold">資料夾</div>
           <div>＄35 /個 &nbsp;&nbsp; ＄55 /兩個</div>
-          <div>以成大最具象徵性之一的榕園為主題，並選擇以像素遊戲的方式呈現，象徵在這次單車16裡，所有的參加者都在以榕園聞名的成大裡探索遊玩，尋找自己的遊戲結局。</div>
+          <div>結合單車16的視覺設計元素，以及通往茫茫升學資訊大海(資料夾)中的單車，和本校光復校區由朱銘創作的校園藝術--飛撲，由內而外表達「大開大合」、「吞吐洪荒」的生命力，與成大人不斷在學術上切磋砥礪的精神不謀而合，也以這樣的精神對學子給予最大的勉勵。</div>
         </div>
       </div>
 
-      <!-- <hr class="w-screen scrollEff"> -->
 
       <div class="scrollEff flex my-20 w-[70%] gap-20 max-xl:w-[90%] max-lg:flex-col max-lg:text-center max-lg:items-center">
         <img class="w-[300px] h-[300px]" src="../assets/Souvenir/Souvenir7.png" alt="Souvenir">
@@ -98,7 +106,7 @@ onBeforeUnmount(() => {
             衣服正面：
             <br> 將NCKU和主視覺物件放在靶心裡面，象徵將目標鎖定在成大單車節，探索大學實際面貌、找尋想要的目標。
             <br><br> 衣服背面：
-            <br> 以網頁風格為基底結合單車節主視覺物件，意味著單車節除了當日實體活動，也能透過官方網站、FB、IG認識實際大學生活面貌
+            <br> 以網頁風格為基底結合單車節主視覺物件，意味著單車節除了當日實體活動，也能透過官方網站、FB、IG認識實際大學生活面貌。
           </div>
         </div>
       </div>

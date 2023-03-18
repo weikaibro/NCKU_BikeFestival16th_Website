@@ -109,7 +109,7 @@ const userChoose = (index) => {
             由兩位設計師好友John&Ronny於2005年創立的香港品牌hellolulu，透過獨特的剪裁和細節上的講究，將設計及功能集於一身。hellolul簡約又亮眼的時尚休閒風格，讓世界各地追求耐用但不單調的消費者有更多不同的選擇。如今hellolulu已進駐歐洲、美國、日本、台灣，商品線也從休閒包袋擴展到孩童背包、相機包以及多款旅行收納袋。
             <br><br>
             <!-- <div class="flex"> -->
-            <img class="" src="../assets/Partner/partner3_1.png" alt="">
+            <img class="w-[100%]" src="../assets/Partner/partner3_1.png" alt="">
             <!-- </div> -->
             <div class="flex mt-5 justify-between">
               <img class="w-[30%]" src="../assets/Partner/partner3_4.png" alt="">
@@ -329,7 +329,7 @@ const userChoose = (index) => {
         <div>
           <div class="text-3xl font-bold mb-4 max-sm:text-lg">ADHIL</div>
           <div class="text-lg max-sm:text-base">
-            本公司創立於2017年,由始至終皆致力於給消費者CP值高的產品，此外，我們擁有完善的售後服務，強勢的商品介紹，使您買得安心，用的開心。
+            本公司創立於2017年，由始至終皆致力於給消費者CP值高的產品，此外，我們擁有完善的售後服務，強勢的商品介紹，使您買得安心，用的開心。
             <br><br> 本公司專營手機配件、耳機、行動電源、充電器、生活用品等，只有您想不到的產品，沒有我們找不到的商品。
             <br><br> 最近火熱的秒貼防塵網玻璃保護貼與真降噪無線藍芽耳機更是擁有著高CP 值，前者，除了有方便的貼膜神器外，其還有著高保護力與隱私性；後者，除了能提供使⽤者舒適的環境外，更重要的是超實惠的價格更替消費者省了不少荷包。
             <br><br> 
@@ -491,6 +491,202 @@ const userChoose = (index) => {
           </div>
         </div>
       </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 10"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner11.png" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">Yory 優歷</div>
+          <div class="text-lg max-sm:text-base">
+            ⾯對 108 課綱，學⽣從⾼⼀就要準備⽇後申請入學所需的資料，並過關斬將，設法進入理想的校系。但科技與社群網路趨勢，讓學⽣們接收的資訊逐漸變多，但卻也越來越不知道⾃⼰喜歡什麼，因此 Yory 優歷結合了科技的⽅式協助⾼中⽣探索學涯及製作學習歷程檔案。
+            <br><br> 平台創立至今已超過 20,000 名使用者、累積 100 場以上校園講座，幫助同學們不只戰勝學檔大魔王，更從中反思自己、認識世界，逐步養成未來人才之核心素養能力！Yory 除了關注 108 課綱學習歷程檔案的議題，也實際走進校園在第⼀線與⾼中⽣接觸，搜集了約 400 位全台各地高中生的問卷，發現其中有 72% 的學生表示面對學習歷程最大的困惑，是想了解大學教授們對學習歷程的看法；42.9% 的學生表示面對未來最大的難題，是想找到自己的興趣和科系方向。
+            <br><br> 因此 Yory 走入⼤學採訪教授，了解教授對學習歷程及科系探索的看法，成為促進⾼中與⼤學彼此認識的橋樑。在平台上 Yory x IOH 聯⼿打造『學群探索任務』，系統化探索流程縮短迷路時間，探索任務中有科系學長姐的分享，引導學⽣全⽅位認識⾃⼰、了解科系，找出最適合⾃⼰的理想⽬標；透過整合教授與專家建議設計出『引導式撰寫模板』，搭配 AI 語意分析及輔助引導寫作，⼀步⼀步帶你從 0 到 1 寫出屬於⾃⼰的故事！
+          </div>
+        </div>
+      </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 11"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner12.png" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">Batiste 乾洗髮</div>
+          <div class="text-lg max-sm:text-base">
+            大家總會經歷過這些情境…
+            <br> 像是運動完要馬上去約會💖
+            <br> 或是讀書好累懶得洗頭🥱
+            <br> 又不想要隔天獲得一枚油頭，
+            <br> 這時候該怎麼辦呢？
+            <br><br> 當然就是拿出大學生最愛用的✨Batiste乾洗髮✨
+            <br> 除了可以快速去油，
+            <br> 帶給你潔淨的感受外🧼
+            <br> 還有針對不同髮質設計的 #雙效款 🤩
+          </div>
+          <br><br>
+          <img src="../assets/Partner/partner12_1.jpg" alt="partner">
+          <br><br>
+          <div class="text-lg max-sm:text-base">
+            ❖扁塌族必備｜豐盈蓬鬆☁️
+            <br> -添加膠原蛋白
+            <br> -增加髮根蓬鬆度
+            <br><br> ❖染燙族必備｜極致修護🩹
+            <br> -添加角蛋白配方
+            <br> -立即修護受損髮
+            <br><br> ❖毛躁族必備｜輕盈柔順⭐️
+            <br> -添加椰子油配方
+            <br> -瞬間撫平毛燥
+            <br><br> ❖造型族必備｜極致蓬鬆🐑
+            <br> -霧面微塑型配方
+            <br> -可用於持久造型
+            <br><br> 芭緹絲擁有升級款噴頭較好按壓🐳
+            <br> 粉末也如消失般隱藏在頭髮中，
+            <br> 隨時隨地讓頭髮飄香🌸
+            <br> 維持完美男神/女神狀態👑
+            <br> 選對產品就能無時無刻保有美麗秀髮💇🏼‍♀️
+          </div>
+        </div>
+      </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 12"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner13.png" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">寶礦力水得</div>
+          <div class="text-lg max-sm:text-base">
+            Otsuka-people creating new products for better health worldwide.
+            <br> 創造革新性產品，謀求全世界人類的健康福祉
+            <br><br> 金車大塚所經營、銷售的品牌包含寶礦力水得、寶礦力水得 ion water、微舒打、MATCH瑪綺機能氣泡飲以及日本原裝進口的SOYJOY大豆營養棒、賢者之食桌。金車大塚會持續秉持著日本大塚製藥和金車股份有限公司的企業精神，堅持守護消費者的健康。在未來的日子，也會以「為世界上人們的健康貢獻」作為心願，提供所有消費者最好的產品。
+          </div>
+        </div>
+      </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 13"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner14.png" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">健酪</div>
+          <div class="text-lg max-sm:text-base">
+            <br> 健酪乳酸飲料於1992年上市，已暢銷30餘年。目前已有原味、水蜜桃、藍莓、熱帶水果的口味，並於2001年推出健酪乳酸氣泡飲，以健酪經典原味，搭配綿密碳酸氣泡，清爽酸甜好滋味。
+            <br><br> 以甜甜的香氣、爽口的微酸為特色，微酸、清甜、令人怦然心動的滋味，淡淡的乳酸口味清爽芳香，讓消費者在一片清爽的口感中，感受到酸酸甜甜的青春滋味，是大人小孩都熱愛的經典風味。
+          </div>
+          <img class="mt-4" src="../assets/Partner/Partner14_1.jpg" alt="partner">
+          <img class="my-4" src="../assets/Partner/Partner14_2.jpg" alt="partner">
+          <div class="flex justify-between">
+            <img class="w-[48%]" src="../assets/Partner/Partner14_3.jpg" alt="partner">
+            <img class="w-[48%]" src="../assets/Partner/Partner14_4.jpg" alt="partner">
+          </div>
+        </div>
+      </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 14"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner15.jpg" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">奧利多</div>
+          <div class="text-lg max-sm:text-base">
+            奧利多添加寡醣，幫助消化，促進新陳代謝
+            <br> 改變細菌叢生態，使排便順暢，調整體質，調節生理機能
+            <br> 兼具爽口風味與功能性的奧利多，讓你在暢飲享受之際，也能維持健康。
+            <br> 更可兼具補充水分，給予身體更清爽、健康的愉快感受
+            <br> 清爽碳酸氣泡口感，是野餐郊遊好夥伴
+            <br> 飽餐一頓來一罐，腸胃咕嚕不卡關!
+            <br> 一路暢通ALL LET GO !
+            <br><a
+              class="linkEff"
+              href="https://reurl.cc/vkeY4k"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >奧利多FB</a>
+            <br><a
+              class="linkEff"
+              href="https://reurl.cc/XL419g"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >奧利多IG</a>
+            <br><a
+              class="linkEff"
+              href="https://reurl.cc/kl7x2n"
+              target="_blank"
+              rel="noreferrer noopenner"
+            >金車線上購</a>
+            <br><br>
+          </div>
+          <div class="flex justify-between">
+            <img class="w-[48%]" src="../assets/Partner/partner15_1.png" alt="partner">
+            <img class="w-[48%]" src="../assets/Partner/partner15_2.png" alt="partner">
+          </div>
+          <img class="my-4" src="../assets/Partner/partner15_3.png" alt="partner">
+          <img src="../assets/Partner/partner15_4.png" alt="partner">
+        </div>
+      </div>
+      <div 
+        class="fixed z-40 flex items-start px-12 pt-32 pb-16 gap-12 bg-stone-50
+         w-[60%] h-[70%] inset-0 mx-auto my-auto overflow-y-auto max-lg:flex-col max-sm:px-3 max-sm:w-[90%] max-sm:h-[80%]" 
+        v-else-if="partnerIndex == 15"
+      >
+        <div 
+          class="absolute top-6 right-6 transition duration-300 hover:scale-90 hover:rotate-90 hover:cursor-pointer active:opacity-50"
+          @click="userChoose(100)"
+        >
+          <img class="w-[50px] max-sm:w-[40px]" src="../assets/crossNoBg.svg" alt="cross">
+        </div>
+        <img class="w-[40%] max-lg:w-[90%] mx-auto" src="../assets/Partner/partner16.png" alt="partner">
+        <div>
+          <div class="text-3xl font-bold mb-4 max-sm:text-lg">Carmex小蜜媞修護唇膏</div>
+          <div class="text-lg max-sm:text-base">
+            好萊塢明星的最愛！美國Carmex締造了全球85年修護傳奇！
+            <br><br> Carmex小蜜媞修護唇膏，是全球明星名人呵護雙唇的秘密！滋潤保濕、專業修護、妝前打底、晚安唇膜、全家適用。
+            <br><br> 美國Carmex小蜜媞誕生於1937年。創辦人Alfred Woelbing為了抵禦家鄉威斯康辛州因為氣候嚴寒，而造成當地居民嚴重的皮膚凍傷和龜裂，於是在自家地下室廚房用火爐上的鍋子不斷實驗調製，而研發出一款能舒緩凍傷、修復皮膚乾裂脫皮的保濕膏！其獨特的配方及卓越的修護效果，能深層滋潤乾裂脆弱的皮膚，舒緩龜裂凍傷的不適，成功解決了家鄉威斯康辛州許多人長期皮膚乾裂的困擾。Carmex小蜜媞於是誕生。
+            <br><br> 美國Carmex締造了全球85年修護傳奇！全球熱銷10億支，每秒賣出170支！Carmex創造了對抗乾燥乾裂的卓越修護魔力！
+            <br><br> Carmex小蜜媞經典原味修護唇膏，一抹有感撫平唇紋「唇熨斗」！
+            <br><br> Carmex小蜜媞經典原味修護唇膏，優異的保濕滋潤及修護柔嫩效果，一抹有感，堪稱是撫平唇紋「唇熨斗」！含有綿羊油、蜂蠟、可可脂等多重保濕因子形成保護膜，長效滋潤保濕、預防乾裂脫皮、淡化黯沉、撫平唇紋、回復粉嫩雙唇、妝前打底口紅上色更潤澤更勻稱。
+            <br><br> Carmex小蜜媞80分鐘防水修護唇膏(薄荷糖口味)，全台第1支防水護唇膏！
+            <br><br> Carmex小蜜媞80分鐘防水修護唇膏(薄荷糖口味)，是全台第1支80分鐘防水護唇膏、並兼具防曬效果。除了Carmex小蜜媞經典的綿羊油、蜂蠟、可可脂多重保濕修護成分，「Carmex 小蜜媞80分鐘防水修護唇膏」更特別添加了珍貴的白芒花籽油，具有非凡的保濕、滋潤效果；白芒花籽油同時能有效減緩肌膚水分流失，持續雙唇保濕，創造80分鐘防水效果。
+            <br><br> 海邊玩水、游泳、爬山、路跑、露營、滑雪等所有戶外運動及戶外活動。連喝咖啡、吃甜點，只要擦上「Carmex 小蜜媞80分鐘防水修護唇膏」就可以保持雙唇水潤亮澤不脫卸！
+            <br><br>
+            <img src="../assets/Partner/partner16_1.png" alt="">
+          </div>
+        </div>
+      </div>
     </Transition>
 
 
@@ -508,22 +704,22 @@ const userChoose = (index) => {
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black pb-6 max-md:text-center">
           <img @click="userChoose(1)" class="cursor-pointer" src="../assets/Partner/partner2.png" alt="Partner">
           <div class="my-4 text-3xl font-bold max-sm:text-2xl">Lindt 瑞士蓮</div>
-          <div>1845年起只專注製造巧克力的品牌，是全世界第一個用可可濃度區分巧克力的品牌。</div>
+          <div>1845 年起只專注製造巧克力的品牌，是全世界第一個用可可濃度區分巧克力的品牌。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black pb-6 max-md:text-center">
           <img @click="userChoose(2)" class="cursor-pointer w-[50%] mx-auto" src="../assets/Partner/partner3.png" alt="Partner">
           <div class="mt-12 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-6">hellolulu</div>
-          <div>由兩位設計師好友John&Ronny於2005年創立的香港品牌。</div>
+          <div>由兩位設計師好友 John&Ronny 於 2005 年創立的香港品牌。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
           <img @click="userChoose(3)" class="cursor-pointer w-[80%] mx-auto" src="../assets/Partner/partner4.png" alt="Partner">
           <div class="mt-28 mb-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">台南大飯店</div>
-          <div>台南大飯店於西元1964年開幕營運，是南台灣第一家國際觀光飯店。</div>
+          <div>台南大飯店於西元 1964 年開幕營運，是南台灣第一家國際觀光飯店。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
           <img @click="userChoose(4)" class="cursor-pointer w-[40%] mx-auto" src="../assets/Partner/partner5.png" alt="Partner">
           <div class="mt-24 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">台灣可果美</div>
-          <div>於1967年於台南成立，秉持「自然。健康」的經營理念。</div>
+          <div>於 1967 年於台南成立，秉持「自然。健康」的經營理念。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
           <img @click="userChoose(5)" class="cursor-pointer w-[50%] mx-auto" src="../assets/Partner/partner6.png" alt="Partner">
@@ -541,7 +737,7 @@ const userChoose = (index) => {
           <div>致力於系列彩妝，讓每位女性自信展現各種樣貌。</div>
         </div>
         <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-12 pb-6 max-md:text-center">
-          <img @click="userChoose(8)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner9.png" alt="Partner">
+          <img @click="userChoose(8)" class="cursor-pointer w-[85%] mx-auto" src="../assets/Partner/partner9.png" alt="Partner">
           <div class="mt-32 my-4 text-3xl font-bold max-sm:text-2xl max-sm:mt-16">Snapask 時課問</div>
           <div>致力於幫助學生解決課業問題的全方位線上學習平台。</div>
         </div>
@@ -549,6 +745,36 @@ const userChoose = (index) => {
           <img @click="userChoose(9)" class="cursor-pointer w-[80%] mx-auto" src="../assets/Partner/partner10.png" alt="Partner">
           <div class="mt-16 my-4 text-3xl font-bold max-sm:text-2xl">JANDI 企業通訊軟體</div>
           <div>全台各地的學生組織都在用！</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(10)" class="cursor-pointer w-[70%] mx-auto" src="../assets/Partner/partner11.png" alt="Partner">
+          <div class="mt-28 my-4 text-3xl font-bold max-sm:text-2xl">Yory 優歷</div>
+          <div>結合科技⽅式協助⾼中⽣探索學涯及製作學習歷程檔案！</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(11)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner12.png" alt="Partner">
+          <div class="mt-20 my-4 text-3xl font-bold max-sm:text-2xl">Batiste 乾洗髮</div>
+          <div>選對產品就能無時無刻保有美麗秀髮！</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(12)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner13.png" alt="Partner">
+          <div class="mt-32 my-4 text-3xl font-bold max-sm:text-2xl">寶礦力水得</div>
+          <div>創造革新性產品，謀求全世界人類的健康福祉</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(13)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner14.png" alt="Partner">
+          <div class="mt-12 my-4 text-3xl font-bold max-sm:text-2xl">健酪</div>
+          <div>酸酸甜甜的青春滋味，是大人小孩都熱愛的經典風味</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(14)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner15.jpg" alt="Partner">
+          <div class="mt-20 my-4 text-3xl font-bold max-sm:text-2xl">奧利多</div>
+          <div>兼具爽口風味與功能性，讓你在暢飲享受之際，也能維持健康</div>
+        </div>
+        <div class="scrollEff flex flex-col justify-end border-b-2 border-black mt-8 pb-6 max-md:text-center">
+          <img @click="userChoose(15)" class="cursor-pointer w-[75%] mx-auto" src="../assets/Partner/partner16.png" alt="Partner">
+          <div class="mt-20 my-4 text-3xl font-bold max-sm:text-2xl">Carmex小蜜媞修護唇膏</div>
+          <div>美國 Carmex 締造了全球 85 年修護傳奇</div>
         </div>
       </div>
 

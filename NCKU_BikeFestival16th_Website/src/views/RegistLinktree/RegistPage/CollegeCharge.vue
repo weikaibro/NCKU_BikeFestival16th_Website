@@ -40,7 +40,7 @@ const session7 = [
 const session8 = [
   "3/5 (日) 14:35~16:00 黃昭禓｜放下你的手機，玩好人生這場大遊戲",
 ];
-const isRegistSuccess = ref("")
+const isRegistSuccess = ref("closed")
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 function checkSelected(event) {
@@ -120,9 +120,26 @@ onMounted(() => {
       </picture>
     </div>
 
-    <div class="px-36 pt-16 max-md:px-4">
+    <div class="px-36 max-md:px-4">
       <Transition mode="out-in">
-        <div class="border-2 border-white p-10 text-center mb-32" v-if="isRegistSuccess == 'success'">
+        <div 
+          class="mx-auto my-16 border-2 border-white flex flex-col justify-center items-center h-[400px] w-[1000px] text-center"
+          v-if="isRegistSuccess == 'closed'"
+        >
+          <div class="text-4xl font-bold mb-10 max-sm:text-2xl">大學充值報名表</div>
+          <div class="text-3xl max-md:text-xl">目前已截止報名，感謝你的參與</div>
+          <br /><br><br>
+          <div class="text-lg max-md:text-base">
+            （如有問題請聯繫<a 
+              class="linkEff"
+              href="https://www.facebook.com/NCKUbikefestival"
+              target="_blank"
+              rel="noreferrer noopenner"
+              >粉絲專頁</a
+            >，將有專人會在第一時間給予回覆！）
+          </div>
+        </div>
+        <div class="border-2 border-white p-10 text-center mb-32" v-else-if="isRegistSuccess == 'success'">
           <div class="text-4xl font-bold mb-10">報名成功</div>
           <div class="text-3xl max-md:text-xl">
             感謝你的填寫，期待在單車節與你相見

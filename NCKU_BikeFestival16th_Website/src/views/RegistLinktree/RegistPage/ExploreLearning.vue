@@ -34,7 +34,7 @@ const sessions = [
   "場次四 3/5（日）10：00 ~11：30（9:30開放入場）",
   "場次五 3/5（日）13：30 ~15：00（13:00開放入場）",
 ];
-const isRegistSuccess = ref("closed");
+const isRegistSuccess = ref("");
 const isBtnDisable = ref("")
 const submitText = ref("送出")
 // at least one "checkbox" to be selected
@@ -275,7 +275,7 @@ function checkSelected() {
                     />
                   </div>
 
-                  <div class="mt-12 text-lg leading-9 max-sm:text-sm">
+                  <!-- <div class="mt-12 text-lg leading-9 max-sm:text-sm">
                     <div class="text-2xl mb-4 max-sm:text-lg">報名相關時程</div>
                     <div>
                       報名時間：即日起～2/26（日）23:59
@@ -283,7 +283,7 @@ function checkSelected() {
                       錄取通知信將於 2/28（二）前寄送完畢 <br />
                       ＊屆時請記得檢查信箱＊
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="mt-20 text-lg leading-9 max-sm:text-sm">
                     <div class="text-2xl mb-4">A. ✨基本資料✨</div>

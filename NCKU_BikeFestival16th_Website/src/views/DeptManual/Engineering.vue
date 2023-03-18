@@ -116,7 +116,17 @@ const scrollRight = () => {
       </Transition>
     </div>
 
-    <div class="relative mt-16 p-0 w-screen h-[800px]">
+    <div class="mt-16 w-screen px-2">
+      <div class="flex justify-center items-center text-black text-3xl mb-16 font-bold">
+        科系小百科
+      </div>
+      <div class="flex justify-center items-center gap-12 max-lg:flex-col">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F9TeVvZfWYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J5n2M-59wfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="relative mt-60 p-0 w-screen h-[800px]">
       <div class="flex justify-center items-center text-black text-3xl mb-16 font-bold">學長姐經驗分享</div>
 
       <div 
