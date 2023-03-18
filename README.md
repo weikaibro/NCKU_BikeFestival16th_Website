@@ -1,6 +1,4 @@
-# NCKU_BikeFestival16th_Website
-
-## 前端 frontend
+# 成大單車節 16th 官網技術文件｜NCKU_BikeFestival16th_Website 
 
 由於有大量的組件會被重複使用，因此我們主要會使用 Vue 來開發前端，並且會搭配使用 TailwindCSS 來節省重新手刻 CSS 所花費的時間。
 
@@ -46,9 +44,9 @@
 > 2. [重新認識 Vue.js - Kuro Hsu](https://book.vue.tw/)
 > 講的很詳細，可以當作工具書。
 > 3. [前端黑洞計畫 (一) : 讓 Vite 來開啟你的 Vue | IT 邦](https://ithelp.ithome.com.tw/users/20139636/ironman/3890)
-> Day1~11 主要在講 Vite 是如何配置我們專案的資料夾，Day12~30 則是在講 Vue 語法的細節。
+> Day1-11 主要在講 Vite 是如何配置我們專案的資料夾，Day12-30 則是在講 Vue 語法的細節。
 > 4. [真的好想離開 Vue 3 新手村 feat. CompositionAPI | IT 邦](https://ithelp.ithome.com.tw/users/20152606/ironman/5782)
-> Day1~6 主要在講 Vite 資料夾配置以及編譯與打包的原理 ( Day3 很接近我們專案的資料夾結構 )，Day7~30 則是在講 Vue 的語法細節 ( Day15 可略 )。
+> Day1-6 主要在講 Vite 資料夾配置以及編譯與打包的原理 ( Day3 很接近我們專案的資料夾結構 )，Day7-30 則是在講 Vue 的語法細節 ( Day15 可略 )。
 > 5. [實作 : 【必看】Vue3 + Vite 快速上手 Get Startrd | ▶️Youtube](https://www.youtube.com/playlist?list=PLbOfcOk7bN42Kzp1wQsoLuU0vPUmFBe-X)
 > 這系列的教學影片可以快速幫大家「收斂」所學，裡面共 9 部影片，第 5, 6, 7, 9 部我們專案用不到可略 ( 建議切兩倍速然後邊看邊實做 )。
 > 6. [實作 : Vue Playground](https://vuejs.org/examples/#hello-world)
