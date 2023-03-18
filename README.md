@@ -1,6 +1,6 @@
-#NCKU_BikeFestival16th_Website 
+# NCKU_BikeFestival16th_Website 
 
-以下為第 16 屆成大單車節官網的技術文件。
+以下為第 16 屆成大單車節官方網站的開發技術文件。
 
 由於有大量的組件會被重複使用，因此我們主要會使用 Vue 來開發前端，並且會搭配使用 TailwindCSS 來節省重新手刻 CSS 所花費的時間。
 
