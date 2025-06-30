@@ -600,11 +600,11 @@ const userChoose = (index) => {
             <br> 健酪乳酸飲料於1992年上市，已暢銷30餘年。目前已有原味、水蜜桃、藍莓、熱帶水果的口味，並於2001年推出健酪乳酸氣泡飲，以健酪經典原味，搭配綿密碳酸氣泡，清爽酸甜好滋味。
             <br><br> 以甜甜的香氣、爽口的微酸為特色，微酸、清甜、令人怦然心動的滋味，淡淡的乳酸口味清爽芳香，讓消費者在一片清爽的口感中，感受到酸酸甜甜的青春滋味，是大人小孩都熱愛的經典風味。
           </div>
-          <img class="mt-4" src="../assets/Partner/Partner14_1.jpg" alt="partner">
-          <img class="my-4" src="../assets/Partner/Partner14_2.jpg" alt="partner">
+          <img class="mt-4" src="../assets/Partner/partner14_1.jpg" alt="partner">
+          <img class="my-4" src="../assets/Partner/partner14_2.jpg" alt="partner">
           <div class="flex justify-between">
-            <img class="w-[48%]" src="../assets/Partner/Partner14_3.jpg" alt="partner">
-            <img class="w-[48%]" src="../assets/Partner/Partner14_4.jpg" alt="partner">
+            <img class="w-[48%]" src="../assets/Partner/partner14_3.jpg" alt="partner">
+            <img class="w-[48%]" src="../assets/Partner/partner14_4.jpg" alt="partner">
           </div>
         </div>
       </div>
